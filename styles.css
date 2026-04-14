@@ -1,0 +1,1801 @@
+/* ------------------------------
+   GLOBAL RESET + BASE STYLES
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f0f0f0;
+}
+
+/* A simple layout container for main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px 40px;
+}
+
+/* ------------------------------
+   NAVIGATION
+--------------------------------*/
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* FIX */
+    padding: 12px 24px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-spacer {
+    flex: 1;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: underline;
+    color: #222;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    background-color: #eaeaea;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* ⭐ Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------
+   DROPDOWN MENU
+--------------------------------*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 8px 0;
+    list-style: none;
+    min-width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2100;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: underline;
+    color: #222;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    white-space: normal;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #eaeaea;
+    color: #000;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+/* ------------------------------
+   RIGHT-SIDE SUBMENU (Members)
+--------------------------------*/
+
+/* Only affect the Members submenu — do NOT touch top-level nav items */
+.nav-links li.dropdown-sub {
+    position: relative;
+}
+
+.dropdown-sub > a {
+    padding-right: 18px; /* space for arrow */
+}
+
+/* Right-side flyout */
+.submenu-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* positions it to the RIGHT of Members */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    min-width: 200px;
+    padding: 8px 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2200;
+}
+
+/* Show submenu on hover */
+.dropdown-sub:hover > .submenu-right {
+    display: block;
+}
+
+/* Styling for submenu links */
+.submenu-right li a {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: underline;
+    color: #222;
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.submenu-right li a:hover {
+    background-color: #eaeaea;
+    color: #000;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+    text-align: center;
+    padding: 40px 0 16px;
+    background-color: #f0f0f0;
+    color: white;
+    margin-top: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    white-space: nowrap;   /* desktop stays on one line */
+}
+
+@media (max-width: 900px) {
+    .hero-title {
+        white-space: normal;
+        font-size: 2rem;
+    }
+}
+
+/* ⭐ OPTION B — allow wrapping on medium screens too */
+@media (max-width: 1400px) {
+    .hero-title {
+        white-space: normal;   /* allow wrap on laptops + smaller desktops */
+    }
+}
+
+.header-underline {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header-underline img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Home page title bigger */
+.home-hero-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    white-space: normal !important;   /* ⭐ THIS FIXES THE WRAP */
+}
+
+/* Move homepage title upward without affecting anything else */
+.home-hero-title {
+    margin-top: -60px;   /* adjust this number until it looks perfect */
+}
+
+/* ------------------------------
+   PLEDGE TEXT
+--------------------------------*/
+.pledge-title-wrapper {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Increased title size */
+.pledge-title-gold,
+.pledge-title-green {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* gold behind green using subtle offset */
+.pledge-title-gold {
+    position: absolute;
+    top: 0.5px;      /* ⭐ shifted down */
+    left: 0.5px;     /* ⭐ shifted right */
+    color: #d4a017;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pledge-title-green {
+    position: relative;
+    color: #e60000;
+    z-index: 2;
+}
+
+/* Wrapper now expands to fit larger text */
+.pledge-paragraph-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: center;
+    padding-bottom: 1.4em;
+}
+
+/* Increased paragraph size */
+.pledge-paragraph-gold,
+.pledge-paragraph-green {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+/* gold layer with subtle offset */
+.pledge-paragraph-gold {
+    position: absolute;
+    top: 0.5px;      /* ⭐ shifted down */
+    left: 0.5px;     /* ⭐ shifted right */
+    color: #d4a017;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* green layer */
+.pledge-paragraph-green {
+    position: relative;
+    color: #32a852;
+    z-index: 2;
+}
+
+/* ------------------------------
+   FACEBOOK BUTTON
+--------------------------------*/
+.facebook-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.facebook-button img {
+    width: 25%;
+    min-width: 180px;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+}
+
+.facebook-button img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+.facebook-note {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    color: #3B8BFF;
+    font-weight: 600;
+    text-align: center;
+    white-space: normal;
+}
+
+/* ------------------------------
+   CONTENT SECTIONS (GENERIC)
+--------------------------------*/
+.content-section {
+    padding: 50px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-bottom: none; /* FIXED — removed old grey divider */
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   SLIDESHOW
+--------------------------------*/
+.slideshow-container {
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-container img.active {
+    display: block;
+    opacity: 1;
+}
+
+/* ------------------------------
+   KITCHEN SECTION (HOMEPAGE)
+--------------------------------*/
+#kitchen {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#kitchen .section-title {
+    color: black;
+}
+
+/* ⭐ FIXED: Image left, text right, never stacks */
+.kitchen-layout {
+    display: flex;
+    align-items: center;      /* centers image + text vertically */
+    justify-content: center;  /* keeps layout balanced */
+    gap: 32px;
+    margin-top: 20px;
+    flex-wrap: nowrap;        /* prevents stacking */
+}
+
+/* Image stays a reasonable size */
+.kitchen-badge {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+/* Text stays beside the image even when bold */
+.kitchen-description {
+    flex: 1;                  /* allows text to shrink instead of dropping */
+    min-width: 260px;         /* prevents collapse */
+    font-size: 1.2rem;        /* matches your bold look */
+    line-height: 1.6;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Reduce space between Kitchen and the divider BELOW it */
+#kitchen + .section-divider {
+    margin-top: 25px;
+}
+
+/* ------------------------------
+   SIMPLE RANGE NOTICE SECTION
+--------------------------------*/
+.range-simple-section {
+    text-align: center;
+    margin: 40px auto 10px;
+    padding: 10px 0;
+}
+
+.range-simple-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #e60000;
+    margin-bottom: 8px;
+}
+
+.range-simple-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;      /* changed from red */
+    font-style: italic; /* new */
+    margin-top: 0;
+}
+
+/* ------------------------------
+   SIMPLE RANGE BUTTON
+--------------------------------*/
+.range-button-simple {
+    text-align: center;
+    margin: 10px auto 40px;
+}
+
+.range-button-simple-img {
+    width: 320px;
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.range-button-simple-img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* ------------------------------
+   HOTDOG SECTION
+--------------------------------*/
+.range-hotdog img {
+    display: block;
+    margin: 30px auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------
+   BAND SECTION
+--------------------------------*/
+.club-ribchicken img {
+    display: block;
+    margin: 25px auto;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
+#band-image {
+    display: block;
+    margin: 40px auto 0;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------
+   MAX BAND SIDE-BY-SIDE SECTION
+--------------------------------*/
+
+/* Wrapper: image left, text right */
+.maxband-wrapper {
+    display: flex;
+    align-items: stretch;   /* allows both sides to match height */
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.maxband-left {
+    display: flex;          /* allows the image to stretch */
+    align-items: stretch;
+}
+
+.maxband-left img {
+    height: 100%;           /* match text height */
+    width: auto;
+    object-fit: cover;      /* fills the height without distortion */
+    border-radius: 10px;
+}
+
+.maxband-right {
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    color: black;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+    .maxband-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ------------------------------
+   CORN HOLE AND EUCHRE
+--------------------------------*/
+.activities-image {
+    text-align: center;
+    margin: 40px 0; /* optional spacing */
+    padding: 0 180px;   /* adds left/right spacing */
+}
+
+.activities-image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* ------------------------------
+   CONTACT SECTION
+--------------------------------*/
+.contact-section {
+    text-align: center;
+    color: #000;
+    font-size: 1.6rem; /* matches universal body size */
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+.contact-line {
+    margin-bottom: 18px;
+}
+
+.contact-spacer {
+    height: 20px;
+}
+
+/* Arrow divider line */
+.section-divider {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.section-divider img {
+    width: 100%;
+    max-width: 600px; /* adjust to your preferred length */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#contact-title {
+    scroll-margin-top: 190px;
+}
+
+/* ------------------------------
+   PARTNERSHIP IMAGE
+--------------------------------*/
+#partnership {
+    border-bottom: none;
+}
+
+.partnership-img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   ACTIVITIES SECTION
+--------------------------------*/
+.activities-section {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.activities-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.activities-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.activities-section {
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.site-footer {
+    background-color: #1877F2;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    width: 100%;
+    max-width: 100%;   /* forces full width even inside a max-width container */
+    margin-top: 40px;
+}
+
+.site-footer p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* HOMEPAGE ONLY — allow full-width layout */
+body.home main {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#club-events {
+    scroll-margin-top: 92px; /* was 80px */
+}
+
+
+/* =========================================================
+   OTHER PAGES (RANGE, ARCHERY, OFHA, PRIVATE EVENTS, LOGIN)
+   — CLEANED BUT VISUALS PRESERVED
+   ========================================================= */
+
+/* ------------------------------
+   PRIVATE EVENTS — TEXT ABOVE, PDF BELOW
+--------------------------------*/
+.private-events-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.private-events-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #e60000;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.private-events-pdf {
+    width: 260px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* FORCE top spacing change for Private Events page */
+.private-events-section {
+    margin-top: 30px !important;   /* was 40px */
+}
+
+/* ------------------------------
+   PRIVATE EVENTS — TEXT + PDF BLOCK (NEW)
+--------------------------------*/
+.private-events-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.private-events-info .private-events-right {
+    flex: 1 1 60%;
+}
+
+.private-events-info .private-events-left {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.private-events-info img.private-events-pdf {
+    width: 306px;   /* perfect size match */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   PRIVATE EVENTS HEADER CAROUSEL
+--------------------------------*/
+.private-events-header-carousel {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* ------------------------------
+   PRIVATE EVENTS — PARTY IMAGE
+--------------------------------*/
+.private-events-header-image img {
+    display: block;
+    margin: 20px auto 40px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   PRIVATE EVENTS — 2x2 IMAGE GRID
+--------------------------------*/
+.private-events-gallery {
+    width: 100%;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.private-events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;                              /* spacing between images */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.private-events-grid a {
+    display: block;
+}
+
+.private-events-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;   /* optional but looks clean */
+    display: block;
+}
+
+/* ------------------------------
+   PRIVATE EVENTS CAROUSEL
+--------------------------------*/
+.private-events-carousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.private-events-carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ------------------------------
+   LOGIN PAGE
+--------------------------------*/
+.login-page-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;   /* was 120px — reduced by half */
+    padding-bottom: 40px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 420px;
+    width: 100%;
+    padding: 40px 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.login-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form input {
+    font-size: 1.1rem;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 4px rgba(0,119,204,0.4);
+    outline: none;
+}
+
+.login-btn {
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.login-btn:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.login-links a {
+    color: #0077cc;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   RANGE PAGE HEADER IMAGE
+--------------------------------*/
+.range-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+/* ------------------------------
+   RANGE STATUS SECTION
+--------------------------------*/
+.range-status-section {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.range-status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.range-status-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 600px;
+}
+
+/* RANGE OPEN BUTTON */
+.range-open-button-section {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+}
+
+.range-open-button-wrapper {
+    text-align: center;
+}
+
+.range-open-button-img {
+    width: 450px;
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.range-open-button-img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* RANGE NOTICE SECTION */
+.range-notice-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.range-notice-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.range-notice-body {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* RANGE FACEBOOK BUTTON */
+.range-facebook-section {
+    width: 100%;
+    display: block;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+
+.range-facebook-img {
+    width: 390px;
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.range-facebook-img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* RANGE TRAPPER NOTICE */
+.range-trapper-section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.range-trapper-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.range-trapper-text {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* RANGE INFO SECTION */
+.range-info-section {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.range-info-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.range-info-text {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* RANGE RULES SECTION */
+.range-rules-section {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.range-rules-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.range-rules-text {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* RANGE RESTRICTED FIREARM NOTICE */
+.range-restricted-section {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.range-restricted-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.range-restricted-image img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.range-revised-date {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ------------------------------
+   ARCHERY HEADER IMAGE
+--------------------------------*/
+.archery-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.archery-header-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ARCHERY INFO */
+.archery-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.archery-info-text {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.archery-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.archery-season,
+.archery-subtitle,
+.archery-times,
+.archery-simple,
+.archery-pricing {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.archery-season {
+    margin-bottom: 25px;
+}
+
+.archery-subtitle {
+    font-weight: 600;
+}
+
+.archery-weather {
+    font-size: 1.4rem;
+    color: #e60000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.archery-private {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 40px 0;
+    font-weight: 600;
+}
+
+/* ARCHERY IMAGE TRIO */
+.archery-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.archery-image-wrapper img {
+    height: 260px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* ARCHERY CANCELLATIONS */
+.archery-cancellations {
+    text-align: center;
+    margin: 60px auto 20px;
+}
+
+.archery-cancel-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* ------------------------------
+   OFHA HEADER IMAGE
+--------------------------------*/
+.ofha-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.ofha-header-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+/* OFHA INTRO */
+.ofha-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ofha-intro-left {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #005BBB;
+    font-weight: 700;
+}
+
+.ofha-intro-right {
+    flex: 1;
+    text-align: center;
+}
+
+.ofha-logo {
+    width: 180px;
+    height: auto;
+    display: inline-block;
+}
+
+.ofha-text-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #005BBB;
+    text-decoration: none;
+}
+
+.ofha-text-link:hover {
+    text-decoration: underline;
+}
+
+/* OFHA MEMBERSHIP */
+.ofha-membership {
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.ofha-membership p {
+    font-size: 1.6rem;
+    color: #005BBB;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* OFHA REASONS */
+.ofha-reasons {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #005BBB;
+}
+
+.ofha-reasons h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.ofha-reasons ol {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.ofha-reasons li {
+    margin-bottom: 12px;
+}
+
+/* OFAH ADVOCACY */
+.ofah-advocacy {
+    text-align: center;
+    color: #005BBB;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.ofah-advocacy h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.ofah-advocacy h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ofah-advocacy p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* OFAH CONSERVATION */
+.ofah-conservation {
+    text-align: center;
+    color: #005BBB;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.ofah-conservation h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ofah-conservation h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px 0 15px;
+}
+
+.ofah-conservation p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* DIVIDER (CLUB EVENTS, ETC.) */
+
+/* QUICK LINKS TITLE */
+.quick-links-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #e60000;
+    letter-spacing: 1px;
+    margin: 40px 0 20px;
+}
+
+/* ------------------------------
+   OFHA QUICK LINKS ROW (FIXED)
+--------------------------------*/
+.ofha-links-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;              /* spacing between logos */
+    flex-wrap: nowrap;      /* keeps all 4 in one row */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.ofha-links-row a {
+    flex: 0 0 auto;         /* each logo keeps its natural size */
+}
+
+.ofha-links-row img {
+    width: 180px;           /* perfect professional size */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.ofha-links-row img:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------
+   MEMBERS PAGE
+--------------------------------*/
+.members-page {
+    text-align: center;
+}
+
+.members-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.members-column {
+    max-width: 380px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.members-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.members-subtitle {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.members-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+/* ------------------------------
+   KITCHEN PAGE TITLE (SEPARATE PAGE)
+--------------------------------*/
+#kitchen-page .section-title {
+    font-size: 3.2rem;
+    color: #000000;
+    text-decoration: underline;
+    margin-top: 0;
+    font-weight: 800;
+}
+
+/* Reduce top spacing on the Kitchen PAGE only */
+#kitchen-page .content-section {
+    padding-top: 40px;
+}
+
+/* FORCE top spacing change for Kitchen PAGE (not homepage) */
+#kitchen-page {
+    padding-top: 60px !important;
+}
+
+/* ⭐ FIXED: Image left, text right, never stacks */
+.kitchen-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;      /* prevents stacking */
+    margin-top: 20px;
+}
+
+/* Image sizing */
+.kitchen-badge {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+/* Text block */
+.kitchen-description {
+    flex: 1;
+    min-width: 260px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   AIR RIFLE (SEPARATE PAGE)
+--------------------------------*/
+
+/* Air Rifle Page Styling */
+.airrifle-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+    text-align: center; /* center EVERYTHING */
+}
+
+/* Main white title */
+.airrifle-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Optional subtitle under main title */
+.airrifle-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Section headers (black) */
+.airrifle-subheader {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px; /* space under each title */
+    color: black;
+}
+
+/* Body text (black) */
+.airrifle-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   /* TV Page Styling */
+
+.tv-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+    text-align: center;
+}
+
+.tv-title {
+    font-size: 2.2rem;        /* matches homepage section titles */
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.tv-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* TV Page Links */
+.tv-title {
+    font-size: 2.2rem;      /* matches homepage section titles */
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tv-link {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tv-link a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1877F2;              /* Facebook blue */
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.tv-link a:hover {
+    color: #0d5fcc;              /* slightly darker hover */
+}
+
+.tv-map {
+    display: block;
+    margin: 30px auto;
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tv-info {
+    font-family: monospace;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* TV Page Image Grid */
+.tv-grid {
+    margin-top: 40px;
+    margin-left: -50px;   /* keep the top images shifted left */
+}
+
+.tv-grid-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* BOTTOM IMAGE — centered, no width changes */
+.tv-grid-bottom {
+    display: flex;
+    justify-content: center;   /* centers the bottom image */
+    margin-left: 0;            /* remove the left shift ONLY for this row */
+}
+
+.tv-grid-bottom img {
+    width: auto;               /* natural width */
+    max-width: 100%;           /* prevents overflow */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ORIGINAL IMAGE RULES */
+.tv-grid-img {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tv-grid-img-wide {
+    width: 95%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tv-info-block {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tv-info-line {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 12px;
+}
+
+/* MATCHED HEIGHTS FOR TOP TWO IMAGES */
+.tv-grid-img,
+.tv-grid-img-wide {
+    height: 540px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+}
+
+/* Antenna Box Section */
+.tv-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.tv-antenna-img {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 95%;
+    max-width: 1000px;   /* large but not wider than the page */
+    height: auto;
+    border-radius: 8px;
+}
+
+.tv-wrapper h2.tv-title:last-of-type,
+.tv-wrapper h2.tv-title:nth-last-of-type(2),
+.tv-wrapper h2.tv-title:nth-last-of-type(3) {
+    text-decoration: none;
+}
+
+/* =========================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================= */
+
+@media (max-width: 992px) {
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+
+    .logo img {
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding-right: 0;
+    }
+
+    .hero {
+        margin-top: 130px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .pledge-title-gold,
+    .pledge-title-green {
+        font-size: 1.5rem;
+    }
+
+    .pledge-paragraph-gold,
+    .pledge-paragraph-green {
+        font-size: 1rem;
+    }
+
+    .kitchen-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kitchen-description {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .ofha-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .range-status-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .activities-text {
+        font-size: 1.1rem;
+    }
+
+    .facebook-button img {
+        width: 60%;
+    }
+
+    .archery-header-img,
+    .ofha-header-img {
+        height: 260px;
+    }
+
+    .archery-image-wrapper img {
+        height: 220px;
+    }
+
+    .ofha-intro-left {
+        font-size: 1.6rem;
+    }
+
+    .ofha-membership p,
+    .ofha-reasons ol,
+    .ofah-advocacy p,
+    .ofah-conservation p {
+        font-size: 1.3rem;
+    }
+}
