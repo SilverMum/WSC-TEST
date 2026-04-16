@@ -2207,27 +2207,30 @@ body.home main {
         display: none;
     }
 
+    @media (max-width: 900px) {
+
     .nav-links {
         order: 2;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px 20px;
+        gap: 6px 6px; /* smaller horizontal + vertical gap */
         width: 100%;
         padding: 0;
+        margin-top: 0;
     }
 
     .nav-links li {
-        flex: 0 0 calc(33.33% - 20px);
+        flex: 0 0 calc(33.33% - 6px); /* tighter columns */
         text-align: center;
-        position: relative;
     }
 
     .nav-links a {
-        font-size: 1.4rem;
-        padding: 6px 4px;
+        font-size: 1.3rem;
+        padding: 4px 2px; /* smaller padding = tighter look */
         white-space: nowrap;
     }
+}
 
     /* Hide dropdowns by default on mobile */
     .dropdown-menu,
