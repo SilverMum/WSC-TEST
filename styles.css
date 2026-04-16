@@ -2207,8 +2207,6 @@ body.home main {
         display: none;
     }
 
-    @media (max-width: 900px) {
-
     .nav-links {
         order: 2;
         display: flex;
