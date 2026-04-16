@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
+    <script>
+document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault(); // stop link from navigating
+            this.parentElement.classList.toggle('open');
+        }
+    });
+});
+
+document.querySelectorAll('.dropdown-sub > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+        }
+    });
+});
+</script>
+
 <body class="home">
 
 <header>
