@@ -2178,3 +2178,50 @@ body.home main {
         width: 100%;
     }
 }
+
+/* =========================================================
+   MOBILE NAVIGATION — MATCH OTHER PAGES testing
+   ========================================================= */
+@media (max-width: 900px) {
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1.8rem;
+    }
+
+    /* Disable dropdowns on mobile */
+    .dropdown-menu,
+    .submenu-right {
+        display: none !important;
+    }
+}
