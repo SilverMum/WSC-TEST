@@ -1684,24 +1684,27 @@ body.home main {
     margin-bottom: 20px;
 }
 
-/* AIR-RIFLE CANCELLATION FORM */
+/* AIR-RIFLE CANCELLATION FORM — BLUE THEME */
 .airrifle-cancel {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #003366; /* Deep blue background */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: white; /* Makes all text inside white */
 }
 
 .airrifle-cancel h2 {
     text-align: center;
     margin-bottom: 10px;
+    color: white; /* Title white */
 }
 
 .airrifle-cancel-intro {
     text-align: center;
     margin-bottom: 20px;
+    color: white; /* Intro text white */
 }
 
 .airrifle-cancel-form .field-row {
@@ -1713,6 +1716,7 @@ body.home main {
 .airrifle-cancel-form label {
     font-weight: bold;
     margin-bottom: 5px;
+    color: white; /* Label text white */
 }
 
 .airrifle-cancel-form input,
@@ -1721,6 +1725,8 @@ body.home main {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    background: white; /* White input boxes */
+    color: black; /* Black text inside inputs */
 }
 
 .airrifle-cancel-form .field-inline {
@@ -1732,8 +1738,10 @@ body.home main {
 .airrifle-cancel-form .field-checkbox {
     display: flex;
     align-items: center;
+    color: white; /* Checkbox label white */
 }
 
+/* Submit button (same as Archery) */
 .ac-submit {
     width: 100%;
     padding: 12px;
