@@ -2178,3 +2178,74 @@ body.home main {
         width: 100%;
     }
 }
+
+/* =========================================================
+   MOBILE NAV — WRAPPED + TAP-TO-OPEN DROPDOWNS
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Centered logo + wrapped nav */
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 0;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    .nav-links {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links li {
+        flex: 0 0 calc(33.33% - 20px);
+        text-align: center;
+        position: relative;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem;
+        padding: 6px 4px;
+        white-space: nowrap;
+    }
+
+    /* Hide dropdowns by default on mobile */
+    .dropdown-menu,
+    .submenu-right {
+        display: none;
+        position: static;
+        background: white;
+        border: 1px solid #ddd;
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px 0;
+        box-shadow: none;
+    }
+
+    /* Show dropdown when parent has .open */
+    .dropdown.open > .dropdown-menu,
+    .dropdown-sub.open > .submenu-right {
+        display: block;
+    }
+}
+
