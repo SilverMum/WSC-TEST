@@ -2246,6 +2246,12 @@ body.home main {
         padding: 2px 0 !important;
     }
 
+    /* HOMEPAGE — match other pages' width so nav spacing matches */
+.home .main-nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
     /* MOBILE DROPDOWN BEHAVIOR */
     .dropdown-menu,
     .submenu-right {
