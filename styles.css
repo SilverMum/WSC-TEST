@@ -2350,10 +2350,11 @@ body.home main {
         cursor: pointer;
     }
 
+    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (MOBILE) */
     .dropdown-sub .submenu-right {
-        top: 50%;
+        top: 0 !important;
         left: 100% !important;
-        transform: translateY(-50%) !important;
+        transform: none !important;
         width: auto !important;
         max-width: 240px !important;
     }
@@ -2364,6 +2365,23 @@ body.home main {
 
     .dropdown.open > .dropdown-menu {
         display: block;
+    }
+
+    /* ⭐ HOMEPAGE FIX — KEEP MEMBERS + ARROW ON SAME LINE */
+    .home .dropdown-sub {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .home .submenu-link {
+        display: inline-block !important;
+    }
+
+    .home .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px !important;
     }
 }
 
@@ -2396,10 +2414,11 @@ body.home main {
         cursor: pointer;
     }
 
+    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (DESKTOP) */
     .dropdown-sub .submenu-right {
-        top: 50%;
+        top: 0;
         left: 100%;
-        transform: translateY(-50%);
+        transform: none;
         min-width: 180px;
     }
 
