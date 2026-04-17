@@ -2324,9 +2324,16 @@ body.home main {
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
-    /* ⭐ SHIFT GROUPS SUBMENU RIGHT BY 4PX (mobile only) */
-    .submenu-right {
-        left: calc(50% + 4px) !important;
+    /* ⭐ FIX #1 — MATCH DROPDOWN TEXT SIZE ON HOMEPAGE */
+    .home .dropdown-menu a,
+    .home .submenu-right a {
+        font-size: 1.3rem !important;
+    }
+
+    /* ⭐ FIX #2 — MATCH DROPDOWN WIDTH TO KITCHEN */
+    .home .dropdown-menu,
+    .home .submenu-right {
+        max-width: 360px !important;
     }
 
     .dropdown.open > .dropdown-menu,
