@@ -2201,45 +2201,41 @@ body.home main {
 
     .logo img {
         height: 90px;
+        margin: 0 auto;
+        display: block;
     }
 
     .nav-spacer {
         display: none;
     }
 
+    /* WRAPPED NAV — 3 OVER 3 */
     .nav-links {
         order: 2;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 6px 6px; /* smaller horizontal + vertical gap */
+        gap: 6px 6px;
         width: 100%;
         padding: 0;
         margin-top: 0;
     }
 
     .nav-links li {
-        flex: 0 0 calc(33.33% - 6px); /* tighter columns */
+        flex: 0 0 calc(33.33% - 6px);
         text-align: center;
     }
 
     .nav-links a {
         font-size: 1.3rem;
-        padding: 4px 2px; /* smaller padding = tighter look */
+        padding: 4px 2px;
         white-space: nowrap;
     }
-}
 
-   /* Hide dropdowns by default on mobile */
-.dropdown-menu,
-.submenu-right {
-    display: none !important;
-}
-
-/* Mobile-only dropdown positioning */
-@media (max-width: 900px) {
+    /* MOBILE DROPDOWN BEHAVIOR */
     .dropdown-menu,
     .submenu-right {
+        display: none;
         position: static !important;
         width: 100%;
         margin-top: 8px;
@@ -2248,7 +2244,6 @@ body.home main {
         background: white;
         box-shadow: none;
     }
-}
 
     /* Show dropdown when parent has .open */
     .dropdown.open > .dropdown-menu,
@@ -2257,3 +2252,8 @@ body.home main {
     }
 }
 
+/* DESKTOP DROPDOWNS — KEEP DEFAULT BEHAVIOR */
+.dropdown-menu,
+.submenu-right {
+    display: none;
+}
