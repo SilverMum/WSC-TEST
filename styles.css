@@ -2367,11 +2367,12 @@ body.home main {
         display: block;
     }
 
-    /* ⭐ HOMEPAGE FIX — KEEP MEMBERS + ARROW ON SAME LINE */
+    /* ⭐ HOMEPAGE FIX — KEEP MEMBERS + ARROW ON SAME LINE (MOBILE) */
     .home .dropdown-sub {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
+        white-space: nowrap !important;
     }
 
     .home .submenu-link {
@@ -2405,7 +2406,24 @@ body.home main {
         position: relative;
     }
 
-    /* ⭐ HOMEPAGE DESKTOP — KEEP MEMBERS + ARROW ON ONE LINE */
+    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
+    .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (DESKTOP) */
+    .dropdown-sub .submenu-right {
+        top: 0;
+        left: 100%;
+        transform: none;
+        min-width: 180px;
+    }
+
+    /* ⭐ HOMEPAGE DESKTOP FIX — KEEP MEMBERS + ARROW ON ONE LINE */
     .home .dropdown-sub {
         display: inline-flex !important;
         align-items: center !important;
@@ -2417,22 +2435,10 @@ body.home main {
         display: inline-block !important;
     }
 
-    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
-    .submenu-toggle {
+    .home .submenu-toggle {
         display: inline-block !important;
+        margin-left: 6px !important;
         vertical-align: middle !important;
-        margin-left: 6px;
-        font-weight: bold;
-        cursor: pointer;
-        white-space: nowrap !important;
-    }
-
-    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (DESKTOP) */
-    .dropdown-sub .submenu-right {
-        top: 0;
-        left: 100%;
-        transform: none;
-        min-width: 180px;
     }
 
     .dropdown:hover > .dropdown-menu,
@@ -2440,3 +2446,4 @@ body.home main {
         display: block;
     }
 }
+
