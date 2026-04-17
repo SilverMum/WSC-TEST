@@ -2312,16 +2312,21 @@ body.home main {
     .dropdown-menu,
     .submenu-right {
         display: none;
-        position: absolute !important;   /* overlay instead of pushing */
+        position: absolute !important;
         left: 50%;
         transform: translateX(-50%);
-        width: 90% !important;           /* keeps nav stable */
+        width: 90% !important;
         margin-top: 6px;
         padding: 10px 0;
         border: 1px solid #ddd;
         background: white;
         z-index: 9999;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* ⭐ SHIFT GROUPS SUBMENU RIGHT BY 4PX (mobile only) */
+    .submenu-right {
+        left: calc(50% + 4px) !important;
     }
 
     .dropdown.open > .dropdown-menu,
