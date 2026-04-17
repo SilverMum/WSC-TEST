@@ -2230,18 +2230,25 @@ body.home main {
     }
 }
 
-    /* Hide dropdowns by default on mobile */
+   /* Hide dropdowns by default on mobile */
+.dropdown-menu,
+.submenu-right {
+    display: none !important;
+}
+
+/* Mobile-only dropdown positioning */
+@media (max-width: 900px) {
     .dropdown-menu,
     .submenu-right {
-        display: none;
-        position: static;
-        background: white;
-        border: 1px solid #ddd;
+        position: static !important;
         width: 100%;
         margin-top: 8px;
         padding: 8px 0;
+        border: 1px solid #ddd;
+        background: white;
         box-shadow: none;
     }
+}
 
     /* Show dropdown when parent has .open */
     .dropdown.open > .dropdown-menu,
