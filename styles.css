@@ -2183,7 +2183,11 @@ body.home main {
    MOBILE NAV — WRAPPED + TAP-TO-OPEN DROPDOWNS
    ========================================================= */
 @media (max-width: 900px) {
-
+    .main-nav {
+        justify-content: center !important;
+        padding: 12px 0 !important;
+    }
+}
     /* Centered logo + wrapped nav */
     .main-nav {
         flex-direction: column;
