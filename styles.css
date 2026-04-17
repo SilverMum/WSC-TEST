@@ -2258,9 +2258,9 @@ body.home main {
         flex: 0 0 calc(33.33% - 4px) !important;
     }
 
-    /* ⭐ HOMEPAGE NAV LINK FONT SIZE — BIGGER AGAIN */
+    /* ⭐ HOMEPAGE NAV LINK FONT SIZE — MATCH OTHER PAGES */
     .home .nav-links a {
-        font-size: 1.2rem !important;
+        font-size: 1.3rem !important; /* ← increased to match other pages */
         padding: 2px 0 !important;
         font-weight: bold;
     }
@@ -2269,8 +2269,8 @@ body.home main {
     .home .main-nav {
         padding-left: 16px !important;
         padding-right: 16px !important;
-        width: 100% !important;        /* ← fills full homepage width */
-        max-width: none !important;    /* ← removes artificial limit */
+        width: 100% !important;        
+        max-width: none !important;    
         margin: 0 auto !important;
     }
 
@@ -2315,4 +2315,3 @@ body.home main {
         display: block;
     }
 }
-
