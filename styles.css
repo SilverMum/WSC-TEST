@@ -2183,17 +2183,13 @@ body.home main {
    MOBILE NAV — WRAPPED + TAP-TO-OPEN DROPDOWNS
    ========================================================= */
 @media (max-width: 900px) {
+
+    /* Force homepage nav to center instead of space-between */
     .main-nav {
         justify-content: center !important;
         padding: 12px 0 !important;
-    }
-}
-    /* Centered logo + wrapped nav */
-    .main-nav {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 12px 0;
         gap: 10px;
     }
 
