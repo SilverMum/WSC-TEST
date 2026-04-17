@@ -2299,7 +2299,7 @@ body.home main {
         font-weight: bold;
     }
 
-    /* ⭐ HOMEPAGE — AUTO-WIDTH NAV (NO MORE PIXEL TUNING) */
+    /* ⭐ HOMEPAGE — AUTO-WIDTH NAV */
     .home .main-nav {
         padding-left: 16px !important;
         padding-right: 16px !important;
@@ -2308,7 +2308,7 @@ body.home main {
         margin: 0 auto !important;
     }
 
-    /* ⭐ MOBILE DROPDOWN — OVERLAY INSTEAD OF PUSHING */
+    /* ⭐ MOBILE DROPDOWN — OVERLAY */
     .dropdown-menu,
     .submenu-right {
         display: none;
@@ -2341,7 +2341,10 @@ body.home main {
         position: relative;
     }
 
+    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
     .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
         margin-left: 6px;
         font-weight: bold;
         cursor: pointer;
@@ -2382,6 +2385,15 @@ body.home main {
     /* ⭐ DESKTOP — MEMBERS SUBMENU OPENS TO THE RIGHT */
     .dropdown-sub {
         position: relative;
+    }
+
+    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
+    .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
     .dropdown-sub .submenu-right {
