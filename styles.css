@@ -2336,8 +2336,30 @@ body.home main {
         max-width: 360px !important;
     }
 
-    .dropdown.open > .dropdown-menu,
+    /* ⭐ MOBILE — MEMBERS SUBMENU OPENS TO THE RIGHT */
+    .dropdown-sub {
+        position: relative;
+    }
+
+    .submenu-toggle {
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .dropdown-sub .submenu-right {
+        top: 50%;
+        left: 100% !important;
+        transform: translateY(-50%) !important;
+        width: auto !important;
+        max-width: 240px !important;
+    }
+
     .dropdown-sub.open > .submenu-right {
+        display: block;
+    }
+
+    .dropdown.open > .dropdown-menu {
         display: block;
     }
 }
@@ -2351,12 +2373,22 @@ body.home main {
     .submenu-right {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
         background: white;
         border: 1px solid #ddd;
         padding: 10px 0;
         z-index: 999;
+    }
+
+    /* ⭐ DESKTOP — MEMBERS SUBMENU OPENS TO THE RIGHT */
+    .dropdown-sub {
+        position: relative;
+    }
+
+    .dropdown-sub .submenu-right {
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        min-width: 180px;
     }
 
     .dropdown:hover > .dropdown-menu,
