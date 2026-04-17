@@ -1236,7 +1236,7 @@ body.home main {
     font-weight: bold; /* make the dates bold */
     text-align: center;
     margin-bottom: 40px; /* 2 finger widths */
-    color: #fff; /* adjust if needed */
+    color: #000; /* adjust if needed */
 }
 
 .archery-cancel-form {
