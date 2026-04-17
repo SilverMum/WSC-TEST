@@ -2405,6 +2405,18 @@ body.home main {
         position: relative;
     }
 
+    /* ⭐ HOMEPAGE DESKTOP — KEEP MEMBERS + ARROW ON ONE LINE */
+    .home .dropdown-sub {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    .home .submenu-link {
+        display: inline-block !important;
+    }
+
     /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
     .submenu-toggle {
         display: inline-block !important;
@@ -2412,6 +2424,7 @@ body.home main {
         margin-left: 6px;
         font-weight: bold;
         cursor: pointer;
+        white-space: nowrap !important;
     }
 
     /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (DESKTOP) */
