@@ -2285,7 +2285,7 @@ body.home main {
 
     /* ⭐ HOMEPAGE-ONLY TIGHTER NAV SPACING */
     .home .nav-links {
-        gap: 2px 4px !important;
+        gap: 4px 6px !important;
     }
 
     .home .nav-links li {
