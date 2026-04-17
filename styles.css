@@ -564,6 +564,15 @@ html {
     display: inline-block;
 }
 
+@media (max-width: 600px) {
+    .ribchicken-img {
+        max-width: 90% !important; /* 10% smaller on mobile */
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important; /* keeps it centered */
+    }
+}
+
 /* ------------------------------
    CONTACT SECTION
 --------------------------------*/
