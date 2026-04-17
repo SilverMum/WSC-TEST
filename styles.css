@@ -2260,17 +2260,17 @@ body.home main {
 
     /* ⭐ HOMEPAGE NAV LINK FONT SIZE — BIGGER AGAIN */
     .home .nav-links a {
-        font-size: 1.2rem !important; /* ← increased */
+        font-size: 1.2rem !important;
         padding: 2px 0 !important;
         font-weight: bold;
     }
 
-    /* ⭐ HOMEPAGE — FIX NAV WIDTH + FINAL TUNING */
+    /* ⭐ HOMEPAGE — AUTO-WIDTH NAV (NO MORE PIXEL TUNING) */
     .home .main-nav {
         padding-left: 16px !important;
         padding-right: 16px !important;
-        width: calc(100% - 32px) !important;
-        max-width: 450px !important; /* ← wider nav container */
+        width: 100% !important;        /* ← fills full homepage width */
+        max-width: none !important;    /* ← removes artificial limit */
         margin: 0 auto !important;
     }
 
