@@ -1592,6 +1592,40 @@ body.home main {
 }
 
 /* ------------------------------
+   CHEESE & CRACKER
+--------------------------------*/
+/* ⭐ CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE */
+.cheesecracker-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.cheesecracker-img {
+    height: 450px;
+    width: auto;
+    max-width: 45vw;
+}
+
+/* ⭐ CHEESE & CRACKER — MOBILE STACKED */
+@media (max-width: 600px) {
+    .cheesecracker-wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cheesecracker-img {
+        height: auto;
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* ------------------------------
    KITCHEN PAGE TITLE (SEPARATE PAGE)
 --------------------------------*/
 #kitchen-page .section-title {
