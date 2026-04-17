@@ -2252,8 +2252,22 @@ body.home main {
     }
 }
 
-/* DESKTOP DROPDOWNS — KEEP DEFAULT BEHAVIOR */
-.dropdown-menu,
-.submenu-right {
-    display: none;
+/* DESKTOP DROPDOWNS — DEFAULT HOVER BEHAVIOR */
+@media (min-width: 901px) {
+    .dropdown-menu,
+    .submenu-right {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        border: 1px solid #ddd;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .dropdown:hover > .dropdown-menu,
+    .dropdown-sub:hover > .submenu-right {
+        display: block;
+    }
 }
