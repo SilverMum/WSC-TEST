@@ -2232,6 +2232,20 @@ body.home main {
         white-space: nowrap;
     }
 
+    /* ⭐ HOMEPAGE-ONLY TIGHTER NAV SPACING */
+    .home .nav-links {
+        gap: 2px 4px !important;
+    }
+
+    .home .nav-links li {
+        flex: 0 0 calc(33.33% - 4px) !important;
+    }
+
+    .home .nav-links a {
+        font-size: 1.15rem !important;
+        padding: 2px 0 !important;
+    }
+
     /* MOBILE DROPDOWN BEHAVIOR */
     .dropdown-menu,
     .submenu-right {
