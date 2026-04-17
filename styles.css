@@ -2184,7 +2184,7 @@ body.home main {
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Force homepage nav to center instead of space-between */
+    /* Mobile nav container */
     .main-nav {
         justify-content: center !important;
         padding: 12px 0 !important;
@@ -2246,11 +2246,11 @@ body.home main {
         padding: 2px 0 !important;
     }
 
-    /* ⭐ HOMEPAGE — RESTORE NORMAL PAGE WIDTH SO NAV MATCHES OTHER PAGES */
-    .home main {
-        max-width: 1200px !important;
+    /* ⭐ HOMEPAGE — FIX NAV WIDTH (THIS IS THE REAL FIX) */
+    .home .main-nav {
         padding-left: 16px !important;
         padding-right: 16px !important;
+        width: calc(100% - 32px) !important;
     }
 
     /* MOBILE DROPDOWN BEHAVIOR */
@@ -2266,15 +2266,17 @@ body.home main {
         box-shadow: none;
     }
 
-    /* Show dropdown when parent has .open */
     .dropdown.open > .dropdown-menu,
     .dropdown-sub.open > .submenu-right {
         display: block;
     }
 }
 
-/* DESKTOP DROPDOWNS — DEFAULT HOVER BEHAVIOR */
+/* =========================================================
+   DESKTOP DROPDOWNS — DEFAULT HOVER BEHAVIOR
+   ========================================================= */
 @media (min-width: 901px) {
+
     .dropdown-menu,
     .submenu-right {
         display: none;
