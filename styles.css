@@ -2467,4 +2467,6 @@ body.home main {
     font-size: 2rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
 }
