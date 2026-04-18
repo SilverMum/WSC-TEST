@@ -2514,8 +2514,20 @@ body.home main {
     border: 0;
 }
 
+/* Inner container: padding only, no border */
 #airrifle-calendar .calendar-container {
-    border: 3px solid #003366; /* Air Rifle deep blue */
     padding: 15px;
     border-radius: 6px;
 }
+
+/* Full blue card with border moved to the outside */
+#airrifle-calendar {
+    background-color: rgba(0, 51, 102, 0.12); /* soft translucent deep blue */
+    padding: 25px 35px; /* inner padding */
+    border-radius: 10px;
+    margin: 0 auto 40px auto; /* center the card */
+    max-width: 900px; /* prevents edge-to-edge stretching */
+
+    border: 3px solid #003366; /* Air Rifle deep blue border */
+}
+
