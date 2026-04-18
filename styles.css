@@ -2452,13 +2452,13 @@ body.home main {
    ========================================================= */
 .calendar-container {
     width: 100%;
-    max-width: 900px; /* you can adjust this */
-    margin: 0 auto; /* centers it */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .calendar-container iframe {
     width: 100%;
-    height: 600px; /* adjust if you want it taller */
+    height: 600px;
     border: 0;
 }
 
@@ -2472,18 +2472,21 @@ body.home main {
     text-underline-offset: 6px;
 }
 
+/* Removed the inner border — now just padding + radius */
 #archery-calendar .calendar-container {
-    border: 3px solid #4cc26b; /* Archery green */
     padding: 15px;
     border-radius: 6px;
 }
 
+/* The full green card with border moved to the outside */
 #archery-calendar {
     background-color: rgba(76, 194, 107, 0.12); /* soft translucent green */
     padding: 25px 35px; /* inner padding */
     border-radius: 10px;
     margin: 0 auto 40px auto; /* center the card */
-    max-width: 900px; /* prevents it from going edge-to-edge */
+    max-width: 900px; /* prevents edge-to-edge stretching */
+
+    border: 3px solid #4cc26b; /* Archery green border moved here */
 }
 
 /* =========================================================
