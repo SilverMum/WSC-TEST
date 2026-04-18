@@ -2478,6 +2478,13 @@ body.home main {
     border-radius: 6px;
 }
 
+#archery-calendar {
+    background-color: rgba(76, 194, 107, 0.12); /* soft translucent green */
+    padding: 25px 35px; /* slightly thicker sides */
+    border-radius: 10px; /* soft card corners */
+    margin-bottom: 40px; /* space below the card */
+}
+
 /* =========================================================
    ----------AIR-RIFLE-CALENDAR-------------
    ========================================================= */
