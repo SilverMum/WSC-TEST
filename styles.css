@@ -2461,3 +2461,10 @@ body.home main {
     height: 600px; /* adjust if you want it taller */
     border: 0;
 }
+
+.archery-calendar-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
