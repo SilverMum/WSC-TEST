@@ -666,6 +666,22 @@ html {
     border-radius: 10px;
 }
 
+/* Tighten space BELOW the first divider */
+.section-divider img {
+    display: block;
+    margin: 10px auto; /* was larger before */
+}
+
+/* Tighten space ABOVE and BELOW the Partnership image */
+.partnership-img {
+    display: block;
+    margin: 10px auto; /* reduced from 20px */
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* ------------------------------
    ACTIVITIES SECTION
 --------------------------------*/
