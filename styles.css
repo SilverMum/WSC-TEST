@@ -2534,17 +2534,26 @@ body.home main {
 /* =========================================================
    ----------- CALENDAR PAGE -------------
    ========================================================= */
+
+/* Header image inside wrapper */
 .calendar-header-img {
     display: block;
     margin: 0 auto 20px auto;
-    max-width: 300px; /* adjust if you want it bigger or smaller */
     height: auto;
 }
 
+/* Wrapper that matches the red card width */
 .calendar-header-wrapper {
     max-width: 900px;
     margin: 0 auto 20px auto;
     text-align: center;
+}
+
+/* FORCE image to match wrapper width */
+.calendar-header-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Title styling */
