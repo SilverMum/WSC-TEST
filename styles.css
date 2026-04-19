@@ -2534,6 +2534,12 @@ body.home main {
 /* =========================================================
    ----------- CALENDAR PAGE -------------
    ========================================================= */
+.calendar-header-img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 300px; /* adjust if you want it bigger or smaller */
+    height: auto;
+}
 
 /* Title styling */
 .calendar-title {
