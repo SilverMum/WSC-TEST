@@ -2541,6 +2541,12 @@ body.home main {
     height: auto;
 }
 
+.calendar-header-wrapper {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
 /* Title styling */
 .calendar-title {
     text-align: center;
