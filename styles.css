@@ -25,6 +25,15 @@ main {
     padding: 0 16px 40px;
 }
 
+/* Homepage background */
+.home {
+    background-image: url("tree line bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 /* ------------------------------
    NAVIGATION
 --------------------------------*/
