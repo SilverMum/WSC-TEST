@@ -27,7 +27,7 @@ main {
 
 /* Content card overlay for homepage */
 .home main {
-    background: rgba(255, 255, 255, 0.85); /* soft white card */
+    background: rgba(255, 255, 255, 0.80); /* soft white card */
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
