@@ -28,7 +28,7 @@ main {
 /* Homepage background */
 .home {
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.40)),
+        linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
         url("images/tree line bg.png");
     background-size: cover;
     background-position: center;
