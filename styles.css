@@ -658,6 +658,17 @@ html {
     border-radius: 10px;
 }
 
+/* Partnership section spacing fixes */
+#contact-title h2 {
+    margin-top: 20px; /* half of what it was */
+    margin-bottom: 10px; /* tighten under the title */
+}
+
+.partnership-image {
+    display: block;
+    margin: 0 auto 20px auto; /* half the space under the image */
+}
+
 /* ------------------------------
    ACTIVITIES SECTION
 --------------------------------*/
