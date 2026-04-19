@@ -194,7 +194,7 @@ html {
 .hero {
     text-align: center;
     padding: 40px 0 16px;
-    background-color: #f0f0f0;
+    background-color: transparent;
     color: white;
     margin-top: 20px;
 }
