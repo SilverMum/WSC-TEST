@@ -649,24 +649,21 @@ html {
     border-bottom: none;
 }
 
+/* Partnership title spacing */
+#contact-title h2,
+#partnership h2 {
+    margin-top: 20px;   /* half the space above the title */
+    margin-bottom: 10px; /* tighter space under the title */
+}
+
+/* Partnership image spacing */
 .partnership-img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* half the space under the image */
     width: 100%;
     max-width: 900px;
     height: auto;
     border-radius: 10px;
-}
-
-/* Partnership section spacing fixes */
-#contact-title h2 {
-    margin-top: 20px; /* half of what it was */
-    margin-bottom: 10px; /* tighten under the title */
-}
-
-.partnership-image {
-    display: block;
-    margin: 0 auto 20px auto; /* half the space under the image */
 }
 
 /* ------------------------------
