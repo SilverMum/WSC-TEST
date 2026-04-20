@@ -2492,6 +2492,7 @@ body.home main {
 /* =========================================================
    ----------ARCHERY------CALENDAR-------------
    ========================================================= */
+
 .calendar-container {
     width: 100%;
     max-width: 900px;
@@ -2514,26 +2515,26 @@ body.home main {
     text-underline-offset: 6px;
 }
 
-/* Removed the inner border — now just padding + radius */
+/* Inner container: padding only, no border */
 #archery-calendar .calendar-container {
     padding: 15px;
     border-radius: 6px;
 }
 
-/* The full green card with border moved to the outside */
+/* Full green card */
 #archery-calendar {
     background-color: rgba(76, 194, 107, 0.12); /* soft translucent green */
-    padding: 25px 35px; /* inner padding */
+    padding: 25px 35px; /* desktop padding */
     border-radius: 10px;
-    margin: 0 auto 40px auto; /* center the card */
-    max-width: 900px; /* prevents edge-to-edge stretching */
-
-    border: 3px solid #4cc26b; /* Archery green border moved here */
+    margin: 0 auto 40px auto;
+    max-width: 900px;
+    border: 3px solid #4cc26b;
 }
 
 /* =========================================================
    ----------AIR-RIFLE-CALENDAR-------------
    ========================================================= */
+
 .airrifle-calendar-title {
     text-align: center;
     font-size: 2rem;
@@ -2562,15 +2563,68 @@ body.home main {
     border-radius: 6px;
 }
 
-/* Full blue card with border moved to the outside */
+/* Full blue card */
 #airrifle-calendar {
     background-color: rgba(0, 51, 102, 0.12); /* soft translucent deep blue */
-    padding: 25px 35px; /* inner padding */
+    padding: 25px 35px; /* desktop padding */
     border-radius: 10px;
-    margin: 0 auto 40px auto; /* center the card */
-    max-width: 900px; /* prevents edge-to-edge stretching */
+    margin: 0 auto 40px auto;
+    max-width: 900px;
+    border: 3px solid #003366;
+}
 
-    border: 3px solid #003366; /* Air Rifle deep blue border */
+/* =========================================================
+   MOBILE FIX FOR BOTH ARCHERY + AIR RIFLE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ARCHERY — show green on sides, remove squeeze */
+    #archery-calendar {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+        border-left-width: 0;
+        border-right-width: 0;
+        max-width: 100% !important;
+    }
+
+    #archery-calendar .calendar-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* AIR RIFLE — show blue on sides, remove squeeze */
+    #airrifle-calendar {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+        border-left-width: 0;
+        border-right-width: 0;
+        max-width: 100% !important;
+    }
+
+    #airrifle-calendar .calendar-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Shared wrapper behavior */
+    .calendar-wrapper {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .calendar-wrapper iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        display: block;
+        border: 0;
+    }
 }
 
 /* =========================================================
