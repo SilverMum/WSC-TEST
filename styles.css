@@ -2805,10 +2805,12 @@ body.home main {
         gap: 20px;
     }
 
-    /* Center the kitchen image */
+    /* Center the kitchen image — UPDATED */
     #kitchen-page .kitchen-badge {
-        margin: 0 auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         display: block !important;
+        max-width: 80% !important;   /* fixes the slight left drift */
     }
 
     /* Center the text block */
