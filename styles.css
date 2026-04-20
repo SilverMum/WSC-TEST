@@ -2700,6 +2700,13 @@ body.home main {
     padding: 20px;
 }
 
+.calendar-bg {
+    background-image: url("images/calendar-page-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* =========================================================
    RESPONSIVE GOOGLE CALENDAR FIX (MOBILE)
    ========================================================= */
