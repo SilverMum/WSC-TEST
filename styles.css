@@ -25,37 +25,31 @@ main {
     padding: 0 16px 40px;
 }
 
-/* Homepage background */
+/* Homepage container */
 .home {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
-        url("images/tree line bg.png");
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-
-    position: relative; /* required for overlay */
+    position: relative;
     z-index: 0;
 }
 
-/* Full-page white overlay */
+/* Full-page fixed background + overlay */
 .home::before {
     content: "";
-    position: fixed; /* FIXED = background stays still */
+    position: fixed; /* background stays still */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)),
         url("images/tree line bg.png");
 
     background-size: cover;
-    background-position: bottom center; /* bottom anchored */
+    background-position: bottom center;
     background-repeat: no-repeat;
-   
+
     pointer-events: none;
-    z-index: -1; /* stays behind all content */
+    z-index: -1;
 }
 
 /* ------------------------------
