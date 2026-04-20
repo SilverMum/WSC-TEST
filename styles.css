@@ -2655,13 +2655,13 @@ body.home main {
 /* Title styling */
 .calendar-title {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: bold;
     color: black;
     display: inline-block;
-    border-bottom: 3px solid red;
+    border-bottom: none;
     padding-bottom: 6px;
-    margin: 40px auto 30px auto;
+    margin: 70px auto 30px auto;
 }
 
 #wsc-calendar {
@@ -2703,6 +2703,16 @@ body.home main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* White overlay over the entire background */
+.calendar-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.10); /* 10% opacity */
+    pointer-events: none; /* don't block clicks */
+    z-index: -1; /* sits behind all content */
 }
 
 /* =========================================================
