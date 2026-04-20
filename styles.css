@@ -25,15 +25,6 @@ main {
     padding: 0 16px 40px;
 }
 
-/* Content card overlay for homepage */
-.home main {
-    background: rgba(255, 255, 255, 0.60); /* soft white card */
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    margin-top: -50px;
-}
-
 /* Homepage background */
 .home {
     background-image:
@@ -43,7 +34,32 @@ main {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    position: relative; /* required for full-page overlay */
 }
+
+/* Full-page white overlay */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.60); /* same opacity as your card */
+    pointer-events: none;
+    z-index: -1; /* stays behind all content */
+}
+
+/* Content card overlay for homepage */
+.home main {
+    background: rgba(255, 255, 255, 0.60); /* soft white card */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    margin-top: -50px;
+}
+
 
 /* ------------------------------
    NAVIGATION
