@@ -421,41 +421,27 @@ html {
 }
 
 /* ------------------------------
-   KITCHEN SECTION (HOMEPAGE)
+   HOMEPAGE — KITCHEN SECTION
 --------------------------------*/
-#kitchen {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#kitchen .section-title {
-    color: black;
-}
-
-/* ⭐ Desktop layout stays EXACTLY the same */
-.kitchen-layout {
+#kitchen .kitchen-layout {
     display: flex;
-    align-items: center;      /* centers image + text vertically */
-    justify-content: center;  /* keeps layout balanced */
+    align-items: center;
+    justify-content: center;
     gap: 32px;
     margin-top: 20px;
-    flex-wrap: nowrap;        /* prevents stacking on desktop */
+    flex-wrap: nowrap;
 }
 
-/* Image stays a reasonable size */
-.kitchen-badge {
+#kitchen .kitchen-badge {
     max-width: 320px;
     width: 100%;
     height: auto;
 }
 
-/* Text stays beside the image even when bold */
-.kitchen-description {
-    flex: 1;                  /* allows text to shrink instead of dropping */
-    min-width: 260px;         /* prevents collapse */
-    font-size: 1.2rem;        /* matches your bold look */
+#kitchen .kitchen-description {
+    flex: 1;
+    min-width: 260px;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: left;
     color: #000;
@@ -465,31 +451,6 @@ html {
 /* Reduce space between Kitchen and the divider BELOW it */
 #kitchen + .section-divider {
     margin-top: 25px;
-}
-
-/* -----------------------------------------
-   ⭐ MOBILE FIXES — IMAGE CENTERS PERFECTLY
-------------------------------------------*/
-@media (max-width: 768px) {
-
-    /* Stack image above text */
-    .kitchen-layout {
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: wrap; /* allow stacking */
-    }
-
-    /* Center the image on mobile */
-    .kitchen-badge {
-        margin: 0 auto !important;
-        display: block;
-    }
-
-    /* Remove desktop left margin from text */
-    .kitchen-description {
-        margin-left: 0 !important;
-        text-align: center;
-    }
 }
 
 /* ------------------------------
@@ -1720,32 +1681,36 @@ body.home main {
     padding-top: 60px !important;
 }
 
-/* ⭐ FIXED: Image left, text right, never stacks */
-.kitchen-layout {
+/* ------------------------------
+   KITCHEN PAGE — DESKTOP LAYOUT
+--------------------------------*/
+#kitchen-page .kitchen-layout {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    flex-wrap: nowrap;      /* prevents stacking */
+    flex-wrap: nowrap;
     margin-top: 20px;
 }
 
-/* Image sizing */
-.kitchen-badge {
+#kitchen-page .kitchen-badge {
     max-width: 350px;
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0;
 }
 
-/* Text block */
-.kitchen-description {
+#kitchen-page .kitchen-description {
     flex: 1;
     min-width: 260px;
     font-size: 1.2rem;
     line-height: 1.6;
     color: black;
     font-weight: bold;
+    text-align: left;
 }
+
 
 .fb-page-container {
     width: calc(100% - 20px); /* full width minus 10px padding each side */
@@ -1760,6 +1725,35 @@ body.home main {
     width: 100% !important;
     height: 800px !important; /* adjust height if needed */
     overflow-y: scroll;
+}
+
+/* ------------------------------
+   KITCHEN PAGE — MOBILE FIX
+--------------------------------*/
+@media (max-width: 768px) {
+
+    #kitchen-page .kitchen-layout {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #kitchen-page .kitchen-badge {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    #kitchen-page .kitchen-description {
+        text-align: center;
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 /* ------------------------------
@@ -2787,35 +2781,5 @@ body.home main {
         min-width: 0 !important;
         display: block;
         border: 0;
-    }
-}
-
-/* -----------------------------------------
-   ⭐ KITCHEN PAGE — MOBILE IMAGE CENTER FIX
-------------------------------------------*/
-@media (max-width: 768px) {
-
-    /* Force stacking ONLY on the Kitchen Page */
-    #kitchen-page .kitchen-layout {
-        flex-direction: column !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center !important;
-        gap: 20px;
-    }
-
-    /* Center the kitchen image — UPDATED */
-    #kitchen-page .kitchen-badge {
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block !important;
-        max-width: 80% !important;   /* fixes the slight left drift */
-    }
-
-    /* Center the text block */
-    #kitchen-page .kitchen-description {
-        margin-left: 0 !important;
-        text-align: center !important;
     }
 }
