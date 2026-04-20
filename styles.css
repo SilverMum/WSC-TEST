@@ -2789,3 +2789,30 @@ body.home main {
         border: 0;
     }
 }
+
+/* -----------------------------------------
+   ⭐ KITCHEN PAGE — MOBILE IMAGE CENTER FIX
+------------------------------------------*/
+@media (max-width: 768px) {
+
+    /* Stack image + text ONLY on the Kitchen Page */
+    #kitchen-page .kitchen-layout {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Center the kitchen image */
+    #kitchen-page .kitchen-badge {
+        margin: 0 auto !important;
+        display: block;
+    }
+
+    /* Center the text block */
+    #kitchen-page .kitchen-description {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
