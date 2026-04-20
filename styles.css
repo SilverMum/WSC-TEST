@@ -2667,3 +2667,40 @@ body.home main {
         border: 0;
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Remove side padding from the red card */
+    #wsc-calendar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border-left-width: 0;
+        border-right-width: 0;
+        max-width: 100% !important;
+    }
+
+    /* Remove inner padding too */
+    #wsc-calendar .calendar-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Make wrapper flush with screen edges */
+    .calendar-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Force iframe to use full mobile width */
+    .calendar-wrapper iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        display: block;
+    }
+}
