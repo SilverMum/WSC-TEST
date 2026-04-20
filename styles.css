@@ -34,7 +34,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 
-    position: relative; /* required for full-page overlay */
+    position: relative; /* required for overlay */
 }
 
 /* Full-page white overlay */
