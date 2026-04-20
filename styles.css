@@ -2652,10 +2652,10 @@ body.home main {
 
 @media (max-width: 768px) {
 
-    /* Red card: small flexible padding so a little red shows */
+    /* Red card: show a little red on sides */
     #wsc-calendar {
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        padding-left: 6% !important;
+        padding-right: 6% !important;
         border-left-width: 0;
         border-right-width: 0;
         max-width: 100% !important;
