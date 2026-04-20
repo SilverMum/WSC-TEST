@@ -2650,57 +2650,40 @@ body.home main {
    RESPONSIVE GOOGLE CALENDAR FIX (MOBILE)
    ========================================================= */
 
-/* NEW: Clean mobile-only fix (Option 1) */
 @media (max-width: 768px) {
 
-    .calendar-wrapper {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden; /* prevent sideways scroll */
-    }
-
-    .calendar-wrapper iframe {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important; /* the magic line */
-        display: block;
-        border: 0;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Remove side padding from the red card */
+    /* Red card: small flexible padding so a little red shows */
     #wsc-calendar {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 3% !important;
+        padding-right: 3% !important;
         border-left-width: 0;
         border-right-width: 0;
         max-width: 100% !important;
     }
 
-    /* Remove inner padding too */
+    /* Remove inner padding so calendar gets full width */
     #wsc-calendar .calendar-container {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 
-    /* Make wrapper flush with screen edges */
+    /* Wrapper flush inside container */
     .calendar-wrapper {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
 
-    /* Force iframe to use full mobile width */
+    /* Iframe obeys container width */
     .calendar-wrapper iframe {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
         display: block;
+        border: 0;
     }
 }
