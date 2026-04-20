@@ -2666,7 +2666,7 @@ body.home main {
 
 /* Outer red card (same structure as Air Rifle, but red) */
 #wsc-calendar {
-    background-color: rgba(255, 0, 0, 0.12); /* soft translucent red */
+    background-color: rgba(255, 0, 0, 0.50); /* soft translucent red */
     padding: 25px 35px; /* inner padding */
     border-radius: 10px;
     margin: 0 auto 40px auto; /* center the card */
