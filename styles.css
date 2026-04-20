@@ -2795,18 +2795,20 @@ body.home main {
 ------------------------------------------*/
 @media (max-width: 768px) {
 
-    /* Stack image + text ONLY on the Kitchen Page */
+    /* Force stacking ONLY on the Kitchen Page */
     #kitchen-page .kitchen-layout {
         flex-direction: column !important;
         flex-wrap: wrap !important;
-        text-align: center;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
         gap: 20px;
     }
 
     /* Center the kitchen image */
     #kitchen-page .kitchen-badge {
         margin: 0 auto !important;
-        display: block;
+        display: block !important;
     }
 
     /* Center the text block */
@@ -2815,4 +2817,3 @@ body.home main {
         text-align: center !important;
     }
 }
-
