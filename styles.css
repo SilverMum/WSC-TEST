@@ -453,6 +453,13 @@ html {
     margin-top: 25px;
 }
 
+/* UNIVERSAL FIX — Center all kitchen images */
+.kitchen-badge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ------------------------------
    SIMPLE RANGE NOTICE SECTION
 --------------------------------*/
