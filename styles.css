@@ -2710,7 +2710,7 @@ body.home main {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.10); /* 10% opacity */
+    background: rgba(255, 255, 255, 0.20); /* 10% opacity */
     pointer-events: none; /* don't block clicks */
     z-index: -1; /* sits behind all content */
 }
