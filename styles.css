@@ -434,14 +434,14 @@ html {
     color: black;
 }
 
-/* ⭐ FIXED: Image left, text right, never stacks */
+/* ⭐ Desktop layout stays EXACTLY the same */
 .kitchen-layout {
     display: flex;
     align-items: center;      /* centers image + text vertically */
     justify-content: center;  /* keeps layout balanced */
     gap: 32px;
     margin-top: 20px;
-    flex-wrap: nowrap;        /* prevents stacking */
+    flex-wrap: nowrap;        /* prevents stacking on desktop */
 }
 
 /* Image stays a reasonable size */
@@ -465,6 +465,31 @@ html {
 /* Reduce space between Kitchen and the divider BELOW it */
 #kitchen + .section-divider {
     margin-top: 25px;
+}
+
+/* -----------------------------------------
+   ⭐ MOBILE FIXES — IMAGE CENTERS PERFECTLY
+------------------------------------------*/
+@media (max-width: 768px) {
+
+    /* Stack image above text */
+    .kitchen-layout {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap; /* allow stacking */
+    }
+
+    /* Center the image on mobile */
+    .kitchen-badge {
+        margin: 0 auto !important;
+        display: block;
+    }
+
+    /* Remove desktop left margin from text */
+    .kitchen-description {
+        margin-left: 0 !important;
+        text-align: center;
+    }
 }
 
 /* ------------------------------
