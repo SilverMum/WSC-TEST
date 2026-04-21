@@ -1161,16 +1161,16 @@ body.home main {
 .range-bg {
     position: relative;
     min-height: 100vh;
-    background: url('images/range-background.jpg') center center / cover no-repeat fixed;
+    background: url('images/range-background1.jpg') center center / cover no-repeat fixed;
 }
 
 /* 20% white wash overlay */
 .range-bg::before {
     content: "";
-    position: fixed; /* stays in place while scrolling */
+    position: fixed;
     inset: 0;
     background: rgba(255, 255, 255, 0.2);
-    z-index: -1; /* sits behind all content */
+    z-index: -1;
 }
 
 /* ------------------------------
