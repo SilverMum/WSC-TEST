@@ -333,6 +333,37 @@ html {
     z-index: 2;
 }
 
+.home-pledge-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.6); /* 60% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* subtle frosted effect */
+}
+
+/* Giant decorative quote */
+.home-pledge-card::before {
+    content: "“";
+    position: absolute;
+
+    /* POSITIONING — moved down + left */
+    top: 10px;      /* was -20px */
+    left: 10px;    /* was -10px */
+
+    /* SIZE + SHAPE SHIFT — moved the glyph down/right visually */
+    font-size: 160px;   /* increased size */
+    transform: translate(8px, 12px); /* nudges the glyph shape down/right */
+
+    line-height: 1;
+    color: rgba(50, 168, 82, 0.75); /* matches your green (#32a852) with soft opacity */
+
+    pointer-events: none;
+    font-family: Georgia, serif;
+    z-index: 0;
+}
+
 /* ------------------------------
    FACEBOOK BUTTON
 --------------------------------*/
@@ -373,37 +404,16 @@ html {
     font-weight: bold; /* now it's bold */
 }
 
-.home-pledge-card {
+.home-facebook-card {
+    position: relative;
     max-width: 900px;
     margin: 40px auto;
     padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.6); /* 60% white */
+    background: rgba(255, 255, 255, 0.6); /* same 60% white */
     border-radius: 12px;
-    backdrop-filter: blur(4px); /* subtle frosted effect */
+    backdrop-filter: blur(4px);
 }
-
-/* Giant decorative quote */
-.home-pledge-card::before {
-    content: "“";
-    position: absolute;
-
-    /* POSITIONING — moved down + left */
-    top: 10px;      /* was -20px */
-    left: 10px;    /* was -10px */
-
-    /* SIZE + SHAPE SHIFT — moved the glyph down/right visually */
-    font-size: 160px;   /* increased size */
-    transform: translate(8px, 12px); /* nudges the glyph shape down/right */
-
-    line-height: 1;
-    color: rgba(50, 168, 82, 0.75); /* matches your green (#32a852) with soft opacity */
-
-    pointer-events: none;
-    font-family: Georgia, serif;
-    z-index: 0;
-}
-
 
 /* ------------------------------
    CONTENT SECTIONS (GENERIC)
