@@ -748,6 +748,26 @@ html {
 }
 
 /* ------------------------------
+   HOMEPAGE — PARTNERSHIP WHITE CARD
+--------------------------------*/
+.home-partnership-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.partnership-img {
+    max-width: 350px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* ------------------------------
    ACTIVITIES SECTION
 --------------------------------*/
 .activities-section {
