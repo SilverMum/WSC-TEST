@@ -373,6 +373,16 @@ html {
     font-weight: bold; /* now it's bold */
 }
 
+.home-pledge-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* subtle frosted effect */
+}
+
 /* ------------------------------
    CONTENT SECTIONS (GENERIC)
 --------------------------------*/
