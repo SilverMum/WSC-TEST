@@ -395,7 +395,10 @@ html {
     text-align: center;
     white-space: normal;
 
-   text-shadow: 0 0 6px rgba(0,0,0,0.35); /* soft glow for readability */
+    text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 3px black;
 }
 
 /* ------------------------------
