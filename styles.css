@@ -409,6 +409,34 @@ html {
 }
 
 /* ------------------------------
+   HOMEPAGE — MEETING WHITE CARD
+--------------------------------*/
+.home-meeting-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white card */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.meeting-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: red;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.meeting-logo {
+    max-width: 300px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* ------------------------------
    SLIDESHOW
 --------------------------------*/
 .slideshow-container {
