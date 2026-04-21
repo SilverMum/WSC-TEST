@@ -1393,6 +1393,17 @@ body.home main {
   }
 }
 
+/* Make main archery info text larger to match .archery-private */
+.archery-title,
+.archery-season,
+.archery-subtitle,
+.archery-times,
+.archery-simple,
+.archery-pricing,
+.archery-weather {
+    font-size: 1.8rem;
+}
+
 /* -----------------------------------------
    ARCHERY PAGE — FULL BACKGROUND IMAGE
 ------------------------------------------*/
