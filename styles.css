@@ -1404,6 +1404,17 @@ body.home main {
     font-size: 1.8rem;
 }
 
+.archery-info {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px 25px; /* adds breathing room inside the card */
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px; /* soft rounded corners */
+    backdrop-filter: blur(4px); /* optional: gives a frosted-glass effect */
+}
+
 /* -----------------------------------------
    ARCHERY PAGE — FULL BACKGROUND IMAGE
 ------------------------------------------*/
