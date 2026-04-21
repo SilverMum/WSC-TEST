@@ -1176,7 +1176,7 @@ body.home main {
 /* ARCHERY INFO */
 .archery-info {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 0 auto 40px; /* remove top margin, keep bottom spacing */
     padding: 0 20px;
     text-align: center;
 }
