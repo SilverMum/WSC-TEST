@@ -1199,10 +1199,12 @@ body.home main {
 .archery-pricing {
     font-size: 1.4rem;
     margin-bottom: 20px;
+    font-weight: 700; /* makes all those lines bold */
 }
 
 .archery-season {
     margin-bottom: 25px;
+    font-weight: 700; /* makes ONLY this line bold */
 }
 
 .archery-subtitle {
@@ -1211,7 +1213,7 @@ body.home main {
 
 .archery-weather {
     font-size: 1.4rem;
-    color: #e60000;
+    color: #8b0000; /* dark red */
     font-weight: 700;
     margin-bottom: 30px;
 }
