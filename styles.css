@@ -378,9 +378,24 @@ html {
     margin: 40px auto;
     padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    background: rgba(255, 255, 255, 0.6); /* 60% white */
     border-radius: 12px;
     backdrop-filter: blur(4px); /* subtle frosted effect */
+}
+
+/* Giant decorative quote */
+.home-pledge-card::before {
+    content: "“";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+
+    font-size: 140px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.4); /* soft white */
+    pointer-events: none;
+    font-family: Georgia, serif; /* can change to match your vibe */
+    z-index: 0;
 }
 
 /* ------------------------------
