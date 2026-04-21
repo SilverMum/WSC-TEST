@@ -1173,6 +1173,46 @@ body.home main {
     z-index: -1;
 }
 
+.range-notice-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+
+    background: rgba(255, 255, 255, 0.2); /* 20% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* optional frosted effect */
+}
+
+.range-trapper-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+
+    background: rgba(255, 255, 255, 0.2); /* 20% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* optional frosted effect */
+}
+
+.range-info-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+
+    background: rgba(255, 255, 255, 0.2); /* 20% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* optional frosted effect */
+}
+
+.range-rules-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+
+    background: rgba(255, 255, 255, 0.2); /* 20% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px); /* optional frosted effect */
+}
+
 /* ------------------------------
    ARCHERY HEADER IMAGE
 --------------------------------*/
