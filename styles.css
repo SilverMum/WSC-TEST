@@ -394,25 +394,8 @@ html {
     font-weight: 600;
     text-align: center;
     white-space: normal;
-}
 
-.wsc-facebook-label {
-    color: #1877F2; /* Facebook blue */
-    text-decoration: underline;
-    margin: 0 0 4px 0; /* small bottom gap to pull it closer to the button */
-    padding: 0;
-    font-weight: bold; /* now it's bold */
-}
-
-.home-facebook-card {
-    position: relative;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 35px 30px;
-
-    background: rgba(255, 255, 255, 0.3); /* same 60% white */
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
+   text-shadow: 0 0 6px rgba(0,0,0,0.35); /* soft glow for readability */
 }
 
 /* ------------------------------
