@@ -397,7 +397,7 @@ html {
     transform: translate(8px, 12px); /* nudges the glyph shape down/right */
 
     line-height: 1;
-    color: rgba(50, 168, 82, 0.45); /* matches your green (#32a852) with soft opacity */
+    color: rgba(50, 168, 82, 0.75); /* matches your green (#32a852) with soft opacity */
 
     pointer-events: none;
     font-family: Georgia, serif;
