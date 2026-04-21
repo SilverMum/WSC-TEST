@@ -777,6 +777,31 @@ html {
 }
 
 /* ------------------------------
+   HOMEPAGE — ACTIVITIES WHITE CARD
+--------------------------------*/
+.home-activities-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.activities-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+}
+
+.activities-title {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
    FOOTER
 --------------------------------*/
 .site-footer {
