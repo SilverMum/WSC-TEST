@@ -387,16 +387,23 @@ html {
 .home-pledge-card::before {
     content: "“";
     position: absolute;
-    top: -20px;
-    left: -10px;
 
-    font-size: 140px;
+    /* POSITIONING — moved down + left */
+    top: 10px;      /* was -20px */
+    left: -25px;    /* was -10px */
+
+    /* SIZE + SHAPE SHIFT — moved the glyph down/right visually */
+    font-size: 160px;   /* increased size */
+    transform: translate(8px, 12px); /* nudges the glyph shape down/right */
+
     line-height: 1;
-    color: rgba(255, 255, 255, 0.4); /* soft white */
+    color: rgba(50, 168, 82, 0.35); /* matches your green (#32a852) with soft opacity */
+
     pointer-events: none;
-    font-family: Georgia, serif; /* can change to match your vibe */
+    font-family: Georgia, serif;
     z-index: 0;
 }
+
 
 /* ------------------------------
    CONTENT SECTIONS (GENERIC)
