@@ -434,7 +434,7 @@ html {
     margin: 40px auto;
     padding: 35px 30px 10px; /* top, left/right, bottom */
 
-    background: rgba(255, 255, 255, 0.3); /* 30% white card */
+    background: rgba(255, 255, 255, 0.6); /* 30% white card */
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
@@ -507,7 +507,7 @@ html {
     margin: 40px auto;
     padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    background: rgba(255, 255, 255, 0.4); /* 30% white */
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
@@ -664,7 +664,7 @@ html {
     margin: 40px auto;
     padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    background: rgba(255, 255, 255, 0.4); /* 30% white */
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
