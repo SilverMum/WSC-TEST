@@ -433,7 +433,21 @@ html {
 /* ------------------------------
    HOMEPAGE — KITCHEN SECTION
 --------------------------------*/
-#kitchen .kitchen-layout {
+
+/* White card wrapper (30% opacity) */
+.home-kitchen-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+/* Layout for badge + description */
+#kitchen .kitchen-layout,
+.home-kitchen-card .kitchen-layout {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,13 +456,21 @@ html {
     flex-wrap: nowrap;
 }
 
-#kitchen .kitchen-badge {
+/* Kitchen badge image */
+#kitchen .kitchen-badge,
+.home-kitchen-card .kitchen-badge {
     max-width: 320px;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#kitchen .kitchen-description {
+/* Kitchen description text */
+#kitchen .kitchen-description,
+.home-kitchen-card .kitchen-description {
     flex: 1;
     min-width: 260px;
     font-size: 1.2rem;
@@ -461,13 +483,6 @@ html {
 /* Reduce space between Kitchen and the divider BELOW it */
 #kitchen + .section-divider {
     margin-top: 25px;
-}
-
-/* UNIVERSAL FIX — Center all kitchen images */
-.kitchen-badge {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ------------------------------
