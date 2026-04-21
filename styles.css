@@ -1406,7 +1406,7 @@ body.home main {
 
 .archery-info {
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 20px auto 40px; /* added 20px top margin */
     padding: 30px 25px; /* adds breathing room inside the card */
     text-align: center;
 
