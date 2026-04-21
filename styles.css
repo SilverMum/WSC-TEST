@@ -432,7 +432,8 @@ html {
 .home-meeting-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
+    padding: 35px 30px 25px; /* top, left/right, bottom */
+}
 
     background: rgba(255, 255, 255, 0.3); /* 30% white card */
     border-radius: 12px;
