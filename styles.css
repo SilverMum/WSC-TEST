@@ -1391,6 +1391,19 @@ body.home main {
   }
 }
 
+/* -----------------------------------------
+   ARCHERY PAGE — FULL BACKGROUND IMAGE
+------------------------------------------*/
+.archery-page {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)),
+        url("images/archery-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* background stays still */
+}
+
 /* ------------------------------
    OFHA HEADER IMAGE
 --------------------------------*/
