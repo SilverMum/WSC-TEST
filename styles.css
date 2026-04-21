@@ -559,6 +559,37 @@ html {
 }
 
 /* ------------------------------
+   HOMEPAGE — RANGE WHITE CARD
+--------------------------------*/
+.home-range-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.range-simple-title {
+    margin-bottom: 15px;
+}
+
+.range-simple-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.range-button-simple-img {
+    max-width: 260px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* ------------------------------
    HOTDOG SECTION
 --------------------------------*/
 .range-hotdog img {
