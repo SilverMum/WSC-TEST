@@ -430,9 +430,9 @@ html {
    HOMEPAGE — MEETING WHITE CARD
 --------------------------------*/
 .home-meeting-card {
-    max-width: 900px;
+    max-width: 600px;
     margin: 40px auto;
-    padding: 35px 30px 10px; /* top, left/right, bottom */
+    padding: 35px 30px 5px; /* top, left/right, bottom */
 
     background: rgba(255, 255, 255, 0.6); /* 30% white card */
     border-radius: 12px;
@@ -505,7 +505,7 @@ html {
 .home-range-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
+    padding: 35px 30px 10px; /* top, left/right, bottom */
 
     background: rgba(255, 255, 255, 0.4); /* 30% white */
     border-radius: 12px;
@@ -557,7 +557,7 @@ html {
 .maxband-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
+    padding: 30px 25px;
 
     background: rgba(255, 255, 255, 0.3); /* 30% white wash */
     border-radius: 12px;
@@ -748,7 +748,7 @@ html {
 .home-activities-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
+    padding: 30px 30px;
 
     background: rgba(255, 255, 255, 0.3); /* 30% white */
     border-radius: 12px;
