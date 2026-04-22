@@ -2124,6 +2124,17 @@ body.home main {
     z-index: -1; /* keeps it behind nav + content */
 }
 
+.airrifle-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.3); /* 30% white wash */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
 /* ------------------------------
    /* TV Page Styling */
 
