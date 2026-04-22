@@ -834,6 +834,11 @@ body.home main {
     color: #e60000;
     line-height: 1.5;
     margin-bottom: 30px;
+
+   text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 3px black;
 }
 
 .private-events-pdf {
