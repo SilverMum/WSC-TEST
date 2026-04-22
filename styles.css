@@ -1971,7 +1971,7 @@ body.home main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 20px 60px;
-    text-align: center; /* center EVERYTHING */
+    text-align: center;
 }
 
 /* Main white title */
@@ -1992,54 +1992,54 @@ body.home main {
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-/* Section headers (black) */
+/* Section headers (now white instead of black) */
 .airrifle-subheader {
     font-size: 2.2rem;
     font-weight: 700;
     margin-top: 40px;
-    margin-bottom: 15px; /* space under each title */
-    color: black;
+    margin-bottom: 15px;
+    color: white;
 }
 
-/* Body text (black) */
+/* Body text (now white instead of black) */
 .airrifle-text {
     font-size: 1.3rem;
     line-height: 1.6;
-    color: black;
+    color: white;
     margin-bottom: 20px;
 }
 
-/* AIR-RIFLE CANCELLATION TITLE */
+/* AIR-RIFLE CANCELLATION TITLE — keep as-is */
 .airrifle-cancel-title {
     text-align: center;
-    font-size: 32px;      /* Same size as Archery */
-    font-weight: bold;    /* Makes it bold */
+    font-size: 32px;
+    font-weight: bold;
     margin-top: 40px;
     margin-bottom: 10px;
-    color: black;         /* White title for blue background */
+    color: black; /* unchanged per your request */
 }
 
-/* AIR-RIFLE CANCELLATION FORM — BLUE THEME */
+/* REMOVE BLUE CARD — keep form clean */
 .airrifle-cancel {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background: #003366; /* Deep blue background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    color: white; /* Makes all text inside white */
+    background: none;      /* removed blue background */
+    border-radius: 0;      /* removed rounded card */
+    box-shadow: none;      /* removed shadow */
+    color: white;          /* form text white */
 }
 
 .airrifle-cancel h2 {
     text-align: center;
     margin-bottom: 10px;
-    color: white; /* Title white */
+    color: white;
 }
 
 .airrifle-cancel-intro {
     text-align: center;
     margin-bottom: 20px;
-    color: white; /* Intro text white */
+    color: white;
 }
 
 .airrifle-cancel-form .field-row {
@@ -2051,7 +2051,7 @@ body.home main {
 .airrifle-cancel-form label {
     font-weight: bold;
     margin-bottom: 5px;
-    color: white; /* Label text white */
+    color: white;
 }
 
 .airrifle-cancel-form input,
@@ -2060,8 +2060,8 @@ body.home main {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
-    background: white; /* White input boxes */
-    color: black; /* Black text inside inputs */
+    background: white;
+    color: black;
 }
 
 .airrifle-cancel-form .field-inline {
@@ -2073,10 +2073,10 @@ body.home main {
 .airrifle-cancel-form .field-checkbox {
     display: flex;
     align-items: center;
-    color: white; /* Checkbox label white */
+    color: white;
 }
 
-/* Submit button (same as Archery) */
+/* Submit button */
 .ac-submit {
     width: 100%;
     padding: 12px;
@@ -2093,35 +2093,31 @@ body.home main {
     background: #8a0000;
 }
 
-.air-rifle-bg {
-    color: white;
+/* MAKE ALL TEXT WHITE ON THIS PAGE */
+.air-rifle-bg,
+.air-rifle-bg * {
+    color: white !important;
 }
 
-/* AIR RIFLE PAGE BACKGROUND — matches Range, Login, Private Events */
+/* AIR RIFLE PAGE BACKGROUND */
 .air-rifle-bg {
     position: relative;
     min-height: 100vh;
     background: url('images/air-rifle-background.jpg') center center / cover no-repeat fixed;
 }
 
-/* 30% white wash overlay — behind everything */
+/* 30% white wash overlay */
 .air-rifle-bg::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.3); /* 30% opacity */
-    z-index: -1; /* keeps it behind nav + content */
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
 }
 
+/* REMOVE WHITE CARD NEAR TOP */
 .airrifle-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 35px 30px;
-
-    background: rgba(255, 255, 255, 0.3); /* 30% white wash */
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    text-align: center;
+    display: none; /* hides the card completely */
 }
 
 /* ------------------------------
