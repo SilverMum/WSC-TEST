@@ -606,16 +606,21 @@ html {
 /* ------------------------------
    CORN HOLE AND EUCHRE
 --------------------------------*/
+
+/* Wrapper matches white-card width */
 .activities-image {
+    max-width: 900px;      /* SAME WIDTH as your white cards */
+    margin: 40px auto;     /* TOP/BOTTOM = 40px, LEFT/RIGHT = centered */
+    padding: 0 30px;       /* LEFT/RIGHT spacing inside the container */
     text-align: center;
-    margin: 40px 0; /* optional spacing */
-    padding: 0 180px;   /* adds left/right spacing */
 }
 
+/* Image scales cleanly inside the 900px container */
 .activities-image img {
     max-width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;        /* cleaner centering */
+    margin: 0 auto;
 }
 
 @media (max-width: 600px) {
