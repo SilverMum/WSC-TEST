@@ -2108,6 +2108,22 @@ body.home main {
     background: #8a0000;
 }
 
+/* AIR RIFLE PAGE BACKGROUND — matches Range, Login, Private Events */
+.air-rifle-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/air-rifle-background.jpg') center center / cover no-repeat fixed;
+}
+
+/* 30% white wash overlay — behind everything */
+.air-rifle-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3); /* 30% opacity */
+    z-index: -1; /* keeps it behind nav + content */
+}
+
 /* ------------------------------
    /* TV Page Styling */
 
