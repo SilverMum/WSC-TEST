@@ -2009,24 +2009,24 @@ body.home main {
     margin-bottom: 20px;
 }
 
-/* Calendar title underline white */
+/* ⭐ CALENDAR TITLE — underline white + centered */
 .airrifle-calendar-title {
     text-align: center;
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-decoration: underline;
-    text-decoration-color: white; /* underline now white */
+    text-decoration-color: white !important;
     text-underline-offset: 6px;
 }
 
-/* Center the calendar and match white card width */
-#airrifle-calendar iframe {
+/* ⭐ CALENDAR — centered + same width as white cards */
+iframe[src*="google.com/calendar"] {
     display: block;
-    margin: 0 auto;        /* centers it */
-    width: 100%;           /* responsive */
-    max-width: 900px;      /* same width as your white cards */
-    height: 600px;         /* same height you had before */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
 }
 
 /* AIR-RIFLE CANCELLATION TITLE — unchanged */
@@ -2039,12 +2039,12 @@ body.home main {
     color: black;
 }
 
-/* RESTORE BLUE BACKGROUND BEHIND CONTACT AIR RIFLE */
+/* Blue contact card */
 .airrifle-cancel {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background: #003366; /* restored deep blue */
+    background: #003366;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     color: white;
