@@ -700,7 +700,7 @@ html {
 /* Partnership title spacing */
 #contact-title h2,
 #partnership h2 {
-    margin-top: 20px;   /* half the space above the title */
+    margin-top: 0px;   /* half the space above the title */
     margin-bottom: 10px; /* tighter space under the title */
 }
 
