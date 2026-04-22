@@ -430,7 +430,7 @@ html {
    HOMEPAGE — MEETING WHITE CARD
 --------------------------------*/
 .home-meeting-card {
-    max-width: 600px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 35px 30px 5px; /* top, left/right, bottom */
 
@@ -556,7 +556,7 @@ html {
 /* White card behind Max Band section */
 .maxband-card {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 30px 25px;
 
     background: rgba(255, 255, 255, 0.3); /* 30% white wash */
