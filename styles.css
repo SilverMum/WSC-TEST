@@ -2093,9 +2093,8 @@ body.home main {
     background: #8a0000;
 }
 
-/* MAKE ALL TEXT WHITE ON THIS PAGE */
-.air-rifle-bg,
-.air-rifle-bg * {
+/* Make all text white EXCEPT the nav */
+.air-rifle-bg *:not(nav):not(nav *):not(.nav-links a) {
     color: white !important;
 }
 
