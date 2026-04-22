@@ -2108,6 +2108,10 @@ body.home main {
     background: #8a0000;
 }
 
+.air-rifle-bg {
+    color: white;
+}
+
 /* AIR RIFLE PAGE BACKGROUND — matches Range, Login, Private Events */
 .air-rifle-bg {
     position: relative;
