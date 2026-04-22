@@ -2009,6 +2009,26 @@ body.home main {
     margin-bottom: 20px;
 }
 
+/* Calendar title underline white */
+.airrifle-calendar-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: white; /* underline now white */
+    text-underline-offset: 6px;
+}
+
+/* Center the calendar and match white card width */
+#airrifle-calendar iframe {
+    display: block;
+    margin: 0 auto;        /* centers it */
+    width: 100%;           /* responsive */
+    max-width: 900px;      /* same width as your white cards */
+    height: 600px;         /* same height you had before */
+}
+
 /* AIR-RIFLE CANCELLATION TITLE — unchanged */
 .airrifle-cancel-title {
     text-align: center;
