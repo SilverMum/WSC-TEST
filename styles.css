@@ -569,7 +569,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;   /* ← FORCE SIDE-BY-SIDE */
     gap: 40px;
     margin: 40px auto;
     max-width: 1200px;
