@@ -697,47 +697,20 @@ html {
     border-bottom: none;
 }
 
-/* Partnership title spacing */
-#contact-title h2,
-#partnership h2 {
-    margin-top: 0px;   /* half the space above the title */
-    margin-bottom: 10px; /* tighter space under the title */
-}
-
 /* Tighten space BELOW the first divider */
 .section-divider img {
     display: block;
     margin: 10px auto; /* reduced space */
 }
 
-/* Tighten space ABOVE and BELOW the Partnership image */
+/* Partnership image — matches white card width */
 .partnership-img {
     display: block;
-    margin: 10px auto; /* this controls BOTH spaces */
+    margin: 10px auto; /* controls space above & below */
     width: 100%;
-    max-width: 900px;
+    max-width: 900px;  /* same width as your white cards */
     height: auto;
     border-radius: 10px;
-}
-
-/* ------------------------------
-   HOMEPAGE — PARTNERSHIP WHITE CARD
---------------------------------*/
-.home-partnership-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 35px 30px;
-
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-.partnership-img {
-    max-width: 600px;
-    height: auto;
-    margin-top: 15px;
 }
 
 /* ------------------------------
