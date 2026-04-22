@@ -2098,14 +2098,6 @@ body.home main {
     color: white !important;
 }
 
-#airrifle-calendar .calendar-container,
-#airrifle-calendar .calendar-wrapper {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-}
-
 /* AIR RIFLE PAGE BACKGROUND */
 .air-rifle-bg {
     position: relative;
@@ -2120,18 +2112,6 @@ body.home main {
     inset: 0;
     background: rgba(255, 255, 255, 0.3);
     z-index: -1;
-}
-
-/* REMOVE WHITE CARD NEAR TOP */
-.airrifle-card {
-    display: none;
-}
-
-/* REMOVE BLUE CARD + BORDER FROM CALENDAR */
-#airrifle-calendar .calendar-container {
-    border: none;
-    padding: 0;
-    background: none;
 }
 
 /* ------------------------------
