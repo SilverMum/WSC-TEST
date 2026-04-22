@@ -602,6 +602,15 @@ html {
     backdrop-filter: blur(4px);
 }
 
+.maxband-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px; /* optional but cleaner */
+}
+
 /* ------------------------------
    CORN HOLE AND EUCHRE
 --------------------------------*/
