@@ -2094,7 +2094,7 @@ body.home main {
 }
 
 /* Make all text white EXCEPT the nav */
-.air-rifle-bg *:not(nav):not(nav *):not(.nav-links a) {
+.air-rifle-bg *:not(.main-nav):not(.main-nav *):not(.main-nav a) {
     color: white !important;
 }
 
