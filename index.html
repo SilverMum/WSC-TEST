@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
-    <script>
+<script>
 document.querySelectorAll('.dropdown > a').forEach(link => {
     link.addEventListener('click', function(e) {
         if (window.innerWidth <= 900) {
-            e.preventDefault(); // stop link from navigating
+            e.preventDefault();
             this.parentElement.classList.toggle('open');
         }
     });
@@ -40,60 +40,49 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 
         <ul class="nav-links">
 
-    <!-- HOME -->
-    <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
 
-    <!-- EVENTS -->
-    <li class="dropdown">
-        <a href="#">Events ▾</a>
-        <ul class="dropdown-menu">
-
-            <!-- NEW: Calendar -->
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="index.html#club-events">Club Events</a></li>
-            <li><a href="private-events.html">Private Events</a></li>
-        </ul>
-    </li>
-
-    <!-- KITCHEN -->
-    <li><a href="kitchen.html">Kitchen</a></li>
-
-    <!-- GROUPS -->
-    <li class="dropdown">
-        <a href="#">Groups ▾</a>
-        <ul class="dropdown-menu">
-            <li><a href="range.html">Range</a></li>
-            <li><a href="archery.html">Archery</a></li>
-            <li><a href="ofha.html">OFHA</a></li>
-            <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
-            <li><a href="air-rifle.html">Air Rifle</a></li>
-
-            <!-- MEMBERS with right-side submenu -->
-            <li class="dropdown-sub">
-                <a href="members.html" class="submenu-link">Members</a>
-                <span class="submenu-toggle">▸</span>
-
-                <ul class="submenu-right">
-                    <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+            <li class="dropdown">
+                <a href="#">Events ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html#club-events">Club Events</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
                 </ul>
             </li>
+
+            <li><a href="kitchen.html">Kitchen</a></li>
+
+            <li class="dropdown">
+                <a href="#">Groups ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="range.html">Range</a></li>
+                    <li><a href="archery.html">Archery</a></li>
+                    <li><a href="ofha.html">OFHA</a></li>
+                    <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
+                    <li><a href="air-rifle.html">Air Rifle</a></li>
+
+                    <li class="dropdown-sub">
+                        <a href="members.html" class="submenu-link">Members</a>
+                        <span class="submenu-toggle">▸</span>
+
+                        <ul class="submenu-right">
+                            <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="index.html#contact-title">Contact</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
         </ul>
-    </li>
-
-    <!-- CONTACT -->
-    <li><a href="index.html#contact-title">Contact</a></li>
-
-    <!-- LOGIN -->
-    <li><a href="login.html">Login</a></li>
-
-</ul>
 
     </nav>
 </header>
 
-<!-- Spacer under fixed nav -->
 <section style="height: 20px;"></section>
-
 <section style="height: 160px;"></section>
 
 <main>
@@ -102,33 +91,35 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 
     <h1 class="hero-title home-hero-title">Welcome to the Windsor Sportsmen’s Club</h1>
 
-    <!-- ⭐ KEEP THIS EXACTLY AS-IS -->
     <div class="header-underline">
         <img src="images/Sportsmen's-Header.png" alt="Header underline image">
     </div>
 
-   <section class="home-pledge-card">
+    <!-- ⭐ PLEDGE — UPDATED TO YOUR DOUBLE CARD STYLE -->
+    <section class="home-pledge-card outer-card">
+        <div class="inner-card">
 
-    <!-- PLEDGE TITLE -->
-    <div class="pledge-title-wrapper">
-        <span class="pledge-title-gold">CONSERVATION PLEDGE</span>
-        <span class="pledge-title-green">CONSERVATION PLEDGE</span>
-    </div>
+            <div class="pledge-title-wrapper">
+                <span class="pledge-title-gold">CONSERVATION PLEDGE</span>
+                <span class="pledge-title-green">CONSERVATION PLEDGE</span>
+            </div>
 
-    <!-- PLEDGE PARAGRAPH -->
-    <div class="pledge-paragraph-wrapper">
-        <div class="pledge-paragraph-gold">
-            I give my pledge as a Canadian, to save and faithfully defend from waste,
-            the natural resources of my country, its air, soil and minerals, its waters,
-            forests and wildlife.
+            <div class="pledge-paragraph-wrapper">
+                <div class="pledge-paragraph-gold">
+                    I give my pledge as a Canadian, to save and faithfully defend from waste,
+                    the natural resources of my country, its air, soil and minerals, its waters,
+                    forests and wildlife.
+                </div>
+
+                <div class="pledge-paragraph-green">
+                    I give my pledge as a Canadian, to save and faithfully defend from waste,
+                    the natural resources of my country, its air, soil and minerals, its waters,
+                    forests and wildlife.
+                </div>
+            </div>
+
         </div>
-
-        <div class="pledge-paragraph-green">
-            I give my pledge as a Canadian, to save and faithfully defend from waste,
-            the natural resources of my country, its air, soil and minerals, its waters,
-            forests and wildlife.
-        </div>
-    </div>
+    </section>
 
 </section>
 
@@ -142,28 +133,28 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
     </p>
 </div>
 
-        <!-- GENERAL MEMBERSHIP MEETING CARD -->
-<section class="home-meeting-card">
+<!-- ⭐ MEMBERSHIP — UPDATED TO YOUR DOUBLE CARD STYLE -->
+<section class="home-meeting-card outer-card">
+    <div class="inner-card">
 
-    <p class="meeting-title">
-        GENERAL MEMBERSHIP MEETING<br>
-        MAY 25TH &nbsp; 7:00PM
-    </p>
+        <p class="meeting-title">
+            GENERAL MEMBERSHIP MEETING<br>
+            MAY 25TH &nbsp; 7:00PM
+        </p>
 
-    <img src="images/WINDSOR SPORTSMANS REMAKE.png" 
-         alt="Windsor Sportsmen's Club Logo"
-         class="meeting-logo">
-         
+        <img src="images/WINDSOR SPORTSMANS REMAKE.png" 
+             alt="Windsor Sportsmen's Club Logo"
+             class="meeting-logo">
+
+    </div>
 </section>
 
-<!-- ⭐ IMAGE DIVIDER (correct placement) -->
 <div class="section-divider">
     <img src="images/divider.png" alt="Section Divider">
 </div>
 
-<!-- ⭐ RANGE SECTION (DOUBLE WHITE CARD) -->
+<!-- ⭐ RANGE SECTION (already correct) -->
 <section class="home-range-card outer-card">
-
     <div class="inner-card">
 
         <h2 class="range-simple-title" style="color:black; text-decoration: underline; font-weight: 800;">
@@ -184,36 +175,30 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
         </div>
 
     </div>
-
 </section>
 
 <div class="section-divider">
     <img src="images/divider.png" alt="Section Divider">
 </div>
 
-<!-- CLUB EVENTS TARGET -->
 <div id="club-events"></div>
 
-<!-- CLUB EVENTS TITLE -->
 <h2 class="section-title" style="color:black; text-decoration: underline; font-weight: 800;">
     Club Events
 </h2>
 
-<!-- ⭐ RIB & CHICKEN EVENT SECTION -->
+<!-- ⭐ RIB & CHICKEN (already correct) -->
 <div class="white-card outer-card">
-
     <div class="inner-card">
 
         <div class="ribchicken-wrapper">
 
-            <!-- LEFT: IMAGE -->
             <div class="ribchicken-left">
                 <img class="ribchicken-img"
                      src="images/ribchicken.png" 
                      alt="Rib & Chicken Dinner Image">
             </div>
 
-            <!-- RIGHT: TEXT -->
             <div class="ribchicken-right">
                 <p>Rib & Chicken Dinner – May 29th 2026, 6:30pm</p>
                 <p>Rib and Chicken Dinner</p>
@@ -227,118 +212,118 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
         </div>
 
     </div>
-
 </div>
 
+<!-- ⭐ MAX BAND — UPDATED TO YOUR DOUBLE CARD STYLE -->
+<div class="maxband-card outer-card">
+    <div class="inner-card">
 
-<!-- MAX BAND IMAGE + TEXT SIDE BY SIDE -->
-<div class="maxband-card">
-    <div class="maxband-wrapper">
+        <div class="maxband-wrapper">
 
-        <!-- LEFT IMAGE -->
-        <div class="maxband-left" style="margin-right:10px;">
-            <img src="images/MAXband.png" alt="Max Band Image" style="max-width:420px; height:auto; border-radius:10px;">
-        </div>
+            <div class="maxband-left" style="margin-right:10px;">
+                <img src="images/MAXband.png" alt="Max Band Image" style="max-width:420px; height:auto; border-radius:10px;">
+            </div>
 
-        <!-- RIGHT TEXT -->
-        <div class="maxband-right" 
-             style="text-align:center; color:black; font-weight:bold; font-size:1.2em; line-height:1.6; margin-left:10px;">
+            <div class="maxband-right" 
+                style="text-align:center; color:black; font-weight:bold; font-size:1.2em; line-height:1.6; margin-left:10px;">
 
-            <p>Friday, May 01<br>
-            Windsor Sportsmen's Club<br>
-            2401 Dougall Ave, Windsor</p>
+                <p>Friday, May 01<br>
+                Windsor Sportsmen's Club<br>
+                2401 Dougall Ave, Windsor</p>
 
-            <p>Tickets: $35 - $30 CSBS Members</p>
+                <p>Tickets: $35 - $30 CSBS Members</p>
 
-            <p>Doors Open 6pm - Showtime 7pm</p>
+                <p>Doors Open 6pm - Showtime 7pm</p>
 
-            <p>The award-winning Johnny Max Band, led by the charismatic and whip sharp Johnny Max, have been touring Canada and Europe for over 30 years and bring their remarkable rhythm and blues, Memphis meets Chicago & New Orleans sound to enthusiastic crowds wherever they go.</p>
+                <p>The award-winning Johnny Max Band, led by the charismatic and whip sharp Johnny Max, have been touring Canada and Europe for over 30 years and bring their remarkable rhythm and blues, Memphis meets Chicago & New Orleans sound to enthusiastic crowds wherever they go.</p>
 
-            <p>With two JUNO award nominations, eight Maple Blues awards nominations, and the winner of the International Songwriting Competition Award for "Daddy's Little Girl" The Johnny Max Band consistently wows audiences with joyous, sometimes raucous rhythms and masterful showmanship.</p>
+                <p>With two JUNO award nominations, eight Maple Blues awards nominations, and the winner of the International Songwriting Competition Award for "Daddy's Little Girl" The Johnny Max Band consistently wows audiences with joyous, sometimes raucous rhythms and masterful showmanship.</p>
 
-            <p>Tickets Available @ Windsor Sportsmen's Club<br>
-            Long&McQuade - D&R Vacuum<br>
-            Contact: Mike McCann (226) 757-0748</p>
+                <p>Tickets Available @ Windsor Sportsmen's Club<br>
+                Long&McQuade - D&R Vacuum<br>
+                Contact: Mike McCann (226) 757-0748</p>
+            </div>
+
         </div>
 
     </div>
 </div>
 
-    <!-- BAND IMAGE -->
+<!-- BAND IMAGE -->
 <img 
     src="images/519 BAND.png" 
     alt="519 Band" 
     id="band-image"
 >
-</div>
 
-    <div class="activities-image">
+<div class="activities-image">
     <img src="images/Tuesday-Nights.png" alt="Tuesday Nights">
 </div>
 
-<!-- DIVIDER -->
 <div class="section-divider">
     <img src="images/divider.png" alt="Section Divider">
 </div>
 
-<!-- ⭐ CONTACT SECTION (WHITE CARD) -->
-<section id="contact" class="home-contact-card">
+<!-- ⭐ CONTACT — UPDATED TO YOUR DOUBLE CARD STYLE -->
+<section id="contact" class="home-contact-card outer-card">
+    <div class="inner-card">
 
-    <h2 id="contact-title" class="section-title" style="color:black; text-decoration: underline; font-weight: 800;">
-        Contact
-    </h2>
+        <h2 id="contact-title" class="section-title" style="color:black; text-decoration: underline; font-weight: 800;">
+            Contact
+        </h2>
 
-    <p class="contact-line"><strong>Clubhouse Location :</strong> 2401 Dougall Avenue</p>
+        <p class="contact-line"><strong>Clubhouse Location :</strong> 2401 Dougall Avenue</p>
 
-    <p class="contact-line">
-        <strong>Mailing Address:</strong> 2401 Dougall Avenue<br>
-        Windsor, ON N8X1T3
-    </p>
+        <p class="contact-line">
+            <strong>Mailing Address:</strong> 2401 Dougall Avenue<br>
+            Windsor, ON N8X1T3
+        </p>
 
-    <p class="contact-line"><strong>Telephone:</strong> 519-966-1600</p>
+        <p class="contact-line"><strong>Telephone:</strong> 519-966-1600</p>
 
-    <p class="contact-line"><strong>Fax:</strong> 519-966-4535</p>
+        <p class="contact-line"><strong>Fax:</strong> 519-966-4535</p>
 
-    <p class="contact-line"><strong>E-Mail Office:</strong> WSC2401@outlook.com</p>
+        <p class="contact-line"><strong>E-Mail Office:</strong> WSC2401@outlook.com</p>
 
-    <div class="contact-spacer"></div>
+        <div class="contact-spacer"></div>
 
+    </div>
 </section>
 
 <div class="section-divider">
     <img src="images/divider.png" alt="Section Divider">
 </div>
 
-<!-- ⭐ PARTNERSHIP SECTION (WHITE CARD) -->
+<!-- ⭐ PARTNERSHIP (unchanged) -->
 <section id="partnership" class="home-partnership-card">
-
     <img 
         src="images/Partnership.png" 
         alt="Partnership Announcement"
         class="partnership-img"
     >
-
 </section>
 
 <div class="section-divider">
     <img src="images/divider.png" alt="Section Divider">
 </div>
 
-<!-- ⭐ ACTIVITIES SECTION (WHITE CARD) -->
-<section class="home-activities-card">
+<!-- ⭐ ACTIVITIES — UPDATED TO YOUR DOUBLE CARD STYLE -->
+<section class="home-activities-card outer-card">
+    <div class="inner-card">
 
-    <h2 class="activities-title" style="color:black; text-decoration: underline; font-weight: 800;">
-        Activities
-    </h2>
+        <h2 class="activities-title" style="color:black; text-decoration: underline; font-weight: 800;">
+            Activities
+        </h2>
 
-    <p class="activities-text">
-        - Conservation Meetings - Archery - Horseshoes <br>
-        - Euchre Leagues - Dart Leagues - Pool Leagues <br>
-        - Golf League - Trap & Skeet - Bridge League <br>
-        - Mah-jong League - Cornhole League <br>
-        - WSC Jr. Sportsmen's Club
-    </p>
+        <p class="activities-text">
+            - Conservation Meetings - Archery - Horseshoes <br>
+            - Euchre Leagues - Dart Leagues - Pool Leagues <br>
+            - Golf League - Trap & Skeet - Bridge League <br>
+            - Mah-jong League - Cornhole League <br>
+            - WSC Jr. Sportsmen's Club
+        </p>
 
+    </div>
 </section>
 
 </main>
