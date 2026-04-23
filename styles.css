@@ -501,16 +501,24 @@ html {
 
 /* ------------------------------
    HOMEPAGE — RANGE WHITE CARD
+   (OUTER CARD — 30% opacity)
 --------------------------------*/
-.home-range-card {
+.home-range-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px 10px; /* top, left/right, bottom */
-
-    background: rgba(255, 255, 255, 0.4); /* 30% white */
+    padding: 20px; /* 20px gap around the inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
+}
+
+/* INNER CARD — 50% opacity + soft drop shadow */
+.inner-card {
+    background: rgba(255, 255, 255, 0.5); /* stronger white */
+    padding: 30px; /* content padding */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow Option #1 */
 }
 
 .range-simple-title {
