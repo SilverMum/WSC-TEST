@@ -989,101 +989,57 @@ body.home main {
    ========================================================= */
 
 /* ------------------------------
-   PRIVATE EVENTS — TEXT ABOVE, PDF BELOW
+   PRIVATE EVENTS — TEXT CARD
 --------------------------------*/
-.private-events-section {
+
+/* Outer card (30% white + blur) */
+.private-events-text-card.outer-card {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
     text-align: center;
 }
 
+/* Inner card (soft fog gray + evergreen glow) */
+.private-events-text-card .inner-card {
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 14px rgba(47, 79, 62, 0.35),
+        0 8px 28px rgba(47, 79, 62, 0.25);
+}
+
+/* Title text inside the card */
 .private-events-text {
     font-size: 2.2rem;
     font-weight: 700;
     color: #e60000;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin: 0;
 
-   text-shadow:
+    text-shadow:
         0 0 1px black,
         0 0 2px black,
         0 0 3px black;
 }
 
+/* ------------------------------
+   PRIVATE EVENTS — PDF BUTTON
+--------------------------------*/
 .private-events-pdf {
     width: 260px;
     height: auto;
     display: block;
-    margin: 0 auto;
-}
-
-/* FORCE top spacing change for Private Events page */
-.private-events-section {
-    margin-top: 30px !important;   /* was 40px */
+    margin: 20px auto 40px;
 }
 
 /* ------------------------------
-   PRIVATE EVENTS — TEXT + PDF BLOCK (NEW)
---------------------------------*/
-.private-events-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
-
-.private-events-info .private-events-right {
-    flex: 1 1 60%;
-}
-
-.private-events-info .private-events-left {
-    flex: 1 1 40%;
-    text-align: center;
-}
-
-.private-events-info img.private-events-pdf {
-    width: 306px;   /* perfect size match */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ------------------------------
-   PRIVATE EVENTS HEADER CAROUSEL
---------------------------------*/
-.private-events-header-carousel {
-    width: 100%;
-    height: 380px;
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-}
-
-/* ------------------------------
-   PRIVATE EVENTS — PARTY IMAGE
+   PRIVATE EVENTS — HEADER IMAGE
 --------------------------------*/
 .private-events-header-image img {
     display: block;
@@ -1099,58 +1055,49 @@ body.home main {
 --------------------------------*/
 .private-events-gallery {
     width: 100%;
-    margin: 60px auto;
+    margin: 40px auto 60px;
     padding: 0 20px;
 }
 
 .private-events-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px;                              /* spacing between images */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.private-events-grid a {
-    display: block;
 }
 
 .private-events-grid img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;   /* optional but looks clean */
+    border-radius: 10px;
     display: block;
 }
 
+/* Mobile: stack images 1 per row */
+@media (max-width: 700px) {
+    .private-events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ------------------------------
-   PRIVATE EVENTS CAROUSEL
+   PRIVATE EVENTS PAGE BACKGROUND
 --------------------------------*/
-.private-events-carousel {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.private-events-carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-/* PRIVATE EVENTS PAGE BACKGROUND — matches Range + Login behavior */
 .private-events-bg {
     position: relative;
     min-height: 100vh;
     background: url('images/private-events-background.jpg') center center / cover no-repeat fixed;
 }
 
-/* 30% white wash overlay — behind everything */
+/* 30% white wash overlay */
 .private-events-bg::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.3); /* 30% opacity */
-    z-index: -1; /* keeps it behind nav + content */
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
 }
 
 /* ------------------------------
