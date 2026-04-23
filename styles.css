@@ -541,12 +541,47 @@ html {
     height: auto;
 }
 
-#band-image {
-    display: block;
-    margin: 40px auto 0;
+/* White card wrapper */
+.white-card {
     max-width: 900px;
-    width: 100%;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: rgba(255, 255, 255, 0.3); /* 30% white wash */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+/* Side-by-side layout */
+.ribchicken-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Left image */
+.ribchicken-left img {
+    max-width: 420px;
     height: auto;
+    border-radius: 10px;
+}
+
+/* Right text */
+.ribchicken-right {
+    max-width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Mobile: stack only on small screens */
+@media (max-width: 900px) {
+    .ribchicken-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* ------------------------------
@@ -593,6 +628,14 @@ html {
     line-height: 1.5;
     font-size: 18px;
     color: black;
+}
+
+#band-image {
+    display: block;
+    margin: 40px auto 0;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
 }
 
 /* Mobile layout */
