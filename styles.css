@@ -349,14 +349,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-pledge-card .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 
     position: relative;
     z-index: 1; /* keeps content above the decorative quote */
@@ -458,14 +459,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-meeting-card .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px; /* content padding */
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 .meeting-title {
@@ -543,14 +545,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px; /* content padding */
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 .range-simple-title {
@@ -593,14 +596,15 @@ html {
 
 /* INNER CARD — 50% opacity + green‑teal shadow + soft tint */
 .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 /* Side-by-side layout */
@@ -651,14 +655,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .maxband-card .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 /* Wrapper: image left, text right */
@@ -796,14 +801,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-contact-card .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px; /* content padding */
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 .contact-line {
@@ -882,14 +888,15 @@ html {
 
 /* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-activities-card .inner-card {
-    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    background: rgba(138, 154, 150, 0.50); /* mist gray */
     padding: 30px; /* content padding */
     border-radius: 12px;
 
-    /* green‑leaning teal shadow, wider sides, contained */
+    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
-        0 4px 14px rgba(0, 210, 160, 0.35),
-        0 8px 28px rgba(0, 210, 160, 0.25);
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+
 }
 
 .activities-text {
