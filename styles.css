@@ -413,6 +413,32 @@ html {
 }
 
 /* ------------------------------
+   FACEBOOK CARD — OUTER WRAPPER
+--------------------------------*/
+.facebook-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px; /* gap around inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+/* ------------------------------
+   FACEBOOK CARD — INNER CARD
+--------------------------------*/
+.facebook-card .inner-card {
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+}
+
+/* ------------------------------
    CONTENT SECTIONS (GENERIC)
 --------------------------------*/
 .content-section {
