@@ -333,32 +333,48 @@ html {
     z-index: 2;
 }
 
-.home-pledge-card {
+/* ------------------------------
+   HOMEPAGE — PLEDGE WHITE CARD
+   (OUTER CARD — 30% opacity)
+--------------------------------*/
+.home-pledge-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
-
-    background: rgba(255, 255, 255, 0.6); /* 60% white */
+    padding: 20px; /* 20px gap around the inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
     border-radius: 12px;
-    backdrop-filter: blur(4px); /* subtle frosted effect */
+    backdrop-filter: blur(4px);
+    position: relative; /* needed for the decorative quote */
+}
+
+/* INNER CARD — mint‑white tint + green‑teal shadow */
+.home-pledge-card .inner-card {
+    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    padding: 30px;
+    border-radius: 12px;
+
+    /* green‑leaning teal shadow, wider sides, contained */
+    box-shadow:
+        0 4px 14px rgba(0, 210, 160, 0.35),
+        0 8px 28px rgba(0, 210, 160, 0.25);
+
+    position: relative;
+    z-index: 1; /* keeps content above the decorative quote */
 }
 
 /* Giant decorative quote */
-.home-pledge-card::before {
+.home-pledge-card.outer-card::before {
     content: "“";
     position: absolute;
 
-    /* POSITIONING — moved down + left */
-    top: 10px;      /* was -20px */
-    left: 10px;    /* was -10px */
+    top: 10px;
+    left: 10px;
 
-    /* SIZE + SHAPE SHIFT — moved the glyph down/right visually */
-    font-size: 160px;   /* increased size */
-    transform: translate(8px, 12px); /* nudges the glyph shape down/right */
+    font-size: 160px;
+    transform: translate(8px, 12px);
 
     line-height: 1;
-    color: rgba(50, 168, 82, 0.75); /* matches your green (#32a852) with soft opacity */
-
+    color: rgba(50, 168, 82, 0.75); /* your green */
     pointer-events: none;
     font-family: Georgia, serif;
     z-index: 0;
