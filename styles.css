@@ -503,7 +503,9 @@ html {
 @media (max-width: 700px) {
     .meeting-logo {
         display: block;
-        margin: 0 auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 70% !important;
         text-align: center;
     }
 }
