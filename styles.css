@@ -638,16 +638,27 @@ html {
 
 /* ------------------------------
    MAX BAND SIDE-BY-SIDE SECTION
+   (OUTER CARD — 30% opacity)
 --------------------------------*/
-
-/* White card behind Max Band section */
-.maxband-card {
+.maxband-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px 25px;   /* ↓ reduced top/bottom padding */
+    padding: 20px; /* 20px gap around the inner card */
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
+}
+
+/* INNER CARD — mint‑white tint + green‑teal shadow */
+.maxband-card .inner-card {
+    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    padding: 30px;
+    border-radius: 12px;
+
+    /* green‑leaning teal shadow, wider sides, contained */
+    box-shadow:
+        0 4px 14px rgba(0, 210, 160, 0.35),
+        0 8px 28px rgba(0, 210, 160, 0.25);
 }
 
 /* Wrapper: image left, text right */
