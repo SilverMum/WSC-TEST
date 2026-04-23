@@ -500,6 +500,14 @@ html {
     margin-top: 5px;
 }
 
+@media (max-width: 700px) {
+    .meeting-logo {
+        display: block;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+}
+
 /* ------------------------------
    SIMPLE RANGE NOTICE SECTION
 --------------------------------*/
