@@ -2168,7 +2168,8 @@ body.home main {
 }
 
 .home-kitchen-card .kitchen-badge {
-    max-width: 420px;
+    max-width: 500px; /* increased size */
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
