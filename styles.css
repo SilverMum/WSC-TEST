@@ -1003,15 +1003,15 @@ body.home main {
     text-align: center;
 }
 
-/* Inner card (soft fog gray + evergreen glow) */
+/* Inner card — soft sunrise cream + warm deep shadow */
 .private-events-text-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    background: rgba(255, 236, 220, 0.55); /* soft sunrise cream */
     padding: 30px;
     border-radius: 12px;
 
     box-shadow:
-        0 4px 14px rgba(47, 79, 62, 0.35),
-        0 8px 28px rgba(47, 79, 62, 0.25);
+        0 4px 14px rgba(90, 45, 20, 0.45),
+        0 8px 28px rgba(90, 45, 20, 0.35);
 }
 
 /* Title text inside the card */
