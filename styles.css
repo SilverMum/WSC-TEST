@@ -285,8 +285,8 @@ html {
 /* gold behind green using subtle offset */
 .pledge-title-gold {
     position: absolute;
-    top: 0.5px;      /* ⭐ shifted down */
-    left: 0.5px;     /* ⭐ shifted right */
+    top: 0.5px;
+    left: 0.5px;
     color: #d4a017;
     pointer-events: none;
     z-index: 1;
@@ -318,8 +318,8 @@ html {
 /* gold layer with subtle offset */
 .pledge-paragraph-gold {
     position: absolute;
-    top: 0.5px;      /* ⭐ shifted down */
-    left: 0.5px;     /* ⭐ shifted right */
+    top: 0.5px;
+    left: 0.5px;
     color: #d4a017;
     width: 100%;
     pointer-events: none;
@@ -335,47 +335,41 @@ html {
 
 /* ------------------------------
    HOMEPAGE — PLEDGE WHITE CARD
-   (OUTER CARD — 30% opacity)
 --------------------------------*/
 .home-pledge-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
-    position: relative; /* needed for the decorative quote */
+    position: relative;
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
+/* INNER CARD — updated to soft fog gray */
 .home-pledge-card .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
 
-
     position: relative;
-    z-index: 1; /* keeps content above the decorative quote */
+    z-index: 1;
 }
 
 /* Giant decorative quote */
 .home-pledge-card.outer-card::before {
     content: "“";
     position: absolute;
-
     top: 10px;
     left: 10px;
-
     font-size: 160px;
     transform: translate(8px, 12px);
-
     line-height: 1;
-    color: rgba(50, 168, 82, 0.75); /* your green */
+    color: rgba(50, 168, 82, 0.75);
     pointer-events: none;
     font-family: Georgia, serif;
     z-index: 0;
@@ -426,7 +420,7 @@ html {
     max-width: 900px;
     margin: 0 auto;
     background-color: transparent;
-    border-bottom: none; /* FIXED — removed old grey divider */
+    border-bottom: none;
 }
 
 .section-title {
@@ -445,29 +439,25 @@ html {
 
 /* ------------------------------
    HOMEPAGE — MEETING WHITE CARD
-   (OUTER CARD — 30% opacity)
 --------------------------------*/
 .home-meeting-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-meeting-card .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
-    padding: 30px; /* content padding */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
 .meeting-title {
@@ -503,8 +493,8 @@ html {
 .range-simple-subtitle {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #000;      /* changed from red */
-    font-style: italic; /* new */
+    color: #000;
+    font-style: italic;
     margin-top: 0;
 }
 
@@ -531,29 +521,26 @@ html {
 
 /* ------------------------------
    HOMEPAGE — RANGE WHITE CARD
-   (OUTER CARD — 30% opacity)
 --------------------------------*/
 .home-range-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
+/* UNIVERSAL INNER CARD — updated */
 .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
-    padding: 30px; /* content padding */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
 .range-simple-title {
@@ -584,7 +571,6 @@ html {
     height: auto;
 }
 
-/* OUTER CARD — 30% opacity (unchanged) */
 .white-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
@@ -594,20 +580,16 @@ html {
     backdrop-filter: blur(4px);
 }
 
-/* INNER CARD — 50% opacity + green‑teal shadow + soft tint */
-.inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
+.white-card .inner-card {
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
-/* Side-by-side layout */
 .ribchicken-wrapper {
     display: flex;
     justify-content: center;
@@ -615,14 +597,12 @@ html {
     gap: 40px;
 }
 
-/* Left image */
 .ribchicken-left img {
     max-width: 420px;
     height: auto;
     border-radius: 10px;
 }
 
-/* Right text */
 .ribchicken-right {
     max-width: 500px;
     text-align: center;
@@ -632,7 +612,6 @@ html {
     color: black;
 }
 
-/* Mobile: stack only on small screens */
 @media (max-width: 900px) {
     .ribchicken-wrapper {
         flex-direction: column;
@@ -641,46 +620,35 @@ html {
 }
 
 /* ------------------------------
-   MAX BAND SIDE-BY-SIDE SECTION
-   (OUTER CARD — 30% opacity)
+   MAX BAND
 --------------------------------*/
 .maxband-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
+    padding: 20px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
 .maxband-card .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
     padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
-/* Wrapper: image left, text right */
 .maxband-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     gap: 40px;
-
-    margin: 20px auto;    /* ↓ reduced from 40px to 20px */
+    margin: 20px auto;
     max-width: 1200px;
-}
-
-.maxband-left {
-    display: flex;
-    align-items: stretch;
 }
 
 .maxband-left img {
@@ -706,41 +674,37 @@ html {
     height: auto;
 }
 
-/* Mobile layout */
 @media (max-width: 900px) {
     .maxband-wrapper {
         flex-direction: column;
         text-align: center;
-        margin: 20px auto; /* keep consistent */
+        margin: 20px auto;
     }
 }
 
 /* ------------------------------
-   CORN HOLE AND EUCHRE
+   ACTIVITIES IMAGE
 --------------------------------*/
-
-/* Wrapper matches white-card width */
 .activities-image {
-    max-width: 900px;      /* SAME WIDTH as your white cards */
-    margin: 40px auto;     /* TOP/BOTTOM = 40px, LEFT/RIGHT = centered */
-    padding: 0 30px;       /* LEFT/RIGHT spacing inside the container */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
     text-align: center;
 }
 
-/* Image scales cleanly inside the 900px container */
 .activities-image img {
     max-width: 100%;
     height: auto;
-    display: block;        /* cleaner centering */
+    display: block;
     margin: 0 auto;
 }
 
 @media (max-width: 600px) {
     .ribchicken-img {
-        max-width: 90% !important; /* 10% smaller on mobile */
+        max-width: 90% !important;
         height: auto !important;
         display: block !important;
-        margin: 0 auto !important; /* keeps it centered */
+        margin: 0 auto !important;
     }
 }
 
@@ -750,7 +714,7 @@ html {
 .contact-section {
     text-align: center;
     color: #000;
-    font-size: 1.6rem; /* matches universal body size */
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.6;
     margin: 40px auto;
@@ -766,7 +730,6 @@ html {
     height: 20px;
 }
 
-/* Arrow divider line */
 .section-divider {
     width: 100%;
     margin: 40px auto;
@@ -775,7 +738,7 @@ html {
 
 .section-divider img {
     width: 100%;
-    max-width: 600px; /* adjust to your preferred length */
+    max-width: 600px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -786,30 +749,26 @@ html {
 }
 
 /* ------------------------------
-   CONTACT — CONTACT WHITE CARD
-   (OUTER CARD — 30% opacity)
+   CONTACT CARD
 --------------------------------*/
 .home-contact-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-contact-card .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
-    padding: 30px; /* content padding */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
 .contact-line {
@@ -827,24 +786,22 @@ html {
     border-bottom: none;
 }
 
-/* Tighten space BELOW the first divider */
 .section-divider img {
     display: block;
-    margin: 10px auto; /* reduced space */
+    margin: 10px auto;
 }
 
-/* Partnership image — matches white card width */
 .partnership-img {
     display: block;
-    margin: 10px auto; /* controls space above & below */
+    margin: 10px auto;
     width: 100%;
-    max-width: 900px;  /* same width as your white cards */
+    max-width: 900px;
     height: auto;
     border-radius: 10px;
 }
 
 /* ------------------------------
-   ACTIVITIES SECTION
+   ACTIVITIES CARD
 --------------------------------*/
 .activities-section {
     width: 100%;
@@ -872,31 +829,24 @@ html {
     margin-bottom: 10px;
 }
 
-/* ------------------------------
-   HOMEPAGE — ACTIVITIES WHITE CARD
-   (OUTER CARD — 30% opacity)
---------------------------------*/
 .home-activities-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around the inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
 }
 
-/* INNER CARD — mint‑white tint + green‑teal shadow */
 .home-activities-card .inner-card {
-    background: rgba(138, 154, 150, 0.50); /* mist gray */
-    padding: 30px; /* content padding */
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
     border-radius: 12px;
 
-    /* Soft Evergreen shadow, wider sides, contained */
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
        0 8px 28px rgba(47, 79, 62, 0.25);
-
 }
 
 .activities-text {
