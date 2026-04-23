@@ -541,20 +541,20 @@ html {
     height: auto;
 }
 
-/* OUTER CARD — 30% opacity (your original card) */
+/* OUTER CARD — 30% opacity (unchanged) */
 .white-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 40px; /* space around the inner card */
+    padding: 20px; /* ↓ was 40px — now 20px gap around inner card */
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
 }
 
-/* INNER CARD — 70% opacity (new smaller card) */
+/* INNER CARD — now 50% opacity + larger because padding is smaller */
 .inner-card {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 30px; /* normal inner padding */
+    background: rgba(255, 255, 255, 0.5); /* ↓ was 0.7 */
+    padding: 30px; /* same content padding as before */
     border-radius: 12px;
 }
 
