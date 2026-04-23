@@ -531,7 +531,7 @@ html {
 }
 
 /* ------------------------------
-   BAND SECTION
+   RIB & CHICKEN
 --------------------------------*/
 .club-ribchicken img {
     display: block;
@@ -541,14 +541,21 @@ html {
     height: auto;
 }
 
-/* White card wrapper */
-.white-card {
+/* OUTER CARD — 30% opacity (your original card) */
+.white-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 30px 25px;
-    background: rgba(255, 255, 255, 0.3); /* 30% white wash */
+    padding: 40px; /* space around the inner card */
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
+}
+
+/* INNER CARD — 70% opacity (new smaller card) */
+.inner-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px; /* normal inner padding */
+    border-radius: 12px;
 }
 
 /* Side-by-side layout */
