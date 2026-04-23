@@ -692,11 +692,39 @@ html {
     color: black;
 }
 
+/* ------------------------------
+   BAND IMAGE — OUTER CARD
+--------------------------------*/
+.band-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px; /* gap around inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+/* ------------------------------
+   BAND IMAGE — INNER CARD
+--------------------------------*/
+.band-card .inner-card {
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+}
+
+/* ------------------------------
+   BAND IMAGE ITSELF
+--------------------------------*/
 #band-image {
     display: block;
-    margin: 40px auto 0;
-    max-width: 900px;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
 }
 
