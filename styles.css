@@ -1070,11 +1070,19 @@ body.home main {
 /* ------------------------------
    RANGE PAGE HEADER IMAGE
 --------------------------------*/
+
+/* Wrapper controls spacing + centering */
+.range-header {
+    max-width: 900px;      /* same width as white cards */
+    margin: 40px auto 0;   /* 40px under nav, centered */
+}
+
+/* Image fills the wrapper cleanly */
 .range-header img {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 420px;
+    border-radius: 10px;   /* optional, remove if not wanted */
     object-fit: cover;
 }
 
