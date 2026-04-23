@@ -782,16 +782,28 @@ html {
 
 /* ------------------------------
    CONTACT — CONTACT WHITE CARD
+   (OUTER CARD — 30% opacity)
 --------------------------------*/
-.home-contact-card {
+.home-contact-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 35px 30px;
-
-    background: rgba(255, 255, 255, 0.4); /* 30% white */
+    padding: 20px; /* 20px gap around the inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
+}
+
+/* INNER CARD — mint‑white tint + green‑teal shadow */
+.home-contact-card .inner-card {
+    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
+    padding: 30px; /* content padding */
+    border-radius: 12px;
+
+    /* green‑leaning teal shadow, wider sides, contained */
+    box-shadow:
+        0 4px 14px rgba(0, 210, 160, 0.35),
+        0 8px 28px rgba(0, 210, 160, 0.25);
 }
 
 .contact-line {
