@@ -855,6 +855,44 @@ html {
 }
 
 /* ------------------------------
+   PARTNERSHIP — OUTER CARD
+--------------------------------*/
+.partnership-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px; /* gap around inner card */
+    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+/* ------------------------------
+   PARTNERSHIP — INNER CARD
+--------------------------------*/
+.partnership-card .inner-card {
+    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+       0 4px 14px rgba(47, 79, 62, 0.35),
+       0 8px 28px rgba(47, 79, 62, 0.25);
+}
+
+/* ------------------------------
+   PARTNERSHIP IMAGE
+--------------------------------*/
+.partnership-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ------------------------------
    ACTIVITIES CARD
 --------------------------------*/
 .activities-section {
