@@ -553,22 +553,22 @@ html {
 .white-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
-    padding: 20px; /* 20px gap around inner card */
+    padding: 20px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
 }
 
-/* INNER CARD — 50% opacity + teal shadow */
+/* INNER CARD — 50% opacity + green‑teal shadow + soft tint */
 .inner-card {
-    background: rgba(255, 255, 255, 0.5); /* 50% opacity */
+    background: rgba(240, 255, 250, 0.5); /* soft mint‑white tint */
     padding: 30px;
     border-radius: 12px;
 
-    /* Teal shadow contained between the cards */
+    /* green‑leaning teal shadow, wider sides, contained */
     box-shadow:
-        0 4px 12px rgba(0, 180, 200, 0.35),
-        0 8px 24px rgba(0, 180, 200, 0.25);
+        0 4px 14px rgba(0, 210, 160, 0.35),
+        0 8px 28px rgba(0, 210, 160, 0.25);
 }
 
 /* Side-by-side layout */
