@@ -2067,37 +2067,40 @@ body.home main {
     text-align: left;
 }
 
-
+/* ------------------------------
+   FACEBOOK EMBED BOX
+--------------------------------*/
 .fb-page-container {
-    width: calc(100% - 20px); /* full width minus 10px padding each side */
+    width: calc(100% - 20px);
     margin: 0 auto;
     padding: 10px;
-    border: 3px solid red; /* red border */
+    border: 3px solid red;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .fb-page {
     width: 100% !important;
-    height: 800px !important; /* adjust height if needed */
+    height: 800px !important;
     overflow-y: scroll;
 }
 
-/* KITCHEN PAGE BACKGROUND — full image, bottom-focused, fixed */
+/* ------------------------------
+   KITCHEN PAGE BACKGROUND
+--------------------------------*/
 .kitchen-bg {
     position: relative;
     min-height: 100vh;
     background: url('images/kitchen-background.jpg') center bottom / cover no-repeat fixed;
-    z-index: 0; /* ensures content scrolls above it */
+    z-index: 0;
 }
 
-/* 30% white wash overlay — fixed behind everything */
 .kitchen-bg::before {
     content: "";
     position: fixed;
     inset: 0;
     background: rgba(255, 255, 255, 0.3);
-    z-index: -1; /* behind nav + content */
+    z-index: -1;
 }
 
 /* ------------------------------
@@ -2126,6 +2129,67 @@ body.home main {
         text-align: center;
         margin-left: 0;
         max-width: 100%;
+    }
+}
+
+/* ------------------------------
+   ⭐ KITCHEN — DOUBLE CARD STYLE
+   (ONLY NEW CODE ADDED)
+--------------------------------*/
+
+/* Outer card */
+.home-kitchen-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+/* Inner card */
+.home-kitchen-card .inner-card {
+    background: rgba(255, 236, 220, 0.55); /* sunrise cream */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 14px rgba(90, 45, 20, 0.45),
+        0 8px 28px rgba(90, 45, 20, 0.35);
+}
+
+/* Make your existing layout work inside the card */
+.home-kitchen-card .kitchen-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.home-kitchen-card .kitchen-badge {
+    max-width: 420px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-kitchen-card .kitchen-description {
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Mobile stacking */
+@media (max-width: 700px) {
+    .home-kitchen-card .kitchen-layout {
+        flex-direction: column;
+    }
+
+    .home-kitchen-card .kitchen-badge {
+        margin-bottom: 20px;
     }
 }
 
