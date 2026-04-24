@@ -2681,6 +2681,14 @@ iframe[src*="google.com/calendar"] {
     text-decoration: none;
 }
 
+/* Antenna instruction titles */
+.tv-title {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #002b45; /* deep blue for readability */
+}
+
 /* ============================
    TV PAGE BACKGROUND (FULL)
    ============================ */
