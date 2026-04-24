@@ -2534,6 +2534,32 @@ iframe[src*="google.com/calendar"] {
     text-decoration: none;
 }
 
+/* ============================
+   TV PAGE BACKGROUND (FULL)
+   ============================ */
+
+body.TV-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/TV-background.png') center bottom / cover no-repeat fixed;
+}
+
+/* 30% white wash overlay */
+body.TV-bg::before {
+    content: "";
+    position: fixed; /* stays still while content scrolls */
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 0;
+    pointer-events: none; /* prevents blocking clicks */
+}
+
+/* Ensure all page content sits ABOVE the wash */
+body.TV-bg * {
+    position: relative;
+    z-index: 1;
+}
+
 /* =========================================================
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
