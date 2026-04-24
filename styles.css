@@ -2385,6 +2385,30 @@ iframe[src*="google.com/calendar"] {
     margin-bottom: 25px;
 }
 
+/* ============================
+   TV PAGE CARD STYLE (BLUE)
+   ============================ */
+
+/* OUTER CARD — 30% white wash */
+.style-card-outer {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+}
+
+/* INNER CARD — 50% soft blue + matching shadow */
+.style-card-inner {
+    background: rgba(173, 216, 255, 0.5); /* super soft blue, 50% opacity */
+    padding: 20px;
+    border-radius: 10px;
+
+    /* soft blue shadow that sits BETWEEN the cards */
+    box-shadow:
+        0 4px 12px rgba(80, 140, 200, 0.35),
+        0 10px 28px rgba(80, 140, 200, 0.25);
+}
+
 .tv-video {
     width: 100%;
     max-width: 800px;
