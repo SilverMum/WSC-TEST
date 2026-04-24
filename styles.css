@@ -2504,6 +2504,47 @@ iframe[src*="google.com/calendar"] {
     margin-bottom: 40px;
 }
 
+/* ============================
+   TV PAGE CARD STYLE (BLUE)
+   ============================ */
+
+/* OUTER CARD — 30% white wash */
+.style-card-outer {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    margin-bottom: 30px;
+}
+
+/* INNER CARD — 50% soft blue + matching shadow */
+.style-card-inner {
+    background: rgba(173, 216, 255, 0.5); /* super soft blue, 50% opacity */
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(80, 140, 200, 0.35),
+        0 10px 28px rgba(80, 140, 200, 0.25);
+}
+
+/* ============================
+   TV INFO PRE BLOCK
+   ============================ */
+
+.tv-info {
+    background: rgba(255, 255, 255, 0.25); /* soft white tint inside the blue card */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    line-height: 1.45;
+    white-space: pre-wrap; /* keeps alignment but wraps on mobile */
+    overflow-x: auto; /* prevents overflow issues */
+    margin-top: 15px;
+    color: #002b45; /* deep blue for readability */
+}
+
 /* TV Page Image Grid */
 .tv-grid {
     margin-top: 40px;
