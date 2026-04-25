@@ -2026,6 +2026,13 @@ body.login-bg .site-footer {
     height: auto;
 }
 
+/* Center the link text under the logo */
+.ofha-info-logo a.ofha-text-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
 /* ------------------------------
    MEMBERSHIP CARD (centered + bold)
 --------------------------------*/
