@@ -1264,12 +1264,11 @@ body.login-bg .site-footer {
     padding: 0 40px;
 }
 
-/* Image fills the wrapper cleanly */
 .range-header img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;   /* optional, remove if not wanted */
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -1286,7 +1285,7 @@ body.login-bg .site-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* consistent spacing */
 }
 
 .range-status-img {
@@ -1296,13 +1295,15 @@ body.login-bg .site-footer {
     max-width: 600px;
 }
 
-/* ⭐ Make ONLY the left image smaller */
+/* Left image smaller + pulled inward */
 .range-status-left img {
-    max-width: 450px; /* adjust this number anytime */
-    margin-left: auto;  /* pushes it toward the center */
+    max-width: 450px;
+    margin-left: auto;
 }
 
-/* RANGE OPEN BUTTON */
+/* ------------------------------
+   RANGE OPEN BUTTON
+--------------------------------*/
 .range-open-button-section {
     width: 100%;
     display: block;
@@ -1326,7 +1327,9 @@ body.login-bg .site-footer {
     filter: brightness(1.1);
 }
 
-/* RANGE NOTICE SECTION (typography only, card handled by outer/inner card) */
+/* ------------------------------
+   RANGE NOTICE SECTION (typography only)
+--------------------------------*/
 .range-notice-section {
     text-align: left;
 }
@@ -1345,7 +1348,9 @@ body.login-bg .site-footer {
     margin-top: 20px;
 }
 
-/* RANGE FACEBOOK BUTTON */
+/* ------------------------------
+   RANGE FACEBOOK BUTTON
+--------------------------------*/
 .range-facebook-section {
     width: 100%;
     display: block;
@@ -1366,7 +1371,9 @@ body.login-bg .site-footer {
     filter: brightness(1.1);
 }
 
-/* RANGE TRAPPER NOTICE (typography only) */
+/* ------------------------------
+   RANGE TRAPPER NOTICE (typography only)
+--------------------------------*/
 .range-trapper-section {
     text-align: left;
 }
@@ -1387,7 +1394,9 @@ body.login-bg .site-footer {
     font-weight: bold;
 }
 
-/* RANGE INFO SECTION (typography only) */
+/* ------------------------------
+   RANGE INFO SECTION (typography only)
+--------------------------------*/
 .range-info-section {
     text-align: left;
 }
@@ -1408,7 +1417,9 @@ body.login-bg .site-footer {
     font-weight: bold;
 }
 
-/* RANGE RULES SECTION (typography only) */
+/* ------------------------------
+   RANGE RULES SECTION (typography only)
+--------------------------------*/
 .range-rules-section {
     text-align: left;
 }
@@ -1429,7 +1440,9 @@ body.login-bg .site-footer {
     font-weight: bold;
 }
 
-/* RANGE RESTRICTED FIREARM NOTICE (typography only) */
+/* ------------------------------
+   RANGE RESTRICTED FIREARM NOTICE
+--------------------------------*/
 .range-restricted-section {
     text-align: center;
 }
@@ -1465,13 +1478,43 @@ body.login-bg .site-footer {
     background: url('images/range-background1.jpg') center center / cover no-repeat fixed;
 }
 
-/* 20% white wash overlay */
 .range-bg::before {
     content: "";
     position: fixed;
     inset: 0;
     background: rgba(255, 255, 255, 0.2);
     z-index: -1;
+}
+
+/* ------------------------------
+   GLOBAL DOUBLE-CARD SYSTEM
+--------------------------------*/
+
+/* Outer card — opacity lowered to 40%, stronger shadow, 20px spacing */
+.outer-card {
+    max-width: 900px;
+    margin: 20px auto; /* consistent spacing between cards */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.40); /* 40% white */
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35); /* darker + more obvious */
+}
+
+/* Inner card — stronger inset shadow */
+.inner-card.ofha-card {
+    background: rgba(150, 180, 220, 0.50); /* 50% OFHA blue */
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: inset 0 0 22px rgba(0, 0, 0, 0.35); /* darker + more depth */
+}
+
+/* Text color inside cards */
+.ofha-card h2,
+.ofha-card h3,
+.ofha-card p,
+.ofha-card li,
+.ofha-card a {
+    color: #062a55;
 }
 
 /* ------------------------------
