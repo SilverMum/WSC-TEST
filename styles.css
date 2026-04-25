@@ -1821,8 +1821,6 @@ body.login-bg .site-footer {
 /* ------------------------------
    CARD SYSTEM (GLOBAL FOR OFHA)
 --------------------------------*/
-
-/* Outer card: 30% white */
 .outer-card {
     max-width: 900px;
     margin: 0 auto 20px;
@@ -1832,7 +1830,6 @@ body.login-bg .site-footer {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Inner card: OFHA Blue Tint (Option C, 60%) */
 .inner-card.ofha-card {
     background: rgba(150, 180, 220, 0.60);
     padding: 30px;
@@ -1850,50 +1847,69 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   OFHA INTRO SECTION
+   GLOBAL TEXT SIZE UPGRADE
 --------------------------------*/
-.ofha-intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.ofha-card p,
+.ofha-card li {
+    font-size: 1.35rem;
+    line-height: 1.65;
 }
 
-.ofha-intro-left p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+.ofha-card h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
 }
 
-.ofha-intro-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.ofha-logo {
-    width: 140px;
-    height: auto;
-}
-
-.ofha-text-link {
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: #062a55;
-}
-
-.ofha-text-link:hover {
-    text-decoration: underline;
+.ofha-card h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
 }
 
 /* ------------------------------
-   MEMBERSHIP SECTION
+   FIXED INTRO ROW (text left, logo right)
+--------------------------------*/
+.ofha-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ofha-info-text {
+    flex: 1;
+}
+
+.ofha-info-text p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ofha-info-logo {
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+.ofha-info-logo img {
+    max-width: 160px;
+    height: auto;
+}
+
+/* Center the link text under the logo */
+.ofha-info-logo a.ofha-text-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* ------------------------------
+   MEMBERSHIP CARD (centered + bold)
 --------------------------------*/
 .ofha-membership p {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.65;
 }
 
 /* ------------------------------
@@ -1960,7 +1976,7 @@ body.login-bg .site-footer {
 }
 
 .ofha-links-row img {
-    width: 140px;
+    width: 165px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.2s ease;
@@ -1968,90 +1984,6 @@ body.login-bg .site-footer {
 
 .ofha-links-row img:hover {
     transform: scale(1.05);
-}
-
-/* ------------------------------
-   GLOBAL TEXT SIZE UPGRADE FOR OFHA CARDS
---------------------------------*/
-.ofha-card p,
-.ofha-card li {
-    font-size: 1.35rem;
-    line-height: 1.65;
-}
-
-.ofha-card h3 {
-    font-size: 1.9rem;
-    font-weight: 700;
-}
-
-.ofha-card h2 {
-    font-size: 2.4rem;
-    font-weight: 800;
-}
-
-/* ------------------------------
-   INTRO CARD (with logo)
-   - Larger text
-   - Bold
-   - Not centered
---------------------------------*/
-.ofha-intro-left p {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: left;
-}
-
-/* ------------------------------
-   FIXED INTRO ROW (text left, logo right)
---------------------------------*/
-.ofha-info-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.ofha-info-text {
-    flex: 1;
-    text-align: left;
-    font-weight: 700;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.ofha-info-logo {
-    flex: 0 0 auto;
-    text-align: right;
-}
-
-.ofha-info-logo img {
-    max-width: 160px;
-    height: auto;
-}
-
-/* Center the link text under the logo */
-.ofha-info-logo a.ofha-text-link {
-    text-align: center;
-    display: block;
-    width: 100%;
-}
-
-.ofha-links-row img {
-    width: 165px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-}
-
-/* ------------------------------
-   MEMBERSHIP CARD (centered + bold)
---------------------------------*/
-.ofha-membership p {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.65;
 }
 
 /* ------------------------------
