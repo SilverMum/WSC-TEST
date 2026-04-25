@@ -206,6 +206,23 @@ html {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 }
 
+/* Keep Members text + arrow on one line */
+.dropdown-sub {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between text and arrow */
+    white-space: nowrap;
+}
+
+.submenu-link {
+    display: inline-block;
+}
+
+.submenu-toggle {
+    display: inline-block;
+    white-space: nowrap;
+}
+
 /* ------------------------------
    HERO SECTION
 --------------------------------*/
