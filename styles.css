@@ -2391,7 +2391,7 @@ iframe[src*="google.com/calendar"] {
 .tv-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px; /* tightened by 10px */
     text-align: center;
 }
 
@@ -2404,7 +2404,7 @@ iframe[src*="google.com/calendar"] {
     font-weight: 700;
     color: #002b45;
     text-decoration: underline;
-    margin: 20px 0;
+    margin: 10px 0; /* tightened by 10px */
 }
 
 .tv-subtitle {
@@ -2412,13 +2412,13 @@ iframe[src*="google.com/calendar"] {
     font-weight: 700;
     color: #002b45;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* tightened */
     text-decoration: underline;
 }
 
 .tv-link {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* tightened */
 }
 
 .tv-link a {
@@ -2439,15 +2439,15 @@ iframe[src*="google.com/calendar"] {
 
 .style-card-outer {
     background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
+    padding: 15px; /* tightened */
     border-radius: 12px;
     backdrop-filter: blur(2px);
-    margin-bottom: 20px; /* NEW: consistent spacing */
+    margin-bottom: 20px; /* consistent spacing */
 }
 
 .style-card-inner {
     background: rgba(173, 216, 255, 0.5);
-    padding: 20px;
+    padding: 15px; /* tightened */
     border-radius: 10px;
     box-shadow:
         0 4px 12px rgba(80, 140, 200, 0.35),
@@ -2463,16 +2463,16 @@ iframe[src*="google.com/calendar"] {
     max-width: 800px;
     border-radius: 10px;
     display: block;
-    margin: 20px auto;
+    margin: 15px auto; /* tightened */
     box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
 /* ------------------------------
-   Info Blocks (TSN, Sportsnet, DAZN)
+   Info Blocks
 ------------------------------ */
 
 .tv-info-block {
-    margin: 20px 0;
+    margin: 15px 0; /* tightened */
 }
 
 .tv-info-line {
@@ -2487,29 +2487,29 @@ iframe[src*="google.com/calendar"] {
 }
 
 /* ------------------------------
-   WSC TV Info (broken into lines)
+   WSC TV Info
 ------------------------------ */
 
 .tv-info {
     background: rgba(255, 255, 255, 0.25);
-    padding: 15px;
+    padding: 12px; /* tightened */
     border-radius: 8px;
     font-family: "Courier New", monospace;
     font-size: 15px;
     line-height: 1.45;
     white-space: pre-wrap;
     overflow-x: auto;
-    margin-top: 15px;
+    margin-top: 10px; /* tightened */
     color: #002b45;
 }
 
 /* ------------------------------
-   TV Image Stack (UPDATED)
+   TV Image Stack
 ------------------------------ */
 
 .tv-grid-top,
 .tv-grid-bottom {
-    display: block; /* stack vertically */
+    display: block;
 }
 
 .tv-grid-img,
@@ -2519,13 +2519,13 @@ iframe[src*="google.com/calendar"] {
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 20px auto;
+    margin: 15px auto; /* tightened */
     box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
 /* Make the top map image smaller */
 .tv-grid-top img:first-child {
-    max-width: 350px;   /* half the size */
+    max-width: 350px;
     width: 100%;
     margin: 10px auto;
 }
@@ -2536,7 +2536,7 @@ iframe[src*="google.com/calendar"] {
 
 .tv-antenna-img {
     display: block;
-    margin: 20px auto;
+    margin: 15px auto; /* tightened */
     width: 95%;
     max-width: 900px;
     border-radius: 10px;
@@ -2562,7 +2562,8 @@ body.TV-bg::before {
     pointer-events: none;
 }
 
-body.TV-bg * {
+/* FIXED: no longer breaks nav dropdowns */
+body.TV-bg > * {
     position: relative;
     z-index: 1;
 }
