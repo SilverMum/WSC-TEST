@@ -2404,7 +2404,7 @@ iframe[src*="google.com/calendar"] {
     font-weight: 700;
     color: #002b45;
     text-decoration: underline;
-    margin: 10px 0; /* tightened by 10px */
+    margin: 10px 0; /* tightened */
 }
 
 .tv-subtitle {
@@ -2509,7 +2509,7 @@ iframe[src*="google.com/calendar"] {
 
 .tv-grid-top,
 .tv-grid-bottom {
-    display: block;
+    display: block; /* stack vertically */
 }
 
 .tv-grid-img,
@@ -2566,6 +2566,16 @@ body.TV-bg::before {
 body.TV-bg > * {
     position: relative;
     z-index: 1;
+}
+
+/* ------------------------------
+   NAV FIX — keeps nav ABOVE content
+------------------------------ */
+
+header,
+.main-nav {
+    position: relative;
+    z-index: 9999; /* ensures nav stays clickable and above content */
 }
 
 /* =========================================================
