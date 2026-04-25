@@ -1299,6 +1299,7 @@ body.login-bg .site-footer {
 /* ⭐ Make ONLY the left image smaller */
 .range-status-left img {
     max-width: 450px; /* adjust this number anytime */
+    margin-left: auto;  /* pushes it toward the center */
 }
 
 /* RANGE OPEN BUTTON */
