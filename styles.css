@@ -2016,6 +2016,10 @@ body.login-bg .site-footer {
     text-align: left;
 }
 
+.ofha-info-text p {
+    font-weight: 700;
+}
+
 .ofha-info-logo {
     flex: 0 0 auto;
     text-align: right;
