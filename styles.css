@@ -1614,6 +1614,10 @@ body.login-bg .site-footer {
     font-weight: 600;
 }
 
+.archery-page {
+    padding-top: 110px; /* nav height (90px) + 20px breathing room */
+}
+
 /* ------------------------------
    ARCHERY IMAGE TRIO
 --------------------------------*/
