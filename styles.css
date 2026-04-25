@@ -2506,6 +2506,13 @@ iframe[src*="google.com/calendar"] {
     box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
+/* Make the top map image smaller */
+.tv-grid-top img:first-child {
+    max-width: 350px;   /* half the size */
+    width: 100%;
+    margin: 10px auto;
+}
+
 /* ------------------------------
    Antenna Box Image
 ------------------------------ */
