@@ -1144,7 +1144,7 @@ body.login-bg .login-page-wrapper {
     justify-content: center;
     margin-top: 120px !important; /* nav height (110px) + 10px gap */
     margin-bottom: 20px; /* space before footer */
-    padding-bottom: 0; /* remove old padding */
+    padding-bottom: 0;
 }
 
 /* Login form card */
@@ -1219,17 +1219,19 @@ body.login-bg .login-page-wrapper {
     text-decoration: underline;
 }
 
-/* Footer spacing — sits 20px below login form */
+/* ------------------------------
+   FIXED FOOTER — 20px below login box
+--------------------------------*/
 body.login-bg .site-footer {
     margin-top: 20px !important;
-    position: relative;
+    position: relative; /* ensures footer stays in normal flow */
+    bottom: 0;
     z-index: 1;
 }
 
 /* ------------------------------
    LOGIN PAGE BACKGROUND
 --------------------------------*/
-
 .login-bg {
     position: relative;
     min-height: 100vh;
