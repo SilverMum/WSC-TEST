@@ -1138,6 +1138,13 @@ body.home main {
    LOGIN PAGE
 --------------------------------*/
 
+/* Make the whole page a vertical layout so footer stays at bottom */
+body.login-bg {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Wrapper that controls spacing under the fixed nav */
 body.login-bg .login-page-wrapper {
     display: flex;
@@ -1145,6 +1152,7 @@ body.login-bg .login-page-wrapper {
     margin-top: 120px !important; /* nav height (110px) + 10px gap */
     margin-bottom: 20px; /* space before footer */
     padding-bottom: 0;
+    flex: 1; /* pushes footer to bottom */
 }
 
 /* Login form card */
@@ -1224,7 +1232,7 @@ body.login-bg .login-page-wrapper {
 --------------------------------*/
 body.login-bg .site-footer {
     margin-top: 20px !important;
-    position: relative; /* ensures footer stays in normal flow */
+    position: relative;
     bottom: 0;
     z-index: 1;
 }
@@ -1234,7 +1242,6 @@ body.login-bg .site-footer {
 --------------------------------*/
 .login-bg {
     position: relative;
-    min-height: 100vh;
     background: url('images/login-background.jpg') center center / cover no-repeat fixed;
 }
 
