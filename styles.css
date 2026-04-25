@@ -2368,330 +2368,160 @@ iframe[src*="google.com/calendar"] {
 }
 
 /* ------------------------------
-   /* TV Page Styling */
+   TV Page Wrapper
+------------------------------ */
 
 .tv-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px 20px 60px;
+    padding: 20px;
     text-align: center;
 }
 
+/* ------------------------------
+   Titles & Text
+------------------------------ */
+
 .tv-title {
-    font-size: 2.2rem;        /* matches homepage section titles */
+    font-size: 2.2rem;
     font-weight: 700;
-    color: black;
+    color: #002b45;
     text-decoration: underline;
-    margin-bottom: 25px;
+    margin: 20px 0;
 }
 
-/* ============================
-   TV PAGE CARD STYLE (BLUE)
-   ============================ */
-
-/* OUTER CARD — 30% white wash */
-.style-card-outer {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(2px);
-}
-
-/* INNER CARD — 50% soft blue + matching shadow */
-.style-card-inner {
-    background: rgba(173, 216, 255, 0.5); /* super soft blue, 50% opacity */
-    padding: 20px;
-    border-radius: 10px;
-
-    /* soft blue shadow that sits BETWEEN the cards */
-    box-shadow:
-        0 4px 12px rgba(80, 140, 200, 0.35),
-        0 10px 28px rgba(80, 140, 200, 0.25);
-}
-
-.tv-video {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-/* ============================
-   TV PAGE CARD STYLE (BLUE)
-   ============================ */
-
-/* OUTER CARD — 30% white wash */
-.style-card-outer {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(2px);
-    margin-bottom: 30px; /* keeps spacing consistent between cards */
-}
-
-/* INNER CARD — 50% soft blue + matching shadow */
-.style-card-inner {
-    background: rgba(173, 216, 255, 0.5); /* super soft blue, 50% opacity */
-    padding: 20px;
-    border-radius: 10px;
-
-    /* soft blue shadow that sits BETWEEN the cards */
-    box-shadow:
-        0 4px 12px rgba(80, 140, 200, 0.35),
-        0 10px 28px rgba(80, 140, 200, 0.25);
-}
-
-/* ============================
-   TV PAGE VIDEO STYLING
-   ============================ */
-
-.tv-video {
-    width: 100%;
-    max-width: 800px; /* keeps it clean on large screens */
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto 0 auto;
-
-    /* subtle shadow to match the blue theme */
-    box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
-}
-
-/* TV Page Links */
-.tv-title {
-    font-size: 2.2rem;      /* matches homepage section titles */
+.tv-subtitle {
+    font-size: 1.8rem;
     font-weight: 700;
-    color: black;
-    text-decoration: underline;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    color: #002b45;
     text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .tv-link {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .tv-link a {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #1877F2;              /* Facebook blue */
+    color: #1877F2;
     text-decoration: underline;
     transition: color 0.2s ease;
 }
 
 .tv-link a:hover {
-    color: #0d5fcc;              /* slightly darker hover */
+    color: #0d5fcc;
 }
 
-.tv-map {
-    display: block;
-    margin: 30px auto;
-    max-width: 600px;
-    width: 90%;
-    height: auto;
-    border-radius: 8px;
-}
+/* ------------------------------
+   CARD STYLE (Blue Theme)
+------------------------------ */
 
-.tv-info {
-    font-family: monospace;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    white-space: pre-wrap;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/* ============================
-   TV PAGE CARD STYLE (BLUE)
-   ============================ */
-
-/* OUTER CARD — 30% white wash */
 .style-card-outer {
     background: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 12px;
     backdrop-filter: blur(2px);
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* NEW: consistent spacing */
 }
 
-/* INNER CARD — 50% soft blue + matching shadow */
 .style-card-inner {
-    background: rgba(173, 216, 255, 0.5); /* super soft blue, 50% opacity */
+    background: rgba(173, 216, 255, 0.5);
     padding: 20px;
     border-radius: 10px;
-
     box-shadow:
         0 4px 12px rgba(80, 140, 200, 0.35),
         0 10px 28px rgba(80, 140, 200, 0.25);
 }
 
-/* ============================
-   TV INFO PRE BLOCK
-   ============================ */
+/* ------------------------------
+   Video Styling
+------------------------------ */
+
+.tv-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
+}
+
+/* ------------------------------
+   Info Blocks (TSN, Sportsnet, DAZN)
+------------------------------ */
+
+.tv-info-block {
+    margin: 20px 0;
+}
+
+.tv-info-line {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #002b45;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   WSC TV Info (broken into lines)
+------------------------------ */
 
 .tv-info {
-    background: rgba(255, 255, 255, 0.25); /* soft white tint inside the blue card */
+    background: rgba(255, 255, 255, 0.25);
     padding: 15px;
     border-radius: 8px;
     font-family: "Courier New", monospace;
     font-size: 15px;
     line-height: 1.45;
-    white-space: pre-wrap; /* keeps alignment but wraps on mobile */
-    overflow-x: auto; /* prevents overflow issues */
+    white-space: pre-wrap;
+    overflow-x: auto;
     margin-top: 15px;
-    color: #002b45; /* deep blue for readability */
+    color: #002b45;
 }
 
-/* TV Page Image Grid */
-.tv-grid {
-    margin-top: 40px;
-    margin-left: -50px;   /* keep the top images shifted left */
-}
+/* ------------------------------
+   TV Image Stack (UPDATED)
+------------------------------ */
 
-.tv-grid-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-/* BOTTOM IMAGE — centered, no width changes */
+.tv-grid-top,
 .tv-grid-bottom {
-    display: flex;
-    justify-content: center;   /* centers the bottom image */
-    margin-left: 0;            /* remove the left shift ONLY for this row */
+    display: block; /* stack vertically */
 }
 
-.tv-grid-bottom img {
-    width: auto;               /* natural width */
-    max-width: 100%;           /* prevents overflow */
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-/* ORIGINAL IMAGE RULES */
-.tv-grid-img {
-    width: 90%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.tv-grid-img-wide {
-    width: 95%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.tv-info-block {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.tv-info-line {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 12px;
-}
-
-/* ============================
-   TV PAGE CARD STYLE (BLUE)
-   ============================ */
-
-/* OUTER CARD — 30% white wash */
-.style-card-outer {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(2px);
-    margin-bottom: 30px;
-}
-
-/* INNER CARD — 50% soft blue + matching shadow */
-.style-card-inner {
-    background: rgba(173, 216, 255, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-
-    box-shadow:
-        0 4px 12px rgba(80, 140, 200, 0.35),
-        0 10px 28px rgba(80, 140, 200, 0.25);
-}
-
-/* ============================
-   CHANNEL SELECTION INFO LINES
-   ============================ */
-
-.tv-info-block {
-    margin-top: 15px;
-}
-
-.tv-info-line {
-    background: rgba(255, 255, 255, 0.25); /* soft white tint */
-    padding: 10px 12px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #002b45; /* deep blue for readability */
-    line-height: 1.4;
-}
-
-/* MATCHED HEIGHTS FOR TOP TWO IMAGES */
 .tv-grid-img,
 .tv-grid-img-wide {
-    height: 540px;
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
     display: block;
-    margin: 0 auto;
-    max-width: none;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
-/* Antenna Box Section */
-.tv-subtitle {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    margin-bottom: 25px;
-    text-decoration: underline;
-}
+/* ------------------------------
+   Antenna Box Image
+------------------------------ */
 
 .tv-antenna-img {
     display: block;
-    margin: 0 auto 40px auto;
+    margin: 20px auto;
     width: 95%;
-    max-width: 1000px;   /* large but not wider than the page */
-    height: auto;
-    border-radius: 8px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
-.tv-wrapper h2.tv-title:last-of-type,
-.tv-wrapper h2.tv-title:nth-last-of-type(2),
-.tv-wrapper h2.tv-title:nth-last-of-type(3) {
-    text-decoration: none;
-}
-
-/* Antenna instruction titles */
-.tv-title {
-    margin: 10px 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: #002b45; /* deep blue for readability */
-}
-
-/* ============================
-   TV PAGE BACKGROUND (FULL)
-   ============================ */
+/* ------------------------------
+   TV Page Background
+------------------------------ */
 
 body.TV-bg {
     position: relative;
@@ -2699,17 +2529,15 @@ body.TV-bg {
     background: url('images/TV-background.png') center bottom / cover no-repeat fixed;
 }
 
-/* 30% white wash overlay */
 body.TV-bg::before {
     content: "";
-    position: fixed; /* stays still while content scrolls */
+    position: fixed;
     inset: 0;
     background: rgba(255, 255, 255, 0.3);
     z-index: 0;
-    pointer-events: none; /* prevents blocking clicks */
+    pointer-events: none;
 }
 
-/* Ensure all page content sits ABOVE the wash */
 body.TV-bg * {
     position: relative;
     z-index: 1;
