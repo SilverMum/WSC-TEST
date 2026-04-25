@@ -1823,7 +1823,7 @@ body.login-bg .site-footer {
 --------------------------------*/
 .outer-card {
     max-width: 900px;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* 20px spacing between cards */
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 16px;
@@ -1880,7 +1880,7 @@ body.login-bg .site-footer {
 }
 
 .ofha-info-text p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;   /* UPDATED */
     font-weight: 700;
     text-align: center;
 }
@@ -1907,7 +1907,7 @@ body.login-bg .site-footer {
 --------------------------------*/
 .ofha-membership p {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.6rem;  /* MATCHES intro text */
     font-weight: 700;
     line-height: 1.65;
 }
