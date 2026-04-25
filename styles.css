@@ -1783,221 +1783,6 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   OFHA HEADER IMAGE
---------------------------------*/
-.ofha-header {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.ofha-header-img {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-    display: block;
-}
-
-/* OFHA INTRO */
-.ofha-intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.ofha-intro-left {
-    flex: 1;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #005BBB;
-    font-weight: 700;
-}
-
-.ofha-intro-right {
-    flex: 1;
-    text-align: center;
-}
-
-.ofha-logo {
-    width: 180px;
-    height: auto;
-    display: inline-block;
-}
-
-.ofha-text-link {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #005BBB;
-    text-decoration: none;
-}
-
-.ofha-text-link:hover {
-    text-decoration: underline;
-}
-
-/* OFHA MEMBERSHIP */
-.ofha-membership {
-    text-align: center;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-.ofha-membership p {
-    font-size: 1.6rem;
-    color: #005BBB;
-    font-weight: 600;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* OFHA REASONS */
-.ofha-reasons {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: #005BBB;
-}
-
-.ofha-reasons h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.ofha-reasons ol {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.ofha-reasons li {
-    margin-bottom: 12px;
-}
-
-/* OFAH ADVOCACY */
-.ofah-advocacy {
-    text-align: center;
-    color: #005BBB;
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-.ofah-advocacy h2 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-.ofah-advocacy h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.ofah-advocacy p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* OFAH CONSERVATION */
-.ofah-conservation {
-    text-align: center;
-    color: #005BBB;
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-.ofah-conservation h2 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.ofah-conservation h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 30px 0 15px;
-}
-
-.ofah-conservation p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* DIVIDER (CLUB EVENTS, ETC.) */
-
-/* QUICK LINKS TITLE */
-.quick-links-title {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 900;
-    color: #e60000;
-    letter-spacing: 1px;
-    margin: 40px 0 20px;
-}
-
-/* ------------------------------
-   OFHA QUICK LINKS ROW (FIXED)
---------------------------------*/
-.ofha-links-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;              /* spacing between logos */
-    flex-wrap: nowrap;      /* keeps all 4 in one row */
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.ofha-links-row a {
-    flex: 0 0 auto;         /* each logo keeps its natural size */
-}
-
-.ofha-links-row img {
-    width: 180px;           /* perfect professional size */
-    height: auto;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.2s ease;
-}
-
-.ofha-links-row img:hover {
-    transform: scale(1.05);
-}
-
-/* OFHA HEADER IMAGE — full width but with side breathing room */
-.ofha-header {
-    max-width: 1200px;        /* wider than your 900px cards */
-    margin: 0 auto 30px;      /* center + spacing below */
-    padding: 0 40px;          /* side breathing room */
-    text-align: center;
-}
-
-.ofha-header-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;      /* optional: softens the edges */
-}
-
-/* ------------------------------
    OFHA PAGE BACKGROUND
 --------------------------------*/
 .ofha-bg {
@@ -2014,6 +1799,175 @@ body.login-bg .site-footer {
     background: rgba(255, 255, 255, 0.3);
     z-index: -1;
     pointer-events: none;
+}
+
+/* ------------------------------
+   OFHA HEADER IMAGE (breathing room)
+--------------------------------*/
+.ofha-header {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.ofha-header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ------------------------------
+   CARD SYSTEM (GLOBAL FOR OFHA)
+--------------------------------*/
+
+/* Outer card: 30% white */
+.outer-card {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Inner card: OFHA Blue Tint (Option C, 60%) */
+.inner-card.ofha-card {
+    background: rgba(150, 180, 220, 0.60);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Darkened OFHA text */
+.ofha-card h2,
+.ofha-card h3,
+.ofha-card p,
+.ofha-card li,
+.ofha-card a {
+    color: #062a55;
+}
+
+/* ------------------------------
+   OFHA INTRO SECTION
+--------------------------------*/
+.ofha-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ofha-intro-left p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.ofha-intro-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ofha-logo {
+    width: 140px;
+    height: auto;
+}
+
+.ofha-text-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #062a55;
+}
+
+.ofha-text-link:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   MEMBERSHIP SECTION
+--------------------------------*/
+.ofha-membership p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   REASONS SECTION
+--------------------------------*/
+.ofha-reasons h3 {
+    margin-bottom: 12px;
+}
+
+.ofha-reasons ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   ADVOCACY SECTION
+--------------------------------*/
+.ofah-advocacy h2 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.ofah-advocacy h3 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.ofah-advocacy p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   CONSERVATION SECTION
+--------------------------------*/
+.ofah-conservation h2 {
+    margin-bottom: 12px;
+}
+
+.ofah-conservation h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.ofah-conservation p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   QUICK LINKS SECTION
+--------------------------------*/
+.quick-links-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #062a55;
+}
+
+.ofha-links-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.ofha-links-row img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.ofha-links-row img:hover {
+    transform: scale(1.05);
 }
 
 /* ------------------------------
