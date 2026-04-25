@@ -2600,10 +2600,18 @@ body.TV-bg > * {
    NAV FIX — keeps nav ABOVE content
 ------------------------------ */
 
-header,
+/* Keep nav fixed AND above all content */
 .main-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+header {
     position: relative;
-    z-index: 9999; /* ensures nav stays clickable and above content */
+    z-index: 9998; /* safe, but not overriding nav */
 }
 
 /* =========================================================
