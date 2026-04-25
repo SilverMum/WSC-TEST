@@ -1642,6 +1642,15 @@ body.login-bg .site-footer {
     object-fit: cover;
 }
 
+/* WIDE CARD FOR IMAGE TRIO ONLY */
+.outer-card.wide-card {
+    max-width: 1200px; /* wider than normal cards */
+}
+
+.inner-card.green-card.wide-inner {
+    padding: 40px; /* more breathing room */
+}
+
 /* ------------------------------
    GREEN DOUBLE-LAYER CARD SYSTEM
 --------------------------------*/
