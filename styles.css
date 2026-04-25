@@ -1982,6 +1982,21 @@ body.login-bg .site-footer {
     transform: scale(1.05);
 }
 
+/* OFHA HEADER IMAGE — full width but with side breathing room */
+.ofha-header {
+    max-width: 1200px;        /* wider than your 900px cards */
+    margin: 0 auto 30px;      /* center + spacing below */
+    padding: 0 40px;          /* side breathing room */
+    text-align: center;
+}
+
+.ofha-header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;      /* optional: softens the edges */
+}
+
 /* ------------------------------
    OFHA PAGE BACKGROUND
 --------------------------------*/
