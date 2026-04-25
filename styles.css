@@ -1636,6 +1636,10 @@ body.login-bg .site-footer {
     object-fit: cover;
 }
 
+.inner-card.green-card {
+    text-align: center;
+}
+
 /* ------------------------------
    GREEN DOUBLE-LAYER CARD SYSTEM
 --------------------------------*/
