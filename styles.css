@@ -1211,6 +1211,20 @@ body.home main {
     text-decoration: underline;
 }
 
+/* LOGIN PAGE SPACING FIXES */
+
+/* Pull login form closer to the nav */
+.login-page-wrapper {
+    margin-top: 10px !important; /* was 160px spacer */
+}
+
+/* Footer sits 20px below the login form */
+body.login-bg .site-footer {
+    margin-top: 20px !important;
+    position: relative;
+    z-index: 1;
+}
+
 /* LOGIN PAGE BACKGROUND — matches Range page behavior */
 .login-bg {
     position: relative;
