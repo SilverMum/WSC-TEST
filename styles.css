@@ -1983,6 +1983,25 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   OFHA PAGE BACKGROUND
+--------------------------------*/
+.ofha-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/ofha-background.jpg') center center / cover no-repeat fixed;
+}
+
+/* 30% white wash overlay */
+.ofha-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ------------------------------
    MEMBERS PAGE
 --------------------------------*/
 .members-page {
