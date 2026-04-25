@@ -1971,6 +1971,47 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   GLOBAL TEXT SIZE UPGRADE FOR OFHA CARDS
+--------------------------------*/
+.ofha-card p,
+.ofha-card li {
+    font-size: 1.35rem;
+    line-height: 1.65;
+}
+
+.ofha-card h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.ofha-card h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+/* ------------------------------
+   INTRO CARD (with logo)
+   - Larger text
+   - Bold
+   - Not centered
+--------------------------------*/
+.ofha-intro-left p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* ------------------------------
+   MEMBERSHIP CARD (centered + bold)
+--------------------------------*/
+.ofha-membership p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.65;
+}
+
+/* ------------------------------
    MEMBERS PAGE
 --------------------------------*/
 .members-page {
