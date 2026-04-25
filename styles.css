@@ -1258,10 +1258,10 @@ body.login-bg .site-footer {
    RANGE PAGE HEADER IMAGE
 --------------------------------*/
 
-/* Wrapper controls spacing + centering */
 .range-header {
-    max-width: 900px;      /* same width as white cards */
-    margin: 40px auto 0;   /* 40px under nav, centered */
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 40px;
 }
 
 /* Image fills the wrapper cleanly */
