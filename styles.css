@@ -52,6 +52,13 @@ main {
     z-index: -1;
 }
 
+/* Force dropdown menus above TV page cards */
+.dropdown-menu,
+.submenu-right {
+    position: absolute;
+    z-index: 99999; /* higher than nav, cards, shadows, everything */
+}
+
 /* ------------------------------
    NAVIGATION
 --------------------------------*/
@@ -2569,10 +2576,10 @@ body.TV-bg::before {
     pointer-events: none;
 }
 
-/* FIXED: no longer breaks nav dropdowns */
+/* FIX — do NOT force TV page content above the nav */
 body.TV-bg > * {
     position: relative;
-    z-index: 1;
+    z-index: auto; /* was 1 — this caused the dropdown to hide */
 }
 
 /* ------------------------------
