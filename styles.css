@@ -2002,6 +2002,31 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   FIXED INTRO ROW (text left, logo right)
+--------------------------------*/
+.ofha-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ofha-info-text {
+    flex: 1;
+    text-align: left;
+}
+
+.ofha-info-logo {
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+.ofha-info-logo img {
+    max-width: 160px;
+    height: auto;
+}
+
+/* ------------------------------
    MEMBERSHIP CARD (centered + bold)
 --------------------------------*/
 .ofha-membership p {
