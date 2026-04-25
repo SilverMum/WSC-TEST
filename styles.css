@@ -2543,6 +2543,13 @@ iframe[src*="google.com/calendar"] {
     box-shadow: 0 4px 12px rgba(80, 140, 200, 0.35);
 }
 
+/* Ensure dropdown menus appear ABOVE all cards */
+.dropdown-menu,
+.submenu-right {
+    position: absolute;
+    z-index: 10000; /* higher than nav + cards */
+}
+
 /* ------------------------------
    TV Page Background
 ------------------------------ */
