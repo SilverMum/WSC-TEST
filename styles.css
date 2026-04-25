@@ -2033,6 +2033,13 @@ body.login-bg .site-footer {
     width: 100%;
 }
 
+.ofha-links-row img {
+    width: 165px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
 /* ------------------------------
    MEMBERSHIP CARD (centered + bold)
 --------------------------------*/
