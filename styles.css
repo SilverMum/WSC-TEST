@@ -2014,10 +2014,10 @@ body.login-bg .site-footer {
 .ofha-info-text {
     flex: 1;
     text-align: left;
-}
-
-.ofha-info-text p {
     font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .ofha-info-logo {
