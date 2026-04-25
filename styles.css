@@ -1545,24 +1545,24 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   ARCHERY HEADER IMAGE
+   ARCHERY HEADER IMAGE (MATCH OFHA)
 --------------------------------*/
 .archery-header {
     max-width: 1200px;
-    margin: 20px auto 0; /* ⭐ 20px space under nav */
-    padding: 0 40px;     /* ⭐ same side spacing as OFHA */
+    margin: 20px auto 0 !important; /* ⭐ forces 20px space under nav */
+    padding: 0 40px;                /* ⭐ same side spacing as OFHA */
 }
 
 .archery-header-img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px; /* same as OFHA */
+    border-radius: 10px;
     object-fit: cover;
 }
 
 /* ------------------------------
-   ARCHERY INFO (now plain text inside double cards)
+   ARCHERY INFO (plain text inside cards)
 --------------------------------*/
 .archery-info {
     max-width: 800px;
@@ -1631,25 +1631,29 @@ body.login-bg .site-footer {
     width: auto;
     object-fit: cover;
 }
+
+/* ------------------------------
+   GREEN DOUBLE-LAYER CARD SYSTEM
+--------------------------------*/
 .outer-card {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
     position: relative;
 }
 
 .inner-card.green-card {
-    background: rgba(220, 245, 230, 0.55); /* ⭐ super soft green tint */
+    background: rgba(220, 245, 230, 0.55); /* ⭐ super soft green */
     padding: 30px;
     border-radius: 12px;
 
-    /* ⭐ dark green shadow, more obvious than the home page */
+    /* ⭐ dark green shadow */
     box-shadow:
-       0 4px 14px rgba(20, 60, 35, 0.45),
-       0 8px 28px rgba(20, 60, 35, 0.35);
+       0 6px 18px rgba(10, 50, 30, 0.55),
+       0 12px 32px rgba(10, 50, 30, 0.35);
 
     position: relative;
     z-index: 1;
