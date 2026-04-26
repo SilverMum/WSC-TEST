@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Correct viewport tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-
     <title>Windsor Sportsmen’s Club</title>
-
-    <!-- Your stylesheet -->
     <link rel="stylesheet" href="styles.css?v=7">
 </head>
 
 <body class="members-bg">
 
-    
 <!-- ⭐ FULL NAV BAR -->
 <header>
     <nav class="main-nav">
@@ -24,55 +19,44 @@
 
         <div class="nav-spacer"></div>
 
-         <ul class="nav-links">
+        <ul class="nav-links">
 
-    <!-- HOME -->
-    <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
 
-    <!-- EVENTS -->
-    <li class="dropdown">
-        <a href="#">Events ▾</a>
-        <ul class="dropdown-menu">
-
-            <!-- NEW: Calendar -->
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="index.html#club-events">Club Events</a></li>
-            <li><a href="private-events.html">Private Events</a></li>
-        </ul>
-    </li>
-
-    <!-- KITCHEN -->
-    <li><a href="kitchen.html">Kitchen</a></li>
-
-    <!-- GROUPS -->
-    <li class="dropdown">
-        <a href="#">Groups ▾</a>
-        <ul class="dropdown-menu">
-            <li><a href="range.html">Range</a></li>
-            <li><a href="archery.html">Archery</a></li>
-            <li><a href="ofha.html">OFHA</a></li>
-            <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
-            <li><a href="air-rifle.html">Air Rifle</a></li>
-
-            <!-- MEMBERS with right-side submenu -->
-            <li class="dropdown-sub">
-                <a href="members.html" class="submenu-link">Members</a>
-                <span class="submenu-toggle">▸</span>
-
-                <ul class="submenu-right">
-                    <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+            <li class="dropdown">
+                <a href="#">Events ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html#club-events">Club Events</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
                 </ul>
             </li>
+
+            <li><a href="kitchen.html">Kitchen</a></li>
+
+            <li class="dropdown">
+                <a href="#">Groups ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="range.html">Range</a></li>
+                    <li><a href="archery.html">Archery</a></li>
+                    <li><a href="ofha.html">OFHA</a></li>
+                    <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
+                    <li><a href="air-rifle.html">Air Rifle</a></li>
+
+                    <li class="dropdown-sub">
+                        <a href="members.html" class="submenu-link">Members</a>
+                        <span class="submenu-toggle">▸</span>
+                        <ul class="submenu-right">
+                            <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="index.html#contact-title">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+
         </ul>
-    </li>
-
-    <!-- CONTACT -->
-    <li><a href="index.html#contact-title">Contact</a></li>
-
-    <!-- LOGIN -->
-    <li><a href="login.html">Login</a></li>
-
-</ul>
     </nav>
 </header>
 
@@ -85,6 +69,9 @@
     <!-- ⭐ PLEDGE IN ITS OWN CARD -->
     <section class="members-card outer-card members-pledge-card">
         <div class="inner-card">
+
+            <div class="screw-bottom-left"></div>
+            <div class="screw-bottom-right"></div>
 
             <div class="pledge-title-wrapper" style="margin-top:20px;">
                 <span class="pledge-title-gold">CONSERVATION PLEDGE</span>
@@ -109,9 +96,12 @@
     </section>
 
 
-    <!-- ⭐ MEMBERS CONTENT IN ONE CLEAN CARD -->
+    <!-- ⭐ MEMBERS PLAQUES -->
     <section class="members-card outer-card">
         <div class="inner-card">
+
+            <div class="screw-bottom-left"></div>
+            <div class="screw-bottom-right"></div>
 
             <h2 class="section-title" style="text-align:center; font-weight:800; text-decoration:underline; color:#3a1f0a;">
                 Members
@@ -119,21 +109,31 @@
 
             <div class="members-grid">
 
-                <!-- LEFT COLUMN -->
-                <div class="members-column">
+                <!-- ⭐ PLAQUE 1 — EXECUTIVE -->
+                <div class="inner-card">
+                    <div class="screw-bottom-left"></div>
+                    <div class="screw-bottom-right"></div>
 
                     <h3 class="members-title">Windsor Sportsmen's Club Executive</h3>
-                    <ul class="members-list">
+
+                    <ul class="members-plaque-list">
                         <li>PRESIDENT — MARK REAUME</li>
                         <li>1ST VICE PRESIDENT — MAX MATTHEWS</li>
                         <li>2ND VICE PRESIDENT — ADAM VELDHUIS</li>
                         <li>SECRETARY — RICK MAHONEY</li>
                         <li>TREASURER — PETE FETTES</li>
                     </ul>
+                </div>
+
+                <!-- ⭐ PLAQUE 2 — DIRECTORS -->
+                <div class="inner-card">
+                    <div class="screw-bottom-left"></div>
+                    <div class="screw-bottom-right"></div>
 
                     <h3 class="members-title">Directors</h3>
+
                     <p class="members-subtitle">2026</p>
-                    <ul class="members-list">
+                    <ul class="members-plaque-list">
                         <li>MARK DELOYDE</li>
                         <li>RICK MAHONEY</li>
                         <li>MAX MATTHEWS</li>
@@ -142,22 +142,23 @@
                     </ul>
 
                     <p class="members-subtitle">2027</p>
-                    <ul class="members-list">
+                    <ul class="members-plaque-list">
                         <li>MARK REAUME</li>
                         <li>TOM HARSHAW</li>
                         <li>PETE FETTES</li>
                         <li>MARDEE GAGNON</li>
                         <li>BERNIE BISSONNETTE</li>
                     </ul>
-
                 </div>
 
-
-                <!-- RIGHT COLUMN -->
-                <div class="members-column">
+                <!-- ⭐ PLAQUE 3 — LIFE MEMBERS -->
+                <div class="inner-card">
+                    <div class="screw-bottom-left"></div>
+                    <div class="screw-bottom-right"></div>
 
                     <h3 class="members-title">Life Members</h3>
-                    <ul class="members-list">
+
+                    <ul class="members-plaque-list">
                         <li>ART BELANGER</li>
                         <li>LARRY LENG</li>
                         <li>RON MASSE</li>
@@ -171,9 +172,16 @@
                         <li>MARK DELOYDE</li>
                         <li>DENNIS MCKEEGAN</li>
                     </ul>
+                </div>
+
+                <!-- ⭐ PLAQUE 4 — 50 YEAR HONOURARY -->
+                <div class="inner-card">
+                    <div class="screw-bottom-left"></div>
+                    <div class="screw-bottom-right"></div>
 
                     <h3 class="members-title">50 Year Honourary Members</h3>
-                    <ul class="members-list">
+
+                    <ul class="members-plaque-list">
                         <li>WALTER BOUFFORD</li>
                         <li>STEVE COX</li>
                         <li>BOB GRAY</li>
@@ -198,7 +206,6 @@
                         <li>JAROD NICHOL</li>
                         <li>NORM WALKER</li>
                     </ul>
-
                 </div>
 
             </div>
