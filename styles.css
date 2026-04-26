@@ -2225,13 +2225,28 @@ body.login-bg .site-footer {
 /* ------------------------------
    LAYER 1 — BOTTOM CARD (SOFT WHITE)
 --------------------------------*/
+/* ------------------------------
+   DARK GOLD BACK CARD (FULL SECTION)
+--------------------------------*/
 .members-card.outer-card {
     max-width: 1000px;
     margin: 40px auto;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.30);
-    border-radius: 16px;
-    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.30);
+    padding: 40px;
+    border-radius: 18px;
+
+    /* Dark brushed gold */
+    background: linear-gradient(
+        135deg,
+        #b89f5e 0%,
+        #a88e4f 40%,
+        #947a3d 100%
+    );
+
+    /* Outer depth */
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.45),
+        inset 0 2px 4px rgba(255,255,255,0.25),
+        inset 0 -3px 6px rgba(0,0,0,0.35);
 }
 
 /* ------------------------------
@@ -2287,6 +2302,20 @@ body.login-bg .site-footer {
         inset 0 2px 6px rgba(255, 255, 255, 0.45),
         inset 0 -3px 8px rgba(0, 0, 0, 0.28),
         0 10px 26px rgba(0, 0, 0, 0.40);
+}
+
+/* Glow between top plaque and dark gold back card */
+.top-card {
+    position: relative;
+
+    /* existing metal background stays the same */
+
+    /* Glow + lift */
+    box-shadow:
+        0 0 22px rgba(255, 255, 200, 0.35),   /* soft gold glow */
+        0 10px 26px rgba(0, 0, 0, 0.40),      /* lift shadow */
+        inset 0 2px 6px rgba(255, 255, 255, 0.45),
+        inset 0 -3px 8px rgba(0, 0, 0, 0.28);
 }
 
 /* ------------------------------
