@@ -2339,9 +2339,10 @@ body.login-bg .site-footer {
 .members-card.outer-card:not(.members-pledge-card) li {
     color: #3a1f0a;
     text-shadow:
-        1px 1px 2px rgba(255,255,255,0.40),
-        -2px -2px 2px rgba(0,0,0,0.45);
+        1px 1px 1px rgba(255,255,255,0.30),  /* soft top highlight */
+        -1px -1px 1px rgba(0,0,0,0.40);      /* crisp carved shadow */
 }
+
 
 /* ------------------------------
    TITLES
