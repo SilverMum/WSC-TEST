@@ -2229,6 +2229,41 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   ⭐ KITCHEN FACEBOOK FEED CARD
+--------------------------------*/
+
+/* Scrollable feed area inside the inner card */
+.kitchen-fb-scroll {
+    max-height: 800px; /* adjust if needed */
+    overflow-y: auto;
+    padding-right: 12px;
+    margin-top: 20px;
+}
+
+/* Pretty scrollbar */
+.kitchen-fb-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 236, 220, 0.55); /* same sunrise cream */
+    border-radius: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-thumb {
+    background: rgba(90, 45, 20, 0.55); /* your brown shadow tone */
+    border-radius: 10px;
+}
+
+/* Optional title styling */
+.kitchen-feed-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #5a2d14; /* warm brown to match shadow */
+}
+
+/* ------------------------------
    KITCHEN PAGE BACKGROUND
 --------------------------------*/
 .kitchen-bg {
