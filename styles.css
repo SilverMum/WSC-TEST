@@ -2404,6 +2404,11 @@ body.login-bg .site-footer {
     transform: translateY(-50%);
 }
 
+/* Turn off screws on individual nameplates */
+.nameplate .screw {
+    display: none;
+}
+
 /* ------------------------------
    MEMBERS GRID
 --------------------------------*/
@@ -2499,6 +2504,18 @@ body.login-bg .site-footer {
 .pledge-title-green,
 .pledge-paragraph-green {
     display: none;
+}
+
+.pledge-glass-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pledge-title-wrapper,
+.pledge-paragraph-wrapper {
+    margin: 0;
 }
 
 /* ------------------------------
