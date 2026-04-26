@@ -2299,6 +2299,64 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   MEMBERS PAGE LAYOUT
+--------------------------------*/
+
+/* Grid for the main members content */
+.members-card .members-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Titles centered */
+.members-card .members-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #3a1f0a;
+}
+
+/* Subtitle (years) */
+.members-card .members-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #3a1f0a;
+}
+
+/* Lists */
+.members-card .members-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.members-card .members-list li {
+    padding: 4px 0;
+    font-size: 1rem;
+    color: #3a1f0a;
+    font-weight: bold;
+}
+
+/* Pledge card spacing */
+.members-pledge-card {
+    margin-bottom: 40px;
+}
+
+/* Mobile layout */
+@media (max-width: 800px) {
+    .members-card .members-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ------------------------------
    CHEESE & CRACKER
 --------------------------------*/
 /* ⭐ CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE */
