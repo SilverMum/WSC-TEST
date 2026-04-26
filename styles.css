@@ -2205,48 +2205,6 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   MEMBERS PAGE
---------------------------------*/
-.members-page {
-    text-align: center;
-}
-
-.members-grid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 60px;
-    margin-top: 30px;
-}
-
-.members-column {
-    max-width: 380px;
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.members-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-
-.members-subtitle {
-    margin: 10px 0 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.members-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
-}
-
-/* ------------------------------
    MEMBERS PAGE BACKGROUND
 --------------------------------*/
 .members-bg {
@@ -2260,99 +2218,158 @@ body.login-bg .site-footer {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.30); /* 30% white wash */
+    background: rgba(255, 255, 255, 0.30);
     z-index: -1;
 }
 
 /* ------------------------------
-   MEMBERS PAGE DOUBLE CARD SYSTEM
+   MEMBERS OUTER CARD (mounted on wood)
 --------------------------------*/
-
-/* Outer card — same structure as your other pages */
 .members-card.outer-card {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.30); /* 30% white */
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.30);
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Inner card — super light gold + dark brown shadow */
+/* ------------------------------
+   MEMBERS PLAQUE (BRUSHED GOLD)
+--------------------------------*/
 .members-card .inner-card {
-    background: rgba(255, 245, 200, 0.55); /* soft light gold */
-    padding: 30px;
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        #e8d8a8 0%,
+        #dccb93 40%,
+        #cbb77a 100%
+    );
+    padding: 40px 35px;
     border-radius: 14px;
 
+    /* Metallic bevel + depth */
     box-shadow:
-        0 4px 14px rgba(90, 45, 20, 0.45),   /* dark brown outer shadow */
-        0 8px 28px rgba(90, 45, 20, 0.35);   /* deeper brown glow */
-}
-
-/* Text color inside members cards */
-.members-card h2,
-.members-card h3,
-.members-card p,
-.members-card li,
-.members-card a {
-    color: #3a1f0a; /* deep brown text */
+        inset 0 2px 6px rgba(255, 255, 255, 0.4),
+        inset 0 -3px 8px rgba(0, 0, 0, 0.25),
+        0 8px 22px rgba(0, 0, 0, 0.35);
 }
 
 /* ------------------------------
-   MEMBERS PAGE LAYOUT
+   SCREWS IN CORNERS
 --------------------------------*/
+.members-card .inner-card::before,
+.members-card .inner-card::after,
+.members-card .inner-card .screw-bottom-left,
+.members-card .inner-card .screw-bottom-right {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #c0a86a 40%, #8a6f3a 100%);
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.6),
+                inset 0 -2px 4px rgba(0,0,0,0.4);
+}
 
-/* Grid for the main members content */
-.members-card .members-grid {
+/* Top-left screw */
+.members-card .inner-card::before {
+    top: 12px;
+    left: 12px;
+}
+
+/* Top-right screw */
+.members-card .inner-card::after {
+    top: 12px;
+    right: 12px;
+}
+
+/* Bottom-left screw */
+.members-card .inner-card .screw-bottom-left {
+    bottom: 12px;
+    left: 12px;
+}
+
+/* Bottom-right screw */
+.members-card .inner-card .screw-bottom-right {
+    bottom: 12px;
+    right: 12px;
+}
+
+/* ------------------------------
+   TEXT (ENGRAVED LOOK)
+--------------------------------*/
+.members-card h2,
+.members-card h3,
+.members-card p,
+.members-card li {
+    color: #3a1f0a;
+}
+
+.members-card .members-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.members-card .members-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+/* ------------------------------
+   PLAQUE GRID (2 PER ROW)
+--------------------------------*/
+.members-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 45px;
     margin-top: 20px;
 }
 
-/* Titles centered */
-.members-card .members-title {
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-    color: #3a1f0a;
-}
-
-/* Subtitle (years) */
-.members-card .members-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #3a1f0a;
-}
-
-/* Lists */
-.members-card .members-list {
+/* ------------------------------
+   50/50 NAME SPLIT
+--------------------------------*/
+.members-plaque-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 25px;
     list-style: none;
     padding: 0;
-    margin: 0 auto 20px;
-    max-width: 350px;
-    text-align: center;
+    margin: 0 auto 25px;
+    max-width: 650px;
 }
 
-.members-card .members-list li {
-    padding: 4px 0;
-    font-size: 1rem;
-    color: #3a1f0a;
+.members-plaque-list li {
+    font-size: 1.05rem;
     font-weight: bold;
+    padding: 4px 0;
+    text-align: left;
 }
 
-/* Pledge card spacing */
+/* ------------------------------
+   PLEDGE CARD SPACING
+--------------------------------*/
 .members-pledge-card {
     margin-bottom: 40px;
 }
 
-/* Mobile layout */
+/* ------------------------------
+   MOBILE SUPPORT
+--------------------------------*/
 @media (max-width: 800px) {
-    .members-card .members-grid {
+    .members-grid {
         grid-template-columns: 1fr;
+    }
+
+    .members-plaque-list {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 
