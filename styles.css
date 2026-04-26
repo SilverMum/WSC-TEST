@@ -2378,6 +2378,12 @@ body.login-bg .site-footer {
     margin-top: 25px !important;
 }
 
+.kitchen-title-img {
+    max-width: 40%;
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
 /* ------------------------------
    AIR RIFLE (SEPARATE PAGE)
 --------------------------------*/
