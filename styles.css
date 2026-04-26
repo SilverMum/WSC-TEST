@@ -2247,6 +2247,58 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   MEMBERS PAGE BACKGROUND
+--------------------------------*/
+.members-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/members-background.jpg') center center / cover no-repeat fixed;
+    z-index: 0;
+}
+
+.members-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.30); /* 30% white wash */
+    z-index: -1;
+}
+
+/* ------------------------------
+   MEMBERS PAGE DOUBLE CARD SYSTEM
+--------------------------------*/
+
+/* Outer card — same structure as your other pages */
+.members-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.30); /* 30% white */
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Inner card — super light gold + dark brown shadow */
+.members-card .inner-card {
+    background: rgba(255, 245, 200, 0.55); /* soft light gold */
+    padding: 30px;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 14px rgba(90, 45, 20, 0.45),   /* dark brown outer shadow */
+        0 8px 28px rgba(90, 45, 20, 0.35);   /* deeper brown glow */
+}
+
+/* Text color inside members cards */
+.members-card h2,
+.members-card h3,
+.members-card p,
+.members-card li,
+.members-card a {
+    color: #3a1f0a; /* deep brown text */
+}
+
+/* ------------------------------
    CHEESE & CRACKER
 --------------------------------*/
 /* ⭐ CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE */
