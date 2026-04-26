@@ -2223,28 +2223,45 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   MEMBERS OUTER CARD (mounted on wood)
+   MEMBERS OUTER CARD (DARKER GOLD)
 --------------------------------*/
 .members-card.outer-card {
     max-width: 1000px;
     margin: 40px auto;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.30);
+
+    /* darker brushed gold for the bottom card */
+    background: linear-gradient(
+        135deg,
+        #c9b16f 0%,
+        #b89f5e 40%,
+        #a88e4f 100%
+    );
+
     border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
 }
 
 /* ------------------------------
-   MEMBERS PLAQUE (BRUSHED GOLD)
+   MEMBERS PLAQUE (TOP CARD)
+   Soft brushed gold + texture
 --------------------------------*/
 .members-card .inner-card {
     position: relative;
-    background: linear-gradient(
-        135deg,
-        #e8d8a8 0%,
-        #dccb93 40%,
-        #cbb77a 100%
-    );
+
+    /* brushed metal texture */
+    background:
+        linear-gradient(135deg, #e8d8a8 0%, #dccb93 40%, #cbb77a 100%),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,0.08) 0px,
+            rgba(255,255,255,0.08) 2px,
+            rgba(0,0,0,0.05) 2px,
+            rgba(0,0,0,0.05) 4px
+        );
+
+    background-blend-mode: overlay;
+
     padding: 40px 35px;
     border-radius: 14px;
 
@@ -2306,6 +2323,7 @@ body.login-bg .site-footer {
     color: #3a1f0a;
 }
 
+/* Big plaque titles */
 .members-card .members-title {
     text-align: center;
     font-size: 1.6rem;
@@ -2315,21 +2333,12 @@ body.login-bg .site-footer {
     text-transform: uppercase;
 }
 
+/* Year subtitles */
 .members-card .members-subtitle {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 800;
     margin: 10px 0;
-}
-
-/* ------------------------------
-   PLAQUE GRID (2 PER ROW)
---------------------------------*/
-.members-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    margin-top: 20px;
 }
 
 /* ------------------------------
@@ -2350,6 +2359,24 @@ body.login-bg .site-footer {
     font-weight: bold;
     padding: 4px 0;
     text-align: left;
+}
+
+/* ------------------------------
+   MAKE EXECUTIVE TITLES BOLD
+--------------------------------*/
+.members-plaque-list li strong {
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+/* ------------------------------
+   PLAQUE GRID (2 PER ROW)
+--------------------------------*/
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    margin-top: 20px;
 }
 
 /* ------------------------------
