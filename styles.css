@@ -2384,6 +2384,16 @@ body.login-bg .site-footer {
     margin-top: 25px;
 }
 
+/* ⭐ Kitchen Title Image — Bigger + Lower */
+.kitchen-title-img {
+    max-width: 50%;        /* was 40% — now bigger */
+    margin-top: 45px;      /* adds ~20px more downward spacing */
+    margin-bottom: 45px;   /* keeps your original bottom spacing */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    /* keeps it centered */
+}
+
 /* ------------------------------
    AIR RIFLE (SEPARATE PAGE)
 --------------------------------*/
