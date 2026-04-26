@@ -2373,6 +2373,11 @@ body.login-bg .site-footer {
     }
 }
 
+/* ⭐ Move Kitchen title down exactly 25px */
+#kitchen-page .section-title {
+    margin-top: 25px !important;
+}
+
 /* ------------------------------
    AIR RIFLE (SEPARATE PAGE)
 --------------------------------*/
