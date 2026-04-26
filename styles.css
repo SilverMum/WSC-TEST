@@ -2231,12 +2231,24 @@ body.login-bg .site-footer {
     padding: 40px;
     border-radius: 18px;
 
-    background: linear-gradient(
-        135deg,
-        #b89f5e 0%,
-        #a88e4f 40%,
-        #947a3d 100%
-    );
+    /* Dark brushed gold with subtle diagonal shine */
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.18) 0%,
+            rgba(255, 255, 255, 0.05) 12%,
+            rgba(148, 122, 61, 1) 50%,
+            rgba(120, 98, 48, 0.85) 88%,
+            rgba(255, 255, 255, 0.15) 100%
+        ),
+        linear-gradient(
+            135deg,
+            #b89f5e 0%,
+            #a88e4f 40%,
+            #947a3d 100%
+        );
+
+    background-blend-mode: overlay;
 
     box-shadow:
         0 12px 28px rgba(0, 0, 0, 0.45),
@@ -2304,15 +2316,22 @@ body.login-bg .site-footer {
 .top-card .screw-bottom-right { bottom: 12px; right: 12px; }
 
 /* ------------------------------
-   TEXT (ENGRAVED LOOK)
+   TEXT (ENGRAVED LOOK — MEMBERS ONLY)
+   DOES NOT APPLY TO PLEDGE
 --------------------------------*/
-.members-card h2,
-.members-card h3,
-.members-card p,
-.members-card li {
+.members-card.outer-card:not(.members-pledge-card) h2,
+.members-card.outer-card:not(.members-pledge-card) h3,
+.members-card.outer-card:not(.members-pledge-card) p,
+.members-card.outer-card:not(.members-pledge-card) li {
     color: #3a1f0a;
+    text-shadow:
+        1px 1px 1px rgba(255,255,255,0.35),  /* top highlight */
+        -1px -1px 1px rgba(0,0,0,0.35);      /* carved shadow */
 }
 
+/* ------------------------------
+   TITLES
+--------------------------------*/
 .members-title {
     text-align: center;
     font-size: 1.6rem;
