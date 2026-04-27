@@ -2241,7 +2241,7 @@ body.login-bg .site-footer {
         inset 0 -3px 6px rgba(0,0,0,0.35);
 }
 
-/* Wood block bottom screws */
+/* Wood block screws */
 .wood-back-card .wood-screw {
     position: absolute;
     width: 24px;
@@ -2299,7 +2299,7 @@ body.login-bg .site-footer {
         inset 0 -3px 8px rgba(0, 0, 0, 0.28);
 }
 
-/* Top screws (existing) */
+/* Top screws */
 .top-card::before,
 .top-card::after {
     content: "";
@@ -2316,7 +2316,7 @@ body.login-bg .site-footer {
 .top-card::before { top: 12px; left: 12px; }
 .top-card::after { top: 12px; right: 12px; }
 
-/* Bottom screws (new) */
+/* Bottom screws */
 .top-card .card-screw {
     position: absolute;
     width: 20px;
@@ -2332,7 +2332,17 @@ body.login-bg .site-footer {
 .top-card .card-screw.br { bottom: 12px; right: 12px; }
 
 /* ------------------------------
-   SECTION TITLE (ENGRAVED)
+   SECTION TITLE (ENGRAVED GOLD)
+--------------------------------*/
+.section-title {
+    color: #e8c96a !important;
+    text-shadow:
+        1px 1px 1px rgba(255,255,255,0.28),
+        -1px -1px 1px rgba(0,0,0,0.50);
+}
+
+/* ------------------------------
+   MEMBERS TITLE (INSIDE GOLD CARDS)
 --------------------------------*/
 .members-title {
     text-align: center;
@@ -2342,10 +2352,10 @@ body.login-bg .site-footer {
     margin-bottom: 25px;
     text-transform: uppercase;
 
-    color: #e8c96a
+    color: #e8c96a;
     text-shadow:
         1px 1px 1px rgba(255,255,255,0.28),
-        -1px -1px 1px rgba(0,0,0,0.50); /* engraved effect */
+        -1px -1px 1px rgba(0,0,0,0.50);
 }
 
 /* ------------------------------
@@ -2392,7 +2402,7 @@ body.login-bg .site-footer {
         -1px -1px 1px rgba(0,0,0,0.40);
 }
 
-/* REMOVE SCREWS FROM NAMEPLATES */
+/* Remove screws from nameplates */
 .nameplate .screw {
     display: none !important;
 }
@@ -2415,7 +2425,7 @@ body.login-bg .site-footer {
     margin: 60px auto;
 }
 
-/* Wood base that grows naturally */
+/* Wood base */
 .pledge-wood {
     position: relative;
     padding: 50px;
@@ -2430,7 +2440,7 @@ body.login-bg .site-footer {
         inset 0 -3px 6px rgba(0,0,0,0.35);
 }
 
-/* Bronze screws */
+/* Pledge screws */
 .pledge-screw {
     position: absolute;
     width: 24px;
@@ -2448,7 +2458,7 @@ body.login-bg .site-footer {
 .pledge-screw.bl { bottom: 16px; left: 16px; }
 .pledge-screw.br { bottom: 16px; right: 16px; }
 
-/* Realistic glass */
+/* Glass */
 .pledge-glass {
     padding: 40px 35px;
     border-radius: 16px;
@@ -2465,11 +2475,11 @@ body.login-bg .site-footer {
         inset 0 -2px 6px rgba(0,0,0,0.25);
 }
 
-/* Solid bright gold engraved text */
+/* Pledge text (bright gold engraved) */
 .pledge-title,
 .pledge-text {
     text-align: center;
-    color: #e8c96a; /* brighter, cleaner gold */
+    color: #e8c96a;
     text-shadow:
         1px 1px 1px rgba(255,255,255,0.28),
         -1px -1px 1px rgba(0,0,0,0.50);
