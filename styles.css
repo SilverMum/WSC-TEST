@@ -2403,6 +2403,7 @@ body.login-bg .site-footer {
 /* ------------------------------
    CHEESE & CRACKER
 --------------------------------*/
+
 /* ⭐ CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE */
 .cheesecracker-wrapper {
     display: flex;
@@ -2434,7 +2435,35 @@ body.login-bg .site-footer {
     }
 }
 
-/* Full-page cheese background */
+/* ------------------------------
+   CHEESE CARD — OUTER WRAPPER
+   (wider than Kitchen to fit images)
+--------------------------------*/
+.cheese-card.outer-card {
+    max-width: 1100px; /* wider so your images stay perfect */
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+/* ------------------------------
+   CHEESE CARD — INNER CARD
+--------------------------------*/
+.cheese-inner-card {
+    background: rgba(255, 245, 230, 0.55); /* warm cream tone */
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 14px rgba(120, 80, 40, 0.35),
+        0 8px 28px rgba(120, 80, 40, 0.25);
+}
+
+/* ------------------------------
+   FULL-PAGE CHEESE BACKGROUND
+--------------------------------*/
 .cheese-bg {
     position: relative;
     min-height: 100vh;
