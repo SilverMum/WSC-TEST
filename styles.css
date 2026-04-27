@@ -1369,15 +1369,19 @@ body.login-bg .site-footer {
 ============================================================ */
 .outer-card {
     max-width: 900px;
-    margin: 40px auto; /* EXACT 40px spacing between cards */
+    margin: 40px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+.outer-card:first-of-type {
+    margin-top: 40px;
+}
+
 .inner-card.ofha-card {
-    background: rgba(150, 180, 220, 0.50);
+    background: rgba(150, 180, 220, 0.40);
     padding: 30px;
     border-radius: 14px;
     box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
@@ -1402,7 +1406,7 @@ body.login-bg .site-footer {
     text-align: center;
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin: 25px 0; /* 25px above + 25px below */
 }
 
 /* ============================================================
