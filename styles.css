@@ -2375,29 +2375,33 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   PLEDGE — WOOD BACKING BOARD (WITH SCREWS)
+   NEW PLEDGE BLOCK
 --------------------------------*/
-.pledge-wood-card {
+.pledge-block {
     max-width: 900px;
-    margin: 0 auto 50px;
-    padding: 40px;
-    border-radius: 18px;
+    margin: 60px auto;
+}
+
+/* Wood base that grows naturally */
+.pledge-wood {
     position: relative;
+    padding: 50px;
+    border-radius: 18px;
 
     background: url('images/dark-wood.jpg') repeat center;
-    background-size: 400px auto;
+    background-size: 420px auto;
 
     box-shadow:
-        0 12px 28px rgba(0, 0, 0, 0.45),
+        0 14px 30px rgba(0,0,0,0.45),
         inset 0 2px 4px rgba(255,255,255,0.15),
         inset 0 -3px 6px rgba(0,0,0,0.35);
 }
 
-/* Bronze screws on pledge wood */
+/* Bronze screws */
 .pledge-screw {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
 
     background: radial-gradient(circle at 30% 30%, #f2d7a0 0%, #8a6f3a 50%, #4a3518 100%);
@@ -2406,66 +2410,51 @@ body.login-bg .site-footer {
         inset 0 -2px 3px rgba(0,0,0,0.5);
 }
 
-.pledge-screw.top-left { top: 14px; left: 14px; }
-.pledge-screw.top-right { top: 14px; right: 14px; }
-.pledge-screw.bottom-left { bottom: 14px; left: 14px; }
-.pledge-screw.bottom-right { bottom: 14px; right: 14px; }
+.pledge-screw.tl { top: 16px; left: 16px; }
+.pledge-screw.tr { top: 16px; right: 16px; }
+.pledge-screw.bl { bottom: 16px; left: 16px; }
+.pledge-screw.br { bottom: 16px; right: 16px; }
 
-/* ------------------------------
-   PLEDGE — FROSTED GLASS PANEL
---------------------------------*/
-.pledge-glass-card {
-    margin: 0 auto;
-    padding: 35px;
-    width: calc(100% - 60px);
+/* Realistic glass */
+.pledge-glass {
+    padding: 40px 35px;
     border-radius: 16px;
 
-    background: rgba(255, 255, 255, 0.28);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
 
-    border: 2px solid rgba(120, 98, 48, 0.45);
+    border: 2px solid rgba(255,255,255,0.35);
+
     box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.35),
-        inset 0 1px 3px rgba(255,255,255,0.4);
-
-    /* FIX: allow glass to grow with text */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+        0 8px 22px rgba(0,0,0,0.35),
+        inset 0 1px 4px rgba(255,255,255,0.5),
+        inset 0 -2px 6px rgba(0,0,0,0.25);
 }
 
-/* ------------------------------
-   PLEDGE — GOLD ENGRAVED TEXT
---------------------------------*/
-.pledge-title-wrapper {
+/* Gold engraved text matching top plaque */
+.pledge-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 900;
     margin-bottom: 20px;
-}
 
-.pledge-paragraph-wrapper {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.55;
-    text-align: center;
-    margin: 0;
-}
-
-.pledge-paragraph-gold,
-.pledge-title-gold {
     color: #3a1f0a;
     text-shadow:
         1px 1px 1px rgba(255,255,255,0.30),
         -1px -1px 1px rgba(0,0,0,0.40);
 }
 
-/* REMOVE GREEN OVERLAY COMPLETELY */
-.pledge-title-green,
-.pledge-paragraph-green {
-    display: none !important;
+.pledge-text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.55;
+
+    color: #3a1f0a;
+    text-shadow:
+        1px 1px 1px rgba(255,255,255,0.30),
+        -1px -1px 1px rgba(0,0,0,0.40);
 }
 
 /* ------------------------------
