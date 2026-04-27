@@ -2440,10 +2440,11 @@ body.login-bg .site-footer {
    (auto-expands to fit images)
 --------------------------------*/
 .cheese-card.outer-card {
-    width: fit-content;        /* ⭐ expands to fit images */
-    max-width: 95vw;           /* ⭐ prevents overflow on huge screens */
-    margin: 40px auto;
-    padding: 20px;             /* reduced so images fit comfortably */
+    width: fit-content;     /* expands to fit images */
+    max-width: 95vw;        /* prevents overflow */
+    display: block;         /* ⭐ ensures proper centering */
+    margin: 40px auto;      /* ⭐ centers the card */
+    padding: 20px;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 12px;
     backdrop-filter: blur(4px);
