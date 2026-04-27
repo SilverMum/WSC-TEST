@@ -2223,9 +2223,10 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   DARK WOOD BACKING BOARD (TILED, NO SCREWS)
+   DARK WOOD BACKING BOARD (TILED)
 --------------------------------*/
 .wood-back-card {
+    position: relative;
     max-width: 1100px;
     margin: 40px auto;
     padding: 40px;
@@ -2239,6 +2240,21 @@ body.login-bg .site-footer {
         inset 0 2px 4px rgba(255,255,255,0.15),
         inset 0 -3px 6px rgba(0,0,0,0.35);
 }
+
+/* Wood block bottom screws */
+.wood-back-card .wood-screw {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f2d7a0 0%, #8a6f3a 50%, #4a3518 100%);
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,0.4),
+        inset 0 -2px 3px rgba(0,0,0,0.5);
+}
+
+.wood-back-card .wood-screw.bl { bottom: 16px; left: 16px; }
+.wood-back-card .wood-screw.br { bottom: 16px; right: 16px; }
 
 /* ------------------------------
    GOLD SECTION PLAQUE
@@ -2281,7 +2297,7 @@ body.login-bg .site-footer {
         inset 0 -3px 8px rgba(0, 0, 0, 0.28);
 }
 
-/* Section plaque screws */
+/* Top screws (existing) */
 .top-card::before,
 .top-card::after {
     content: "";
@@ -2297,6 +2313,21 @@ body.login-bg .site-footer {
 
 .top-card::before { top: 12px; left: 12px; }
 .top-card::after { top: 12px; right: 12px; }
+
+/* Bottom screws (new) */
+.top-card .card-screw {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #c0a86a 40%, #8a6f3a 100%);
+    box-shadow:
+        inset 0 1px 3px rgba(255,255,255,0.6),
+        inset 0 -2px 4px rgba(0,0,0,0.4);
+}
+
+.top-card .card-screw.bl { bottom: 12px; left: 12px; }
+.top-card .card-screw.br { bottom: 12px; right: 12px; }
 
 /* ------------------------------
    SECTION TITLE (ENGRAVED)
@@ -2432,29 +2463,26 @@ body.login-bg .site-footer {
         inset 0 -2px 6px rgba(0,0,0,0.25);
 }
 
-/* Gold engraved text matching top plaque */
-.pledge-title {
+/* Solid bright gold engraved text */
+.pledge-title,
+.pledge-text {
     text-align: center;
+    color: #c9a84e; /* solid bright gold */
+    text-shadow:
+        1px 1px 1px rgba(255,255,255,0.25),
+        -1px -1px 1px rgba(0,0,0,0.45);
+}
+
+.pledge-title {
     font-size: 1.9rem;
     font-weight: 900;
     margin-bottom: 20px;
-
-    color: #3a1f0a;
-    text-shadow:
-        1px 1px 1px rgba(255,255,255,0.30),
-        -1px -1px 1px rgba(0,0,0,0.40);
 }
 
 .pledge-text {
-    text-align: center;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.55;
-
-    color: #3a1f0a;
-    text-shadow:
-        1px 1px 1px rgba(255,255,255,0.30),
-        -1px -1px 1px rgba(0,0,0,0.40);
 }
 
 /* ------------------------------
@@ -2471,7 +2499,6 @@ body.login-bg .site-footer {
         margin: 0 auto;
     }
 }
-
 
 /* ------------------------------
    CHEESE & CRACKER
