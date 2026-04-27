@@ -2334,7 +2334,8 @@ body.login-bg .site-footer {
 /* ------------------------------
    SECTION TITLE (BIG "MEMBERS")
 --------------------------------*/
-.section-title {
+/* Only the big MEMBERS title on the wood block */
+.wood-back-card > .section-title {
     color: #e8c96a !important;
     text-shadow:
         1px 1px 1px rgba(255,255,255,0.28),
