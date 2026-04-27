@@ -2414,9 +2414,9 @@ body.login-bg .site-footer {
 }
 
 .cheesecracker-img {
-    height: 405px;      /* was 450px — 10% smaller */
+    height: 405px;
     width: auto;
-    max-width: 40vw;    /* was 45vw — 10% smaller */
+    max-width: 40vw;
 }
 
 /* ⭐ CHEESE & CRACKER — MOBILE STACKED */
@@ -2437,12 +2437,13 @@ body.login-bg .site-footer {
 
 /* ------------------------------
    CHEESE CARD — OUTER WRAPPER
-   (wider so images fit perfectly)
+   (auto-expands to fit images)
 --------------------------------*/
 .cheese-card.outer-card {
-    max-width: 1200px; /* was 1100px — now fits images */
+    width: fit-content;        /* ⭐ expands to fit images */
+    max-width: 95vw;           /* ⭐ prevents overflow on huge screens */
     margin: 40px auto;
-    padding: 25px; /* reduced so images have more room */
+    padding: 20px;             /* reduced so images fit comfortably */
     background: rgba(255, 255, 255, 0.30);
     border-radius: 12px;
     backdrop-filter: blur(4px);
@@ -2452,8 +2453,8 @@ body.login-bg .site-footer {
    CHEESE CARD — INNER CARD
 --------------------------------*/
 .cheese-inner-card {
-    background: rgba(255, 245, 230, 0.55); /* warm cream tone */
-    padding: 25px; /* was 35px — gives images breathing room */
+    background: rgba(255, 245, 230, 0.55);
+    padding: 20px;             /* reduced to give images more room */
     border-radius: 12px;
 
     box-shadow:
@@ -2476,8 +2477,8 @@ body.login-bg .site-footer {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.3); /* 30% opacity */
-    z-index: -1; /* keeps overlay + image behind all content */
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
 }
 
 /* ------------------------------
