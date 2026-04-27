@@ -566,14 +566,6 @@ html {
     margin: 10px auto 40px;
 }
 
-.range-button-simple-img {
-    width: 320px;
-    max-width: 90%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease, filter 0.2s ease;
-}
-
 .range-button-simple-img:hover {
     transform: translateY(-3px);
     filter: brightness(1.1);
@@ -615,9 +607,12 @@ html {
 }
 
 .range-button-simple-img {
-    max-width: 260px;
+    width: 380px;      /* increased from 320px */
+    max-width: 95%;    /* stays responsive */
     height: auto;
+    cursor: pointer;
     margin-top: 10px;
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 /* ------------------------------
