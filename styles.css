@@ -2255,6 +2255,8 @@ body.login-bg .site-footer {
 
 .wood-back-card .wood-screw.bl { bottom: 16px; left: 16px; }
 .wood-back-card .wood-screw.br { bottom: 16px; right: 16px; }
+.wood-back-card .wood-screw.tl { top: 16px; left: 16px; }
+.wood-back-card .wood-screw.tr { top: 16px; right: 16px; }
 
 /* ------------------------------
    GOLD SECTION PLAQUE
@@ -2467,10 +2469,10 @@ body.login-bg .site-footer {
 .pledge-title,
 .pledge-text {
     text-align: center;
-    color: #c9a84e; /* solid bright gold */
+    color: #e8c96a; /* brighter, cleaner gold */
     text-shadow:
-        1px 1px 1px rgba(255,255,255,0.25),
-        -1px -1px 1px rgba(0,0,0,0.45);
+        1px 1px 1px rgba(255,255,255,0.28),
+        -1px -1px 1px rgba(0,0,0,0.50);
 }
 
 .pledge-title {
