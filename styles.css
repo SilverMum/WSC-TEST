@@ -1261,6 +1261,7 @@ body.login-bg .site-footer {
 /* ------------------------------
    RANGE PAGE BACKGROUND
 --------------------------------*/
+
 .range-bg {
     position: relative;
     min-height: 100vh;
@@ -1531,31 +1532,24 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-   AUTOMATIC BOLDING RULES
+   MOBILE RESPONSIVE
 ============================================================ */
+@media (max-width: 600px) {
+    .trap-skeet-contact {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
 
-/* Bold labels like "Trap & Skeet:" "Range Facilities:" etc. */
-.ofha-card p,
-.ofha-card li {
-    font-size: 18px;
-    line-height: 1.6;
-}
+    .trap-skeet-form {
+        grid-template-columns: 1fr;
+    }
 
-/* Bold ANY word label ending with a colon */
-.ofha-card p:has(:not(.time-label)) span.label,
-.ofha-card li:has(:not(.time-label)) span.label {
-    font-weight: bold;
-}
-
-/* Bold single-digit numbers ending with a colon */
-.ofha-card p span.single-digit,
-.ofha-card li span.single-digit {
-    font-weight: bold;
-}
-
-/* Prevent bolding times */
-.time-label {
-    font-weight: normal !important;
+    .field-row:nth-child(4),
+    .field-inline,
+    .field-checkbox,
+    .ts-submit {
+        grid-column: 1 / 2;
+    }
 }
 
 /* ------------------------------
