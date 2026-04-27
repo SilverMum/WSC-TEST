@@ -2437,12 +2437,12 @@ body.login-bg .site-footer {
 
 /* ------------------------------
    CHEESE CARD — OUTER WRAPPER
-   (wider than Kitchen to fit images)
+   (wider so images fit perfectly)
 --------------------------------*/
 .cheese-card.outer-card {
-    max-width: 1100px; /* wider so your images stay perfect */
+    max-width: 1200px; /* was 1100px — now fits images */
     margin: 40px auto;
-    padding: 30px; /* increased slightly so images fit comfortably */
+    padding: 25px; /* reduced so images have more room */
     background: rgba(255, 255, 255, 0.30);
     border-radius: 12px;
     backdrop-filter: blur(4px);
@@ -2453,7 +2453,7 @@ body.login-bg .site-footer {
 --------------------------------*/
 .cheese-inner-card {
     background: rgba(255, 245, 230, 0.55); /* warm cream tone */
-    padding: 35px; /* increased to match new image size */
+    padding: 25px; /* was 35px — gives images breathing room */
     border-radius: 12px;
 
     box-shadow:
