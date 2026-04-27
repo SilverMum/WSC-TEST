@@ -2342,10 +2342,10 @@ body.login-bg .site-footer {
     margin-bottom: 25px;
     text-transform: uppercase;
 
-    color: #3a1f0a;
+    color: #e8c96a
     text-shadow:
-        1px 1px 1px rgba(255,255,255,0.30),
-        -1px -1px 1px rgba(0,0,0,0.40);
+        1px 1px 1px rgba(255,255,255,0.28),
+        -1px -1px 1px rgba(0,0,0,0.50); /* engraved effect */
 }
 
 /* ------------------------------
