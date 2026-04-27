@@ -2436,6 +2436,14 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
+   FIX PAGE PADDING FOR CENTERING
+--------------------------------*/
+body.cheese-bg .content-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ------------------------------
    CHEESE CARD — OUTER WRAPPER
    (auto-expands + perfectly centered)
 --------------------------------*/
