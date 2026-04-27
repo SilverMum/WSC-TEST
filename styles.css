@@ -2434,6 +2434,23 @@ body.login-bg .site-footer {
     }
 }
 
+/* Full-page cheese background */
+.cheese-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/cheese-background.jpg') center bottom / cover no-repeat fixed;
+    z-index: 0;
+}
+
+/* 30% white wash overlay */
+.cheese-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3); /* 30% opacity */
+    z-index: -1; /* keeps overlay + image behind all content */
+}
+
 /* ------------------------------
    KITCHEN PAGE TITLE
 --------------------------------*/
