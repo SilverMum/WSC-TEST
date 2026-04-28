@@ -1360,7 +1360,7 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-   DOUBLE-CARD SYSTEM
+   DOUBLE-CARD SYSTEM (2 LAYERS ONLY)
 ============================================================ */
 
 .outer-card {
@@ -1377,52 +1377,59 @@ body.login-bg .site-footer {
 }
 
 .inner-card {
-    background: rgba(150, 180, 220, 0.40);
+    background: rgba(230, 235, 234, 0.55); /* fog gray (matches Simple Range card) */
     padding: 30px;
     border-radius: 14px;
+    box-shadow:
+        0 4px 14px rgba(47, 79, 62, 0.35),
+        0 8px 28px rgba(47, 79, 62, 0.25);
+}
+
+/* ============================================================
+   TOP CARD (CONTENT LAYER)
+============================================================ */
+
+.range-bg .top-card {
+    background: rgba(150, 180, 220, 0.40); /* soft subtle blue */
+    border-radius: 12px;
+    padding: 25px;
     box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
 }
 
-.top-card h2,
-.top-card h3,
-.top-card p,
-.top-card li,
-.top-card a {
+/* Prevent Members page gold/screws from leaking */
+.range-bg .top-card::before,
+.range-bg .top-card::after {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* ============================================================
+   TYPOGRAPHY — MATCH SIMPLE RANGE NOTICE
+============================================================ */
+
+/* Titles */
+.range-bg .top-card h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
     color: #062a55;
 }
 
-/* ============================================================
-   SECTION TITLES
-============================================================ */
-
-.range-notice-title,
-.range-trapper-title,
-.range-info-title,
-.range-rules-title,
-.range-restricted-title {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-    margin: 25px 0;
+/* Subtitles */
+.range-bg .top-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0 15px;
+    color: #000;
+    font-style: italic;
 }
 
-/* ============================================================
-   TEXT BLOCKS
-============================================================ */
-
-.range-notice-section,
-.range-trapper-section,
-.range-info-section,
-.range-rules-section {
-    text-align: left;
-}
-
-.range-notice-body,
-.range-trapper-text,
-.range-info-text,
-.range-rules-text {
-    font-size: 18px;
-    line-height: 1.6;
+/* Body text */
+.range-bg .top-card p,
+.range-bg .top-card li {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: #062a55;
 }
 
 /* ============================================================
@@ -1534,20 +1541,6 @@ body.login-bg .site-footer {
     padding: 0.7rem 1.8rem;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-/* RANGE PAGE — FORCE SOFT BLUE TOP CARD */
-.range-bg .top-card {
-    background: rgba(150, 180, 220, 0.40); /* soft subtle blue */
-    border-radius: 12px;
-    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
-}
-
-/* Prevent Members page gold from leaking into Range page */
-.range-bg .top-card::before,
-.range-bg .top-card::after {
-    background: none !important;
-    box-shadow: none !important;
 }
 
 /* ============================================================
