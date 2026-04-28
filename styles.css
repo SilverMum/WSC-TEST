@@ -2496,7 +2496,9 @@ body.cheese-bg .content-section {
     background: rgba(255, 255, 255, 0.30);
     border-radius: 12px;
     backdrop-filter: blur(4px);
+    text-align: center;   /* ⭐ CORRECT PLACE */
 }
+
 
 /* ------------------------------
    CHEESE CARD — INNER CARD
