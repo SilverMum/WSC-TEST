@@ -1549,6 +1549,17 @@ body.login-bg .site-footer {
     cursor: pointer;
 }
 
+/* Only affect the Pre‑Shot Packages card */
+.outer-card:nth-of-type(5) h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.outer-card:nth-of-type(5) p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
 /* ============================================================
    MOBILE RESPONSIVE
 ============================================================ */
