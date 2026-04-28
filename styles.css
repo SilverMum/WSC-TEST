@@ -2447,17 +2447,19 @@ body.login-bg .site-footer {
 .cheesecracker-wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;      /* ⭐ center vertically + horizontally */
     gap: 40px;
     flex-wrap: nowrap;
-    width: fit-content;   /* shrink to exact image width */
-    margin: 0 auto;       /* center under the title */
+    width: fit-content;       /* ⭐ shrink to exact combined image width */
+    margin: 0 auto;           /* ⭐ center wrapper under title */
 }
 
 .cheesecracker-img {
-    height: 405px;      /* 10% smaller */
+    display: block;           /* ⭐ centers each image individually */
+    margin: 0 auto;           /* ⭐ fixes visual drift from uneven PNGs */
+    height: 405px;            /* 10% smaller */
     width: auto;
-    max-width: 34vw;   
+    max-width: 34vw;          /* prevents overflow */
 }
 
 /* ⭐ CHEESE & CRACKER — MOBILE STACKED */
@@ -2466,6 +2468,7 @@ body.login-bg .site-footer {
         flex-direction: column;
         flex-wrap: wrap;
         gap: 20px;
+        width: 100%;          /* mobile safe */
     }
 
     .cheesecracker-img {
