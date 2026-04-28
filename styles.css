@@ -1536,6 +1536,20 @@ body.login-bg .site-footer {
     cursor: pointer;
 }
 
+/* RANGE PAGE — FORCE SOFT BLUE TOP CARD */
+.range-bg .top-card {
+    background: rgba(150, 180, 220, 0.40); /* soft subtle blue */
+    border-radius: 12px;
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Prevent Members page gold from leaking into Range page */
+.range-bg .top-card::before,
+.range-bg .top-card::after {
+    background: none !important;
+    box-shadow: none !important;
+}
+
 /* ============================================================
    MOBILE RESPONSIVE
 ============================================================ */
