@@ -2491,14 +2491,16 @@ body.cheese-bg .content-section {
     width: fit-content;
     max-width: 95vw;
     display: block;
-    margin: 40px auto;   /* ⭐ TRUE centering */
+    margin-left: auto;   /* ⭐ EXACT MATCH TO TITLE IMAGE */
+    margin-right: auto;  /* ⭐ EXACT MATCH TO TITLE IMAGE */
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 12px;
     backdrop-filter: blur(4px);
-    text-align: center;   /* ⭐ CORRECT PLACE */
+    text-align: center;
 }
-
 
 /* ------------------------------
    CHEESE CARD — INNER CARD
