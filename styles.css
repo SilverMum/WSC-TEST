@@ -1250,12 +1250,8 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-            RANGE PAGE 
+   RANGE PAGE — GLOBAL BACKGROUND
 ============================================================ */
-
-/* ------------------------------
-   RANGE PAGE BACKGROUND
---------------------------------*/
 
 .range-bg {
     position: relative;
@@ -1271,9 +1267,10 @@ body.login-bg .site-footer {
     z-index: -1;
 }
 
-/* ------------------------------
+/* ============================================================
    HEADER IMAGE
---------------------------------*/
+============================================================ */
+
 .range-header {
     max-width: 1200px;
     margin: 40px auto 0;
@@ -1288,9 +1285,10 @@ body.login-bg .site-footer {
     object-fit: cover;
 }
 
-/* ------------------------------
+/* ============================================================
    STATUS SECTION
---------------------------------*/
+============================================================ */
+
 .range-status-section {
     padding: 30px 20px;
     max-width: 1200px;
@@ -1316,9 +1314,10 @@ body.login-bg .site-footer {
     margin-left: auto;
 }
 
-/* ------------------------------
+/* ============================================================
    FACEBOOK BUTTON
---------------------------------*/
+============================================================ */
+
 .range-facebook-section {
     width: 100%;
     text-align: center;
@@ -1338,9 +1337,10 @@ body.login-bg .site-footer {
     filter: brightness(1.1);
 }
 
-/* ------------------------------
+/* ============================================================
    RANGE OPEN BUTTON
---------------------------------*/
+============================================================ */
+
 .range-open-button-wrapper {
     text-align: center;
     margin: 25px 0;
@@ -1360,8 +1360,9 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-   DOUBLE-CARD SYSTEM (GLOBAL)
+   DOUBLE-CARD SYSTEM
 ============================================================ */
+
 .outer-card {
     max-width: 900px;
     margin: 40px auto;
@@ -1375,24 +1376,25 @@ body.login-bg .site-footer {
     margin-top: 40px;
 }
 
-.inner-card.ofha-card {
+.inner-card {
     background: rgba(150, 180, 220, 0.40);
     padding: 30px;
     border-radius: 14px;
     box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
 }
 
-.ofha-card h2,
-.ofha-card h3,
-.ofha-card p,
-.ofha-card li,
-.ofha-card a {
+.top-card h2,
+.top-card h3,
+.top-card p,
+.top-card li,
+.top-card a {
     color: #062a55;
 }
 
 /* ============================================================
-   SECTION TITLES (GLOBAL)
+   SECTION TITLES
 ============================================================ */
+
 .range-notice-title,
 .range-trapper-title,
 .range-info-title,
@@ -1401,12 +1403,13 @@ body.login-bg .site-footer {
     text-align: center;
     font-size: 26px;
     font-weight: bold;
-    margin: 25px 0; /* 25px above + 25px below */
+    margin: 25px 0;
 }
 
 /* ============================================================
    TEXT BLOCKS
 ============================================================ */
+
 .range-notice-section,
 .range-trapper-section,
 .range-info-section,
@@ -1422,10 +1425,12 @@ body.login-bg .site-footer {
     line-height: 1.6;
 }
 
-/* ------------------------------
+/* ============================================================
    RESTRICTED FIREARMS SECTION
---------------------------------*/
-.range-restricted-section {
+============================================================ */
+
+.restricted-firearms-wrapper {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -1454,6 +1459,7 @@ body.login-bg .site-footer {
 /* ============================================================
    CONTACT FORM (BLUE THEME)
 ============================================================ */
+
 .trap-skeet-contact {
     max-width: 700px;
     margin: 0 auto;
@@ -1533,7 +1539,9 @@ body.login-bg .site-footer {
 /* ============================================================
    MOBILE RESPONSIVE
 ============================================================ */
+
 @media (max-width: 600px) {
+
     .trap-skeet-contact {
         margin: 0 1rem;
         padding: 1.5rem;
