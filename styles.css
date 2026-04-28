@@ -2925,6 +2925,34 @@ iframe[src*="google.com/calendar"] {
 }
 
 /* ------------------------------
+   AIR RIFLE — DARK OAK CARD STYLE
+--------------------------------*/
+.airrifle-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+
+    /* Dark Oak overlay */
+    background: rgba(60, 40, 25, 0.40);
+
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.airrifle-card .inner-card {
+    /* Slightly lighter oak tint for inner layer */
+    background: rgba(80, 55, 35, 0.55);
+
+    padding: 30px;
+    border-radius: 12px;
+
+    /* Shadow tuned to brown tones */
+    box-shadow:
+        0 4px 14px rgba(40, 25, 15, 0.45),
+        0 8px 28px rgba(40, 25, 15, 0.35);
+}
+
+/* ------------------------------
    TV Page Wrapper
 ------------------------------ */
 
