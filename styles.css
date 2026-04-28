@@ -1272,7 +1272,12 @@ body.login-bg .site-footer {
 ============================================================ */
 
 .range-bg section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* ⭐ half spacing between cards */
+}
+
+/* Remove accidental <br> spacing ONLY on Range page */
+.range-bg br {
+    display: none;
 }
 
 /* ============================================================
@@ -1382,7 +1387,7 @@ body.login-bg .site-footer {
 }
 
 .range-bg .inner-card {
-    background: rgba(175, 205, 240, 0.55); /* gentle light blue */
+    background: rgba(175, 205, 240, 0.55);
     padding: 30px;
     border-radius: 12px;
     text-align: center;
@@ -1435,7 +1440,22 @@ body.login-bg .site-footer {
 
 .range-indent {
     text-align: left;
-    padding-left: 40px; /* ~10 spaces visually */
+    padding-left: 40px;
+}
+
+/* ============================================================
+   CARD 5 — FIX SPACING (Pre‑Shot Packages)
+============================================================ */
+
+/* Target the card by its heading text */
+.inner-card h2:contains("2026 Member Pre‑Shot Packages") ~ h3 {
+    margin-top: 25px;   /* space above title */
+    margin-bottom: 5px; /* tighten space under title */
+}
+
+.inner-card h2:contains("2026 Member Pre‑Shot Packages") ~ p {
+    margin-top: 0;       /* remove extra space above line */
+    margin-bottom: 25px; /* space below line */
 }
 
 /* ============================================================
@@ -1547,17 +1567,6 @@ body.login-bg .site-footer {
     padding: 0.7rem 1.8rem;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-/* Only affect the Pre‑Shot Packages card */
-.outer-card:nth-of-type(5) h3 {
-    margin-top: 25px;
-    margin-bottom: 5px;
-}
-
-.outer-card:nth-of-type(5) p {
-    margin-top: 0;
-    margin-bottom: 25px;
 }
 
 /* ============================================================
