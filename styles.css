@@ -1268,6 +1268,14 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
+   RANGE PAGE — MATCH ARCHERY SPACING
+============================================================ */
+
+.range-bg section {
+    margin-bottom: 40px;
+}
+
+/* ============================================================
    HEADER IMAGE
 ============================================================ */
 
@@ -1360,74 +1368,65 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-   DOUBLE-CARD SYSTEM (RANGE ONLY, 2 LAYERS)
+   DOUBLE-CARD SYSTEM (RANGE ONLY — BLUE VERSION)
 ============================================================ */
 
 .range-bg .outer-card {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.30);
-    border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-.range-bg .outer-card:first-of-type {
-    margin-top: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    position: relative;
 }
 
 .range-bg .inner-card {
-    background: rgba(150, 180, 220, 0.40); /* soft subtle blue for Range */
+    background: rgba(175, 205, 240, 0.55); /* ⭐ gentle light blue */
     padding: 30px;
-    border-radius: 14px;
-    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
-}
-
-/* ============================================================
-   TOP CARD (CONTENT LAYER — RANGE ONLY)
-============================================================ */
-
-.range-bg .top-card {
-    background: rgba(230, 235, 234, 0.55); /* fog gray content layer */
     border-radius: 12px;
-    padding: 25px;
-    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
-}
+    text-align: center;
 
-/* Prevent Members page gold/screws from leaking into Range page */
-.range-bg .top-card::before,
-.range-bg .top-card::after {
-    background: none !important;
-    box-shadow: none !important;
+    box-shadow:
+       0 6px 18px rgba(20, 40, 70, 0.45),
+       0 12px 32px rgba(20, 40, 70, 0.30);
+
+    position: relative;
+    z-index: 1;
 }
 
 /* ============================================================
-   TYPOGRAPHY — MATCH SIMPLE RANGE NOTICE (RANGE ONLY)
+   RANGE PAGE — TEXT COLORS (BLUE VERSION)
 ============================================================ */
 
-/* Titles inside cards */
-.range-bg .top-card h2 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: #062a55; /* soft blue text */
+.range-bg .inner-card h2,
+.range-bg .inner-card h3,
+.range-bg .inner-card p,
+.range-bg .inner-card li,
+.range-bg .inner-card a {
+    color: #062a55;
 }
 
-/* Subtitles (if used) */
-.range-bg .top-card h3 {
-    font-size: 1.3rem;
+/* ============================================================
+   RANGE PAGE — TYPOGRAPHY (MATCH ARCHERY SCALE)
+============================================================ */
+
+.range-bg h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.range-bg h3 {
+    font-size: 1.4rem;
     font-weight: 600;
-    margin: 10px 0 15px;
-    color: #000;
-    font-style: italic;
+    margin-bottom: 20px;
 }
 
-/* Body text */
-.range-bg .top-card p,
-.range-bg .top-card li {
+.range-bg p,
+.range-bg li {
     font-size: 1.15rem;
     line-height: 1.65;
-    color: #062a55;
 }
 
 /* ============================================================
