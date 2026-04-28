@@ -2829,12 +2829,12 @@ iframe[src*="google.com/calendar"] {
     color: black;
 }
 
-/* Blue contact card */
+/* Dark Oak contact card (was blue) */
 .airrifle-cancel {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background: #003366;
+    background: rgba(60, 40, 25, 1); /* solid dark oak */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     color: white;
