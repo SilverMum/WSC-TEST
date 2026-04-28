@@ -2443,15 +2443,31 @@ body.login-bg .site-footer {
    CHEESE & CRACKER
 --------------------------------*/
 
-/* ⭐ CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE */
+/* ⭐ PAGE-LEVEL CENTERING (must come BEFORE card rules) */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;      /* ⭐ TRUE PAGE-LEVEL CENTERING */
+}
+
+/* ------------------------------
+   FIX PAGE PADDING FOR CENTERING
+--------------------------------*/
+body.cheese-bg .content-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ------------------------------
+   CHEESE & CRACKER — DESKTOP SIDE-BY-SIDE
+--------------------------------*/
 .cheesecracker-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;      /* ⭐ center vertically + horizontally */
+    align-items: center;      /* ⭐ centers vertically + horizontally */
     gap: 40px;
     flex-wrap: nowrap;
     width: fit-content;       /* ⭐ shrink to exact combined image width */
-    margin: 0 auto;           /* ⭐ center wrapper under title */
+    margin: 0 auto;           /* ⭐ centers wrapper under title */
 }
 
 .cheesecracker-img {
@@ -2462,7 +2478,9 @@ body.login-bg .site-footer {
     max-width: 34vw;          /* prevents overflow */
 }
 
-/* ⭐ CHEESE & CRACKER — MOBILE STACKED */
+/* ------------------------------
+   CHEESE & CRACKER — MOBILE STACKED
+--------------------------------*/
 @media (max-width: 600px) {
     .cheesecracker-wrapper {
         flex-direction: column;
@@ -2480,16 +2498,7 @@ body.login-bg .site-footer {
 }
 
 /* ------------------------------
-   FIX PAGE PADDING FOR CENTERING
---------------------------------*/
-body.cheese-bg .content-section {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* ------------------------------
    CHEESE CARD — OUTER WRAPPER
-   (auto-expands + perfectly centered)
 --------------------------------*/
 .cheese-card.outer-card {
     width: fit-content;
