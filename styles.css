@@ -1280,22 +1280,21 @@ body.login-bg .site-footer {
     display: none;
 }
 
-/* ============================================================
-   HEADER IMAGE
-============================================================ */
-
+/* ------------------------------
+   RANGE HEADER IMAGE (matches OFHA)
+--------------------------------*/
 .range-header {
     max-width: 1200px;
-    margin: 40px auto 0;
+    margin: 0 auto 30px;
     padding: 0 40px;
+    text-align: center;
 }
 
-.range-header img {
+.range-header-img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
-    object-fit: cover;
+    border-radius: 12px;
 }
 
 /* ============================================================
