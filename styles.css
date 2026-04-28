@@ -1444,18 +1444,17 @@ body.login-bg .site-footer {
 }
 
 /* ============================================================
-   CARD 5 — FIX SPACING (Pre‑Shot Packages)
+   CARD 5 — FIX SPACING (Pre‑Shot Packages ONLY)
 ============================================================ */
 
-/* Target the card by its heading text */
-.inner-card h2:contains("2026 Member Pre‑Shot Packages") ~ h3 {
-    margin-top: 25px;   /* space above title */
+.packages-card h3 {
+    margin-top: 30px;   /* space above each title */
     margin-bottom: 5px; /* tighten space under title */
 }
 
-.inner-card h2:contains("2026 Member Pre‑Shot Packages") ~ p {
-    margin-top: 0;       /* remove extra space above line */
-    margin-bottom: 25px; /* space below line */
+.packages-card p {
+    margin-top: 0;       /* remove extra space above the line */
+    margin-bottom: 30px; /* space below the line */
 }
 
 /* ============================================================
