@@ -2952,6 +2952,18 @@ iframe[src*="google.com/calendar"] {
         0 8px 28px rgba(40, 25, 15, 0.35);
 }
 
+/* -----------------------------------------
+   AIR RIFLE — CALENDAR CARD (extra width)
+------------------------------------------*/
+.airrifle-card.outer-card.calendar-card {
+    max-width: 1050px;   /* wider than normal cards */
+    padding: 25px 30px;  /* a bit more breathing room */
+}
+
+.airrifle-card.outer-card.calendar-card .inner-card {
+    padding: 35px;       /* slightly larger inner padding */
+}
+
 /* ------------------------------
    TV Page Wrapper
 ------------------------------ */
