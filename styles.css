@@ -2450,6 +2450,7 @@ body.login-bg .site-footer {
     align-items: flex-start;
     gap: 40px;
     flex-wrap: nowrap;
+    margin: 0 auto;   /* ⭐ FORCES TRUE CENTERING */
 }
 
 .cheesecracker-img {
