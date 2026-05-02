@@ -4006,139 +4006,75 @@ body, body * {
 }
 
 /* =========================================================
-   TRAP & SKEET — FINAL ANNOUNCEMENT OVERRIDES (IMAGE 1 STYLE)
+   TRAP & SKEET — ANNOUNCEMENT (IMAGE 1 EXACT STYLE)
    ========================================================= */
 
+/* Base announcement block */
 .trap-skeet-bg .ts-announcement .ts-left {
-    font-style: italic !important;
     margin-left: 40px !important;
     margin-right: 40px !important;
-    line-height: 1.7 !important;
     text-align: left !important;
+    line-height: 1.7 !important;
+    font-style: normal !important; /* reset everything to normal */
 }
 
-/* Headings inside announcement */
+/* Headings */
 .trap-skeet-bg .ts-announcement .ts-left h2,
 .trap-skeet-bg .ts-announcement .ts-left h3 {
-    font-style: normal !important;   /* Image 1 headings are NOT italic */
+    font-style: normal !important;
     margin-left: 0 !important;
 }
 
-/* "Important Notes:" specifically */
 .trap-skeet-bg .ts-announcement .ts-left h3 {
-    font-weight: 800 !important;
+    font-weight: 800 !important; /* Important Notes */
 }
 
-/* Paragraphs */
+/* Paragraphs (normal) */
 .trap-skeet-bg .ts-announcement .ts-left p {
-    font-style: italic !important;
-    margin-left: 0 !important; /* paragraphs follow the parent indent */
+    font-style: normal !important;
     font-size: 1.6rem !important;
+    margin-left: 0 !important;
 }
 
-/* Strong text inside paragraphs */
+/* ONLY the italic line */
+.trap-skeet-bg .ts-announcement .ts-left p em {
+    font-style: italic !important; /* Repairs are complete */
+}
+
+/* Ensure “The club reopens…” is NOT italic */
 .trap-skeet-bg .ts-announcement .ts-left p strong {
-    font-style: italic !important;
+    font-style: normal !important;
     font-weight: 800 !important;
 }
 
-/* Emphasized text */
-.trap-skeet-bg .ts-announcement .ts-left p em {
-    font-style: italic !important;
-}
-
-/* Bullet list indentation + style */
+/* Bullet list */
 .trap-skeet-bg .ts-announcement .ts-left ul {
-    margin-left: 60px !important;  /* deeper indent like Image 1 */
+    margin-left: 60px !important;
     line-height: 1.7 !important;
-    font-size: 1.4rem !important;
-    font-style: italic !important;
-}
-
-/* Bullet list items */
-.trap-skeet-bg .ts-announcement .ts-left li {
-    margin-bottom: 8px !important;
-    font-style: italic !important;
-}
-
-/* =========================================================
-   TRAP & SKEET — HORIZONTAL PADDING FIX (10px LESS)
-   ========================================================= */
-
-/* Reduce left/right padding on the main announcement + calendar container */
-.trap-skeet-bg .ts-announcement {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
-/* Reduce padding on the card grid section */
-.trap-skeet-bg .ts-card-grid {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
-/* Reduce padding on the entire page content wrapper */
-.trap-skeet-bg main,
-.trap-skeet-bg .content-section {
-    padding-left: 6px !important;   /* was 16px globally — now 10px less */
-    padding-right: 6px !important;
-}
-
-/* =========================================================
-   TRAP & SKEET — FIX ITALIC ISSUE (ONLY "Repairs are complete")
-   ========================================================= */
-
-/* Remove italic from EVERYTHING in the announcement */
-.trap-skeet-bg .ts-announcement .ts-left,
-.trap-skeet-bg .ts-announcement .ts-left h2,
-.trap-skeet-bg .ts-announcement .ts-left h3,
-.trap-skeet-bg .ts-announcement .ts-left p,
-.trap-skeet-bg .ts-announcement .ts-left ul,
-.trap-skeet-bg .ts-announcement .ts-left li,
-.trap-skeet-bg .ts-announcement .ts-left strong {
+    font-size: 1.1rem !important; /* reduced size */
     font-style: normal !important;
 }
 
-/* Apply italic ONLY to the correct line */
-.trap-skeet-bg .ts-announcement .ts-left p em {
-    font-style: italic !important;
+.trap-skeet-bg .ts-announcement .ts-left li {
+    margin-bottom: 8px !important;
+    font-style: normal !important;
 }
 
 /* =========================================================
-   TRAP & SKEET — REDUCE LEFT/RIGHT PAGE SPACING BY 15PX
+   TRAP & SKEET — PAGE HORIZONTAL SPACING REDUCTION
    ========================================================= */
 
-/* Main announcement + calendar container */
 .trap-skeet-bg .ts-announcement {
-    padding-left: 5px !important;   /* was ~20px → now 15px less */
+    padding-left: 5px !important;
     padding-right: 5px !important;
 }
 
-/* Card grid below the announcement */
 .trap-skeet-bg .ts-card-grid {
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
 
-/* Global main container override for this page only */
 .trap-skeet-bg main {
-    padding-left: 1px !important;   /* was 16px → now 15px less */
+    padding-left: 1px !important;
     padding-right: 1px !important;
-}
-
-/* =========================================================
-   TRAP & SKEET — BULLET LIST FONT SIZE REDUCTION
-   ========================================================= */
-
-.trap-skeet-bg .ts-announcement .ts-left ul,
-.trap-skeet-bg .ts-announcement .ts-left li {
-    font-size: 1.1rem !important;   /* smaller than the paragraphs */
-}
-
-/* =========================================================
-   TRAP & SKEET — REMOVE ITALIC FROM "The club reopens..." LINE
-   ========================================================= */
-
-.trap-skeet-bg .ts-announcement .ts-left p strong {
-    font-style: normal !important;
 }
