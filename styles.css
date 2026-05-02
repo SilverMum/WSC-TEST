@@ -4310,3 +4310,25 @@ body, body * {
 .home-info-section .meeting-title {
     text-decoration: underline !important;
 }
+
+/* =========================================================
+   HOME PAGE — MEMBERSHIP SPACING FIXES
+   ========================================================= */
+
+/* Pull left and right columns upward to remove extra space */
+.home-info-section .info-col {
+    margin-top: -15px; /* adjust tighter or looser if needed */
+}
+
+/* Make Activities list flush left */
+.home-info-section .activities-list {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Make bullets sit tight to the text */
+.home-info-section .activities-list li {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    list-style-position: inside !important;
+}
