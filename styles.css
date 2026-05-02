@@ -4343,12 +4343,12 @@ body, body * {
    CARD TOP PADDING — REMOVE 10PX FROM BOTH CARDS
    ========================================================= */
 
-/* OUTER CARD — 20px → 10px */
+/* OUTER CARD — 20px → -10px (removes 30px) */
 .home-meeting-card.outer-card.wide-card {
-    padding-top: 10px !important;
+    padding-top: -10px !important;
 }
 
-/* INNER CARD — 30px → 20px */
+/* INNER CARD — 30px → 0px (removes 30px) */
 .home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
-    padding-top: 20px !important;
+    padding-top: 0px !important;
 }
