@@ -4249,3 +4249,54 @@ body, body * {
 .home-meeting-card .inner-card.wide-inner {
     padding: 40px !important; /* same breathing room */
 }
+
+/* =========================================================
+   HOME PAGE — MEMBERSHIP SECTION TYPOGRAPHY + ALIGNMENT
+   ========================================================= */
+
+/* Make all text dark grey */
+.home-info-section,
+.home-info-section p,
+.home-info-section li,
+.home-info-section h3 {
+    color: #333 !important;
+}
+
+/* Title sizes */
+.home-info-section .info-title {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+}
+
+/* Body text sizes */
+.home-info-section p,
+.home-info-section li,
+.home-info-section .meeting-date {
+    font-size: 1.8rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Center the middle column under the logo */
+.home-info-section .info-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* THIS makes left/right titles align with top of logo */
+}
+
+/* Middle column centered */
+.home-info-section .info-col:nth-child(2) {
+    text-align: center;
+}
+
+/* Left and right columns align to top of logo */
+.home-info-section .info-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Activities list spacing */
+.home-info-section .activities-list {
+    margin-left: 25px !important;
+    line-height: 1.5;
+}
