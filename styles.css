@@ -1278,344 +1278,414 @@ body.login-bg .site-footer {
     z-index: -1;
 }
 
-/* ============================================================
-   RANGE PAGE — GLOBAL BACKGROUND
-============================================================ */
-
-.range-bg {
-    position: relative;
-    min-height: 100vh;
-    background: url('images/range-background1.jpg') center center / cover no-repeat fixed;
-}
-
-.range-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-}
-
-/* ============================================================
-   RANGE PAGE — MATCH ARCHERY SPACING
-============================================================ */
-
-.range-bg section {
-    margin-bottom: 30px; /* ⭐ half spacing between cards */
-}
-
-/* Remove accidental <br> spacing ONLY on Range page */
-.range-bg br {
-    display: none;
-}
-
 /* ------------------------------
-   RANGE HEADER IMAGE (matches OFHA)
+   TRAP & SKEET RANGE PAGE
 --------------------------------*/
-.range-header {
-    max-width: 1200px;
-    margin: 0 auto 30px;
-    padding: 0 40px;
-    text-align: center;
-}
-
-.range-header-img {
+/* --------------------------------------------------
+   HEADER IMAGE
+-------------------------------------------------- */
+.page-header img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
 }
 
-/* ============================================================
-   STATUS SECTION
-============================================================ */
-
-.range-status-section {
-    padding: 30px 20px;
+/* --------------------------------------------------
+   ANNOUNCEMENT + CALENDAR SECTION
+-------------------------------------------------- */
+.ts-announcement {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
 }
 
-.range-status-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
+.ts-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.range-status-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 600px;
+.ts-left,
+.ts-left h2,
+.ts-left h3,
+.ts-left p,
+.ts-left ul,
+.ts-left li,
+.ts-left strong,
+.ts-left em {
+    color: white !important;
 }
 
-.range-status-left img {
-    max-width: 450px;
-    margin-left: auto;
-}
-
-/* ============================================================
-   FACEBOOK BUTTON
-============================================================ */
-
-.range-facebook-section {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0 30px;
-}
-
-.range-facebook-img {
-    width: 390px;
-    max-width: 90%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.range-facebook-img:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.1);
-}
-
-/* ============================================================
-   RANGE OPEN BUTTON
-============================================================ */
-
-.range-open-button-wrapper {
-    text-align: center;
-    margin: 25px 0;
-}
-
-.range-open-button-img {
-    width: 450px;
-    max-width: 90%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.range-open-button-img:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.1);
-}
-
-/* ============================================================
-   DOUBLE-CARD SYSTEM (RANGE ONLY — BLUE VERSION)
-============================================================ */
-
-.range-bg .outer-card {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.30);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    position: relative;
-}
-
-.range-bg .inner-card {
-    background: rgba(175, 205, 240, 0.55);
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-
-    box-shadow:
-       0 6px 18px rgba(20, 40, 70, 0.45),
-       0 12px 32px rgba(20, 40, 70, 0.30);
-
-    position: relative;
-    z-index: 1;
-}
-
-/* ============================================================
-   RANGE PAGE — TEXT COLORS (BLUE VERSION)
-============================================================ */
-
-.range-bg .inner-card h2,
-.range-bg .inner-card h3,
-.range-bg .inner-card p,
-.range-bg .inner-card li,
-.range-bg .inner-card a {
-    color: #062a55;
-}
-
-/* ============================================================
-   RANGE PAGE — TYPOGRAPHY (MATCH ARCHERY SCALE)
-============================================================ */
-
-.range-bg h2 {
-    font-size: 2.4rem;
+.ts-left h2 {
+    font-size: 2.3rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
-.range-bg h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+.ts-left p strong {
+    font-size: 1.45rem;
+    font-weight: 700;
 }
 
-.range-bg p,
-.range-bg li {
+.ts-left p em {
+    font-size: 1.3rem;
+}
+
+.ts-left h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.ts-left ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.55;
     font-size: 1.15rem;
-    line-height: 1.65;
 }
 
-/* ============================================================
-   CUSTOM INDENT CLASS (10-SPACE VISUAL INDENT)
-============================================================ */
-
-.range-indent {
-    text-align: left;
-    padding-left: 40px;
+.ts-left p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-/* ============================================================
-   CARD 5 — FIX SPACING (Pre‑Shot Packages ONLY)
-============================================================ */
-
-.packages-card h3 {
-    margin-top: 30px;   /* space above each title */
-    margin-bottom: 5px; /* tighten space under title */
+.ts-right {
+    flex: 1;
 }
 
-.packages-card p {
-    margin-top: 0;       /* remove extra space above the line */
-    margin-bottom: 30px; /* space below the line */
-}
-
-/* ============================================================
-   RESTRICTED FIREARMS SECTION
-============================================================ */
-
-.restricted-firearms-wrapper {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.range-restricted-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: red;
-}
-
-.range-restricted-image img {
-    max-width: 600px;
+.ts-right iframe {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+    border-radius: 10px;
 }
 
-.range-revised-date {
+/* ⭐ Orange card behind calendar */
+.calendar-card {
+    background: #ff9f43;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.calendar-card iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* --------------------------------------------------
+   CARD GRID
+-------------------------------------------------- */
+.ts-card-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.ts-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    overflow: hidden;
     text-align: center;
-    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ts-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.ts-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.ts-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 10px 20px 10px;
+}
+
+/* --------------------------------------------------
+   TEXT UTILITIES
+-------------------------------------------------- */
+.red-text {
+    color: #ff4d4d !important;
+}
+
+/* --------------------------------------------------
+   RANGE OPEN BUTTON
+-------------------------------------------------- */
+.range-open-button-img {
+    width: 52.5%;
+    max-width: 255px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ⭐ Shotgun image fix */
+.range-restricted-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: contain;
+}
+
+/* --------------------------------------------------
+   FIXED‑SIZE MODAL OVERLAY
+-------------------------------------------------- */
+.ts-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    z-index: 99999;
+}
+
+/* --------------------------------------------------
+   MODAL BOX
+-------------------------------------------------- */
+.ts-overlay-content {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 12.5vh;
+    background: rgba(0,0,0,0.6);
+    border: 4px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 30px;
+    color: white;
+}
+
+/* --------------------------------------------------
+   FLOATING X BUTTON
+-------------------------------------------------- */
+.ts-close-wrapper {
+    position: fixed;
+    top: calc(12.5vh + 7px);
+    right: calc(15vw - 12px);
+    width: 38px;
+    height: 38px;
+    background: rgba(0,0,0,0.85);
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200000;
+}
+
+.ts-close {
+    font-size: 1.6rem;
+    color: white;
     font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+}
+
+/* --------------------------------------------------
+   MODAL TYPOGRAPHY
+-------------------------------------------------- */
+.ts-overlay-content p,
+.ts-overlay-content li,
+.ts-overlay-content strong,
+.ts-overlay-content em {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.ts-overlay-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.ts-overlay-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ts-overlay-content .package-block p {
+    margin: 4px 0;
+}
+
+/* ⭐⭐⭐ CONTACT POPUP LEFT/RIGHT + ORANGE FORM CARD ⭐⭐⭐ */
+
+.ts-contact-flex {
+    display: flex;
+    gap: 10px; /* moved 10px closer */
     margin-top: 20px;
 }
 
-/* ============================================================
-   CONTACT FORM (BLUE THEME)
-============================================================ */
-
-.trap-skeet-contact {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #0b1a33;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-    color: #e8f0ff;
+.ts-contact-left {
+    flex: 0 0 40%;
 }
 
-.trap-skeet-contact h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.04em;
-    color: #4aa3ff;
-    text-transform: uppercase;
+.ts-contact-right {
+    flex: 0 0 60%;
 }
 
-.trap-skeet-intro {
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    color: #c7d6f5;
+.ts-contact-card {
+    background: #ff9f43;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    /* ⭐ POSITION TWEAKS */
+    margin-top: 9px;      /* keeps the downward shift */
+    margin-left: -15px;   /* moved 10px more left than before */
+    margin-right: 4px;    /* keeps right edge visible */
 }
 
-.trap-skeet-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem 2rem;
+.ts-contact-card input,
+.ts-contact-card textarea {
+    width: calc(100% - 10px); /* end 10px earlier on the right */
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
-.field-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
+.ts-contact-card label {
+    font-weight: 600;
 }
 
-.field-row label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #bcd4ff;
-}
-
-.field-row input,
-.field-row textarea {
-    background: #000814;
-    border: 1px solid #1e5fb3;
-    border-radius: 4px;
-    padding: 0.6rem 0.75rem;
-    color: #e8f0ff;
-}
-
-.field-row:nth-child(4) {
-    grid-column: 1 / 3;
-}
-
-#ts-message {
-    height: 140px;
-}
-
-.field-inline,
-.field-checkbox {
-    grid-column: 1 / 3;
-}
-
-.ts-submit {
-    grid-column: 1 / 3;
-    margin-top: 0.5rem;
-    background: #1e5fb3;
-    color: #fff;
-    border-radius: 999px;
-    padding: 0.7rem 1.8rem;
-    text-transform: uppercase;
+.ts-contact-card button {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
-/* ============================================================
+.ts-contact-card button:hover {
+    background: #000;
+}
+
+/* --------------------------------------------------
+   BACKGROUND
+-------------------------------------------------- */
+body.trap-skeet-bg {
+    background: url('images/trap-skeet-background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.trap-skeet-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    z-index: -1;
+}
+
+/* ============================
+   Trap & Skeet – Weather at bottom
+   ============================ */
+
+.trap-skeet-bg .ts-weather {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.trap-skeet-bg .ts-weather > div {
+    width: 100% !important;
+}
+
+/* ⭐ Facebook button under LEFT TEXT only */
+.trap-skeet-bg .ts-left .fb-bottom-button img {
+    width: 240px;
+    max-width: 240px;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto;
+    transition: all 0.2s ease;
+}
+
+.trap-skeet-bg .ts-left .fb-bottom-button img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    margin-top: 0;
+    padding: 20px 0;
+    text-align: center;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* --------------------------------------------------
    MOBILE RESPONSIVE
-============================================================ */
+-------------------------------------------------- */
+@media (max-width: 992px) {
+    .ts-announcement {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ts-right iframe {
+        height: 450px;
+    }
+
+    .ts-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 600px) {
-
-    .trap-skeet-contact {
-        margin: 0 1rem;
-        padding: 1.5rem;
-    }
-
-    .trap-skeet-form {
+    .ts-card-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .field-row:nth-child(4),
-    .field-inline,
-    .field-checkbox,
-    .ts-submit {
-        grid-column: 1 / 2;
+    .ts-card img {
+        height: 160px;
+    }
+
+    .ts-overlay-content {
+        width: 90vw;
+        height: 75vh;
+        margin-top: 10vh;
+        overflow-x: hidden;
     }
 }
 
