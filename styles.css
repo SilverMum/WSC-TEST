@@ -4093,16 +4093,15 @@ body, body * {
 }
 
 /* =========================================================
-   TRAP & SKEET — CALENDAR EXPANSION (LEFT + DOWN ONLY)
+   TRAP & SKEET — CALENDAR EXPANSION (20PX LEFT + 20PX DOWN)
    ========================================================= */
 
-/* Expand the orange card 20px to the left */
+/* Expand the orange card 20px further to the left */
 .trap-skeet-bg .calendar-card {
-    margin-left: -20px !important;   /* grows left only */
-    padding: 5px !important;         /* keep existing padding */
+    margin-left: -40px !important;   /* previously -20px → now 20px more */
 }
 
-/* Expand the calendar downward by 20px */
+/* Expand the calendar downward by another 20px */
 .trap-skeet-bg .calendar-card iframe {
-    height: 620px !important;        /* was 600px */
+    height: 640px !important;        /* previously 620px → now 20px more */
 }
