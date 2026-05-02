@@ -4004,3 +4004,59 @@ footer {
 body, body * {
     font-family: "Times New Roman", Times, serif !important;
 }
+
+/* =========================================================
+   TRAP & SKEET — FINAL ANNOUNCEMENT OVERRIDES (IMAGE 1 STYLE)
+   ========================================================= */
+
+.trap-skeet-bg .ts-announcement .ts-left {
+    font-style: italic !important;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+    line-height: 1.7 !important;
+    text-align: left !important;
+}
+
+/* Headings inside announcement */
+.trap-skeet-bg .ts-announcement .ts-left h2,
+.trap-skeet-bg .ts-announcement .ts-left h3 {
+    font-style: normal !important;   /* Image 1 headings are NOT italic */
+    margin-left: 0 !important;
+}
+
+/* "Important Notes:" specifically */
+.trap-skeet-bg .ts-announcement .ts-left h3 {
+    font-weight: 800 !important;
+}
+
+/* Paragraphs */
+.trap-skeet-bg .ts-announcement .ts-left p {
+    font-style: italic !important;
+    margin-left: 0 !important; /* paragraphs follow the parent indent */
+    font-size: 1.6rem !important;
+}
+
+/* Strong text inside paragraphs */
+.trap-skeet-bg .ts-announcement .ts-left p strong {
+    font-style: italic !important;
+    font-weight: 800 !important;
+}
+
+/* Emphasized text */
+.trap-skeet-bg .ts-announcement .ts-left p em {
+    font-style: italic !important;
+}
+
+/* Bullet list indentation + style */
+.trap-skeet-bg .ts-announcement .ts-left ul {
+    margin-left: 60px !important;  /* deeper indent like Image 1 */
+    line-height: 1.7 !important;
+    font-size: 1.4rem !important;
+    font-style: italic !important;
+}
+
+/* Bullet list items */
+.trap-skeet-bg .ts-announcement .ts-left li {
+    margin-bottom: 8px !important;
+    font-style: italic !important;
+}
