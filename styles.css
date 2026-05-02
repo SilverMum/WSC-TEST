@@ -150,6 +150,24 @@ html {
     display: block;
 }
 
+/* Make Trap & Skeet match the other nav items */
+.nav-trap-skeet a {
+    font-size: 1.2rem;        /* match your sleek nav size */
+    font-weight: 600;         /* match other items */
+    color: #fff;              /* match white nav text */
+    text-decoration: none;    /* remove underline */
+    padding: 10px 14px;       /* match spacing */
+    line-height: 1.1;
+    display: inline-block;
+}
+
+.nav-trap-skeet a span {
+    font-size: 0.85em;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+}
+
 /* ------------------------------
    DROPDOWN MENU
 --------------------------------*/
