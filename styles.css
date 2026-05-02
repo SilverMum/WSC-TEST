@@ -4332,3 +4332,9 @@ body, body * {
     padding-left: 0 !important;
     list-style-position: inside !important;
 }
+
+/* Raise ONLY the left and right columns to the top of the card */
+.home-info-section .info-col:first-child,
+.home-info-section .info-col:last-child {
+    margin-top: -40px; /* adjust to taste: -30, -35, -45 */
+}
