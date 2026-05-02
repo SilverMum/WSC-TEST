@@ -78,6 +78,7 @@ main {
 
 .nav-spacer {
     flex: 1;
+    display: none;
 }
 
 .logo img {
@@ -109,6 +110,14 @@ main {
     white-space: nowrap;
 }
 
+/* Sleek nav link style */
+.nav-links a {
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    text-decoration: none; /* remove underline for modern look */
+    color: #fff;
+}
+
 .nav-links a:hover {
     background-color: #eaeaea;
     color: #000;
@@ -119,6 +128,26 @@ main {
 /* ⭐ Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Slim modern nav bar */
+.main-nav {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    justify-content: center; /* centers nav since logo is gone */
+}
+
+/* Two-line Trap & Skeet nav item */
+.nav-trap-skeet a {
+    text-align: center;
+    line-height: 1.1;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.nav-trap-skeet a span {
+    font-size: 0.85em;
+    display: block;
 }
 
 /* ------------------------------
