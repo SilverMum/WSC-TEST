@@ -4317,7 +4317,7 @@ body, body * {
 
 /* Pull left and right columns upward to remove extra space */
 .home-info-section .info-col {
-    margin-top: -15px; /* adjust tighter or looser if needed */
+    margin-top: -15px;
 }
 
 /* Raise ONLY the left and right columns higher */
@@ -4340,15 +4340,15 @@ body, body * {
 }
 
 /* =========================================================
-   CARD TOP PADDING ADJUSTMENTS (FINAL VALUES)
+   CARD TOP PADDING — REMOVE 10PX FROM BOTH CARDS
    ========================================================= */
 
-/* OUTER CARD — remove 10px from the top */
+/* OUTER CARD — 20px → 10px */
 .home-meeting-card.outer-card.wide-card {
     padding-top: 10px !important;
 }
 
-/* INNER CARD — remove 10px from the top (30 → 20) */
+/* INNER CARD — 30px → 20px */
 .home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
     padding-top: 20px !important;
 }
