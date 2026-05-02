@@ -260,6 +260,15 @@ main {
     white-space: nowrap;   /* desktop stays on one line */
 }
 
+/* Subtitle under homepage title */
+.home-subtitle {
+    text-align: center;
+    font-size: 1.4rem; /* slightly smaller than title */
+    font-weight: 600;
+    color: inherit; /* matches the title color automatically */
+    margin-top: 10px;
+}
+
 @media (max-width: 900px) {
     .hero-title {
         white-space: normal;
