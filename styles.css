@@ -4105,6 +4105,28 @@ body, body * {
 }
 
 /* =========================================================
+   TRAP & SKEET — REDUCE LEFT/RIGHT PAGE SPACING BY 15PX
+   ========================================================= */
+
+/* Main announcement + calendar container */
+.trap-skeet-bg .ts-announcement {
+    padding-left: 5px !important;   /* was ~20px → now 15px less */
+    padding-right: 5px !important;
+}
+
+/* Card grid below the announcement */
+.trap-skeet-bg .ts-card-grid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* Global main container override for this page only */
+.trap-skeet-bg main {
+    padding-left: 1px !important;   /* was 16px → now 15px less */
+    padding-right: 1px !important;
+}
+
+/* =========================================================
    TRAP & SKEET — BULLET LIST FONT SIZE REDUCTION
    ========================================================= */
 
@@ -4112,3 +4134,4 @@ body, body * {
 .trap-skeet-bg .ts-announcement .ts-left li {
     font-size: 1.1rem !important;   /* smaller than the paragraphs */
 }
+
