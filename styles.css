@@ -4339,4 +4339,8 @@ body, body * {
     margin-top: -260px;
 }
 
+/* Reduce top padding ONLY for the membership card */
+.home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
+    padding-top: 5px !important; /* was 40px */
+}
 
