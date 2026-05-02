@@ -1004,15 +1004,15 @@ main {
 }
 
 /* ------------------------------
-   FOOTER
+   FOOTER — DARK THEME (GLOBAL)
 --------------------------------*/
 .site-footer {
-    background-color: #1877F2;
+    background-color: #1a1a1a;   /* dark footer */
     color: #ffffff;
     text-align: center;
     padding: 25px 10px;
     width: 100%;
-    max-width: 100%;   /* forces full width even inside a max-width container */
+    max-width: 100%;
     margin-top: 40px;
 }
 
