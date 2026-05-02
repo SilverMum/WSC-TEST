@@ -260,13 +260,14 @@ main {
     white-space: nowrap;   /* desktop stays on one line */
 }
 
-/* Subtitle under homepage title */
+/* Subtitle under homepage title — styled like the main title but smaller */
 .home-subtitle {
     text-align: center;
-    font-size: 1.4rem; /* slightly smaller than title */
-    font-weight: 600;
-    color: inherit; /* matches the title color automatically */
-    margin-top: 10px;
+    font-size: clamp(1.8rem, 3vw, 2.4rem); /* 2 sizes bigger than before */
+    font-weight: 800; /* matches the main title weight */
+    color: inherit; /* same color as the title */
+    margin-top: -20px; /* pulls it closer to the title like your screenshot */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* matches the title shadow */
 }
 
 @media (max-width: 900px) {
