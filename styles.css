@@ -4083,3 +4083,23 @@ body, body * {
     padding-left: 6px !important;   /* was 16px globally — now 10px less */
     padding-right: 6px !important;
 }
+
+/* =========================================================
+   TRAP & SKEET — FIX ITALIC ISSUE (ONLY "Repairs are complete")
+   ========================================================= */
+
+/* Remove italic from EVERYTHING in the announcement */
+.trap-skeet-bg .ts-announcement .ts-left,
+.trap-skeet-bg .ts-announcement .ts-left h2,
+.trap-skeet-bg .ts-announcement .ts-left h3,
+.trap-skeet-bg .ts-announcement .ts-left p,
+.trap-skeet-bg .ts-announcement .ts-left ul,
+.trap-skeet-bg .ts-announcement .ts-left li,
+.trap-skeet-bg .ts-announcement .ts-left strong {
+    font-style: normal !important;
+}
+
+/* Apply italic ONLY to the correct line */
+.trap-skeet-bg .ts-announcement .ts-left p em {
+    font-style: italic !important;
+}
