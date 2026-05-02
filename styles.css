@@ -4344,4 +4344,9 @@ body, body * {
     padding-top: 0px !important; 
 }
 
+/* Pull the bottom card upward to match the new top-card height */
+.home-meeting-card.outer-card + .outer-card {
+    margin-top: -20px !important; /* adjust to taste: -15, -20, -25 */
+}
+
 
