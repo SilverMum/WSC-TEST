@@ -4186,3 +4186,19 @@ body, body * {
     margin-left: 20px;
     line-height: 1.6;
 }
+
+/* =========================================================
+   HOME PAGE — REMOVE CARD PADDING FOR INFO SECTION
+   ========================================================= */
+
+.home-meeting-card.outer-card .inner-card .home-info-section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    max-width: 100% !important;
+}
+
+/* Remove the card padding ONLY for this one card */
+.home-meeting-card.outer-card .inner-card {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
