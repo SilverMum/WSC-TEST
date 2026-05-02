@@ -4078,3 +4078,16 @@ body, body * {
     padding-left: 1px !important;
     padding-right: 1px !important;
 }
+
+/* =========================================================
+   TRAP & SKEET — ALIGN ANNOUNCEMENT WITH CARD GRID
+   ========================================================= */
+
+/* Match announcement left edge to card grid left edge */
+.trap-skeet-bg .ts-announcement {
+    padding-left: 0 !important;   /* remove extra padding */
+}
+
+.trap-skeet-bg .ts-announcement .ts-left {
+    margin-left: 20px !important; /* same visual offset as card grid */
+}
