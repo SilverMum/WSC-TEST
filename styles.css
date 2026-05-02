@@ -4348,3 +4348,8 @@ body, body * {
 .home-meeting-card.outer-card.wide-card:nth-of-type(2) {
     padding-top: 0px !important;
 }
+
+/* Reduce the top padding of the INNER CARD so the OUTER CARD becomes shorter */
+.home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
+    padding-top: 10px !important; /* try 10px, adjust to taste */
+}
