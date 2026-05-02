@@ -4106,3 +4106,11 @@ body, body * {
 .trap-skeet-bg .ts-announcement .ts-right {
     flex: 0 0 60% !important;   /* calendar column */
 }
+
+/* =========================================================
+   TRAP & SKEET — FIX CALENDAR RIGHT-SIDE ALIGNMENT
+   ========================================================= */
+
+.trap-skeet-bg .ts-announcement .ts-right {
+    padding-right: 5px !important;   /* matches card grid right padding */
+}
