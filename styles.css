@@ -4202,3 +4202,38 @@ body, body * {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+/* =========================================================
+   HOME PAGE — FACEBOOK SECTION (MATCH IMAGE STYLE)
+   ========================================================= */
+
+.facebook-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Button image */
+.facebook-button img {
+    width: 260px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Text block */
+.facebook-text p {
+    margin: 4px 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/* Bold first line */
+.facebook-text p:first-child {
+    font-weight: 800;
+}
+
+/* Second line italic */
+.facebook-text p:nth-child(2) {
+    font-style: italic;
+}
