@@ -3989,3 +3989,8 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
+/* Make ALL text on the entire site use Image 1's font */
+body, body * {
+    font-family: "Times New Roman", Times, serif !important;
+}
