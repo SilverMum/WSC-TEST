@@ -4114,3 +4114,75 @@ body, body * {
 .trap-skeet-bg .ts-announcement .ts-right {
     padding-right: 5px !important;   /* matches card grid right padding */
 }
+
+/* =========================================================
+   HOME PAGE — INFO SECTION (CONTACT / MEETING / ACTIVITIES)
+   ========================================================= */
+
+.home-info-section {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Invisible spacers */
+.info-spacer {
+    width: 33%;
+    height: 20px;
+    visibility: hidden;
+}
+
+/* Logo centered */
+.info-logo img {
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto 25px auto;
+    display: block;
+}
+
+/* Three-column layout */
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+/* Each column */
+.info-col {
+    width: 33%;
+    text-align: left;
+}
+
+/* Titles */
+.info-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Title sizes */
+.contact-title {
+    font-size: 1.6rem;
+}
+
+.meeting-title {
+    font-size: 2rem;
+}
+
+.activities-title {
+    font-size: 1.6rem;
+}
+
+/* Meeting date italic */
+.meeting-date {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Activities list */
+.activities-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
