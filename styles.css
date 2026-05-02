@@ -4146,45 +4146,49 @@ body, body * {
     justify-content: space-between;
     gap: 40px;
     margin-top: 10px;
+    align-items: flex-start; /* aligns left/right titles with top of logo */
 }
 
 /* Each column */
 .info-col {
     width: 33%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Titles */
 .info-title {
     font-weight: 800;
     margin-bottom: 10px;
+    font-size: 2.2rem !important;
 }
 
-/* Title sizes */
-.contact-title {
-    font-size: 1.6rem;
+/* Body text sizes + color */
+.home-info-section,
+.home-info-section p,
+.home-info-section li,
+.home-info-section h3 {
+    color: #333 !important;
 }
 
-.meeting-title {
-    font-size: 2rem;
+.home-info-section p,
+.home-info-section li,
+.home-info-section .meeting-date {
+    font-size: 1.8rem !important;
+    line-height: 1.5 !important;
 }
 
-.activities-title {
-    font-size: 1.6rem;
-}
-
-/* Meeting date italic */
-.meeting-date {
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-top: 5px;
+/* Middle column centered */
+.home-info-section .info-col:nth-child(2) {
+    text-align: center;
 }
 
 /* Activities list */
 .activities-list {
     list-style-type: disc;
-    margin-left: 20px;
-    line-height: 1.6;
+    margin-left: 25px !important;
+    line-height: 1.5;
 }
 
 /* =========================================================
@@ -4204,6 +4208,18 @@ body, body * {
 }
 
 /* =========================================================
+   HOME PAGE — MAKE MEMBERSHIP CARD WIDE LIKE ARCHERY TRIO
+   ========================================================= */
+
+.home-meeting-card.outer-card.wide-card {
+    max-width: 1200px !important;
+}
+
+.home-meeting-card .inner-card.wide-inner {
+    padding: 40px !important;
+}
+
+/* =========================================================
    HOME PAGE — FACEBOOK SECTION (MATCH IMAGE STYLE)
    ========================================================= */
 
@@ -4212,7 +4228,6 @@ body, body * {
     margin-top: 10px;
 }
 
-/* Button image */
 .facebook-button img {
     width: 260px;
     max-width: 90%;
@@ -4221,82 +4236,16 @@ body, body * {
     margin: 0 auto 15px auto;
 }
 
-/* Text block */
 .facebook-text p {
     margin: 4px 0;
     font-size: 1.4rem;
     line-height: 1.4;
 }
 
-/* Bold first line */
 .facebook-text p:first-child {
     font-weight: 800;
 }
 
-/* Second line italic */
 .facebook-text p:nth-child(2) {
     font-style: italic;
-}
-
-/* =========================================================
-   HOME PAGE — MAKE MEMBERSHIP CARD WIDE LIKE ARCHERY TRIO
-   ========================================================= */
-
-.home-meeting-card.outer-card.wide-card {
-    max-width: 1200px !important; /* same width as archery wide card */
-}
-
-.home-meeting-card .inner-card.wide-inner {
-    padding: 40px !important; /* same breathing room */
-}
-
-/* =========================================================
-   HOME PAGE — MEMBERSHIP SECTION TYPOGRAPHY + ALIGNMENT
-   ========================================================= */
-
-/* Make all text dark grey */
-.home-info-section,
-.home-info-section p,
-.home-info-section li,
-.home-info-section h3 {
-    color: #333 !important;
-}
-
-/* Title sizes */
-.home-info-section .info-title {
-    font-size: 2.2rem !important;
-    font-weight: 800 !important;
-}
-
-/* Body text sizes */
-.home-info-section p,
-.home-info-section li,
-.home-info-section .meeting-date {
-    font-size: 1.8rem !important;
-    line-height: 1.5 !important;
-}
-
-/* Center the middle column under the logo */
-.home-info-section .info-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* THIS makes left/right titles align with top of logo */
-}
-
-/* Middle column centered */
-.home-info-section .info-col:nth-child(2) {
-    text-align: center;
-}
-
-/* Left and right columns align to top of logo */
-.home-info-section .info-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Activities list spacing */
-.home-info-section .activities-list {
-    margin-left: 25px !important;
-    line-height: 1.5;
 }
