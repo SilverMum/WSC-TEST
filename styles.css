@@ -59,6 +59,16 @@ main {
     z-index: 99999; /* higher than nav, cards, shadows, everything */
 }
 
+/* Global dark footer for all pages */
+footer {
+    margin-top: 0;
+    padding: 20px 0;
+    text-align: center;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+}
+
 /* ------------------------------
    NAVIGATION
 --------------------------------*/
