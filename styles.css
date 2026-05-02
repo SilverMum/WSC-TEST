@@ -1284,6 +1284,11 @@ body.login-bg .site-footer {
     display: block;
 }
 
+/* Add 20px space between nav and header image on Trap & Skeet page */
+.trap-skeet-bg .page-header {
+    margin-top: 20px;
+}
+
 /* --------------------------------------------------
    ANNOUNCEMENT + CALENDAR SECTION
 -------------------------------------------------- */
