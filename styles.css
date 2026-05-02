@@ -4249,3 +4249,45 @@ body, body * {
 .facebook-text p:nth-child(2) {
     font-style: italic;
 }
+
+/* =========================================================
+   HOME PAGE — MEMBERSHIP SECTION UPDATED TYPOGRAPHY
+   ========================================================= */
+
+/* Make all text dark grey */
+.home-info-section,
+.home-info-section p,
+.home-info-section li,
+.home-info-section h3 {
+    color: #333 !important;
+}
+
+/* Title sizes — ALL titles same size, bigger than before */
+.home-info-section .info-title {
+    font-size: 2.4rem !important; /* 1 size bigger than 2.2rem */
+    font-weight: 800 !important;
+    text-decoration: underline; /* underline CONTACT as requested */
+}
+
+/* Body text sizes */
+.home-info-section p,
+.home-info-section li,
+.home-info-section .meeting-date {
+    font-size: 1.8rem !important;
+    line-height: 1.5 !important;
+}
+
+/* CONTACT SECTION FORMATTING */
+.home-info-section .contact-title {
+    text-decoration: underline !important; /* underline CONTACT only */
+}
+
+/* Bold labels */
+.home-info-section .contact-bold {
+    font-weight: 800 !important;
+}
+
+/* Italic values */
+.home-info-section .contact-italic {
+    font-style: italic !important;
+}
