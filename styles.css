@@ -4105,3 +4105,19 @@ body, body * {
 .trap-skeet-bg .calendar-card iframe {
     height: 640px !important;        /* previously 620px → now 20px more */
 }
+
+/* =========================================================
+   TRAP & SKEET — FORCE 40/60 LAYOUT FOR ANNOUNCEMENT + CALENDAR
+   ========================================================= */
+
+.trap-skeet-bg .ts-announcement {
+    display: flex !important;
+}
+
+.trap-skeet-bg .ts-announcement .ts-left {
+    flex: 0 0 40% !important;   /* text column */
+}
+
+.trap-skeet-bg .ts-announcement .ts-right {
+    flex: 0 0 60% !important;   /* calendar column */
+}
