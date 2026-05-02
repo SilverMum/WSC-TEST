@@ -4103,3 +4103,12 @@ body, body * {
 .trap-skeet-bg .ts-announcement .ts-left p em {
     font-style: italic !important;
 }
+
+/* =========================================================
+   TRAP & SKEET — BULLET LIST FONT SIZE REDUCTION
+   ========================================================= */
+
+.trap-skeet-bg .ts-announcement .ts-left ul,
+.trap-skeet-bg .ts-announcement .ts-left li {
+    font-size: 1.1rem !important;   /* smaller than the paragraphs */
+}
