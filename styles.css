@@ -70,14 +70,13 @@ main {
     z-index: 2000;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* FIX */
-    padding: 5px 24px;
-    background-color: #f2f2f2;
+    justify-content: center; /* centered nav */
+    padding: 10px 0;
+    background-color: #1a1a1a;
     border-bottom: 1px solid #ddd;
 }
 
 .nav-spacer {
-    flex: 1;
     display: none;
 }
 
@@ -99,66 +98,38 @@ main {
     position: relative;
 }
 
+/* Base nav link style */
 .nav-links a {
-    text-decoration: underline;
-    color: #222;
+    padding: 10px 14px;
+    font-size: 1.2rem;
     font-weight: 600;
-    font-size: 1.7rem;
-    padding: 6px 10px;
+    color: #fff;
+    text-decoration: none;
     border-radius: 4px;
     transition: all 0.2s ease;
     white-space: nowrap;
 }
 
-/* Sleek nav link style */
-.nav-links a {
-    padding: 10px 14px;
-    font-size: 1.2rem;
-    text-decoration: none; /* remove underline for modern look */
-    color: #fff;
-}
-
-.nav-links a:hover {
-    background-color: #eaeaea;
-    color: #000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+/* Dark hover style for TOP NAV (matches dropdown) */
+.nav-links > li > a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+    box-shadow: none;
     transform: translateY(-2px);
 }
 
-/* ⭐ Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Slim modern nav bar */
-.main-nav {
-    background-color: #1a1a1a;
-    padding: 10px 0;
-    justify-content: center; /* centers nav since logo is gone */
-}
-
-/* Two-line Trap & Skeet nav item */
+/* ------------------------------
+   TRAP & SKEET TWO-LINE ITEM
+--------------------------------*/
 .nav-trap-skeet a {
-    text-align: center;
-    line-height: 1.1;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.nav-trap-skeet a span {
-    font-size: 0.85em;
-    display: block;
-}
-
-/* Make Trap & Skeet match the other nav items */
-.nav-trap-skeet a {
-    font-size: 1.2rem;        /* match your sleek nav size */
-    font-weight: 600;         /* match other items */
-    color: #fff;              /* match white nav text */
-    text-decoration: none;    /* remove underline */
-    padding: 10px 14px;       /* match spacing */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
     line-height: 1.1;
     display: inline-block;
+    text-align: left !important;
 }
 
 .nav-trap-skeet a span {
@@ -169,7 +140,7 @@ html {
 }
 
 /* ------------------------------
-   DROPDOWN MENU
+   DROPDOWN MENU (Unified Dark Theme)
 --------------------------------*/
 .dropdown {
     position: relative;
@@ -180,11 +151,11 @@ html {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    min-width: 220px;
     padding: 8px 0;
     list-style: none;
-    min-width: 220px;
+    background-color: #1a1a1a !important;
+    border: none !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     z-index: 2100;
 }
@@ -193,88 +164,77 @@ html {
     display: block;
 }
 
-.dropdown-menu li a {
+.dropdown-menu a {
     display: block;
     padding: 10px 18px;
-    text-decoration: underline;
-    color: #222;
-    font-weight: 600;
     font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
     transition: all 0.2s ease;
     white-space: normal;
 }
 
-.dropdown-menu li a:hover {
-    background-color: #eaeaea;
-    color: #000;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+.dropdown-menu a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 /* ------------------------------
    RIGHT-SIDE SUBMENU (Members)
 --------------------------------*/
-
-/* Only affect the Members submenu — do NOT touch top-level nav items */
 .nav-links li.dropdown-sub {
     position: relative;
 }
 
 .dropdown-sub > a {
-    padding-right: 18px; /* space for arrow */
+    padding-right: 18px;
 }
 
-/* Right-side flyout */
 .submenu-right {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%; /* positions it to the RIGHT of Members */
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    left: 100%;
     min-width: 200px;
     padding: 8px 0;
     list-style: none;
+    background-color: #1a1a1a !important;
+    border: none !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     z-index: 2200;
 }
 
-/* Show submenu on hover */
 .dropdown-sub:hover > .submenu-right {
     display: block;
 }
 
-/* Styling for submenu links */
-.submenu-right li a {
+.submenu-right a {
     display: block;
     padding: 10px 18px;
-    text-decoration: underline;
-    color: #222;
-    font-weight: 600;
     font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
     white-space: nowrap;
 }
 
-.submenu-right li a:hover {
-    background-color: #eaeaea;
-    color: #000;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+.submenu-right a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
-/* Keep Members text + arrow on one line */
+/* Keep Members text + arrow aligned */
 .dropdown-sub {
     display: flex;
     align-items: center;
-    gap: 6px; /* space between text and arrow */
+    gap: 6px;
     white-space: nowrap;
 }
 
-.submenu-link {
-    display: inline-block;
-}
-
+.submenu-link,
 .submenu-toggle {
     display: inline-block;
-    white-space: nowrap;
 }
 
 /* ------------------------------
