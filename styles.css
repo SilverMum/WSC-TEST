@@ -4291,3 +4291,22 @@ body, body * {
 .home-info-section .contact-italic {
     font-style: italic !important;
 }
+
+/* =========================================================
+   HOME PAGE — MEMBERSHIP SECTION ADDITIONAL TITLE + LIST STYLES
+   ========================================================= */
+
+/* Underline ACTIVITIES title */
+.home-info-section .activities-title {
+    text-decoration: underline !important;
+}
+
+/* Make entire Activities list italic */
+.home-info-section .activities-list li {
+    font-style: italic !important;
+}
+
+/* Underline GENERAL MEMBERSHIP MEETING title */
+.home-info-section .meeting-title {
+    text-decoration: underline !important;
+}
