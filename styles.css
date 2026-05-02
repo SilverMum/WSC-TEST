@@ -4091,3 +4091,18 @@ body, body * {
 .trap-skeet-bg .ts-announcement .ts-left {
     margin-left: 20px !important; /* same visual offset as card grid */
 }
+
+/* =========================================================
+   TRAP & SKEET — CALENDAR EXPANSION (LEFT + DOWN ONLY)
+   ========================================================= */
+
+/* Expand the orange card 20px to the left */
+.trap-skeet-bg .calendar-card {
+    margin-left: -20px !important;   /* grows left only */
+    padding: 5px !important;         /* keep existing padding */
+}
+
+/* Expand the calendar downward by 20px */
+.trap-skeet-bg .calendar-card iframe {
+    height: 620px !important;        /* was 600px */
+}
