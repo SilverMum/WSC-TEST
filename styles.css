@@ -4237,3 +4237,15 @@ body, body * {
 .facebook-text p:nth-child(2) {
     font-style: italic;
 }
+
+/* =========================================================
+   HOME PAGE — MAKE MEMBERSHIP CARD WIDE LIKE ARCHERY TRIO
+   ========================================================= */
+
+.home-meeting-card.outer-card.wide-card {
+    max-width: 1200px !important; /* same width as archery wide card */
+}
+
+.home-meeting-card .inner-card.wide-inner {
+    padding: 40px !important; /* same breathing room */
+}
