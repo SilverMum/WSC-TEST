@@ -4135,3 +4135,10 @@ body, body * {
     font-size: 1.1rem !important;   /* smaller than the paragraphs */
 }
 
+/* =========================================================
+   TRAP & SKEET — REMOVE ITALIC FROM "The club reopens..." LINE
+   ========================================================= */
+
+.trap-skeet-bg .ts-announcement .ts-left p strong {
+    font-style: normal !important;
+}
