@@ -4336,6 +4336,7 @@ body, body * {
 /* Raise ONLY the left and right columns higher */
 .home-info-section .info-col:first-child,
 .home-info-section .info-col:last-child {
-    margin-top: -120px; 
+    margin-top: -180px;
 }
+
 
