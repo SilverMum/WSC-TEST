@@ -4060,3 +4060,26 @@ body, body * {
     margin-bottom: 8px !important;
     font-style: italic !important;
 }
+
+/* =========================================================
+   TRAP & SKEET — HORIZONTAL PADDING FIX (10px LESS)
+   ========================================================= */
+
+/* Reduce left/right padding on the main announcement + calendar container */
+.trap-skeet-bg .ts-announcement {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* Reduce padding on the card grid section */
+.trap-skeet-bg .ts-card-grid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* Reduce padding on the entire page content wrapper */
+.trap-skeet-bg main,
+.trap-skeet-bg .content-section {
+    padding-left: 6px !important;   /* was 16px globally — now 10px less */
+    padding-right: 6px !important;
+}
