@@ -4302,3 +4302,13 @@ body, body * {
     padding-top: 0 !important;   /* removes the inner card’s top space */
     margin-top: -10px !important; /* pulls the inner card upward by 10px */
 }
+
+.home-meeting-card.outer-card {
+    padding-top: 20px !important;
+}
+
+.home-meeting-card .inner-card {
+    margin-top: 0 !important;
+    padding-top: 30px !important;
+}
+
