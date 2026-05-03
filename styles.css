@@ -4351,4 +4351,5 @@ body, body * {
 /* INNER CARD — 30px → 0px (removes 30px) */
 .home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
     padding-top: 5px !important;
+    margin-top: -5px !important; /* move TOP CARD up by 5px */
 }
