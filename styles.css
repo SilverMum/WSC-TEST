@@ -4291,9 +4291,3 @@ body, body * {
     padding-left: 0 !important;
     list-style-position: inside !important;
 }
-
-/* Move ALL THREE columns upward by 10px */
-.home-info-section .info-col {
-    margin-top: -10px !important;
-}
-
