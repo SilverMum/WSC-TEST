@@ -4292,3 +4292,8 @@ body, body * {
     list-style-position: inside !important;
 }
 
+/* Move ALL THREE columns upward by 10px */
+.home-info-section .info-col {
+    margin-top: -10px !important;
+}
+
