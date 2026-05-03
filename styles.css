@@ -4295,11 +4295,28 @@ body, body * {
 /* OUTER CARD — remove top padding so the card starts higher */
 .home-meeting-card.outer-card.wide-card {
     padding-top: 0 !important;   /* removes the built‑in top space INSIDE the card */
-    margin-top: -3px !important; /* pulls the entire outer card upward 
+    margin-top: 0px !important; /* pulls the entire outer card upward 
 }
 
 /* INNER CARD — remove its top padding and pull it up slightly */
 .home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
     padding-top: 0 !important;   /* removes the inner card’s top space */
-    margin-top: 0px !important; /* pulls the inner card upward by 10px */
+    margin-top: -10px !important; /* pulls the inner card upward by 10px */
+}
+
+/* OUTER CARD — create a 2–3px top reveal */
+.outer-card {
+    position: relative;
+}
+
+.outer-card::before {
+    content: "";
+    position: absolute;
+    top: -3px;          /* how far the reveal sticks out */
+    left: 0;
+    right: 0;
+    height: 3px;        /* thickness of the reveal */
+    background: inherit; /* matches the outer card background */
+    border-radius: inherit; /* keeps rounded corners perfect */
+    z-index: 2;         /* sits above the inner card */
 }
