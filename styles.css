@@ -4301,5 +4301,5 @@ body, body * {
 /* INNER CARD — remove its top padding and pull it up slightly */
 .home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
     padding-top: 0 !important;   /* removes the inner card’s top space */
-    margin-top: -10px !important; /* pulls the inner card upward by 10px */
+    margin-top: 0px !important; /* pulls the inner card upward by 10px */
 }
