@@ -4320,3 +4320,20 @@ body, body * {
     border-radius: inherit; /* keeps rounded corners perfect */
     z-index: 2;         /* sits above the inner card */
 }
+
+/* OUTER CARD — create a 2–3px top reveal */
+.outer-card {
+    position: relative;
+}
+
+.outer-card::before {
+    content: "";
+    position: absolute;
+    top: -3px;          /* how far the reveal sticks out */
+    left: 0;
+    right: 0;
+    height: 3px;        /* thickness of the reveal */
+    background: rgba(255, 255, 255, 0.3); /* match your outer card background */
+    border-radius: 12px 12px 0 0; /* match top corners only */
+    z-index: 5;         /* sits above the inner card */
+}
