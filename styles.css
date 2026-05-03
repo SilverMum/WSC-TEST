@@ -4345,7 +4345,7 @@ body, body * {
 
 .home-meeting-card.outer-card.wide-card {
     padding-top: 0 !important;   /* reset */
-    margin-top: -25px !important;
+    margin-top: -15px !important;
 }
 
 /* INNER CARD — 30px → 0px (removes 30px) */
