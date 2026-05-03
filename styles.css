@@ -4338,19 +4338,3 @@ body, body * {
     padding-left: 0 !important;
     list-style-position: inside !important;
 }
-
-/* =========================================================
-   CARD TOP PADDING — REMOVE 10PX FROM BOTH CARDS
-   ========================================================= */
-
-/* OUTER CARD — this is the BOTTOM card in the stack */
-.home-meeting-card.outer-card.wide-card {
-    padding-top: 0 !important;   /* removes all top padding INSIDE the outer card */
-    margin-top: 0px !important;  /* keeps the entire outer card in its normal position (no up/down movement) */
-}
-
-/* INNER CARD — this is the TOP card in the stack */
-.home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
-    padding-top: 5px !important;  /* pushes the CONTENT inside the inner card DOWN by 5px */
-    margin-top: 0px !important;  /* moves the ENTIRE inner card UP by 5px */
-}
