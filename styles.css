@@ -527,7 +527,7 @@ main {
     background: rgba(230, 235, 234, 0.55); /* soft fog gray */
     padding: 30px;
     border-radius: 12px;
-    min-height: 500px; /* you asked for 500px */
+    min-height: 440px; /* you asked for 500px */
 
     box-shadow:
        0 4px 14px rgba(47, 79, 62, 0.35),
