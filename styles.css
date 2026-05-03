@@ -4257,13 +4257,13 @@ body, body * {
 
 /* Pull left and right columns upward to remove extra space */
 .home-info-section .info-col {
-    margin-top: 0; /* was -15px — this was pulling content upward */
+    margin-top: -15px;
 }
 
 /* Raise ONLY the left and right columns higher */
 .home-info-section .info-col:first-child,
 .home-info-section .info-col:last-child {
-    margin-top: -20px; /* was -260px — this was stretching the card height */
+    margin-top: -260px;
 }
 
 /* Make Activities list flush left */
