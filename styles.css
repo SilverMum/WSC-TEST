@@ -4278,3 +4278,17 @@ body, body * {
     margin-left: 0 !important;
 }
 
+/* Make Activities list flush left */
+.home-info-section .activities-list {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    list-style-position: inside !important; /* THIS is the missing piece */
+}
+
+/* Make bullets sit tight to the text */
+.home-info-section .activities-list li {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    list-style-position: inside !important;
+}
+
