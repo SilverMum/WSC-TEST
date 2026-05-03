@@ -520,6 +520,7 @@ main {
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
+   
 }
 
 .home-meeting-card .inner-card {
@@ -4251,79 +4252,18 @@ body, body * {
 }
 
 /* =========================================================
-   HOME PAGE — MEMBERSHIP SECTION UPDATED TYPOGRAPHY
-   ========================================================= */
-
-/* Make all text dark grey */
-.home-info-section,
-.home-info-section p,
-.home-info-section li,
-.home-info-section h3 {
-    color: #333 !important;
-}
-
-/* Title sizes — ALL titles same size, bigger than before */
-.home-info-section .info-title {
-    font-size: 2.2rem !important; /* 1 size bigger than 2.2rem */
-    font-weight: 800 !important;
-    text-decoration: underline; /* underline CONTACT as requested */
-}
-
-/* Body text sizes */
-.home-info-section p,
-.home-info-section li,
-.home-info-section .meeting-date {
-    font-size: 1.6rem !important;
-    line-height: 1.5 !important;
-}
-
-/* CONTACT SECTION FORMATTING */
-.home-info-section .contact-title {
-    text-decoration: underline !important; /* underline CONTACT only */
-}
-
-/* Bold labels */
-.home-info-section .contact-bold {
-    font-weight: 800 !important;
-}
-
-/* Italic values */
-.home-info-section .contact-italic {
-    font-style: italic !important;
-}
-
-/* =========================================================
-   HOME PAGE — MEMBERSHIP SECTION ADDITIONAL TITLE + LIST STYLES
-   ========================================================= */
-
-/* Underline ACTIVITIES title */
-.home-info-section .activities-title {
-    text-decoration: underline !important;
-}
-
-/* Make entire Activities list italic */
-.home-info-section .activities-list li {
-    font-style: italic !important;
-}
-
-/* Underline GENERAL MEMBERSHIP MEETING title */
-.home-info-section .meeting-title {
-    text-decoration: underline !important;
-}
-
-/* =========================================================
    HOME PAGE — MEMBERSHIP SPACING FIXES
    ========================================================= */
 
 /* Pull left and right columns upward to remove extra space */
 .home-info-section .info-col {
-    margin-top: -15px;
+    margin-top: 0; /* was -15px — this was pulling content upward */
 }
 
 /* Raise ONLY the left and right columns higher */
 .home-info-section .info-col:first-child,
 .home-info-section .info-col:last-child {
-    margin-top: -260px;
+    margin-top: -20px; /* was -260px — this was stretching the card height */
 }
 
 /* Make Activities list flush left */
@@ -4335,6 +4275,5 @@ body, body * {
 /* Make bullets sit tight to the text */
 .home-info-section .activities-list li {
     margin-left: 0 !important;
-    padding-left: 0 !important;
-    list-style-position: inside !important;
 }
+
