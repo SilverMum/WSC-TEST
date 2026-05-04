@@ -4290,25 +4290,3 @@ body, body * {
     padding-left: 0 !important;
     list-style-position: inside !important;
 }
-
-/* OUTER CARD — remove top padding so the card starts higher */
-.home-meeting-card.outer-card.wide-card {
-    padding-top: 0 !important;   /* removes the built‑in top space INSIDE the card */
-    margin-top: -10px !important; /* pulls the entire outer card upward 
-}
-
-/* INNER CARD — remove its top padding and pull it up slightly */
-.home-meeting-card.outer-card.wide-card .inner-card.wide-inner {
-    padding-top: 0 !important;   /* removes the inner card’s top space */
-    margin-top: -10px !important; /* pulls the inner card upward by 10px */
-}
-
-.home-meeting-card.outer-card {
-    padding-top: 20px !important;
-}
-
-.home-meeting-card .inner-card {
-    margin-top: 0 !important;
-    padding-top: 30px !important;
-}
-
