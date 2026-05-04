@@ -1071,6 +1071,24 @@ body.login-bg .site-footer {
     margin: 0 auto;     /* centers it inside the right column */
 }
 
+/* Force calendar card to align with the 8-card grid */
+.ts-announcement {
+    justify-content: space-between;
+}
+
+.ts-right {
+    flex: 1;
+    max-width: 900px;      /* same width as grid */
+    display: flex;
+    justify-content: flex-end; /* pushes card left */
+}
+
+.calendar-card {
+    width: 100%;
+    max-width: 900px;      /* hard cap */
+    margin-right: auto;    /* shifts it left */
+}
+
 /* --------------------------------------------------
    CARD GRID
 -------------------------------------------------- */
