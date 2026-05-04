@@ -4132,3 +4132,8 @@ body, body * {
 .facebook-text p:nth-child(2) {
     font-style: italic;
 }
+
+/* MEMBERSHIP CARD WIDTH — MATCH ALL OTHER HOMEPAGE CARDS */
+.home-meeting-card.outer-card {
+    max-width: 900px !important;
+}
