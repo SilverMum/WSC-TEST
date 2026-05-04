@@ -300,14 +300,10 @@ main {
 
 /* Home page title bigger */
 .home-hero-title {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(2.2rem, 4vw, 4.0rem); /* 4 text sizes bigger */
     font-weight: 800;
-    white-space: normal !important;   /* ⭐ THIS FIXES THE WRAP */
-}
-
-/* Move homepage title upward without affecting anything else */
-.home-hero-title {
-    margin-top: -60px;   /* adjust this number until it looks perfect */
+    white-space: normal !important;
+    margin-top: -60px;
 }
 
 /* ------------------------------
