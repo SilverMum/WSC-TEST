@@ -4132,3 +4132,89 @@ body, body * {
     }
 }
 
+/* =========================================================
+   MOBILE FIXES — CHEESE & CRACKER PAGE ONLY
+   (NO DESKTOP CHANGES)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* ------------------------------
+       1. LOWER THE HEADER IMAGE ~15px
+       ------------------------------ */
+    body.cheese-bg section[style] {
+        height: 165px !important; /* was 180px → lowered by 15px */
+    }
+
+    /* ------------------------------
+       2. REDUCE EMPTY SPACE ABOVE FOOTER
+       ------------------------------ */
+    main.content-section {
+        margin-bottom: 10px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .cheese-card.outer-card {
+        margin-bottom: 20px !important;
+    }
+
+    /* ------------------------------
+       3. MATCH ARCHERY MOBILE NAV
+       ------------------------------ */
+    .main-nav {
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 6px 10px;
+        white-space: normal;
+    }
+
+    /* Dropdowns full-width on mobile */
+    .dropdown-menu,
+    .submenu-right {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu a,
+    .submenu-right a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    /* ------------------------------
+       4. CHEESE IMAGES — stack cleanly
+       ------------------------------ */
+    .cheesecracker-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cheesecracker-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* ------------------------------
+       5. PREVENT ANY SIDE SCROLLING
+       ------------------------------ */
+    body {
+        overflow-x: hidden;
+    }
+}
