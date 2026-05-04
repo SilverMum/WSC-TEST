@@ -514,7 +514,7 @@ main {
 --------------------------------*/
 /* OUTER CARD — standard */
 .outer-card {
-    max-width: 900px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.3);
