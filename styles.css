@@ -1060,6 +1060,17 @@ body.login-bg .site-footer {
     border: none;
 }
 
+/* Fix calendar alignment to match the 8-card grid */
+.ts-right {
+    max-width: 900px;   /* same width as your cards */
+    margin-left: auto;  /* pushes it left to align perfectly */
+}
+
+.calendar-card {
+    max-width: 900px;   /* prevents it from stretching wider */
+    margin: 0 auto;     /* centers it inside the right column */
+}
+
 /* --------------------------------------------------
    CARD GRID
 -------------------------------------------------- */
