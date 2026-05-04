@@ -415,7 +415,7 @@ main {
     font-size: 160px;
     transform: translate(8px, 12px);
     line-height: 1;
-    color: rgba(50, 168, 82, 0.75);
+    color: rgb(50, 168, 82); /* ← FULLY SOLID NOW */
     pointer-events: none;
     font-family: Georgia, serif;
     z-index: 0;
