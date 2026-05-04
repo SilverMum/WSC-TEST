@@ -535,6 +535,13 @@ main {
         0 8px 28px rgba(47, 79, 62, 0.25);
 }
 
+.membership-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* optional */
+}
+
 /* ------------------------------
    SIMPLE RANGE NOTICE SECTION
 --------------------------------*/
