@@ -526,7 +526,7 @@ main {
 
 /* INNER CARD — standard */
 .inner-card {
-    background: rgba(230, 235, 234, 0.55);
+    background: rgba(220, 230, 239, 0.55); /* new blue-gray with same opacity */
     padding: 30px;
     border-radius: 12px;
 
