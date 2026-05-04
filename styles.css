@@ -512,7 +512,8 @@ main {
 /* ------------------------------
    HOMEPAGE — MEETING WHITE CARD
 --------------------------------*/
-.home-meeting-card.outer-card {
+/* OUTER CARD — standard */
+.outer-card {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
@@ -520,41 +521,18 @@ main {
     border-radius: 12px;
     backdrop-filter: blur(4px);
     text-align: center;
-   
+    position: relative;
 }
 
-.home-meeting-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
+/* INNER CARD — standard */
+.inner-card {
+    background: rgba(230, 235, 234, 0.55);
     padding: 30px;
     border-radius: 12px;
 
     box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.meeting-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: red;
-    line-height: 1.4;
-    margin-bottom: 5px;
-}
-
-.meeting-logo {
-    max-width: 300px;
-    height: auto;
-    margin-top: 5px;
-}
-
-@media (max-width: 700px) {
-    .meeting-logo {
-        display: block;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        max-width: 70% !important;
-        text-align: center;
-    }
+        0 4px 14px rgba(47, 79, 62, 0.35),
+        0 8px 28px rgba(47, 79, 62, 0.25);
 }
 
 /* ------------------------------
@@ -4117,110 +4095,6 @@ body, body * {
 }
 
 /* =========================================================
-   HOME PAGE — INFO SECTION (CONTACT / MEETING / ACTIVITIES)
-   ========================================================= */
-
-.home-info-section {
-    width: 100%;
-    margin-top: 40px;
-    text-align: center;
-}
-
-/* Invisible spacers */
-.info-spacer {
-    width: 33%;
-    height: 20px;
-    visibility: hidden;
-}
-
-/* Logo centered */
-.info-logo img {
-    max-width: 260px;
-    height: auto;
-    margin: 0 auto 25px auto;
-    display: block;
-}
-
-/* Three-column layout */
-.info-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 10px;
-    align-items: flex-start; /* aligns left/right titles with top of logo */
-}
-
-/* Each column */
-.info-col {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Titles */
-.info-title {
-    font-weight: 800;
-    margin-bottom: 10px;
-    font-size: 2.2rem !important;
-}
-
-/* Body text sizes + color */
-.home-info-section,
-.home-info-section p,
-.home-info-section li,
-.home-info-section h3 {
-    color: #333 !important;
-}
-
-.home-info-section p,
-.home-info-section li,
-.home-info-section .meeting-date {
-    font-size: 1.8rem !important;
-    line-height: 1.5 !important;
-}
-
-/* Middle column centered */
-.home-info-section .info-col:nth-child(2) {
-    text-align: center;
-}
-
-/* Activities list */
-.activities-list {
-    list-style-type: disc;
-    margin-left: 25px !important;
-    line-height: 1.5;
-}
-
-/* =========================================================
-   HOME PAGE — REMOVE CARD PADDING FOR INFO SECTION
-   ========================================================= */
-
-.home-meeting-card.outer-card .inner-card .home-info-section {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    max-width: 100% !important;
-}
-
-/* Remove the card padding ONLY for this one card */
-.home-meeting-card.outer-card .inner-card {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* =========================================================
-   HOME PAGE — MAKE MEMBERSHIP CARD WIDE LIKE ARCHERY TRIO
-   ========================================================= */
-
-.home-meeting-card.outer-card.wide-card {
-    max-width: 1200px !important;
-}
-
-.home-meeting-card .inner-card.wide-inner {
-    padding: 40px !important;
-}
-
-/* =========================================================
    HOME PAGE — FACEBOOK SECTION (MATCH IMAGE STYLE)
    ========================================================= */
 
@@ -4249,44 +4123,4 @@ body, body * {
 
 .facebook-text p:nth-child(2) {
     font-style: italic;
-}
-
-/* =========================================================
-   HOME PAGE — MEMBERSHIP SPACING FIXES
-   ========================================================= */
-
-/* Pull left and right columns upward to remove extra space */
-.home-info-section .info-col {
-    margin-top: -15px;
-}
-
-/* Raise ONLY the left and right columns higher */
-.home-info-section .info-col:first-child,
-.home-info-section .info-col:last-child {
-    margin-top: -260px;
-}
-
-/* Make Activities list flush left */
-.home-info-section .activities-list {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-}
-
-/* Make bullets sit tight to the text */
-.home-info-section .activities-list li {
-    margin-left: 0 !important;
-}
-
-/* Make Activities list flush left */
-.home-info-section .activities-list {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-    list-style-position: inside !important; /* THIS is the missing piece */
-}
-
-/* Make bullets sit tight to the text */
-.home-info-section .activities-list li {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-    list-style-position: inside !important;
 }
