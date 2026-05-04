@@ -4134,3 +4134,13 @@ body, body * {
         overflow-x: hidden;
     }
 }
+
+/* =========================================================
+   ARCHERY — REMOVE HEADER IMAGE ON MOBILE ONLY
+   ========================================================= */
+@media (max-width: 900px) {
+    .archery-header {
+        display: none !important;
+    }
+}
+
