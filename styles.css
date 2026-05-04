@@ -982,6 +982,8 @@ body.login-bg .site-footer {
     display: flex;
     gap: 40px;
     padding: 0 20px;
+    justify-content: space-between;   /* keep spacing */
+    align-items: flex-start;          /* ⭐ STOP equal-height stretching */
 }
 
 .ts-left {
@@ -1038,6 +1040,9 @@ body.login-bg .site-footer {
 
 .ts-right {
     flex: 1;
+    max-width: 900px;              /* match card grid */
+    display: flex;
+    justify-content: flex-start;   /* align left */
 }
 
 .ts-right iframe {
@@ -1048,10 +1053,13 @@ body.login-bg .site-footer {
 /* ⭐ Orange card behind calendar */
 .calendar-card {
     background: #ff9f43;
-    padding: 5px;
+    padding: 5px 5px 3px 5px;      /* top right bottom left */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    padding: 5px 5px 3px 5px; /* top right bottom left */
+    width: 100%;
+    max-width: 900px;              /* match grid width */
+    margin-left: 0;
+    margin-right: auto;            /* push right edge left */
 }
 
 .calendar-card iframe {
@@ -1061,23 +1069,46 @@ body.login-bg .site-footer {
     border: none;
 }
 
-/* ⭐ ALIGN CALENDAR WITH 8-CARD GRID */
-.ts-announcement {
-    justify-content: space-between;
+/* --------------------------------------------------
+   CARD GRID
+-------------------------------------------------- */
+.ts-card-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
-.ts-right {
-    flex: 1;
-    max-width: 900px;          /* same width as grid */
-    display: flex;
-    justify-content: flex-start; /* pushes card LEFT */
+.ts-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.calendar-card {
+.ts-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.ts-card-image {
     width: 100%;
-    max-width: 900px;          /* hard cap */
-    margin-left: 0;            /* align left edge */
-    margin-right: auto;        /* push right edge left */
+    height: 180px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.ts-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 10px 20px 10px;
 }
 
 /* --------------------------------------------------
