@@ -514,7 +514,7 @@ main {
 --------------------------------*/
 /* OUTER CARD — standard */
 .outer-card {
-    max-width: 700px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.3);
@@ -537,6 +537,7 @@ main {
 
 .membership-image {
     width: 100%;
+    max-width: 900px;
     height: auto;
     display: block;
     border-radius: 10px; /* optional */
