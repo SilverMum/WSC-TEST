@@ -1069,6 +1069,26 @@ body.login-bg .site-footer {
     border: none;
 }
 
+.fb-bottom-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.fb-bottom-button img {
+    width: 240px;
+    max-width: 240px;
+    height: auto;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.fb-bottom-button img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
 /* --------------------------------------------------
    CARD GRID
 -------------------------------------------------- */
