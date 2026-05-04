@@ -680,94 +680,24 @@ main {
 }
 
 /* ------------------------------
-   MAX BAND
+   EARLY EVENT CARD (replaces MaxBand + Band)
 --------------------------------*/
-.maxband-card.outer-card {
+.early-event-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(4px);
-}
-
-.maxband-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.maxband-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 40px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-.maxband-left img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.maxband-right {
-    max-width: 500px;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 18px;
-    color: black;
-}
-
-/* ------------------------------
-   BAND IMAGE — OUTER CARD
---------------------------------*/
-.band-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px; /* gap around inner card */
-    background: rgba(255, 255, 255, 0.3); /* 30% white */
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
     text-align: center;
 }
 
-/* ------------------------------
-   BAND IMAGE — INNER CARD
---------------------------------*/
-.band-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-/* ------------------------------
-   BAND IMAGE ITSELF
---------------------------------*/
-#band-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+/* Event image inside the card */
+.event-image {
+    width: 100%;
     height: auto;
-}
-
-@media (max-width: 900px) {
-    .maxband-wrapper {
-        flex-direction: column;
-        text-align: center;
-        margin: 20px auto;
-    }
+    display: block;
+    border-radius: 12px; /* matches outer card corners */
 }
 
 /* ------------------------------
