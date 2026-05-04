@@ -1051,6 +1051,7 @@ body.login-bg .site-footer {
     padding: 5px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 5px 5px 3px 5px; /* top right bottom left */
 }
 
 .calendar-card iframe {
