@@ -1355,6 +1355,30 @@ body.trap-skeet-bg::before {
     z-index: -1;
 }
 
+/* --------------------------------------------------
+   INFO 8 — FORM COLOR FIXES
+-------------------------------------------------- */
+
+/* Make all form text white */
+.ts-contact-card label,
+.ts-contact-card h3,
+.ts-contact-card .field-checkbox label {
+    color: white !important;
+}
+
+/* Make input + textarea backgrounds white, text black */
+.ts-contact-card input,
+.ts-contact-card textarea {
+    background: white !important;
+    color: black !important;
+}
+
+/* Placeholder text also black */
+.ts-contact-card input::placeholder,
+.ts-contact-card textarea::placeholder {
+    color: black !important;
+}
+
 /* ============================
    Trap & Skeet – Weather at bottom
    ============================ */
