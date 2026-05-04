@@ -1219,7 +1219,7 @@ body.login-bg .site-footer {
 .ts-close-wrapper {
     position: fixed;
     top: calc(12.5vh + 7px);
-    right: calc(15vw - 12px);
+    right: calc(15vw - 12px + 8px);
     width: 38px;
     height: 38px;
     background: rgba(0,0,0,0.85);
