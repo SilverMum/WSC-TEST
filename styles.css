@@ -540,43 +540,6 @@ main {
 }
 
 /* ------------------------------
-   SIMPLE RANGE NOTICE SECTION
---------------------------------*/
-.range-simple-section {
-    text-align: center;
-    margin: 40px auto 10px;
-    padding: 10px 0;
-}
-
-.range-simple-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #e60000;
-    margin-bottom: 8px;
-}
-
-.range-simple-subtitle {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #000;
-    font-style: italic;
-    margin-top: 0;
-}
-
-/* ------------------------------
-   SIMPLE RANGE BUTTON
---------------------------------*/
-.range-button-simple {
-    text-align: center;
-    margin: 10px auto 40px;
-}
-
-.range-button-simple-img:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.1);
-}
-
-/* ------------------------------
    HOMEPAGE — RANGE WHITE CARD
 --------------------------------*/
 .home-range-card.outer-card {
@@ -589,98 +552,18 @@ main {
     text-align: center;
 }
 
-/* UNIVERSAL INNER CARD — updated */
-.inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.range-simple-title {
-    margin-bottom: 15px;
-}
-
-.range-simple-subtitle {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.range-button-simple-img {
-    width: 380px;      /* increased from 320px */
-    max-width: 95%;    /* stays responsive */
-    height: auto;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: transform 0.2s ease, filter 0.2s ease;
-}
-
 /* ------------------------------
-   RIB & CHICKEN
+   RANGE IMAGE (new)
 --------------------------------*/
-.club-ribchicken img {
-    display: block;
-    margin: 25px auto;
-    max-width: 900px;
+.range-image {
     width: 100%;
     height: auto;
-}
-
-.white-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-}
-
-.white-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.ribchicken-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.ribchicken-left img {
-    max-width: 420px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.ribchicken-right {
-    max-width: 500px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: black;
-}
-
-@media (max-width: 900px) {
-    .ribchicken-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
+    display: block;
+    border-radius: 12px; /* matches outer card corners */
 }
 
 /* ------------------------------
-   EARLY EVENT CARD (replaces MaxBand + Band)
+   EARLY EVENT CARD
 --------------------------------*/
 .early-event-card.outer-card {
     max-width: 900px;
@@ -692,12 +575,31 @@ main {
     text-align: center;
 }
 
-/* Event image inside the card */
 .event-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px; /* matches outer card corners */
+    border-radius: 12px;
+}
+
+/* ------------------------------
+   LATER EVENT CARD
+--------------------------------*/
+.later-event-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.later-event-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 /* ------------------------------
@@ -724,77 +626,6 @@ main {
         display: block !important;
         margin: 0 auto !important;
     }
-}
-
-/* ------------------------------
-   CONTACT SECTION
---------------------------------*/
-.contact-section {
-    text-align: center;
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.6;
-    margin: 40px auto;
-    padding: 0 20px;
-    max-width: 900px;
-}
-
-.contact-line {
-    margin-bottom: 18px;
-}
-
-.contact-spacer {
-    height: 20px;
-}
-
-.section-divider {
-    width: 100%;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.section-divider img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-#contact-title {
-    scroll-margin-top: 190px;
-}
-
-/* ------------------------------
-   CONTACT CARD
---------------------------------*/
-.home-contact-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-.home-contact-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.contact-line {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
-    line-height: 1.6;
-    margin-bottom: 10px;
 }
 
 /* ------------------------------
@@ -854,66 +685,6 @@ main {
     max-width: 900px;
     height: auto;
     border-radius: 10px;
-}
-
-/* ------------------------------
-   ACTIVITIES CARD
---------------------------------*/
-.activities-section {
-    width: 100%;
-    margin: 40px 0;
-    padding: 0 0 20px;
-    text-align: center;
-}
-
-.activities-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.activities-text {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #000;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.activities-section {
-    margin-bottom: 10px;
-}
-
-.home-activities-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-.home-activities-card .inner-card {
-    background: rgba(230, 235, 234, 0.55); /* soft fog gray */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-       0 4px 14px rgba(47, 79, 62, 0.35),
-       0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-.activities-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
-    line-height: 1.6;
-}
-
-.activities-title {
-    margin-bottom: 20px;
 }
 
 /* ------------------------------
