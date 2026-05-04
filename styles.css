@@ -1325,6 +1325,18 @@ body.login-bg .site-footer {
 }
 
 /* --------------------------------------------------
+   PACKAGE TITLES (Card 4)
+-------------------------------------------------- */
+.package-title {
+    font-size: 2rem;          /* 4 text sizes bigger */
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    text-align: center;       /* matches your layout */
+    color: white !important;  /* ensures visibility in modal */
+}
+
+/* --------------------------------------------------
    BACKGROUND
 -------------------------------------------------- */
 body.trap-skeet-bg {
