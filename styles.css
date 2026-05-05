@@ -4191,3 +4191,28 @@ body.home main {
         height: 90px !important;
     }
 }
+
+/* =========================================================
+   FINAL FIX — HOMEPAGE NAV MATCHES ALL OTHER PAGES ON MOBILE
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Homepage nav must align left like other pages */
+    body.home .main-nav {
+        justify-content: flex-start !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* Homepage nav links wrap exactly like other pages */
+    body.home .nav-links {
+        justify-content: flex-start !important;
+        gap: 14px !important;
+        flex-wrap: wrap !important;
+    }
+
+    /* Logo scales same as other pages */
+    body.home .logo img {
+        height: 90px !important;
+    }
+}
