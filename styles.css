@@ -4218,42 +4218,51 @@ body.home main {
 }
 
 /* =========================================================
-   HOMEPAGE NAV — FIX MOBILE LAYOUT ONLY FOR INDEX.HTML
+   HOMEPAGE NAV — MATCH ARCHERY MOBILE BEHAVIOR EXACTLY
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Stack nav vertically ONLY on homepage */
+    /* Homepage nav layout identical to Archery */
     body.home .main-nav {
         flex-direction: column;
+        align-items: flex-start;   /* Archery uses left alignment */
         justify-content: flex-start;
-        align-items: center;
-        padding: 10px 0 20px;
+        padding: 10px 20px;        /* Archery spacing */
     }
 
-    /* Logo smaller ONLY on homepage */
+    /* Logo stays full size like Archery */
     body.home .logo img {
-        height: 80px;
+        height: 110px;
     }
 
-    /* Stack nav links vertically ONLY on homepage */
+    /* Nav links stack vertically, left aligned */
     body.home .nav-links {
         flex-direction: column;
-        gap: 12px;
+        align-items: flex-start;   /* match Archery */
+        gap: 10px;
         padding-right: 0;
         margin-top: 10px;
+        width: 100%;
     }
 
-    /* Dropdown menus behave like other pages */
+    /* Dropdown menus become static (same as Archery) */
     body.home .dropdown-menu,
     body.home .submenu-right {
         position: static;
-        box-shadow: none;
-        background-color: #1a1a1a;
+        display: none;             /* JS will toggle open */
         width: 100%;
-        text-align: center;
+        background-color: #1a1a1a;
+        box-shadow: none;
+        padding-left: 10px;        /* Archery indent */
     }
 
-    /* Remove homepage spacer conflicts */
+    /* When dropdown is opened via JS */
+    body.home .dropdown.open > .dropdown-menu,
+    body.home .dropdown-sub.open > .submenu-right {
+        display: block;
+    }
+
+    /* Remove homepage spacer */
     body.home .nav-spacer {
         display: none !important;
     }
