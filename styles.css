@@ -4147,3 +4147,22 @@ body, body * {
 body.home main {
     margin-top: 180px !important; /* same visual spacing as before */
 }
+
+/* =========================================================
+   FIX HOMEPAGE NAV — STOP DESKTOP RULES FROM LEAKING INTO MOBILE
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Reset homepage-only desktop nav behavior */
+    .home .dropdown-sub {
+        display: block !important;
+        white-space: normal !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .home .submenu-link,
+    .home .submenu-toggle {
+        display: inline-block !important;
+    }
+}
