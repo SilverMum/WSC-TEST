@@ -4122,3 +4122,22 @@ body, body * {
         overflow-x: hidden;
     }
 }
+
+/* =========================================================
+   GLOBAL MOBILE FIX — PUSH ALL PAGE CONTENT DOWN 20PX
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Push main content down on ALL pages */
+    main,
+    body.home main,
+    .content-section,
+    .calendar-page,
+    .trap-skeet-bg main,
+    .archery-page main,
+    .cheese-bg main,
+    .air-rifle-bg main {
+        padding-top: 20px !important;
+    }
+}
+
