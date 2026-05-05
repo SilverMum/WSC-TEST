@@ -4135,6 +4135,18 @@ body.home main {
     }
 }
 
+/* ⭐ FIX DROPDOWN MENU BREAKING (restore nav <li> spacing) */
+@media (max-width: 900px) {
+    .main-nav li,
+    .nav-links li,
+    .dropdown-menu li,
+    .submenu-right li {
+        font-size: inherit !important;
+        line-height: inherit !important;
+        white-space: nowrap !important;
+    }
+}
+
 /* 3. Fix all images that may overflow */
 @media (max-width: 900px) {
     img {
