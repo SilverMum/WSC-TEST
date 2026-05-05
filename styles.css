@@ -4216,3 +4216,45 @@ body.home main {
         height: 90px !important;
     }
 }
+
+/* =========================================================
+   HOMEPAGE NAV — FIX MOBILE LAYOUT TO MATCH OTHER PAGES
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Stack nav vertically like other pages */
+    .main-nav {
+        flex-direction: column;
+        justify-content: flex-start; /* override homepage centering */
+        align-items: center;
+        padding: 10px 0 20px;
+    }
+
+    /* Logo centered and smaller */
+    .logo img {
+        height: 80px;
+    }
+
+    /* Nav links stacked vertically */
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+    /* Dropdown menus behave like other pages */
+    .dropdown-menu,
+    .submenu-right {
+        position: static;
+        box-shadow: none;
+        background-color: #1a1a1a;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Remove homepage spacing conflicts */
+    .nav-spacer {
+        display: none !important;
+    }
+}
