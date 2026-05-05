@@ -4079,3 +4079,35 @@ body.home main {
         justify-content: space-between;
     }
 }
+
+/* =========================================================
+   TEST SHIFT — GROUPS SUBMENU (ALL PAGES, MOBILE ONLY)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    .dropdown-sub .submenu-right {
+        position: static !important;
+        width: 100% !important;
+        margin: 0 !important;
+
+        /* ⭐ DRAMATIC SHIFT RIGHT — 60px ⭐ */
+        padding: 0 60px !important;
+
+        background-color: #1a1a1a !important;
+        text-align: left !important;
+        box-shadow: none !important;
+    }
+
+    .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .dropdown-sub {
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+}
