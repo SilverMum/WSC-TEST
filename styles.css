@@ -4135,7 +4135,7 @@ body.home main {
     }
 }
 
-/* ⭐ FIX DROPDOWN MENU BREAKING (restore nav <li> spacing) */
+/* ⭐ FIX DROPDOWN MENU BREAKING (restore nav <li> spacing + alignment) */
 @media (max-width: 900px) {
     .main-nav li,
     .nav-links li,
@@ -4144,6 +4144,28 @@ body.home main {
         font-size: inherit !important;
         line-height: inherit !important;
         white-space: nowrap !important;
+        text-align: left !important;
+    }
+}
+
+/* ⭐ FIX NAV IMAGES (prevent arrow icons from stretching) */
+@media (max-width: 900px) {
+    .main-nav img,
+    .nav-links img,
+    .dropdown-menu img,
+    .submenu-right img {
+        max-width: none !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+/* ⭐ ENSURE DROPDOWNS ACTUALLY OPEN ON MOBILE */
+@media (max-width: 900px) {
+    .dropdown-menu.open,
+    .submenu-right.open {
+        display: block !important;
+        position: absolute !important;
     }
 }
 
