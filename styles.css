@@ -4567,3 +4567,17 @@ body.home main {
         white-space: nowrap !important;
     }
 }
+
+@media (max-width: 900px) {
+    body.home .nav-links li.dropdown {
+        position: relative !important;
+        z-index: 10 !important;
+    }
+}
+
+@media (max-width: 900px) {
+    body.home .dropdown-menu,
+    body.home .submenu-right {
+        z-index: 9999 !important;
+    }
+}
