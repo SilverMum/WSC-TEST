@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* -----------------------------------------------------
        2. EVENTS DROPDOWN (TOP LEVEL)
        ----------------------------------------------------- */
-    const eventsToggle = document.querySelector('.dropdown > a'); 
+    const eventsToggle = document.querySelector('.dropdown > a');
     const eventsMenu = document.querySelector('.dropdown > .dropdown-menu');
 
     if (eventsToggle && eventsMenu) {
@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     /* -----------------------------------------------------
        3. GROUPS → MEMBERS SUBMENU
        ----------------------------------------------------- */
-    const groupsToggle = document.querySelector('.dropdown-sub > a'); 
+    const groupsToggle = document.querySelector('.dropdown-sub > a');
     const groupsMenu = document.querySelector('.dropdown-sub > .submenu-right');
 
     if (groupsToggle && groupsMenu) {
         groupsToggle.addEventListener('click', function (e) {
             if (window.innerWidth <= 900) {
                 e.preventDefault();
-                groupsMenu.classList.toggle('open'); 
+                groupsMenu.classList.toggle('open');
             }
         });
     }
