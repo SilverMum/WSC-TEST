@@ -4053,11 +4053,11 @@ body.home main {
 }
 
 /* =========================================================
-   FINAL — GROUPS SUBMENU (ALL PAGES, MOBILE ONLY)
+   FINAL — GROUPS & EVENTS SUBMENU (ALL PAGES, MOBILE ONLY)
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* 1. Override global absolute positioning */
+    /* 1. Remove desktop absolute positioning */
     body .dropdown-menu,
     body .submenu-right {
         position: static !important;
@@ -4065,34 +4065,43 @@ body.home main {
         top: auto !important;
         width: 100% !important;
         margin: 0 !important;
-        box-shadow: none !important;
+        padding: 0 !important;
         background-color: #1a1a1a !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 
-    /* 2. Default state: submenu hidden (toggle controls this) */
-    body .dropdown-sub .submenu-right {
+    /* 2. Default: hidden */
+    body .dropdown-menu,
+    body .submenu-right {
         display: none !important;
     }
 
-    /* 3. When JS adds .open → show submenu */
-    body .dropdown-sub .submenu-right.open {
+    /* 3. JS toggles .open → show */
+    body .dropdown-menu.open,
+    body .submenu-right.open {
         display: block !important;
     }
 
-    /* 4. Actual layout + dramatic test shift */
-    body .dropdown-sub .submenu-right {
-        padding-left: 80px !important;   /* ⭐ dramatic shift so we SEE it */
-        padding-right: 0 !important;
+    /* 4. Clean vertical list */
+    body .dropdown-menu li,
+    body .submenu-right li {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
         text-align: left !important;
+        white-space: nowrap !important;
     }
 
-    /* 5. Text inside submenu */
-    body .dropdown-sub .submenu-right a {
+    /* 5. Clean links */
+    body .dropdown-menu a,
+    body .submenu-right a {
         display: block !important;
         width: 100% !important;
+        padding: 10px 16px !important;
         text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        white-space: nowrap !important;
+        background-color: #1a1a1a !important;
     }
 
     /* 6. Parent row alignment */
@@ -4129,26 +4138,27 @@ body.home main {
         font-size: 1.6rem !important;
     }
 
+    /* CONTENT text only — nav is overridden below */
     p, li {
         font-size: 1.1rem !important;
         line-height: 1.55 !important;
     }
 }
 
-/* ⭐ FIX DROPDOWN MENU BREAKING (restore nav <li> spacing + alignment) */
+/* ⭐ RESTORE NAV TEXT (prevent global li rule from breaking dropdown) */
 @media (max-width: 900px) {
     .main-nav li,
     .nav-links li,
     .dropdown-menu li,
     .submenu-right li {
-        font-size: inherit !important;
-        line-height: inherit !important;
+        font-size: 1rem !important;
+        line-height: 1.3 !important;
         white-space: nowrap !important;
         text-align: left !important;
     }
 }
 
-/* ⭐ FIX NAV IMAGES (prevent arrow icons from stretching) */
+/* ⭐ PREVENT NAV IMAGES FROM STRETCHING */
 @media (max-width: 900px) {
     .main-nav img,
     .nav-links img,
@@ -4157,15 +4167,6 @@ body.home main {
         max-width: none !important;
         width: auto !important;
         height: auto !important;
-    }
-}
-
-/* ⭐ ENSURE DROPDOWNS ACTUALLY OPEN ON MOBILE */
-@media (max-width: 900px) {
-    .dropdown-menu.open,
-    .submenu-right.open {
-        display: block !important;
-        position: absolute !important;
     }
 }
 
@@ -4331,7 +4332,7 @@ body.home main {
     }
 }
 
-/* 16. ⭐ FIX HUGE MOBILE LOGO (nav stays centered, desktop untouched) */
+/* 16. ⭐ FIX HUGE MOBILE LOGO */
 @media (max-width: 900px) {
     .logo img {
         height: 60px !important;
