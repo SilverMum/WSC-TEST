@@ -4330,3 +4330,67 @@ body.home main {
         justify-content: space-between;
     }
 }
+
+/* =========================================================
+   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Make submenu open below and full width */
+    .dropdown-sub .submenu-right {
+        position: static !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 20px !important; /* aligns with outer card left edge */
+        background-color: #1a1a1a;
+        box-shadow: none;
+        text-align: left !important;
+    }
+
+    /* Fix text alignment inside submenu */
+    .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        display: block;
+    }
+
+    /* Ensure Members row spans full width */
+    .dropdown-sub {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* =========================================================
+   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Make submenu open BELOW and fully visible on ALL pages */
+    .dropdown-sub .submenu-right {
+        position: static !important;     /* stop opening to the right */
+        width: 100% !important;          /* full width under parent */
+        margin: 0 !important;
+        padding: 0 30px !important;      /* ⭐ shift right 10px (20 → 30) */
+        background-color: #1a1a1a;
+        box-shadow: none;
+        text-align: left !important;     /* force left alignment */
+    }
+
+    /* Fix text alignment inside submenu on ALL pages */
+    .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        display: block;
+    }
+
+    /* Ensure the Members row spans full width */
+    .dropdown-sub {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
