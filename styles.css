@@ -4606,3 +4606,26 @@ body.home main {
         white-space: nowrap !important;
     }
 }
+
+/* ⭐ FIX EVENTS DROPDOWN PUSHING NAV DOWN */
+.dropdown {
+    position: relative !important; /* anchor point */
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;     /* directly under Events */
+    left: 0 !important;       /* aligned to Events button */
+    z-index: 9999 !important; /* float above nav */
+    background: #1a1a1a !important;
+    display: none !important;
+    width: max-content !important;
+    min-width: 160px !important;
+    padding: 6px 0 !important;
+    border-radius: 4px !important;
+}
+
+/* Show when JS toggles .open */
+.dropdown-menu.open {
+    display: block !important;
+}
