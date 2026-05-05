@@ -4574,3 +4574,35 @@ body.home main {
         white-space: nowrap !important;
     }
 }
+
+/* ⭐ MOBILE FIX — Keep Members submenu visible on small screens */
+@media (max-width: 900px) {
+
+    /* Keep submenu opening to the right, like desktop */
+    .submenu-right {
+        position: absolute !important;
+        top: 0 !important;
+        left: 100% !important;
+        background: #1a1a1a !important;
+        z-index: 9999 !important;
+        display: none !important;
+        min-width: 160px !important;
+        border-radius: 4px !important;
+        padding: 6px 0 !important;
+    }
+
+    /* Show when JS toggles .open */
+    .submenu-right.open {
+        display: block !important;
+
+        /* ⭐ Prevent off‑screen overflow */
+        transform: translateX(-20px) !important;
+    }
+
+    /* Submenu items */
+    .submenu-right li a {
+        display: block !important;
+        padding: 10px 14px !important;
+        white-space: nowrap !important;
+    }
+}
