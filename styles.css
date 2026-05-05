@@ -4218,25 +4218,25 @@ body.home main {
 }
 
 /* =========================================================
-   HOMEPAGE NAV — FIX MOBILE LAYOUT TO MATCH OTHER PAGES
+   HOMEPAGE NAV — FIX MOBILE LAYOUT ONLY FOR INDEX.HTML
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Stack nav vertically like other pages */
-    .main-nav {
+    /* Stack nav vertically ONLY on homepage */
+    body.home .main-nav {
         flex-direction: column;
-        justify-content: flex-start; /* override homepage centering */
+        justify-content: flex-start;
         align-items: center;
         padding: 10px 0 20px;
     }
 
-    /* Logo centered and smaller */
-    .logo img {
+    /* Logo smaller ONLY on homepage */
+    body.home .logo img {
         height: 80px;
     }
 
-    /* Nav links stacked vertically */
-    .nav-links {
+    /* Stack nav links vertically ONLY on homepage */
+    body.home .nav-links {
         flex-direction: column;
         gap: 12px;
         padding-right: 0;
@@ -4244,8 +4244,8 @@ body.home main {
     }
 
     /* Dropdown menus behave like other pages */
-    .dropdown-menu,
-    .submenu-right {
+    body.home .dropdown-menu,
+    body.home .submenu-right {
         position: static;
         box-shadow: none;
         background-color: #1a1a1a;
@@ -4253,8 +4253,8 @@ body.home main {
         text-align: center;
     }
 
-    /* Remove homepage spacing conflicts */
-    .nav-spacer {
+    /* Remove homepage spacer conflicts */
+    body.home .nav-spacer {
         display: none !important;
     }
 }
