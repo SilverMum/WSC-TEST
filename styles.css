@@ -3588,8 +3588,8 @@ header {
 
 /* Full blue card */
 #airrifle-calendar {
-    background-color: rgba(0, 51, 102, 0.12); /* soft translucent deep blue */
-    padding: 25px 35px; /* desktop padding */
+    background-color: rgba(0, 51, 102, 0.12);
+    padding: 25px 35px;
     border-radius: 10px;
     margin: 0 auto 40px auto;
     max-width: 900px;
@@ -3602,7 +3602,6 @@ header {
 
 @media (max-width: 768px) {
 
-    /* ARCHERY — show green on sides, remove squeeze */
     #archery-calendar {
         padding-left: 6% !important;
         padding-right: 6% !important;
@@ -3616,7 +3615,6 @@ header {
         padding-right: 0 !important;
     }
 
-    /* AIR RIFLE — show blue on sides, remove squeeze */
     #airrifle-calendar {
         padding-left: 6% !important;
         padding-right: 6% !important;
@@ -3630,7 +3628,6 @@ header {
         padding-right: 0 !important;
     }
 
-    /* Shared wrapper behavior */
     .calendar-wrapper {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -3654,35 +3651,30 @@ header {
    ----------- CALENDAR PAGE -------------
    ========================================================= */
 
-/* Header image inside wrapper */
 .calendar-header-img {
     display: block;
     margin: 0 auto 20px auto;
     height: auto;
 }
 
-/* Wrapper that matches the red card width */
 .calendar-header-wrapper {
     max-width: 900px;
     margin: 0 auto 20px auto;
     text-align: center;
 }
 
-/* FORCE image to match wrapper width */
 .calendar-header-wrapper img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Title styling */
 .calendar-title {
     text-align: center;
     font-size: 2.6rem;
     font-weight: bold;
     color: black;
     display: inline-block;
-    border-bottom: none;
     padding-bottom: 6px;
     margin: 70px auto 30px auto;
 }
@@ -3695,27 +3687,23 @@ header {
     background: none;
 }
 
-/* Inner container: padding only, no border */
 #wsc-calendar .calendar-container {
     padding: 15px;
     border-radius: 6px;
 }
 
-/* Calendar container sizing */
 .calendar-container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* Calendar iframe */
 .calendar-container iframe {
     width: 100%;
     height: 600px;
     border: 0;
 }
 
-/* Page wrapper */
 .calendar-page {
     text-align: center;
     padding: 20px;
@@ -3728,7 +3716,6 @@ header {
     background-repeat: no-repeat;
 }
 
-/* White overlay over the entire background */
 .calendar-bg::before {
     content: "";
     position: fixed;
@@ -3744,9 +3731,8 @@ header {
 
 @media (max-width: 768px) {
 
-    /* NEW: Move header image down so nav doesn't cover it */
     .calendar-header-img {
-        margin-top: 60px; /* about 1 inch on most phones */
+        margin-top: 60px;
     }
 
     #wsc-calendar {
@@ -3791,25 +3777,22 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Make ALL text on the entire site use Image 1's font */
 body, body * {
     font-family: "Times New Roman", Times, serif !important;
 }
 
 /* =========================================================
-   TRAP & SKEET — ANNOUNCEMENT (IMAGE 1 EXACT STYLE)
+   TRAP & SKEET — ANNOUNCEMENT
    ========================================================= */
 
-/* Base announcement block */
 .trap-skeet-bg .ts-announcement .ts-left {
-    margin-left: 20px !important;   /* aligned with card grid */
+    margin-left: 20px !important;
     margin-right: 40px !important;
     text-align: left !important;
     line-height: 1.7 !important;
-    font-style: normal !important;  /* reset everything */
+    font-style: normal !important;
 }
 
-/* Headings */
 .trap-skeet-bg .ts-announcement .ts-left h2,
 .trap-skeet-bg .ts-announcement .ts-left h3 {
     font-style: normal !important;
@@ -3817,28 +3800,24 @@ body, body * {
 }
 
 .trap-skeet-bg .ts-announcement .ts-left h3 {
-    font-weight: 800 !important; /* Important Notes */
+    font-weight: 800 !important;
 }
 
-/* Paragraphs */
 .trap-skeet-bg .ts-announcement .ts-left p {
     font-style: normal !important;
     font-size: 1.6rem !important;
     margin-left: 0 !important;
 }
 
-/* ONLY the italic line */
 .trap-skeet-bg .ts-announcement .ts-left p em {
-    font-style: italic !important; /* Repairs are complete */
+    font-style: italic !important;
 }
 
-/* Ensure “The club reopens…” is NOT italic */
 .trap-skeet-bg .ts-announcement .ts-left p strong {
     font-style: normal !important;
     font-weight: 800 !important;
 }
 
-/* Bullet list */
 .trap-skeet-bg .ts-announcement .ts-left ul {
     margin-left: 60px !important;
     line-height: 1.7 !important;
@@ -3856,7 +3835,7 @@ body, body * {
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement {
-    padding-left: 0 !important;   /* aligns with card grid */
+    padding-left: 0 !important;
     padding-right: 5px !important;
 }
 
@@ -3871,19 +3850,19 @@ body, body * {
 }
 
 /* =========================================================
-   TRAP & SKEET — CALENDAR EXPANSION (20PX LEFT + 20PX DOWN)
+   TRAP & SKEET — CALENDAR EXPANSION
    ========================================================= */
 
 .trap-skeet-bg .calendar-card {
-    margin-left: -40px !important;   /* expand left */
+    margin-left: -40px !important;
 }
 
 .trap-skeet-bg .calendar-card iframe {
-    height: 640px !important;        /* expand down */
+    height: 640px !important;
 }
 
 /* =========================================================
-   TRAP & SKEET — FORCE 40/60 LAYOUT FOR ANNOUNCEMENT + CALENDAR
+   TRAP & SKEET — FORCE 40/60 LAYOUT
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement {
@@ -3891,11 +3870,11 @@ body, body * {
 }
 
 .trap-skeet-bg .ts-announcement .ts-left {
-    flex: 0 0 40% !important;   /* text column */
+    flex: 0 0 40% !important;
 }
 
 .trap-skeet-bg .ts-announcement .ts-right {
-    flex: 0 0 60% !important;   /* calendar column */
+    flex: 0 0 60% !important;
 }
 
 /* =========================================================
@@ -3903,11 +3882,11 @@ body, body * {
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement .ts-right {
-    padding-right: 5px !important;   /* matches card grid right padding */
+    padding-right: 5px !important;
 }
 
 /* =========================================================
-   HOME PAGE — FACEBOOK SECTION (MATCH IMAGE STYLE)
+   HOME PAGE — FACEBOOK SECTION
    ========================================================= */
 
 .facebook-section {
@@ -3937,20 +3916,15 @@ body, body * {
     font-style: italic;
 }
 
-/* MEMBERSHIP CARD WIDTH — MATCH ALL OTHER HOMEPAGE CARDS */
 .home-meeting-card.outer-card {
     max-width: 900px !important;
 }
 
 /* =========================================================
    MOBILE FIXES — AIR RIFLE PAGE ONLY
-   (NO DESKTOP CHANGES, NO NAV CHANGES)
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* ------------------------------
-       AIR RIFLE CARDS — prevent title overflow
-       ------------------------------ */
     .airrifle-card .inner-card {
         padding: 20px;
     }
@@ -3974,9 +3948,6 @@ body, body * {
         line-height: 1.5;
     }
 
-    /* ------------------------------
-       CALENDAR — full width, no overflow
-       ------------------------------ */
     .calendar-card {
         padding: 10px;
     }
@@ -3986,7 +3957,6 @@ body, body * {
         height: 450px !important;
     }
 
-    /* Prevent horizontal scrolling globally */
     body {
         overflow-x: hidden;
     }
@@ -3994,13 +3964,9 @@ body, body * {
 
 /* =========================================================
    MOBILE FIXES — ARCHERY PAGE ONLY
-   (NO DESKTOP CHANGES, NO NAV CHANGES)
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* ------------------------------
-       HEADER IMAGE — full image, scaled down
-       ------------------------------ */
     .archery-header-img {
         width: 100%;
         height: auto;
@@ -4010,9 +3976,6 @@ body, body * {
         margin: 0 auto;
     }
 
-    /* ------------------------------
-       ARCHERY CARDS — prevent overflow
-       ------------------------------ */
     .outer-card {
         padding: 12px;
         margin: 20px auto;
@@ -4035,9 +3998,6 @@ body, body * {
         word-break: break-word;
     }
 
-    /* ------------------------------
-       CANCELATIONS — overflow fix
-       ------------------------------ */
     .archery-cancel-title {
         font-size: 1.6rem;
         white-space: normal;
@@ -4051,9 +4011,6 @@ body, body * {
         word-break: break-word;
     }
 
-    /* ------------------------------
-       CALENDAR — full width, no overflow
-       ------------------------------ */
     .calendar-container,
     .calendar-wrapper {
         width: 100%;
@@ -4070,9 +4027,6 @@ body, body * {
         padding: 15px;
     }
 
-    /* ------------------------------
-       IMAGE TRIO — stack on mobile
-       ------------------------------ */
     .archery-image-wrapper {
         display: flex;
         flex-direction: column;
@@ -4092,20 +4046,13 @@ body, body * {
 
 /* =========================================================
    MOBILE FIXES — CHEESE & CRACKER PAGE ONLY
-   (NO DESKTOP CHANGES, NO NAV CHANGES)
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* ------------------------------
-       LOWER THE HEADER IMAGE ~15px
-       ------------------------------ */
     body.cheese-bg section[style] {
         height: 165px !important;
     }
 
-    /* ------------------------------
-       REDUCE EMPTY SPACE ABOVE FOOTER
-       ------------------------------ */
     main.content-section {
         margin-bottom: 10px !important;
         padding-bottom: 0 !important;
@@ -4115,9 +4062,6 @@ body, body * {
         margin-bottom: 20px !important;
     }
 
-    /* ------------------------------
-       CHEESE IMAGES — stack cleanly
-       ------------------------------ */
     .cheesecracker-wrapper {
         display: flex;
         flex-direction: column;
@@ -4145,18 +4089,22 @@ body, body * {
 }
 
 /* =========================================================
-   HOMEPAGE NAV — MATCH ARCHERY ON MOBILE
+   FORCE HOMEPAGE NAV TO MATCH ARCHERY NAV ON MOBILE
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Remove the two giant spacers ONLY on mobile */
-    body.home section[style] {
-        height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
+    body.home main {
+        max-width: 1200px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
     }
 
-    /* Ensure homepage nav wraps naturally like Archery */
+    body.home section[style] {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     body.home .main-nav {
         display: flex;
         flex-wrap: wrap;
@@ -4170,7 +4118,6 @@ body, body * {
         justify-content: center;
     }
 
-    /* Prevent homepage from forcing horizontal scroll */
     body.home {
         overflow-x: hidden;
     }
