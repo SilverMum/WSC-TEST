@@ -4296,3 +4296,11 @@ body.home main {
         padding-right: 12px !important;
     }
 }
+
+/* 16. ⭐ FIX HUGE MOBILE LOGO (nav stays centered, desktop untouched) */
+@media (max-width: 900px) {
+    .logo img {
+        height: 60px !important;
+        width: auto !important;
+    }
+}
