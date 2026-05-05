@@ -4154,3 +4154,35 @@ body.home main {
         display: block !important;
     }
 }
+
+/* =========================================================
+   MOBILE — OVERRIDE GLOBAL ABSOLUTE POSITIONING
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Override the global rule that forces absolute positioning */
+    .dropdown-menu,
+    .submenu-right {
+        position: static !important;   /* ← THIS is the key */
+        left: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Now we can shift the submenu */
+    .dropdown-sub .submenu-right {
+        padding-left: 60px !important;  /* dramatic shift so we can SEE it */
+        padding-right: 0 !important;
+        text-align: left !important;
+        display: block !important;
+    }
+
+    .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        display: block !important;
+    }
+}
