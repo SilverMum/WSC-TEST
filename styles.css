@@ -4517,106 +4517,18 @@ body.home main {
 }
 
 /* =========================================================
-   ⭐ MOBILE DROPDOWN — TEXT-WIDTH ONLY, UNDER GRID ITEM
+   ⭐ FIX EVENTS DROPDOWN PUSHING NAV DOWN (DESKTOP + MOBILE)
    ========================================================= */
-@media (max-width: 900px) {
 
-    /* Allow grid cells to grow vertically + anchor dropdown */
-    body .nav-links li {
-        height: auto !important;
-        position: relative !important;
-    }
-
-    /* Extra anchor for dropdown items */
-    body .nav-links li.dropdown {
-        position: relative !important;
-        z-index: 10 !important;
-    }
-
-    /* Dropdown positioned under the clicked item */
-    body .dropdown-menu,
-    body .submenu-right {
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
-        display: none !important;
-        background: #1a1a1a !important;
-        padding: 6px 0 !important;
-        margin: 0 !important;
-        width: max-content !important;   /* only as wide as text */
-        min-width: 140px !important;     /* min width for clean look */
-        z-index: 9999 !important;
-        border-radius: 4px !important;
-    }
-
-    /* Show when JS toggles .open */
-    body .dropdown-menu.open,
-    body .submenu-right.open {
-        display: block !important;
-    }
-
-    /* Dropdown items */
-    body .dropdown-menu li,
-    body .submenu-right li {
-        white-space: nowrap !important;
-        text-align: left !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    /* Dropdown links */
-    body .dropdown-menu a,
-    body .submenu-right a {
-        display: block !important;
-        padding: 10px 14px !important;
-        color: white !important;
-        background: #1a1a1a !important;
-        white-space: nowrap !important;
-    }
-}
-
-/* ⭐ MOBILE FIX — Keep Members submenu visible on small screens */
-@media (max-width: 900px) {
-
-    /* Keep submenu opening to the right, like desktop */
-    .submenu-right {
-        position: absolute !important;
-        top: 0 !important;
-        left: 100% !important;
-        background: #1a1a1a !important;
-        z-index: 9999 !important;
-        display: none !important;
-        min-width: 160px !important;
-        border-radius: 4px !important;
-        padding: 6px 0 !important;
-    }
-
-    /* Show when JS toggles .open */
-    .submenu-right.open {
-        display: block !important;
-
-        /* ⭐ Prevent off‑screen overflow */
-        transform: translateX(-20px) !important;
-    }
-
-    /* Submenu items */
-    .submenu-right li a {
-        display: block !important;
-        padding: 10px 14px !important;
-        white-space: nowrap !important;
-    }
-}
-
-/* ⭐ FIX EVENTS DROPDOWN PUSHING NAV DOWN */
 .dropdown {
     position: relative !important; /* anchor point */
 }
 
 .dropdown-menu {
     position: absolute !important;
-    top: 100% !important;     /* directly under Events */
-    left: 0 !important;       /* aligned to Events button */
-    z-index: 9999 !important; /* float above nav */
+    top: 100% !important;
+    left: 0 !important;
+    z-index: 9999 !important;
     background: #1a1a1a !important;
     display: none !important;
     width: max-content !important;
@@ -4625,7 +4537,6 @@ body.home main {
     border-radius: 4px !important;
 }
 
-/* Show when JS toggles .open */
 .dropdown-menu.open {
     display: block !important;
 }
