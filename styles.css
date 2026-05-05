@@ -4166,3 +4166,28 @@ body.home main {
         display: inline-block !important;
     }
 }
+
+/* =========================================================
+   FINAL FIX — FORCE HOMEPAGE NAV TO MATCH ARCHERY ON MOBILE
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Homepage nav must behave like other pages */
+    body.home .main-nav {
+        justify-content: flex-start !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Homepage nav links wrap like Archery */
+    body.home .nav-links {
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+        gap: 12px !important;
+    }
+
+    /* Logo stays left like other pages */
+    body.home .logo img {
+        height: 90px !important;
+    }
+}
