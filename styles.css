@@ -4112,6 +4112,65 @@ body.home main {
 }
 
 /* =========================================================
+   FINAL — EVENTS + GROUPS DROPDOWN (MOBILE ONLY)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* 1. Remove desktop absolute positioning */
+    body .dropdown-menu,
+    body .submenu-right {
+        position: static !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #1a1a1a !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* 2. Hidden by default */
+    body .dropdown-menu,
+    body .submenu-right {
+        display: none !important;
+    }
+
+    /* 3. Show when JS toggles .open */
+    body .dropdown-menu.open,
+    body .submenu-right.open {
+        display: block !important;
+        padding: 10px 0 !important;   /* visible dropdown bar */
+    }
+
+    /* 4. Clean vertical list */
+    body .dropdown-menu li,
+    body .submenu-right li {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center !important;   /* centered options */
+        white-space: nowrap !important;
+    }
+
+    /* 5. Clean links */
+    body .dropdown-menu a,
+    body .submenu-right a {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 0 !important;      /* tap-friendly */
+        text-align: center !important;
+        white-space: nowrap !important;
+        background-color: #1a1a1a !important;
+        color: white !important;
+    }
+
+    /* 6. Parent row alignment */
+    body .dropdown-sub {
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+}
+
+/* =========================================================
    UNIVERSAL MOBILE FIXES — CONTENT ONLY (NO NAV)
    ========================================================= */
 
