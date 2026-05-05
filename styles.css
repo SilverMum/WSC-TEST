@@ -4053,166 +4053,51 @@ body.home main {
 }
 
 /* =========================================================
-   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES (FINAL VERSION)
+   FINAL — GROUPS SUBMENU (ALL PAGES, MOBILE ONLY)
    ========================================================= */
 @media (max-width: 900px) {
-    .dropdown-sub .submenu-right {
+
+    /* 1. Override global absolute positioning */
+    body .dropdown-menu,
+    body .submenu-right {
         position: static !important;
+        left: auto !important;
+        top: auto !important;
         width: 100% !important;
         margin: 0 !important;
-        padding: 0 30px !important; /* final 10px right shift */
-        background-color: #1a1a1a;
-        box-shadow: none;
-        text-align: left !important;
+        box-shadow: none !important;
+        background-color: #1a1a1a !important;
     }
 
-    .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100%;
-        display: block;
-    }
-
-    .dropdown-sub {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* =========================================================
-   MOBILE — GROUPS SUBMENU TOGGLE (ALL PAGES)
-   ========================================================= */
-@media (max-width: 900px) {
-    .dropdown-sub .submenu-right {
+    /* 2. Default state: submenu hidden (toggle controls this) */
+    body .dropdown-sub .submenu-right {
         display: none !important;
     }
-    .dropdown-sub .submenu-right.open {
+
+    /* 3. When JS adds .open → show submenu */
+    body .dropdown-sub .submenu-right.open {
         display: block !important;
     }
-}
 
-/* =========================================================
-   TEST SHIFT — GROUPS SUBMENU (ALL PAGES, MOBILE ONLY)
-   ========================================================= */
-@media (max-width: 900px) {
-
-    .dropdown-sub .submenu-right {
-        position: static !important;
-        width: 100% !important;
-        margin: 0 !important;
-
-        /* ⭐ DRAMATIC SHIFT RIGHT — 60px ⭐ */
-        padding: 0 60px !important;
-
-        background-color: #1a1a1a !important;
+    /* 4. Actual layout + dramatic test shift */
+    body .dropdown-sub .submenu-right {
+        padding-left: 80px !important;   /* ⭐ dramatic shift so we SEE it */
+        padding-right: 0 !important;
         text-align: left !important;
-        box-shadow: none !important;
     }
 
-    .dropdown-sub .submenu-right a {
+    /* 5. Text inside submenu */
+    body .dropdown-sub .submenu-right a {
+        display: block !important;
+        width: 100% !important;
         text-align: left !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        width: 100% !important;
-        display: block !important;
     }
 
-    .dropdown-sub {
+    /* 6. Parent row alignment */
+    body .dropdown-sub {
         width: 100% !important;
         justify-content: space-between !important;
-    }
-}
-
-/* =========================================================
-   MOBILE — CORRECT GROUPS SUBMENU POSITIONING (ALL PAGES)
-   ========================================================= */
-@media (max-width: 900px) {
-
-    .dropdown-sub .submenu-right {
-        position: static !important;   /* overrides absolute */
-        left: auto !important;         /* overrides left:100% */
-        top: auto !important;          /* overrides top:0 */
-        width: 100% !important;        /* full width under parent */
-        margin: 0 !important;
-
-        /* ⭐ NOW padding will actually move it */
-        padding-left: 60px !important; /* dramatic shift so we can see it */
-        padding-right: 0 !important;
-
-        background-color: #1a1a1a !important;
-        box-shadow: none !important;
-        text-align: left !important;
-        display: block !important;
-    }
-
-    .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100% !important;
-        display: block !important;
-    }
-}
-
-/* =========================================================
-   MOBILE — OVERRIDE GLOBAL ABSOLUTE POSITIONING
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Override the global rule that forces absolute positioning */
-    .dropdown-menu,
-    .submenu-right {
-        position: static !important;   /* ← THIS is the key */
-        left: auto !important;
-        top: auto !important;
-        width: 100% !important;
-        margin: 0 !important;
-    }
-
-    /* Now we can shift the submenu */
-    .dropdown-sub .submenu-right {
-        padding-left: 60px !important;  /* dramatic shift so we can SEE it */
-        padding-right: 0 !important;
-        text-align: left !important;
-        display: block !important;
-    }
-
-    .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100% !important;
-        display: block !important;
-    }
-}
-
-/* =========================================================
-   FINAL OVERRIDE — GROUPS SUBMENU (ALL PAGES, MOBILE)
-   ========================================================= */
-@media (max-width: 900px) {
-
-    body .dropdown-sub .submenu-right {
-        position: static !important;
-        left: auto !important;
-        top: auto !important;
-        width: 100% !important;
-        margin: 0 !important;
-
-        /* ⭐ DRAMATIC SHIFT — 80px so we KNOW it works */
-        padding-left: 80px !important;
-
-        background-color: #1a1a1a !important;
-        text-align: left !important;
-        box-shadow: none !important;
-        display: block !important;
-    }
-
-    body .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100% !important;
-        display: block !important;
     }
 }
