@@ -4186,3 +4186,33 @@ body.home main {
         display: block !important;
     }
 }
+
+/* =========================================================
+   FINAL OVERRIDE — GROUPS SUBMENU (ALL PAGES, MOBILE)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    body .dropdown-sub .submenu-right {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        margin: 0 !important;
+
+        /* ⭐ DRAMATIC SHIFT — 80px so we KNOW it works */
+        padding-left: 80px !important;
+
+        background-color: #1a1a1a !important;
+        text-align: left !important;
+        box-shadow: none !important;
+        display: block !important;
+    }
+
+    body .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        display: block !important;
+    }
+}
