@@ -4144,3 +4144,34 @@ body, body * {
     }
 }
 
+/* =========================================================
+   HOMEPAGE NAV — MATCH ARCHERY ON MOBILE
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Remove the two giant spacers ONLY on mobile */
+    body.home section[style] {
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Ensure homepage nav wraps naturally like Archery */
+    body.home .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body.home .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* Prevent homepage from forcing horizontal scroll */
+    body.home {
+        overflow-x: hidden;
+    }
+}
