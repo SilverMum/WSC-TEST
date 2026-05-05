@@ -3924,211 +3924,62 @@ body, body * {
    MOBILE FIXES — AIR RIFLE PAGE ONLY
    ========================================================= */
 @media (max-width: 900px) {
-
-    .airrifle-card .inner-card {
-        padding: 20px;
-    }
-
-    .airrifle-title {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        white-space: normal;
-        word-break: break-word;
-    }
-
-    .airrifle-subheader {
-        font-size: 1.5rem;
-        line-height: 1.2;
-        white-space: normal;
-        word-break: break-word;
-    }
-
-    .airrifle-text {
-        font-size: 1.1rem;
-        line-height: 1.5;
-    }
-
-    .calendar-card {
-        padding: 10px;
-    }
-
-    .calendar-card iframe {
-        width: 100% !important;
-        height: 450px !important;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
+    .airrifle-card .inner-card { padding: 20px; }
+    .airrifle-title { font-size: 1.8rem; line-height: 1.2; white-space: normal; word-break: break-word; }
+    .airrifle-subheader { font-size: 1.5rem; line-height: 1.2; white-space: normal; word-break: break-word; }
+    .airrifle-text { font-size: 1.1rem; line-height: 1.5; }
+    .calendar-card { padding: 10px; }
+    .calendar-card iframe { width: 100% !important; height: 450px !important; }
+    body { overflow-x: hidden; }
 }
 
 /* =========================================================
    MOBILE FIXES — ARCHERY PAGE ONLY
    ========================================================= */
 @media (max-width: 900px) {
-
-    .archery-header-img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: contain;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .outer-card {
-        padding: 12px;
-        margin: 20px auto;
-    }
-
-    .inner-card.green-card {
-        padding: 18px;
-    }
-
+    .archery-header-img { width: 100%; height: auto; display: block; object-fit: contain; margin: 0 auto; }
+    .outer-card { padding: 12px; margin: 20px auto; }
+    .inner-card.green-card { padding: 18px; }
     .archery-title,
     .archery-subtitle,
     .archery-times,
     .archery-simple,
     .archery-pricing,
     .archery-weather,
-    .archery-private {
-        font-size: 1.1rem;
-        line-height: 1.4;
-        white-space: normal;
-        word-break: break-word;
-    }
-
-    .archery-cancel-title {
-        font-size: 1.6rem;
-        white-space: normal;
-        word-break: break-word;
-    }
-
-    .archery-dates {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        white-space: normal;
-        word-break: break-word;
-    }
-
-    .calendar-container,
-    .calendar-wrapper {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .calendar-wrapper iframe {
-        width: 100% !important;
-        height: 450px !important;
-        border: none;
-    }
-
-    .wide-inner {
-        padding: 15px;
-    }
-
-    .archery-image-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .archery-image-wrapper img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
+    .archery-private { font-size: 1.1rem; line-height: 1.4; white-space: normal; word-break: break-word; }
+    .archery-cancel-title { font-size: 1.6rem; white-space: normal; word-break: break-word; }
+    .archery-dates { font-size: 1.2rem; line-height: 1.4; white-space: normal; word-break: break-word; }
+    .calendar-container, .calendar-wrapper { width: 100%; overflow: hidden; }
+    .calendar-wrapper iframe { width: 100% !important; height: 450px !important; border: none; }
+    .wide-inner { padding: 15px; }
+    .archery-image-wrapper { display: flex; flex-direction: column; gap: 12px; }
+    .archery-image-wrapper img { width: 100%; height: auto; object-fit: contain; }
+    body { overflow-x: hidden; }
 }
 
 /* =========================================================
    MOBILE FIXES — CHEESE & CRACKER PAGE ONLY
    ========================================================= */
 @media (max-width: 900px) {
-
-    body.cheese-bg section[style] {
-        height: 165px !important;
-    }
-
-    main.content-section {
-        margin-bottom: 10px !important;
-        padding-bottom: 0 !important;
-    }
-
-    .cheese-card.outer-card {
-        margin-bottom: 20px !important;
-    }
-
-    .cheesecracker-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .cheesecracker-img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
+    body.cheese-bg section[style] { height: 165px !important; }
+    main.content-section { margin-bottom: 10px !important; padding-bottom: 0 !important; }
+    .cheese-card.outer-card { margin-bottom: 20px !important; }
+    .cheesecracker-wrapper { display: flex; flex-direction: column; gap: 12px; }
+    .cheesecracker-img { width: 100%; height: auto; object-fit: contain; }
+    body { overflow-x: hidden; }
 }
 
 /* =========================================================
    ARCHERY — REMOVE HEADER IMAGE ON MOBILE ONLY
    ========================================================= */
 @media (max-width: 900px) {
-    .archery-header {
-        display: none !important;
-    }
-}
-
-/* =========================================================
-   FORCE HOMEPAGE NAV TO MATCH ARCHERY NAV ON MOBILE
-   ========================================================= */
-@media (max-width: 900px) {
-
-    body.home main {
-        max-width: 1200px !important;
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-    }
-
-    body.home section[style] {
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    body.home .main-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    body.home .nav-links {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    body.home {
-        overflow-x: hidden;
-    }
+    .archery-header { display: none !important; }
 }
 
 /* =========================================================
    GLOBAL MOBILE FIX — PUSH ALL PAGE CONTENT DOWN 20PX
    ========================================================= */
 @media (max-width: 900px) {
-
-    /* Push main content down on ALL pages */
     main,
     body.home main,
     .content-section,
@@ -4145,84 +3996,13 @@ body, body * {
    HOMEPAGE — UNIVERSAL TOP SPACING (DESKTOP + MOBILE)
    ========================================================= */
 body.home main {
-    margin-top: 180px !important; /* same visual spacing as before */
-}
-
-/* =========================================================
-   FIX HOMEPAGE NAV — STOP DESKTOP RULES FROM LEAKING INTO MOBILE
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Reset homepage-only desktop nav behavior */
-    .home .dropdown-sub {
-        display: block !important;
-        white-space: normal !important;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-    }
-
-    .home .submenu-link,
-    .home .submenu-toggle {
-        display: inline-block !important;
-    }
-}
-
-/* =========================================================
-   FINAL FIX — FORCE HOMEPAGE NAV TO MATCH ARCHERY ON MOBILE
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Homepage nav must behave like other pages */
-    body.home .main-nav {
-        justify-content: flex-start !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-    /* Homepage nav links wrap like Archery */
-    body.home .nav-links {
-        flex-wrap: wrap !important;
-        justify-content: flex-start !important;
-        gap: 12px !important;
-    }
-
-    /* Logo stays left like other pages */
-    body.home .logo img {
-        height: 90px !important;
-    }
-}
-
-/* =========================================================
-   FINAL FIX — HOMEPAGE NAV MATCHES ALL OTHER PAGES ON MOBILE
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Homepage nav must align left like other pages */
-    body.home .main-nav {
-        justify-content: flex-start !important;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-
-    /* Homepage nav links wrap exactly like other pages */
-    body.home .nav-links {
-        justify-content: flex-start !important;
-        gap: 14px !important;
-        flex-wrap: wrap !important;
-    }
-
-    /* Logo scales same as other pages */
-    body.home .logo img {
-        height: 90px !important;
-    }
+    margin-top: 180px !important;
 }
 
 /* =========================================================
    HOMEPAGE NAV — MATCH ARCHERY 3‑COLUMN MOBILE GRID EXACTLY
    ========================================================= */
 @media (max-width: 900px) {
-
-    /* Logo centered like Archery */
     body.home .main-nav {
         flex-direction: column;
         align-items: center;
@@ -4231,22 +4011,20 @@ body.home main {
     }
 
     body.home .logo img {
-        height: 110px; /* Archery size */
+        height: 110px;
         margin-bottom: 10px;
     }
 
-    /* ⭐ 3‑COLUMN GRID — EXACT ARCHERY BEHAVIOR */
     body.home .nav-links {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        gap: 12px 0; /* vertical spacing only */
+        gap: 12px 0;
         padding: 0 20px;
         margin-top: 10px;
         text-align: left;
     }
 
-    /* Left‑aligned text inside each grid cell */
     body.home .nav-links a {
         text-align: left;
         width: 100%;
@@ -4254,7 +4032,6 @@ body.home main {
         white-space: nowrap;
     }
 
-    /* Dropdown menus span full width under the grid */
     body.home .dropdown-menu,
     body.home .submenu-right {
         position: static;
@@ -4262,92 +4039,33 @@ body.home main {
         background-color: #1a1a1a;
         padding-left: 10px;
         box-shadow: none;
-        grid-column: span 3; /* ⭐ dropdown spans full width */
+        grid-column: span 3;
     }
 
-    /* When dropdown is opened via JS */
     body.home .dropdown.open > .dropdown-menu,
     body.home .dropdown-sub.open > .submenu-right {
         display: block;
     }
 
-    /* Remove homepage spacer */
     body.home .nav-spacer {
         display: none !important;
     }
 }
 
 /* =========================================================
-   MOBILE FIX — GROUPS SUBMENU ALIGNMENT (ALL PAGES)
+   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES (FINAL VERSION)
    ========================================================= */
 @media (max-width: 900px) {
-
-    /* Make the Members submenu open fully visible */
-    .dropdown-sub .submenu-right {
-        position: static !important;   /* no off-screen positioning */
-        width: 100% !important;        /* full width under parent */
-        padding-left: 0 !important;    /* align with parent text */
-        padding-right: 0 !important;
-        margin-left: 0 !important;
-        text-align: left;              /* match Archery behavior */
-    }
-
-    /* Ensure the arrow stays aligned */
-    .dropdown-sub {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* =========================================================
-   MOBILE FIX — GROUPS SUBMENU ALIGNMENT + TEXT ALIGNMENT
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Make the submenu open BELOW and fully visible */
-    .dropdown-sub .submenu-right {
-        position: static !important;   /* no off-screen positioning */
-        width: 100% !important;        /* full width under parent */
-        margin: 0 !important;
-        padding: 0 20px !important;    /* aligns with outer card left edge */
-        background-color: #1a1a1a;
-        box-shadow: none;
-        text-align: left !important;   /* force left alignment */
-    }
-
-    /* Make the submenu text left aligned and consistent */
-    .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100%;
-        display: block;
-    }
-
-    /* Ensure the Members row stays full width */
-    .dropdown-sub {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* =========================================================
-   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Make submenu open below and full width */
     .dropdown-sub .submenu-right {
         position: static !important;
         width: 100% !important;
         margin: 0 !important;
-        padding: 0 20px !important; /* aligns with outer card left edge */
+        padding: 0 30px !important; /* final 10px right shift */
         background-color: #1a1a1a;
         box-shadow: none;
         text-align: left !important;
     }
 
-    /* Fix text alignment inside submenu */
     .dropdown-sub .submenu-right a {
         text-align: left !important;
         padding-left: 0 !important;
@@ -4356,39 +4074,6 @@ body.home main {
         display: block;
     }
 
-    /* Ensure Members row spans full width */
-    .dropdown-sub {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* =========================================================
-   MOBILE — FIX GROUPS SUBMENU ON ALL PAGES
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Make submenu open BELOW and fully visible on ALL pages */
-    .dropdown-sub .submenu-right {
-        position: static !important;     /* stop opening to the right */
-        width: 100% !important;          /* full width under parent */
-        margin: 0 !important;
-        padding: 0 30px !important;      /* ⭐ shift right 10px (20 → 30) */
-        background-color: #1a1a1a;
-        box-shadow: none;
-        text-align: left !important;     /* force left alignment */
-    }
-
-    /* Fix text alignment inside submenu on ALL pages */
-    .dropdown-sub .submenu-right a {
-        text-align: left !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100%;
-        display: block;
-    }
-
-    /* Ensure the Members row spans full width */
     .dropdown-sub {
         width: 100%;
         justify-content: space-between;
