@@ -4299,3 +4299,34 @@ body.home main {
     }
 }
 
+/* =========================================================
+   MOBILE FIX — GROUPS SUBMENU ALIGNMENT + TEXT ALIGNMENT
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Make the submenu open BELOW and fully visible */
+    .dropdown-sub .submenu-right {
+        position: static !important;   /* no off-screen positioning */
+        width: 100% !important;        /* full width under parent */
+        margin: 0 !important;
+        padding: 0 20px !important;    /* aligns with outer card left edge */
+        background-color: #1a1a1a;
+        box-shadow: none;
+        text-align: left !important;   /* force left alignment */
+    }
+
+    /* Make the submenu text left aligned and consistent */
+    .dropdown-sub .submenu-right a {
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        display: block;
+    }
+
+    /* Ensure the Members row stays full width */
+    .dropdown-sub {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
