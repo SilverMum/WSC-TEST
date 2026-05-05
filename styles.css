@@ -4101,3 +4101,198 @@ body.home main {
         justify-content: space-between !important;
     }
 }
+
+/* =========================================================
+   UNIVERSAL MOBILE FIXES — CONTENT ONLY (NO NAV)
+   ========================================================= */
+
+/* 1. Universal card padding tightening */
+@media (max-width: 900px) {
+    .outer-card {
+        padding: 14px !important;
+        margin: 20px auto !important;
+    }
+
+    .inner-card {
+        padding: 18px !important;
+    }
+}
+
+/* 2. Fix oversized text on mobile */
+@media (max-width: 900px) {
+    h1, .hero-title, .home-hero-title {
+        font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
+        white-space: normal !important;
+    }
+
+    h2, .section-title {
+        font-size: 1.6rem !important;
+    }
+
+    p, li {
+        font-size: 1.1rem !important;
+        line-height: 1.55 !important;
+    }
+}
+
+/* 3. Fix all images that may overflow */
+@media (max-width: 900px) {
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .page-header img,
+    .membership-image,
+    .event-image,
+    .later-event-image,
+    .trap-skeet-home-image {
+        border-radius: 10px !important;
+    }
+}
+
+/* 4. Force all 2‑column layouts to stack */
+@media (max-width: 900px) {
+    .ts-announcement,
+    .private-events-info,
+    .kitchen-layout,
+    .archery-image-wrapper,
+    .ofha-info-row,
+    .ts-contact-flex {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    .ts-contact-left,
+    .ts-contact-right {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* 5. Fix modal sizing on small screens */
+@media (max-width: 900px) {
+    .ts-overlay-content {
+        width: 92vw !important;
+        height: 78vh !important;
+        margin-top: 10vh !important;
+        padding: 20px !important;
+    }
+
+    .ts-close-wrapper {
+        right: 10px !important;
+        top: 10px !important;
+    }
+}
+
+/* 6. Fix Google Calendar embeds */
+@media (max-width: 900px) {
+    iframe[src*="calendar"] {
+        height: 450px !important;
+        width: 100% !important;
+    }
+
+    .calendar-card {
+        padding: 10px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* 7. Fix grids that don’t collapse properly */
+@media (max-width: 900px) {
+    .ts-card-grid,
+    .members-grid,
+    .private-events-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+/* 8. Fix spacing under fixed nav (non‑homepage) */
+@media (max-width: 900px) {
+    main:not(.home main) {
+        padding-top: 20px !important;
+    }
+}
+
+/* 9. Fix long titles wrapping badly */
+@media (max-width: 900px) {
+    .package-title,
+    .archery-title,
+    .airrifle-title {
+        white-space: normal !important;
+        word-break: break-word !important;
+        text-align: center !important;
+    }
+}
+
+/* 10. Fix contact forms on all pages */
+@media (max-width: 900px) {
+    input, textarea {
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+
+    .field-row,
+    .field-inline,
+    .field-checkbox {
+        width: 100% !important;
+        display: block !important;
+    }
+}
+
+/* 11. Fix wood‑background pages (Members, Pledge, Cheese) */
+@media (max-width: 900px) {
+    .wood-back-card,
+    .pledge-wood {
+        padding: 20px !important;
+    }
+
+    .pledge-glass {
+        padding: 20px !important;
+    }
+}
+
+/* 12. Fix TV page images */
+@media (max-width: 900px) {
+    .tv-grid-img,
+    .tv-grid-img-wide,
+    .tv-antenna-img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* 13. Fix OFHA intro row */
+@media (max-width: 900px) {
+    .ofha-info-logo {
+        text-align: center !important;
+    }
+
+    .ofha-info-logo img {
+        margin: 0 auto !important;
+    }
+}
+
+/* 14. Fix Air Rifle page text scaling */
+@media (max-width: 900px) {
+    .airrifle-text,
+    .airrifle-subheader {
+        font-size: 1.1rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* 15. Fix excessive horizontal padding on some pages */
+@media (max-width: 900px) {
+    .content-section,
+    .tv-wrapper,
+    .airrifle-wrapper,
+    .archery-page,
+    .private-events-gallery {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
