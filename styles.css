@@ -4276,3 +4276,26 @@ body.home main {
         display: none !important;
     }
 }
+
+/* =========================================================
+   MOBILE FIX — GROUPS SUBMENU ALIGNMENT (ALL PAGES)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Make the Members submenu open fully visible */
+    .dropdown-sub .submenu-right {
+        position: static !important;   /* no off-screen positioning */
+        width: 100% !important;        /* full width under parent */
+        padding-left: 0 !important;    /* align with parent text */
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        text-align: left;              /* match Archery behavior */
+    }
+
+    /* Ensure the arrow stays aligned */
+    .dropdown-sub {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
