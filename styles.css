@@ -4081,6 +4081,18 @@ body.home main {
 }
 
 /* =========================================================
+   MOBILE — GROUPS SUBMENU TOGGLE (ALL PAGES)
+   ========================================================= */
+@media (max-width: 900px) {
+    .dropdown-sub .submenu-right {
+        display: none !important;
+    }
+    .dropdown-sub .submenu-right.open {
+        display: block !important;
+    }
+}
+
+/* =========================================================
    TEST SHIFT — GROUPS SUBMENU (ALL PAGES, MOBILE ONLY)
    ========================================================= */
 @media (max-width: 900px) {
