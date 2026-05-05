@@ -4141,3 +4141,9 @@ body, body * {
     }
 }
 
+/* =========================================================
+   HOMEPAGE — UNIVERSAL TOP SPACING (DESKTOP + MOBILE)
+   ========================================================= */
+body.home main {
+    margin-top: 180px !important; /* same visual spacing as before */
+}
