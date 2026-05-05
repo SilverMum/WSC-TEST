@@ -5,7 +5,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     /* -----------------------------------------------------
-       1. MOBILE HAMBURGER MENU TOGGLE
+       1. MOBILE HAMBURGER MENU TOGGLE (if used)
        ----------------------------------------------------- */
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /* -----------------------------------------------------
        2. EVENTS DROPDOWN (TOP LEVEL)
        ----------------------------------------------------- */
-    const eventsToggle = document.querySelector('.dropdown > .nav-link, .dropdown > .submenu-toggle');
-    const eventsMenu = document.querySelector('.dropdown-menu');
+    const eventsToggle = document.querySelector('.dropdown > a'); 
+    const eventsMenu = document.querySelector('.dropdown > .dropdown-menu');
 
     if (eventsToggle && eventsMenu) {
         eventsToggle.addEventListener('click', function (e) {
@@ -32,19 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* -----------------------------------------------------
-       3. GROUPS → MEMBERS SUBMENU (THE ONE YOU CARE ABOUT)
+       3. GROUPS → MEMBERS SUBMENU
        ----------------------------------------------------- */
-    const groupsToggle = document.querySelector('.dropdown-sub .submenu-toggle');
-    const groupsMenu = document.querySelector('.dropdown-sub .submenu-right');
+    const groupsToggle = document.querySelector('.dropdown-sub > a'); 
+    const groupsMenu = document.querySelector('.dropdown-sub > .submenu-right');
 
     if (groupsToggle && groupsMenu) {
         groupsToggle.addEventListener('click', function (e) {
             if (window.innerWidth <= 900) {
                 e.preventDefault();
-                groupsMenu.classList.toggle('open');  // ⭐ tap again closes it
+                groupsMenu.classList.toggle('open'); 
             }
         });
     }
 
 });
-
