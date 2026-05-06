@@ -4098,6 +4098,6 @@ body.home main {
 
 @media (max-width: 900px) {
     .kitchen-description {
-        margin-left: -5px;
+        margin-left: 5px;
     }
 }
