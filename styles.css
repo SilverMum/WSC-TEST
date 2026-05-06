@@ -3946,7 +3946,7 @@ body, body * {
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Disable hover behavior on mobile */
+    /* Disable hover behavior on mobile so JS is in full control */
     .dropdown:hover > .dropdown-menu {
         display: none !important;
     }
@@ -3964,5 +3964,10 @@ body, body * {
     .nav-links li.dropdown > .dropdown-menu {
         left: 0 !important;
         transform: translateX(0) !important;
+    }
+
+    /* ⭐ This is the missing piece: show menu when JS adds .open */
+    .nav-links li.dropdown > .dropdown-menu.open {
+        display: block !important;
     }
 }
