@@ -3948,3 +3948,10 @@ body, body * {
         transform: translateX(0);
     }
 }
+
+@media (max-width: 900px) {
+    .nav-links li.dropdown > .dropdown-menu {
+        left: 0 !important;
+        transform: translateX(0) !important;
+    }
+}
