@@ -4168,19 +4168,19 @@ body.home main {
         display: none !important;
     }
 
-    /* Add OFHA title */
+    /* Add OFHA title — moved down 70px more than before */
     body.ofha-bg::before {
         content: "OFHA";
         display: block;
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        margin-top: 120px;
+        margin-top: 190px;   /* was 120px → now 120 + 70 */
         margin-bottom: 25px;
         color: #ffffff;
     }
 
-    /* Push first content card down so it's not hidden by nav */
+    /* Push first content card down 70px */
     body.ofha-bg .outer-card:first-of-type {
         margin-top: 70px !important;
     }
