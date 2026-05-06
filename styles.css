@@ -4103,12 +4103,6 @@ body.home main {
 }
 
 @media (max-width: 900px) {
-    .login-page-wrapper {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 900px) {
     .private-events-text {
         font-size: 0.8rem;
         line-height: 1.3;
