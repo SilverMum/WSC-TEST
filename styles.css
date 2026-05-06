@@ -4521,13 +4521,13 @@ body.home main {
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Anchor top-level dropdowns */
-    .nav-links > li.dropdown {
+    /* Anchor ALL top-level dropdowns */
+    .nav-links li.dropdown {
         position: relative !important;
     }
 
     /* Floating dropdown panel — LEFT TO LEFT ALIGNMENT */
-    .nav-links > li.dropdown > .dropdown-menu {
+    .nav-links li.dropdown > .dropdown-menu {
         position: absolute !important;
         top: 100% !important;
         left: 0 !important;          /* ⭐ LEFT EDGE MATCHES BUTTON */
@@ -4543,7 +4543,7 @@ body.home main {
     }
 
     /* Show when JS toggles .open */
-    .nav-links > li.dropdown > .dropdown-menu.open {
+    .nav-links li.dropdown > .dropdown-menu.open {
         display: block !important;
     }
 
