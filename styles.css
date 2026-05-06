@@ -4088,3 +4088,10 @@ body.home main {
         height: auto;
     }
 }
+
+@media (max-width: 900px) {
+    .kitchen-description p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
