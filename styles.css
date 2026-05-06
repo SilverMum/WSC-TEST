@@ -4181,6 +4181,11 @@ body.home main {
         color: #ffffff;
     }
 
+    /* Push first content card down so it's not hidden by nav */
+    body.ofha-bg .outer-card:first-of-type {
+        margin-top: 70px !important;
+    }
+
     /* First card fixes */
     .ofha-info-logo img.ofha-logo {
         width: 50% !important;
@@ -4204,7 +4209,6 @@ body.home main {
         text-align: center;
     }
 }
-
 
 /* =========================================================
    MOBILE-ONLY — ARCHERY PAGE (TIMES + PRIVATE EVENTS TEXT)
