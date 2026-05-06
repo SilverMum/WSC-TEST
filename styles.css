@@ -3975,3 +3975,17 @@ body.home main {
         display: block !important;
     }
 }
+
+/* MOBILE ONLY — shorten Trap & Skeet Ranges label */
+@media (max-width: 768px) {
+    nav ul li a[href="trap-skeet.html"] {
+        font-size: 0; /* hide original text */
+        position: relative;
+    }
+
+    nav ul li a[href="trap-skeet.html"]::after {
+        content: "Trap & Skeet";
+        font-size: 16px; /* normal readable size */
+        color: inherit;
+    }
+}
