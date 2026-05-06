@@ -4521,6 +4521,11 @@ body.home main {
    ========================================================= */
 @media (max-width: 900px) {
 
+    /* Disable desktop hover behavior on mobile */
+    .dropdown:hover > .dropdown-menu {
+        display: none !important;
+    }
+
     /* Anchor ALL top-level dropdowns */
     .nav-links li.dropdown {
         position: relative !important;
@@ -4530,8 +4535,8 @@ body.home main {
     .nav-links li.dropdown > .dropdown-menu {
         position: absolute !important;
         top: 100% !important;
-        left: 0 !important;          /* ⭐ LEFT EDGE MATCHES BUTTON */
-        margin-left: 0 !important;   /* remove any inherited offset */
+        left: 0 !important;
+        margin-left: 0 !important;
         transform: translateX(0) !important;
         z-index: 9999 !important;
         background: #1a1a1a !important;
@@ -4568,6 +4573,6 @@ body.home main {
 
     .submenu-right.open {
         display: block !important;
-        transform: translateX(-20px) !important; /* keep inside screen */
+        transform: translateX(-20px) !important;
     }
 }
