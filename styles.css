@@ -4223,18 +4223,18 @@ body.home main {
     }
 
     .archery-times::before {
-        content:
-            "5:30 - 6:30 pm\n"
-            "(17 and under)\n\n"
-            "6:30 - 7:30 pm\n"
-            "(17 and under)\n\n"
-            "7:30 - 8:30 pm\n"
-            "(Age 18+)";
-        white-space: pre-line;
-        display: block;
-        font-size: 1.3rem;
-        text-align: center;
-    }
+    content:
+        "5:30 - 6:30 pm"
+        "(17 and under)"
+        "6:30 - 7:30 pm"
+        "(17 and under)"
+        "7:30 - 8:30 pm"
+        "(Age 18+)";
+    white-space: pre-line;
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+}
 
     .archery-times {
         font-size: 0 !important;
