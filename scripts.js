@@ -17,10 +17,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* -----------------------------------------------------
-       2. (NO DROPDOWN CLICK HANDLERS HERE)
-          Desktop dropdowns are controlled purely by CSS :hover.
-          Mobile dropdown behavior can be re-added later once
-          desktop is confirmed perfect again.
+       2. UNIVERSAL MOBILE DROPDOWN TOGGLE (EVENTS + GROUPS)
        ----------------------------------------------------- */
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('open');
+            }
+        });
+    });
+
+    /* -----------------------------------------------------
+       3. MEMBERS SUBMENU (RIGHT-OPENING)
+       ----------------------------------------------------- */
+    const membersToggle = document.querySelector('.dropdown-sub > .submenu-link');
+    const membersMenu = document.querySelector('.dropdown-sub > .submenu-right');
+
+    if (membersToggle && membersMenu) {
+        membersToggle.addEventListener('click', function (e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                membersMenu.classList.toggle('open');
+            }
+        });
+    }
 
 });
