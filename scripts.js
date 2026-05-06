@@ -1,5 +1,6 @@
 /* =========================================================
-   GLOBAL NAVIGATION SCRIPT — WORKS ON ALL PAGES
+   ORIGINAL GLOBAL NAVIGATION SCRIPT
+   (Only hamburger toggle — no dropdown JS at all)
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -17,30 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* -----------------------------------------------------
-       2. UNIVERSAL MOBILE DROPDOWN TOGGLE (EVENTS + GROUPS)
+       (NO DROPDOWN HANDLERS IN THIS VERSION)
+       Desktop dropdowns use CSS :hover only.
+       Mobile dropdowns were handled by the inline script
+       inside index.html, not here.
        ----------------------------------------------------- */
-    document.querySelectorAll('.dropdown > a').forEach(link => {
-        link.addEventListener('click', function (e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('open');
-            }
-        });
-    });
-
-    /* -----------------------------------------------------
-       3. MEMBERS SUBMENU (RIGHT-OPENING)
-       ----------------------------------------------------- */
-    const membersToggle = document.querySelector('.dropdown-sub > .submenu-link');
-    const membersMenu = document.querySelector('.dropdown-sub > .submenu-right');
-
-    if (membersToggle && membersMenu) {
-        membersToggle.addEventListener('click', function (e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                membersMenu.classList.toggle('open');
-            }
-        });
-    }
 
 });
