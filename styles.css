@@ -4039,68 +4039,62 @@ body.home main {
     }
 
 
-    /* -----------------------------------------
-       KITCHEN PAGE — TITLE IMAGE
-    ----------------------------------------- */
+ /* =========================================================
+   KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
+========================================================= */
 
-    .kitchen-title-img {
-        max-width: 70%;
-        height: auto;
-        display: block;
-        margin: 110px auto 0; /* lowered from nav */
-    }
-
-
-    /* -----------------------------------------
-       KITCHEN PAGE — BADGE + TEXT LAYOUT
-    ----------------------------------------- */
-
-    /* Stack badge + text vertically */
-    .kitchen-layout {
-        display: block;
-        text-align: center;
-    }
-
-    /* Badge image scaling */
-    .kitchen-badge {
-        max-width: 60%;
-        height: auto;
-        margin: 0 auto 20px;
-        display: block;
-    }
-
-    /* Text block inside kitchen card */
-    .kitchen-description p {
-        font-size: 0.95rem;
-        line-height: 1.35;
-        padding: 0 10px;
-        word-break: break-word;
-    }
-
-
-    /* -----------------------------------------
-       KITCHEN PAGE — FACEBOOK IFRAME FIX
-    ----------------------------------------- */
-
-    .kitchen-fb-scroll iframe {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto;
-    }
+.kitchen-title-img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 110px auto 0;
 }
+
+.kitchen-layout {
+    display: block;
+    text-align: center;
+}
+
+.kitchen-badge {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.kitchen-description p {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    padding: 0 10px;
+    word-break: break-word;
+}
+
+.kitchen-fb-scroll iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+}
+
+
+/* =========================================================
+   MOBILE-ONLY — KITCHEN PAGE
+========================================================= */
 
 @media (max-width: 900px) {
     .kitchen-description p {
         padding-left: 0;
         padding-right: 0;
     }
-}
 
-@media (max-width: 900px) {
     .kitchen-description {
         margin-left: -17px;
     }
 }
+
+
+/* =========================================================
+   MOBILE-ONLY — PRIVATE EVENTS PAGE
+========================================================= */
 
 @media (max-width: 900px) {
     .private-events-text {
@@ -4109,32 +4103,36 @@ body.home main {
     }
 }
 
+
+/* =========================================================
+   MOBILE-ONLY — ARCHERY PAGE (HEADER + TITLE + CANCELATIONS)
+========================================================= */
+
 @media (max-width: 900px) {
 
-    /* 1️⃣ Remove Archery Header Image on Mobile */
+    /* Remove header image */
     .archery-header {
         display: none !important;
     }
 
-    /* 3️⃣ Add Mobile-Only Page Title Where Header Image Was */
+    /* Add ARCHERY title */
     body.archery-page::before {
         content: "ARCHERY";
         display: block;
         text-align: center;
         font-size: 2.2rem;
         font-weight: 700;
-        margin-top: 120px;   /* space below nav */
+        margin-top: 120px;
         margin-bottom: 20px;
-        color: #ffffff;      /* adjust if needed */
+        color: #ffffff;
     }
 
-    /* 2️⃣ Fix “Cancellations” → “Cancelations” + make smaller */
+    /* Fix spelling + size */
     .archery-cancel-title {
-        font-size: 1.4rem !important; /* smaller than desktop */
+        font-size: 1.4rem !important;
         letter-spacing: 0.5px;
     }
 
-    /* Replace the text visually without editing HTML */
     .archery-cancel-title::after {
         content: "Archery Cancelations";
         display: block;
@@ -4144,9 +4142,14 @@ body.home main {
     }
 
     .archery-cancel-title {
-        font-size: 0 !important; /* hide original text */
+        font-size: 0 !important;
     }
 }
+
+
+/* =========================================================
+   MOBILE-ONLY — LOGIN PAGE
+========================================================= */
 
 @media (max-width: 900px) {
     body.login-bg .login-form {
@@ -4154,43 +4157,44 @@ body.home main {
     }
 }
 
+
+/* =========================================================
+   MOBILE-ONLY — OFHA PAGE
+========================================================= */
+
 @media (max-width: 900px) {
 
-    /* 1️⃣ Remove OFHA header image on mobile */
+    /* Remove header image */
     .ofha-header {
         display: none !important;
     }
 
-    /* 2️⃣ Add mobile-only OFHA title where header image was */
+    /* Add OFHA title */
     body.ofha-bg::before {
         content: "OFHA";
         display: block;
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        margin-top: 120px;   /* space under nav */
+        margin-top: 120px;
         margin-bottom: 25px;
-        color: #ffffff;      /* adjust if needed */
+        color: #ffffff;
     }
 
-    /* 3️⃣ FIRST CARD FIXES ONLY */
-
-    /* Make the OFHA logo half size */
+    /* First card fixes */
     .ofha-info-logo img.ofha-logo {
         width: 50% !important;
         height: auto;
     }
 
-    /* Slightly smaller text in the first card */
     .ofha-info-text p {
-        font-size: 1rem !important;   /* not too small */
+        font-size: 1rem !important;
         line-height: 1.4;
     }
 
-    /* Fix layout so text + logo don’t look squished */
     .ofha-info-row {
         display: flex;
-        flex-direction: column; /* stack on mobile */
+        flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 15px;
@@ -4199,23 +4203,25 @@ body.home main {
     .ofha-info-logo {
         text-align: center;
     }
-
 }
+
+
+/* =========================================================
+   MOBILE-ONLY — ARCHERY PAGE (TIMES + PRIVATE EVENTS TEXT)
+========================================================= */
 
 @media (max-width: 900px) {
 
-    /* 1️⃣ Split times + ages onto separate centered lines */
+    /* Split times + ages */
     .archery-times {
         text-align: center !important;
         line-height: 1.6;
     }
 
-    /* Force each time + age onto its own line */
     .archery-times br {
-        display: none; /* remove original breaks */
+        display: none;
     }
 
-    /* Replace with mobile-only stacked layout */
     .archery-times::before {
         content:
             "5:30 - 6:30 pm\n"
@@ -4230,15 +4236,13 @@ body.home main {
         text-align: center;
     }
 
-    /* Hide original text so only mobile version shows */
     .archery-times {
         font-size: 0 !important;
     }
 
-    /* 2️⃣ Make the private events text slightly smaller */
+    /* Smaller private events text */
     .archery-private {
         font-size: 1rem !important;
         line-height: 1.4;
     }
 }
-
