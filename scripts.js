@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /* -----------------------------------------------------
        2. EVENTS DROPDOWN (TOP LEVEL)
        ----------------------------------------------------- */
-    const eventsToggle = document.querySelector('.nav-links > .dropdown:nth-of-type(1) > a');
-    const eventsMenu = document.querySelector('.nav-links > .dropdown:nth-of-type(1) > .dropdown-menu');
+    const eventsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(1) > a');
+    const eventsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(1) > .dropdown-menu');
 
     if (eventsToggle && eventsMenu) {
         eventsToggle.addEventListener('click', function (e) {
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /* -----------------------------------------------------
        3. GROUPS DROPDOWN (TOP LEVEL)
        ----------------------------------------------------- */
-    const groupsToggle = document.querySelector('.nav-links > .dropdown:nth-of-type(2) > a');
-    const groupsMenu = document.querySelector('.nav-links > .dropdown:nth-of-type(2) > .dropdown-menu');
+    const groupsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > a');
+    const groupsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > .dropdown-menu');
 
     if (groupsToggle && groupsMenu) {
         groupsToggle.addEventListener('click', function (e) {
@@ -62,16 +62,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-
-/* GROUPS DROPDOWN */
-const groupsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > a');
-const groupsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > .dropdown-menu');
-
-if (groupsToggle && groupsMenu) {
-    groupsToggle.addEventListener('click', function (e) {
-        if (window.innerWidth <= 900) {
-            e.preventDefault();
-            groupsMenu.classList.toggle('open');
-        }
-    });
-}
