@@ -4003,3 +4003,26 @@ body.home main {
         color: inherit;
     }
 }
+
+@media (max-width: 900px) {
+
+    /* Prevent content from sticking out of inner cards */
+    .inner-card {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Ensure images inside cards never overflow */
+    .inner-card img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Prevent long links or long titles from pushing the card wider */
+    .inner-card a {
+        word-break: break-word;
+    }
+}
