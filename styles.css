@@ -4517,60 +4517,55 @@ body.home main {
 }
 
 /* =========================================================
-   ⭐ FLOATING DROPDOWNS — EVENTS + GROUPS
+   ⭐ MOBILE DROPDOWNS — FLOATING PANELS (EVENTS + GROUPS)
    ========================================================= */
-
-/* Anchor all top-level dropdowns */
-.nav-links > .dropdown {
-    position: relative !important;
-}
-
-/* Floating dropdown panel */
-.nav-links > .dropdown > .dropdown-menu {
-    position: absolute !important;
-    top: 100% !important;
-    left: 0 !important;
-    z-index: 9999 !important;
-    background: #1a1a1a !important;
-    display: none !important;
-    width: max-content !important;
-    min-width: 160px !important;
-    padding: 6px 0 !important;
-    border-radius: 4px !important;
-}
-
-/* Show when JS toggles .open */
-.nav-links > .dropdown > .dropdown-menu.open {
-    display: block !important;
-}
-
-/* =========================================================
-   ⭐ MEMBERS SUBMENU — FLOAT RIGHT + STAY VISIBLE
-   ========================================================= */
-
-.dropdown-sub {
-    position: relative !important;
-}
-
-.submenu-right {
-    position: absolute !important;
-    top: 0 !important;
-    left: 100% !important;
-    background: #1a1a1a !important;
-    z-index: 9999 !important;
-    display: none !important;
-    min-width: 160px !important;
-    padding: 6px 0 !important;
-    border-radius: 4px !important;
-}
-
-.submenu-right.open {
-    display: block !important;
-}
-
-/* ⭐ MOBILE: keep submenu inside screen */
 @media (max-width: 900px) {
+
+    /* Anchor top-level dropdowns */
+    .nav-links > li.dropdown {
+        position: relative !important;
+    }
+
+    /* Floating dropdown panel */
+    .nav-links > li.dropdown > .dropdown-menu {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        z-index: 9999 !important;
+        background: #1a1a1a !important;
+        display: none !important;
+        width: max-content !important;
+        min-width: 160px !important;
+        padding: 6px 0 !important;
+        border-radius: 4px !important;
+    }
+
+    /* Show when JS toggles .open */
+    .nav-links > li.dropdown > .dropdown-menu.open {
+        display: block !important;
+    }
+
+    /* =====================================================
+       ⭐ MEMBERS SUBMENU — FLOAT RIGHT + STAY VISIBLE
+       ===================================================== */
+    .dropdown-sub {
+        position: relative !important;
+    }
+
+    .submenu-right {
+        position: absolute !important;
+        top: 0 !important;
+        left: 100% !important;
+        background: #1a1a1a !important;
+        z-index: 9999 !important;
+        display: none !important;
+        min-width: 160px !important;
+        padding: 6px 0 !important;
+        border-radius: 4px !important;
+    }
+
     .submenu-right.open {
-        transform: translateX(-20px) !important;
+        display: block !important;
+        transform: translateX(-20px) !important; /* keep inside screen */
     }
 }
