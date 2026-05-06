@@ -4037,9 +4037,10 @@ body.home main {
 @media (max-width: 900px) {
     /* Mobile-only Kitchen Title Image Fix */
     .kitchen-title-img {
-        max-width: 70%;      /* shrink to fit mobile */
+        max-width: 70%;      
         height: auto;
         display: block;
-        margin: 80px auto 0; /* lower 80px + center horizontally */
+        margin: 110px auto 0; /* lowered from 80px → now 110px */
     }
 }
+
