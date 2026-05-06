@@ -62,3 +62,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+/* GROUPS DROPDOWN */
+const groupsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > a');
+const groupsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > .dropdown-menu');
+
+if (groupsToggle && groupsMenu) {
+    groupsToggle.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            groupsMenu.classList.toggle('open');
+        }
+    });
+}
