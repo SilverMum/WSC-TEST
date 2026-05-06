@@ -3983,3 +3983,12 @@ header,
     position: relative;
     z-index: 99999 !important;
 }
+
+/* ⭐ ALIGN DROPDOWN LEFT EDGE WITH BUTTON */
+@media (max-width: 900px) {
+    .nav-links li.dropdown > .dropdown-menu {
+        left: 0 !important;              /* align left edges */
+        margin-left: 0 !important;       /* no offset */
+        transform: translateX(0) !important;
+    }
+}
