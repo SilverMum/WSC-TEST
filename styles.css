@@ -4038,8 +4038,7 @@ body.home main {
         margin-right: 5px;
     }
 
-
- /* =========================================================
+/* =========================================================
    KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
 ========================================================= */
 
@@ -4210,6 +4209,7 @@ body.home main {
     }
 }
 
+
 /* =========================================================
    MOBILE-ONLY — ARCHERY PAGE (TIMES + PRIVATE EVENTS TEXT)
 ========================================================= */
@@ -4220,6 +4220,7 @@ body.home main {
     .archery-times {
         text-align: center !important;
         line-height: 1.6;
+        font-size: 0 !important; /* hides original text */
     }
 
     .archery-times br {
@@ -4227,21 +4228,17 @@ body.home main {
     }
 
     .archery-times::before {
-    content:
-        "5:30 - 6:30 pm"
-        "(17 and under)"
-        "6:30 - 7:30 pm"
-        "(17 and under)"
-        "7:30 - 8:30 pm"
-        "(Age 18+)";
-    white-space: pre-line;
-    display: block;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-    .archery-times {
-        font-size: 0 !important;
+        content:
+            "5:30 - 6:30 pm"
+            "(17 and under)"
+            "6:30 - 7:30 pm"
+            "(17 and under)"
+            "7:30 - 8:30 pm"
+            "(Age 18+)";
+        white-space: pre-line;
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
     }
 
     /* Smaller private events text */
