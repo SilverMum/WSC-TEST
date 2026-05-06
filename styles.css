@@ -4095,3 +4095,9 @@ body.home main {
         padding-right: 0;
     }
 }
+
+@media (max-width: 900px) {
+    .kitchen-description {
+        margin-left: -5px;
+    }
+}
