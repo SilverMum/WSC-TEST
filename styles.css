@@ -4026,3 +4026,10 @@ body.home main {
         word-break: break-word;
     }
 }
+
+@media (max-width: 900px) {
+    .inner-card {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
