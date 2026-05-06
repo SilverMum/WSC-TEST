@@ -4033,3 +4033,14 @@ body.home main {
         margin-right: 5px;
     }
 }
+
+@media (max-width: 900px) {
+    .home img,
+    .kitchen img,
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
