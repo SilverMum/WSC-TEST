@@ -3941,6 +3941,10 @@ body, body * {
     max-width: 900px !important;
 }
 
+body.home main {
+    padding-top: 50px;
+}
+
 /* =========================================================
    MOBILE NAVIGATION FIXES — ALIGNMENT + TOGGLE BEHAVIOR
    ========================================================= */
