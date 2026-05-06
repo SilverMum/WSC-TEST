@@ -4068,3 +4068,12 @@ body.home main {
         word-break: break-word;
     }
 }
+
+@media (max-width: 900px) {
+    /* Fix Facebook iframe overflow on Kitchen page */
+    .kitchen-fb-scroll iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto;
+    }
+}
