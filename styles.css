@@ -4035,12 +4035,11 @@ body.home main {
 }
 
 @media (max-width: 900px) {
-    .home img,
-    .kitchen img,
-    img {
-        max-width: 100%;
+    /* Mobile-only Kitchen Title Image Fix */
+    .kitchen-title-img {
+        max-width: 70%;      /* shrink to fit mobile */
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 80px auto 0; /* lower 80px + center horizontally */
     }
 }
