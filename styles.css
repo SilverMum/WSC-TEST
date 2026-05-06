@@ -4201,3 +4201,44 @@ body.home main {
     }
 
 }
+
+@media (max-width: 900px) {
+
+    /* 1️⃣ Split times + ages onto separate centered lines */
+    .archery-times {
+        text-align: center !important;
+        line-height: 1.6;
+    }
+
+    /* Force each time + age onto its own line */
+    .archery-times br {
+        display: none; /* remove original breaks */
+    }
+
+    /* Replace with mobile-only stacked layout */
+    .archery-times::before {
+        content:
+            "5:30 - 6:30 pm\n"
+            "(17 and under)\n\n"
+            "6:30 - 7:30 pm\n"
+            "(17 and under)\n\n"
+            "7:30 - 8:30 pm\n"
+            "(Age 18+)";
+        white-space: pre-line;
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* Hide original text so only mobile version shows */
+    .archery-times {
+        font-size: 0 !important;
+    }
+
+    /* 2️⃣ Make the private events text slightly smaller */
+    .archery-private {
+        font-size: 1rem !important;
+        line-height: 1.4;
+    }
+}
+
