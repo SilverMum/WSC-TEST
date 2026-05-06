@@ -4110,6 +4110,45 @@ body.home main {
 }
 
 @media (max-width: 900px) {
+
+    /* 1️⃣ Remove Archery Header Image on Mobile */
+    .archery-header {
+        display: none !important;
+    }
+
+    /* 3️⃣ Add Mobile-Only Page Title Where Header Image Was */
+    body.archery-page::before {
+        content: "ARCHERY";
+        display: block;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-top: 120px;   /* space below nav */
+        margin-bottom: 20px;
+        color: #ffffff;      /* adjust if needed */
+    }
+
+    /* 2️⃣ Fix “Cancellations” → “Cancelations” + make smaller */
+    .archery-cancel-title {
+        font-size: 1.4rem !important; /* smaller than desktop */
+        letter-spacing: 0.5px;
+    }
+
+    /* Replace the text visually without editing HTML */
+    .archery-cancel-title::after {
+        content: "Archery Cancelations";
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: inherit;
+    }
+
+    .archery-cancel-title {
+        font-size: 0 !important; /* hide original text */
+    }
+}
+
+@media (max-width: 900px) {
     body.login-bg .login-form {
         margin-top: 100px !important;
     }
