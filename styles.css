@@ -3989,3 +3989,17 @@ body.home main {
         color: inherit;
     }
 }
+
+/* MOBILE ONLY — shorten Cheese & Cracker Club label */
+@media (max-width: 768px) {
+    nav ul li a[href="cheese-cracker.html"] {
+        font-size: 0; /* hide original text */
+        position: relative;
+    }
+
+    nav ul li a[href="cheese-cracker.html"]::after {
+        content: "Cheese & Cracker";
+        font-size: 16px;
+        color: inherit;
+    }
+}
