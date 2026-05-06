@@ -4517,36 +4517,16 @@ body.home main {
 }
 
 /* =========================================================
-   ⭐ FIX EVENTS DROPDOWN PUSHING NAV DOWN (DESKTOP + MOBILE)
+   ⭐ FLOATING DROPDOWNS — EVENTS + GROUPS
    ========================================================= */
 
-.dropdown {
-    position: relative !important; /* anchor point */
+/* Anchor all top-level dropdowns */
+.nav-links > .dropdown {
+    position: relative !important;
 }
 
-.dropdown-menu {
-    position: absolute !important;
-    top: 100% !important;
-    left: 0 !important;
-    z-index: 9999 !important;
-    background: #1a1a1a !important;
-    display: none !important;
-    width: max-content !important;
-    min-width: 160px !important;
-    padding: 6px 0 !important;
-    border-radius: 4px !important;
-}
-
-.dropdown-menu.open {
-    display: block !important;
-}
-
-/* ⭐ FIX GROUPS DROPDOWN — FLOAT ABOVE NAV LIKE EVENTS */
-.nav-links li.dropdown:nth-of-type(2) {
-    position: relative !important; /* anchor point for Groups */
-}
-
-.nav-links li.dropdown:nth-of-type(2) > .dropdown-menu {
+/* Floating dropdown panel */
+.nav-links > .dropdown > .dropdown-menu {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
@@ -4560,13 +4540,16 @@ body.home main {
 }
 
 /* Show when JS toggles .open */
-.nav-links li.dropdown:nth-of-type(2) > .dropdown-menu.open {
+.nav-links > .dropdown > .dropdown-menu.open {
     display: block !important;
 }
 
-/* ⭐ FIX MEMBERS SUBMENU — FLOAT RIGHT BUT STAY VISIBLE */
+/* =========================================================
+   ⭐ MEMBERS SUBMENU — FLOAT RIGHT + STAY VISIBLE
+   ========================================================= */
+
 .dropdown-sub {
-    position: relative !important; /* anchor point */
+    position: relative !important;
 }
 
 .submenu-right {
@@ -4581,7 +4564,6 @@ body.home main {
     border-radius: 4px !important;
 }
 
-/* Show when JS toggles .open */
 .submenu-right.open {
     display: block !important;
 }
