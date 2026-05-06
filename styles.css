@@ -3941,3 +3941,39 @@ body, body * {
 .home-meeting-card.outer-card {
     max-width: 900px !important;
 }
+
+/* =========================================================
+   MOBILE DROPDOWN FIXES — SAFE FOR DESKTOP
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Disable desktop hover behavior on mobile */
+    .dropdown:hover > .dropdown-menu {
+        display: none !important;
+    }
+
+    /* Force dropdowns to start hidden */
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    /* Align dropdown directly under its parent */
+    .nav-links li.dropdown > .dropdown-menu {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        transform: translateX(0) !important;
+        z-index: 9999 !important;
+        background: #1a1a1a !important;
+        width: max-content !important;
+        min-width: 160px !important;
+        padding: 6px 0 !important;
+        border-radius: 4px !important;
+    }
+
+    /* Show dropdown when JS toggles .open */
+    .nav-links li.dropdown > .dropdown-menu.open {
+        display: block !important;
+    }
+}
