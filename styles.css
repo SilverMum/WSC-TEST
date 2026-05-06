@@ -3973,3 +3973,13 @@ body.home main {
         transform: translateX(-20px) !important; /* keep inside screen */
     }
 }
+
+/* ⭐ ENSURE NAV FLOATING PANELS APPEAR ABOVE EVERYTHING */
+header,
+.main-nav,
+.nav-links,
+.dropdown-menu,
+.submenu-right {
+    position: relative;
+    z-index: 99999 !important;
+}
