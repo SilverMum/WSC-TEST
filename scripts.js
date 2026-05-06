@@ -17,7 +17,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* -----------------------------------------------------
-       2. UNIVERSAL MOBILE DROPDOWN TOGGLE (EVENTS + GROUPS)
+       2. EVENTS DROPDOWN (DIRECT TARGET)
+       ----------------------------------------------------- */
+    const eventsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(1) > a');
+    const eventsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(1) > .dropdown-menu');
+
+    if (eventsToggle && eventsMenu) {
+        eventsToggle.addEventListener('click', function (e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                eventsMenu.classList.toggle('open');
+            }
+        });
+    }
+
+    /* -----------------------------------------------------
+       3. GROUPS DROPDOWN (DIRECT TARGET)
+       ----------------------------------------------------- */
+    const groupsToggle = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > a');
+    const groupsMenu = document.querySelector('.nav-links > li.dropdown:nth-of-type(2) > .dropdown-menu');
+
+    if (groupsToggle && groupsMenu) {
+        groupsToggle.addEventListener('click', function (e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                groupsMenu.classList.toggle('open');
+            }
+        });
+    }
+
+    /* -----------------------------------------------------
+       4. UNIVERSAL MOBILE DROPDOWN TOGGLE (BACKUP)
        ----------------------------------------------------- */
     document.querySelectorAll('.dropdown > a').forEach(link => {
         link.addEventListener('click', function (e) {
@@ -29,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* -----------------------------------------------------
-       3. MEMBERS SUBMENU (RIGHT-OPENING)
+       5. MEMBERS SUBMENU (RIGHT-OPENING)
        ----------------------------------------------------- */
     const membersToggle = document.querySelector('.dropdown-sub > .submenu-link');
     const membersMenu = document.querySelector('.dropdown-sub > .submenu-right');
