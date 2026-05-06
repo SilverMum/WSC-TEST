@@ -4526,11 +4526,13 @@ body.home main {
         position: relative !important;
     }
 
-    /* Floating dropdown panel */
+    /* Floating dropdown panel — LEFT TO LEFT ALIGNMENT */
     .nav-links > li.dropdown > .dropdown-menu {
         position: absolute !important;
         top: 100% !important;
-        left: 0 !important;
+        left: 0 !important;          /* ⭐ LEFT EDGE MATCHES BUTTON */
+        margin-left: 0 !important;   /* remove any inherited offset */
+        transform: translateX(0) !important;
         z-index: 9999 !important;
         background: #1a1a1a !important;
         display: none !important;
