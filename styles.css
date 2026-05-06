@@ -3304,6 +3304,10 @@ header {
         width: 100%;
     }
 }
+
+/* =========================================================
+   MOBILE NAV — WRAPPED + TAP-TO-OPEN DROPDOWNS
+   ========================================================= */
 @media (max-width: 900px) {
 
     /* Mobile nav container */
@@ -3378,6 +3382,144 @@ header {
         max-width: none !important;
         margin: 0 auto !important;
     }
+
+    /* ⭐ MOBILE DROPDOWN — OVERLAY */
+    .dropdown-menu,
+    .submenu-right {
+        display: none;
+        position: absolute !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        margin-top: 6px;
+        padding: 10px 0;
+        border: 1px solid #ddd;
+        background: white;
+        z-index: 9999;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* ⭐ FIX #1 — MATCH DROPDOWN TEXT SIZE ON HOMEPAGE */
+    .home .dropdown-menu a,
+    .home .submenu-right a {
+        font-size: 1.3rem !important;
+    }
+
+    /* ⭐ FIX #2 — MATCH DROPDOWN WIDTH TO KITCHEN */
+    .home .dropdown-menu,
+    .home .submenu-right {
+        max-width: 360px !important;
+    }
+
+    /* ⭐ MOBILE — MEMBERS SUBMENU OPENS TO THE RIGHT */
+    .dropdown-sub {
+        position: relative;
+    }
+
+    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
+    .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (MOBILE) */
+    .dropdown-sub .submenu-right {
+        top: 0 !important;
+        left: 100% !important;
+        transform: none !important;
+        width: auto !important;
+        max-width: 240px !important;
+    }
+
+    .dropdown-sub.open > .submenu-right {
+        display: block;
+    }
+
+    .dropdown.open > .dropdown-menu {
+        display: block;
+    }
+
+    /* ⭐ HOMEPAGE FIX — KEEP MEMBERS + ARROW ON SAME LINE (MOBILE) */
+    .home .dropdown-sub {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    .home .submenu-link {
+        display: inline-block !important;
+    }
+
+    .home .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px !important;
+    }
+}
+
+/* =========================================================
+   DESKTOP DROPDOWNS — DEFAULT HOVER BEHAVIOR
+   ========================================================= */
+@media (min-width: 901px) {
+
+    .dropdown-menu,
+    .submenu-right {
+        display: none;
+        position: absolute;
+        background: white;
+        border: 1px solid #ddd;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    /* ⭐ DESKTOP — MEMBERS SUBMENU OPENS TO THE RIGHT */
+    .dropdown-sub {
+        position: relative;
+    }
+
+    /* ⭐ ARROW FIX — KEEP BESIDE MEMBERS */
+    .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* ⭐ TOP‑ALIGNED RIGHT‑OPENING SUBMENU (DESKTOP) */
+    .dropdown-sub .submenu-right {
+        top: 0;
+        left: 100%;
+        transform: none;
+        min-width: 180px;
+    }
+
+    /* ⭐ HOMEPAGE DESKTOP FIX — KEEP MEMBERS + ARROW ON ONE LINE */
+    .home .dropdown-sub {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    .home .submenu-link {
+        display: inline-block !important;
+    }
+
+    .home .submenu-toggle {
+        display: inline-block !important;
+        margin-left: 6px !important;
+        vertical-align: middle !important;
+    }
+
+    .dropdown:hover > .dropdown-menu,
+    .dropdown-sub:hover > .submenu-right {
+        display: block;
+    }
 }
 
 /* =========================================================
@@ -3446,8 +3588,8 @@ header {
 
 /* Full blue card */
 #airrifle-calendar {
-    background-color: rgba(0, 51, 102, 0.12);
-    padding: 25px 35px;
+    background-color: rgba(0, 51, 102, 0.12); /* soft translucent deep blue */
+    padding: 25px 35px; /* desktop padding */
     border-radius: 10px;
     margin: 0 auto 40px auto;
     max-width: 900px;
@@ -3460,6 +3602,7 @@ header {
 
 @media (max-width: 768px) {
 
+    /* ARCHERY — show green on sides, remove squeeze */
     #archery-calendar {
         padding-left: 6% !important;
         padding-right: 6% !important;
@@ -3473,6 +3616,7 @@ header {
         padding-right: 0 !important;
     }
 
+    /* AIR RIFLE — show blue on sides, remove squeeze */
     #airrifle-calendar {
         padding-left: 6% !important;
         padding-right: 6% !important;
@@ -3486,6 +3630,7 @@ header {
         padding-right: 0 !important;
     }
 
+    /* Shared wrapper behavior */
     .calendar-wrapper {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -3509,30 +3654,35 @@ header {
    ----------- CALENDAR PAGE -------------
    ========================================================= */
 
+/* Header image inside wrapper */
 .calendar-header-img {
     display: block;
     margin: 0 auto 20px auto;
     height: auto;
 }
 
+/* Wrapper that matches the red card width */
 .calendar-header-wrapper {
     max-width: 900px;
     margin: 0 auto 20px auto;
     text-align: center;
 }
 
+/* FORCE image to match wrapper width */
 .calendar-header-wrapper img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* Title styling */
 .calendar-title {
     text-align: center;
     font-size: 2.6rem;
     font-weight: bold;
     color: black;
     display: inline-block;
+    border-bottom: none;
     padding-bottom: 6px;
     margin: 70px auto 30px auto;
 }
@@ -3545,23 +3695,27 @@ header {
     background: none;
 }
 
+/* Inner container: padding only, no border */
 #wsc-calendar .calendar-container {
     padding: 15px;
     border-radius: 6px;
 }
 
+/* Calendar container sizing */
 .calendar-container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Calendar iframe */
 .calendar-container iframe {
     width: 100%;
     height: 600px;
     border: 0;
 }
 
+/* Page wrapper */
 .calendar-page {
     text-align: center;
     padding: 20px;
@@ -3574,6 +3728,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/* White overlay over the entire background */
 .calendar-bg::before {
     content: "";
     position: fixed;
@@ -3589,8 +3744,9 @@ header {
 
 @media (max-width: 768px) {
 
+    /* NEW: Move header image down so nav doesn't cover it */
     .calendar-header-img {
-        margin-top: 60px;
+        margin-top: 60px; /* about 1 inch on most phones */
     }
 
     #wsc-calendar {
@@ -3635,22 +3791,25 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Make ALL text on the entire site use Image 1's font */
 body, body * {
     font-family: "Times New Roman", Times, serif !important;
 }
 
 /* =========================================================
-   TRAP & SKEET — ANNOUNCEMENT
+   TRAP & SKEET — ANNOUNCEMENT (IMAGE 1 EXACT STYLE)
    ========================================================= */
 
+/* Base announcement block */
 .trap-skeet-bg .ts-announcement .ts-left {
-    margin-left: 20px !important;
+    margin-left: 20px !important;   /* aligned with card grid */
     margin-right: 40px !important;
     text-align: left !important;
     line-height: 1.7 !important;
-    font-style: normal !important;
+    font-style: normal !important;  /* reset everything */
 }
 
+/* Headings */
 .trap-skeet-bg .ts-announcement .ts-left h2,
 .trap-skeet-bg .ts-announcement .ts-left h3 {
     font-style: normal !important;
@@ -3658,24 +3817,28 @@ body, body * {
 }
 
 .trap-skeet-bg .ts-announcement .ts-left h3 {
-    font-weight: 800 !important;
+    font-weight: 800 !important; /* Important Notes */
 }
 
+/* Paragraphs */
 .trap-skeet-bg .ts-announcement .ts-left p {
     font-style: normal !important;
     font-size: 1.6rem !important;
     margin-left: 0 !important;
 }
 
+/* ONLY the italic line */
 .trap-skeet-bg .ts-announcement .ts-left p em {
-    font-style: italic !important;
+    font-style: italic !important; /* Repairs are complete */
 }
 
+/* Ensure “The club reopens…” is NOT italic */
 .trap-skeet-bg .ts-announcement .ts-left p strong {
     font-style: normal !important;
     font-weight: 800 !important;
 }
 
+/* Bullet list */
 .trap-skeet-bg .ts-announcement .ts-left ul {
     margin-left: 60px !important;
     line-height: 1.7 !important;
@@ -3693,7 +3856,7 @@ body, body * {
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement {
-    padding-left: 0 !important;
+    padding-left: 0 !important;   /* aligns with card grid */
     padding-right: 5px !important;
 }
 
@@ -3708,19 +3871,19 @@ body, body * {
 }
 
 /* =========================================================
-   TRAP & SKEET — CALENDAR EXPANSION
+   TRAP & SKEET — CALENDAR EXPANSION (20PX LEFT + 20PX DOWN)
    ========================================================= */
 
 .trap-skeet-bg .calendar-card {
-    margin-left: -40px !important;
+    margin-left: -40px !important;   /* expand left */
 }
 
 .trap-skeet-bg .calendar-card iframe {
-    height: 640px !important;
+    height: 640px !important;        /* expand down */
 }
 
 /* =========================================================
-   TRAP & SKEET — FORCE 40/60 LAYOUT
+   TRAP & SKEET — FORCE 40/60 LAYOUT FOR ANNOUNCEMENT + CALENDAR
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement {
@@ -3728,11 +3891,11 @@ body, body * {
 }
 
 .trap-skeet-bg .ts-announcement .ts-left {
-    flex: 0 0 40% !important;
+    flex: 0 0 40% !important;   /* text column */
 }
 
 .trap-skeet-bg .ts-announcement .ts-right {
-    flex: 0 0 60% !important;
+    flex: 0 0 60% !important;   /* calendar column */
 }
 
 /* =========================================================
@@ -3740,11 +3903,11 @@ body, body * {
    ========================================================= */
 
 .trap-skeet-bg .ts-announcement .ts-right {
-    padding-right: 5px !important;
+    padding-right: 5px !important;   /* matches card grid right padding */
 }
 
 /* =========================================================
-   HOME PAGE — FACEBOOK SECTION
+   HOME PAGE — FACEBOOK SECTION (MATCH IMAGE STYLE)
    ========================================================= */
 
 .facebook-section {
@@ -3774,235 +3937,7 @@ body, body * {
     font-style: italic;
 }
 
+/* MEMBERSHIP CARD WIDTH — MATCH ALL OTHER HOMEPAGE CARDS */
 .home-meeting-card.outer-card {
     max-width: 900px !important;
-}
-
-/* =========================================================
-   MOBILE FIXES — AIR RIFLE PAGE ONLY
-   ========================================================= */
-@media (max-width: 900px) {
-    .airrifle-card .inner-card { padding: 20px; }
-    .airrifle-title { font-size: 1.8rem; line-height: 1.2; white-space: normal; word-break: break-word; }
-    .airrifle-subheader { font-size: 1.5rem; line-height: 1.2; white-space: normal; word-break: break-word; }
-    .airrifle-text { font-size: 1.1rem; line-height: 1.5; }
-    .calendar-card { padding: 10px; }
-    .calendar-card iframe { width: 100% !important; height: 450px !important; }
-    body { overflow-x: hidden; }
-}
-
-/* =========================================================
-   MOBILE FIXES — ARCHERY PAGE ONLY
-   ========================================================= */
-@media (max-width: 900px) {
-    .archery-header-img { width: 100%; height: auto; display: block; object-fit: contain; margin: 0 auto; }
-    .outer-card { padding: 12px; margin: 20px auto; }
-    .inner-card.green-card { padding: 18px; }
-    .archery-title,
-    .archery-subtitle,
-    .archery-times,
-    .archery-simple,
-    .archery-pricing,
-    .archery-weather,
-    .archery-private { font-size: 1.1rem; line-height: 1.4; white-space: normal; word-break: break-word; }
-    .archery-cancel-title { font-size: 1.6rem; white-space: normal; word-break: break-word; }
-    .archery-dates { font-size: 1.2rem; line-height: 1.4; white-space: normal; word-break: break-word; }
-    .calendar-container, .calendar-wrapper { width: 100%; overflow: hidden; }
-    .calendar-wrapper iframe { width: 100% !important; height: 450px !important; border: none; }
-    .wide-inner { padding: 15px; }
-    .archery-image-wrapper { display: flex; flex-direction: column; gap: 12px; }
-    .archery-image-wrapper img { width: 100%; height: auto; object-fit: contain; }
-    body { overflow-x: hidden; }
-}
-
-/* =========================================================
-   MOBILE FIXES — CHEESE & CRACKER PAGE ONLY
-   ========================================================= */
-@media (max-width: 900px) {
-    body.cheese-bg section[style] { height: 165px !important; }
-    main.content-section { margin-bottom: 10px !important; padding-bottom: 0 !important; }
-    .cheese-card.outer-card { margin-bottom: 20px !important; }
-    .cheesecracker-wrapper { display: flex; flex-direction: column; gap: 12px; }
-    .cheesecracker-img { width: 100%; height: auto; object-fit: contain; }
-    body { overflow-x: hidden; }
-}
-
-/* =========================================================
-   ARCHERY — REMOVE HEADER IMAGE ON MOBILE ONLY
-   ========================================================= */
-@media (max-width: 900px) {
-    .archery-header { display: none !important; }
-}
-
-/* =========================================================
-   GLOBAL MOBILE FIX — PUSH ALL PAGE CONTENT DOWN 20PX
-   ========================================================= */
-@media (max-width: 900px) {
-    main,
-    body.home main,
-    .content-section,
-    .calendar-page,
-    .trap-skeet-bg main,
-    .archery-page main,
-    .cheese-bg main,
-    .air-rifle-bg main {
-        padding-top: 20px !important;
-    }
-}
-
-/* =========================================================
-   HOMEPAGE — UNIVERSAL TOP SPACING (DESKTOP + MOBILE)
-   ========================================================= */
-body.home main {
-    margin-top: 180px !important;
-}
-
-/* =========================================================
-   HOMEPAGE NAV — MATCH ARCHERY 3‑COLUMN MOBILE GRID EXACTLY
-   ========================================================= */
-@media (max-width: 900px) {
-    body.home .main-nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 10px 0 20px;
-    }
-
-    body.home .logo img {
-        height: 110px;
-        margin-bottom: 10px;
-    }
-
-    body.home .nav-links {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        gap: 12px 0;
-        padding: 0 20px;
-        margin-top: 10px;
-        text-align: left;
-    }
-
-    body.home .nav-links a {
-        text-align: left;
-        width: 100%;
-        padding-left: 0;
-        white-space: nowrap;
-    }
-
-    body.home .dropdown-menu,
-    body.home .submenu-right {
-        position: static;
-        display: none;
-        background-color: #1a1a1a;
-        padding-left: 10px;
-        box-shadow: none;
-        grid-column: span 3;
-    }
-
-    body.home .dropdown.open > .dropdown-menu,
-    body.home .dropdown-sub.open > .submenu-right {
-        display: block;
-    }
-
-    body.home .nav-spacer {
-        display: none !important;
-    }
-}
-/* =========================================================
-   ⭐ MOBILE DROPDOWNS — FLOATING PANELS (EVENTS + GROUPS)
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Disable desktop hover behavior ONLY on mobile */
-    .dropdown:hover > .dropdown-menu {
-        display: none !important;
-    }
-
-    /* Force ALL dropdown menus to start hidden on mobile */
-    .dropdown-menu {
-        display: none !important;
-    }
-
-    /* Anchor ALL top-level dropdowns */
-    .nav-links li.dropdown {
-        position: relative !important;
-    }
-
-    /* Floating dropdown panel — LEFT TO LEFT ALIGNMENT */
-    .nav-links li.dropdown > .dropdown-menu {
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
-        margin-left: 0 !important;
-        transform: translateX(0) !important;
-        z-index: 9999 !important;
-        background: #1a1a1a !important;
-        width: max-content !important;
-        min-width: 160px !important;
-        padding: 6px 0 !important;
-        border-radius: 4px !important;
-    }
-
-    /* ⭐ FORCE SHOW when JS toggles .open */
-    .nav-links li.dropdown > .dropdown-menu.open {
-        display: block !important;
-    }
-
-} /* ⭐ THIS BRACE WAS MISSING — THIS FIXES DESKTOP */
-
-    /* =====================================================
-       ⭐ MEMBERS SUBMENU — FLOAT RIGHT + STAY VISIBLE
-       ===================================================== */
-    .dropdown-sub {
-        position: relative !important;
-    }
-
-    .submenu-right {
-        position: absolute !important;
-        top: 0 !important;
-        left: 100% !important;
-        background: #1a1a1a !important;
-        z-index: 9999 !important;
-        display: none !important;
-        min-width: 160px !important;
-        padding: 6px 0 !important;
-        border-radius: 4px !important;
-    }
-
-    .submenu-right.open {
-        display: block !important;
-        transform: translateX(-20px) !important; /* keep inside screen */
-    }
-}  /* ⭐ THIS BRACE WAS MISSING — NOW FIXED */
-
-
-/* =========================================================
-   ⭐ DESKTOP HOVER — RESTORE ORIGINAL BEHAVIOR
-   ========================================================= */
-@media (min-width: 901px) {
-    .dropdown:hover > .dropdown-menu {
-        display: block !important;
-    }
-}
-
-
-/* ⭐ ENSURE NAV FLOATING PANELS APPEAR ABOVE EVERYTHING */
-header,
-.main-nav,
-.nav-links,
-.dropdown-menu,
-.submenu-right {
-    position: relative;
-    z-index: 99999 !important;
-}
-
-
-/* ⭐ ALIGN DROPDOWN LEFT EDGE WITH BUTTON (MOBILE ONLY) */
-@media (max-width: 900px) {
-    .nav-links li.dropdown > .dropdown-menu {
-        left: 0 !important;
-        margin-left: 0 !important;
-        transform: translateX(0) !important;
-    }
 }
