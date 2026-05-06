@@ -3936,20 +3936,31 @@ body, body * {
 .facebook-text p:nth-child(2) {
     font-style: italic;
 }
-
 /* MEMBERSHIP CARD WIDTH — MATCH ALL OTHER HOMEPAGE CARDS */
 .home-meeting-card.outer-card {
     max-width: 900px !important;
 }
 
+/* =========================================================
+   MOBILE NAVIGATION FIXES — ALIGNMENT + TOGGLE BEHAVIOR
+   ========================================================= */
 @media (max-width: 900px) {
-    .nav-links li.dropdown > .dropdown-menu {
-        left: 0;
-        transform: translateX(0);
-    }
-}
 
-@media (max-width: 900px) {
+    /* Disable hover behavior on mobile */
+    .dropdown:hover > .dropdown-menu {
+        display: none !important;
+    }
+
+    /* Normalize dropdown anchor width so alignment matches */
+    .nav-links li.dropdown {
+        width: auto !important;
+    }
+
+    .nav-links li.dropdown > a {
+        display: inline-block !important;
+    }
+
+    /* Perfect left alignment for all dropdowns */
     .nav-links li.dropdown > .dropdown-menu {
         left: 0 !important;
         transform: translateX(0) !important;
