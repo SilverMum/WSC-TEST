@@ -3949,6 +3949,8 @@ body.home main {
         display: block !important;
     }
 
+} /* ⭐ THIS BRACE WAS MISSING — THIS FIXES DESKTOP */
+
     /* =====================================================
        ⭐ MEMBERS SUBMENU — FLOAT RIGHT + STAY VISIBLE
        ===================================================== */
