@@ -3914,7 +3914,7 @@ body.home main {
    ========================================================= */
 @media (max-width: 900px) {
 
-    /* Disable desktop hover behavior on mobile */
+    /* Disable desktop hover behavior ONLY on mobile */
     .dropdown:hover > .dropdown-menu {
         display: none !important;
     }
@@ -3974,6 +3974,15 @@ body.home main {
     }
 }
 
+/* =========================================================
+   ⭐ DESKTOP HOVER — RESTORE ORIGINAL BEHAVIOR
+   ========================================================= */
+@media (min-width: 901px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block !important;
+    }
+}
+
 /* ⭐ ENSURE NAV FLOATING PANELS APPEAR ABOVE EVERYTHING */
 header,
 .main-nav,
@@ -3984,11 +3993,11 @@ header,
     z-index: 99999 !important;
 }
 
-/* ⭐ ALIGN DROPDOWN LEFT EDGE WITH BUTTON */
+/* ⭐ ALIGN DROPDOWN LEFT EDGE WITH BUTTON (MOBILE ONLY) */
 @media (max-width: 900px) {
     .nav-links li.dropdown > .dropdown-menu {
-        left: 0 !important;              /* align left edges */
-        margin-left: 0 !important;       /* no offset */
+        left: 0 !important;
+        margin-left: 0 !important;
         transform: translateX(0) !important;
     }
 }
