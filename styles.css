@@ -4044,3 +4044,27 @@ body.home main {
     }
 }
 
+@media (max-width: 900px) {
+
+    /* Stack badge + text vertically on mobile */
+    .kitchen-layout {
+        display: block;
+        text-align: center;
+    }
+
+    /* Make badge image scale properly */
+    .kitchen-badge {
+        max-width: 60%;
+        height: auto;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    /* Make text fit the card cleanly */
+    .kitchen-description p {
+        font-size: 0.95rem;
+        line-height: 1.35;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+}
