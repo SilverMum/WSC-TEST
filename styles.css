@@ -4006,12 +4006,18 @@ body.home main {
 
 @media (max-width: 900px) {
 
+    /* -----------------------------------------
+       GLOBAL MOBILE CARD FIXES
+    ----------------------------------------- */
+
     /* Prevent content from sticking out of inner cards */
     .inner-card {
         overflow-wrap: break-word;
         word-break: break-word;
         max-width: 100%;
         box-sizing: border-box;
+        padding-left: 2px;   /* your final padding choice */
+        padding-right: 2px;
     }
 
     /* Ensure images inside cards never overflow */
@@ -4025,34 +4031,37 @@ body.home main {
     .inner-card a {
         word-break: break-word;
     }
-}
 
-@media (max-width: 900px) {
+    /* Outer card spacing (your chosen minimal margins) */
     .outer-card {
         margin-left: 5px;
         margin-right: 5px;
     }
-}
 
-@media (max-width: 900px) {
-    /* Mobile-only Kitchen Title Image Fix */
+
+    /* -----------------------------------------
+       KITCHEN PAGE — TITLE IMAGE
+    ----------------------------------------- */
+
     .kitchen-title-img {
-        max-width: 70%;      
+        max-width: 70%;
         height: auto;
         display: block;
-        margin: 110px auto 0; /* lowered from 80px → now 110px */
+        margin: 110px auto 0; /* lowered from nav */
     }
-}
 
-@media (max-width: 900px) {
 
-    /* Stack badge + text vertically on mobile */
+    /* -----------------------------------------
+       KITCHEN PAGE — BADGE + TEXT LAYOUT
+    ----------------------------------------- */
+
+    /* Stack badge + text vertically */
     .kitchen-layout {
         display: block;
         text-align: center;
     }
 
-    /* Make badge image scale properly */
+    /* Badge image scaling */
     .kitchen-badge {
         max-width: 60%;
         height: auto;
@@ -4060,17 +4069,19 @@ body.home main {
         display: block;
     }
 
-    /* Make text fit the card cleanly */
+    /* Text block inside kitchen card */
     .kitchen-description p {
         font-size: 0.95rem;
         line-height: 1.35;
         padding: 0 10px;
         word-break: break-word;
     }
-}
 
-@media (max-width: 900px) {
-    /* Fix Facebook iframe overflow on Kitchen page */
+
+    /* -----------------------------------------
+       KITCHEN PAGE — FACEBOOK IFRAME FIX
+    ----------------------------------------- */
+
     .kitchen-fb-scroll iframe {
         width: 100% !important;
         max-width: 100% !important;
