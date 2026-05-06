@@ -47,3 +47,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+/* EVENTS — already working */
+
+/* GROUPS */
+const groupsToggle = document.querySelector('.nav-links li.dropdown:nth-of-type(2) > a');
+const groupsMenu = document.querySelector('.nav-links li.dropdown:nth-of-type(2) > .dropdown-menu');
+
+if (groupsToggle && groupsMenu) {
+    groupsToggle.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            groupsMenu.classList.toggle('open');
+        }
+    });
+}
+
+/* MEMBERS SUBMENU */
+const membersToggle = document.querySelector('.dropdown-sub > .submenu-link');
+const membersMenu = document.querySelector('.dropdown-sub > .submenu-right');
+
+if (membersToggle && membersMenu) {
+    membersToggle.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            membersMenu.classList.toggle('open');
+        }
+    });
+}
