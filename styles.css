@@ -4123,27 +4123,6 @@ body.home main {
     }
 }
 
-@media (max-width: 900px) {
-    body.air-rifle-bg .airrifle-title {
-        font-size: 1.6rem !important;
-        line-height: 1.15;
-        text-align: center;
-        white-space: normal !important; /* allow wrapping */
-    }
-
-    /* Replace the full title with a mobile‑friendly stacked version */
-    body.air-rifle-bg .airrifle-title::before {
-        content: "Windsor\nSportsmen's\nAir Rifle";
-        white-space: pre-line;
-        display: block;
-    }
-
-    /* Hide the original desktop title text */
-    body.air-rifle-bg .airrifle-title {
-        color: transparent !important;
-    }
-}
-
 /* =========================================================
    MOBILE-ONLY — ARCHERY PAGE
 ========================================================= */
@@ -4298,5 +4277,20 @@ body.home main {
 
     .ofha-info-logo {
         text-align: center;
+    }
+}
+
+/* MOBILE ONLY — Air Rifle Title */
+@media (max-width: 900px) {
+    body.air-rifle-bg .airrifle-title {
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.2;
+
+        /* Wrapping behavior */
+        white-space: normal !important;   /* allow natural wrapping */
+        overflow-wrap: break-word;        /* wrap long words only if needed */
+        word-break: normal;               /* avoid breaking words */
     }
 }
