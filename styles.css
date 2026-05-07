@@ -4247,3 +4247,9 @@ body.home main {
         line-height: 1.4;
     }
 }
+
+@media (max-width: 900px) {
+    body.cheese-bg main img[alt="Cheese and Cracker Club Title"] {
+        margin-top: 50px !important;
+    }
+}
