@@ -4168,21 +4168,21 @@ body.home main {
         display: none !important;
     }
 
-    /* Add OFHA title — moved down 70px more than before */
+    /* Mobile-only OFHA title — pushed down 80px */
     body.ofha-bg::before {
         content: "OFHA";
         display: block;
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        margin-top: 190px;   /* was 120px → now 120 + 70 */
+        margin-top: 200px !important; /* 120 + 80 */
         margin-bottom: 25px;
         color: #ffffff;
     }
 
-    /* Push first content card down 70px */
+    /* Push first content card down 80px */
     body.ofha-bg .outer-card:first-of-type {
-        margin-top: 70px !important;
+        margin-top: 80px !important;
     }
 
     /* First card fixes */
@@ -4208,7 +4208,6 @@ body.home main {
         text-align: center;
     }
 }
-
 
 /* =========================================================
    MOBILE-ONLY — ARCHERY PAGE (TIMES + PRIVATE EVENTS TEXT)
