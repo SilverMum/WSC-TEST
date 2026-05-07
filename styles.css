@@ -4223,10 +4223,24 @@ body.home main {
     }
 }
 
-/* =========================================================
-   MOBILE-ONLY — OFHA PAGE (FINAL, CLEAN, WORKING)
-========================================================= */
+/* MOBILE ONLY — Air Rifle Title */
+@media (max-width: 900px) {
+    body.air-rifle-bg .airrifle-title {
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.2;
 
+        /* Wrapping behavior */
+        white-space: normal !important;   /* allow natural wrapping */
+        overflow-wrap: break-word;        /* wrap long words only if needed */
+        word-break: normal;               /* avoid breaking words */
+    }
+}
+
+/* =========================================================
+   MOBILE-ONLY — OFHA PAGE (clean + corrected)
+========================================================= */
 @media (max-width: 900px) {
 
     /* Remove the 160px spacer ONLY on mobile */
@@ -4239,21 +4253,21 @@ body.home main {
         display: none !important;
     }
 
-    /* Mobile-only OFHA title (now correctly at the top) */
+    /* Mobile-only OFHA title */
     body.ofha-bg::before {
         content: "OFHA";
         display: block;
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        margin-top: 120px;   /* now works because spacer is gone */
+        margin-top: 180px;
         margin-bottom: 25px;
         color: #ffffff;
     }
 
     /* Push first content card down so it's not tight under the title */
     body.ofha-bg .outer-card:first-of-type {
-        margin-top: 40px !important;
+        margin-top: 60px !important;
     }
 
     /* First card fixes */
@@ -4277,20 +4291,5 @@ body.home main {
 
     .ofha-info-logo {
         text-align: center;
-    }
-}
-
-/* MOBILE ONLY — Air Rifle Title */
-@media (max-width: 900px) {
-    body.air-rifle-bg .airrifle-title {
-        display: block;
-        text-align: center;
-        font-size: 1.6rem;
-        line-height: 1.2;
-
-        /* Wrapping behavior */
-        white-space: normal !important;   /* allow natural wrapping */
-        overflow-wrap: break-word;        /* wrap long words only if needed */
-        word-break: normal;               /* avoid breaking words */
     }
 }
