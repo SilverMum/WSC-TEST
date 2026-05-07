@@ -4313,6 +4313,11 @@ body.home main {
    ============================================ */
 @media (max-width: 600px) {
 
+    /* Push page down under nav */
+    body {
+        padding-top: 50px;
+    }
+
     /* Stack announcement + calendar vertically */
     .ts-announcement {
         flex-direction: column;
@@ -4388,8 +4393,8 @@ body.home main {
         left: 0;
         width: 100vw !important;
         height: 100vh !important;
-        background: rgba(0,0,0,0.85);
-        display: none; /* default, JS sets to flex */
+        background: rgba(0,0,0,0.55); /* DARKER but still see-through */
+        display: none; /* JS sets to flex */
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -4408,7 +4413,7 @@ body.home main {
         position: sticky;
         top: 0;
         z-index: 10000;
-        background: rgba(0,0,0,0.85);
+        background: rgba(0,0,0,0.55);
     }
 
     .ts-close {
