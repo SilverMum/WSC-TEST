@@ -4090,7 +4090,6 @@ body.home main {
     }
 }
 
-
 /* =========================================================
    MOBILE-ONLY — PRIVATE EVENTS PAGE
 ========================================================= */
@@ -4102,50 +4101,6 @@ body.home main {
     }
 }
 
-
-/* =========================================================
-   MOBILE-ONLY — ARCHERY PAGE (HEADER + TITLE + CANCELATIONS)
-========================================================= */
-
-@media (max-width: 900px) {
-
-    /* Remove header image */
-    .archery-header {
-        display: none !important;
-    }
-
-    /* Add ARCHERY title */
-    body.archery-page::before {
-        content: "ARCHERY";
-        display: block;
-        text-align: center;
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-top: 120px;
-        margin-bottom: 20px;
-        color: #ffffff;
-    }
-
-    /* Fix spelling + size */
-    .archery-cancel-title {
-        font-size: 1.4rem !important;
-        letter-spacing: 0.5px;
-    }
-
-    .archery-cancel-title::after {
-        content: "Archery Cancelations";
-        display: block;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: inherit;
-    }
-
-    .archery-cancel-title {
-        font-size: 0 !important;
-    }
-}
-
-
 /* =========================================================
    MOBILE-ONLY — LOGIN PAGE
 ========================================================= */
@@ -4155,7 +4110,6 @@ body.home main {
         margin-top: 100px !important;
     }
 }
-
 
 /* =========================================================
    MOBILE-ONLY — OFHA PAGE
@@ -4209,44 +4163,6 @@ body.home main {
     }
 }
 
-/* =========================================================
-   MOBILE-ONLY — ARCHERY PAGE (TIMES + PRIVATE EVENTS TEXT)
-========================================================= */
-
-@media (max-width: 900px) {
-
-    /* Split times + ages */
-    .archery-times {
-        text-align: center !important;
-        line-height: 1.6;
-        font-size: 0 !important; /* hides original text */
-    }
-
-    .archery-times br {
-        display: none;
-    }
-
-    .archery-times::before {
-        content:
-            "5:30 - 6:30 pm"
-            "(17 and under)"
-            "6:30 - 7:30 pm"
-            "(17 and under)"
-            "7:30 - 8:30 pm"
-            "(Age 18+)";
-        white-space: pre-line;
-        display: block;
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    /* Smaller private events text */
-    .archery-private {
-        font-size: 1rem !important;
-        line-height: 1.4;
-    }
-}
-
 @media (max-width: 900px) {
     body.cheese-bg main img[alt="Cheese and Cracker Club Title"] {
         margin-top: 50px !important;
@@ -4275,21 +4191,6 @@ body.home main {
 }
 
 @media (max-width: 900px) {
-    body.archery-page .archery-title {
-        font-size: 1.7rem !important;   /* tuned to fit mobile */
-        line-height: 1.15;
-        text-align: center;
-        white-space: normal !important; /* allow wrapping */
-    }
-
-    /* Insert a clean line break after the first part */
-    body.archery-page .archery-title::after {
-        content: "";
-        display: block; /* forces the second half onto its own line */
-    }
-}
-
-@media (max-width: 900px) {
     body.air-rifle-bg .airrifle-title {
         font-size: 1.6rem !important;
         line-height: 1.15;
@@ -4307,5 +4208,105 @@ body.home main {
     /* Hide the original desktop title text */
     body.air-rifle-bg .airrifle-title {
         color: transparent !important;
+    }
+}
+
+/* =========================================================
+   MOBILE-ONLY — ARCHERY PAGE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ---------------------------------------------
+       1) MOBILE TITLE (Windsor Sportsmen's / Air Rifle Range)
+       --------------------------------------------- */
+    body.archery-page .archery-title {
+        font-size: 1.7rem !important;
+        line-height: 1.15;
+        text-align: center;
+        white-space: normal !important; /* allow wrapping */
+    }
+
+    /* Force second part onto its own line */
+    body.archery-page .archery-title::after {
+        content: "";
+        display: block;
+    }
+
+
+    /* ---------------------------------------------
+       2) TIMES + PRIVATE EVENTS TEXT
+       --------------------------------------------- */
+
+    /* Replace times block with mobile-stacked version */
+    .archery-times {
+        text-align: center !important;
+        line-height: 1.6;
+        font-size: 0 !important; /* hide original */
+    }
+
+    .archery-times br {
+        display: none;
+    }
+
+    .archery-times::before {
+        content:
+            "5:30 - 6:30 pm\n"
+            "(17 and under)\n\n"
+            "6:30 - 7:30 pm\n"
+            "(17 and under)\n\n"
+            "7:30 - 8:30 pm\n"
+            "(Age 18+)";
+        white-space: pre-line;
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* Smaller private events text */
+    .archery-private {
+        font-size: 1rem !important;
+        line-height: 1.4;
+    }
+
+
+    /* ---------------------------------------------
+       3) HEADER IMAGE REMOVAL + MOBILE PAGE TITLE
+       --------------------------------------------- */
+
+    /* Remove header image */
+    .archery-header {
+        display: none !important;
+    }
+
+    /* Add ARCHERY title above content */
+    body.archery-page::before {
+        content: "ARCHERY";
+        display: block;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+
+    /* ---------------------------------------------
+       4) CANCELATIONS TITLE FIX
+       --------------------------------------------- */
+
+    /* Fix spelling + size */
+    .archery-cancel-title {
+        font-size: 0 !important; /* hide original */
+        letter-spacing: 0.5px;
+    }
+
+    .archery-cancel-title::after {
+        content: "Archery Cancelations";
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: inherit;
     }
 }
