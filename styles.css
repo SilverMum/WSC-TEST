@@ -4365,13 +4365,17 @@ body.home main {
         height: auto;
     }
 
-    /* Calendar full width, centered, no overflow */
+    /* ⭐ FIX: Calendar truly centered */
     .ts-right {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .calendar-card {
         width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         overflow: hidden;
@@ -4436,17 +4440,18 @@ body.home main {
         padding: 5px 10px;
     }
 
-    /* Main content box — DARK NOW */
+    /* ⭐ FIX: Main content box scrolls internally */
     .ts-overlay-content {
         width: 92%;
         max-width: 500px;
+        max-height: 85vh;          /* NEW */
+        overflow-y: auto;          /* NEW */
         background: rgba(0,0,0,0.80) !important;
         color: #fff !important;
         padding: 22px 18px 40px 18px;
         border-radius: 10px;
         margin-bottom: 40px;
         box-shadow: 0 0 20px rgba(0,0,0,0.4);
-        overflow: hidden;
     }
 
     /* Typography — all white */
