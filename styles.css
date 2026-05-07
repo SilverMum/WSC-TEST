@@ -4239,7 +4239,7 @@ body.home main {
 }
 
 /* =========================================================
-   MOBILE-ONLY — OFHA PAGE (corrected spacing)
+   MOBILE-ONLY — OFHA PAGE (corrected spacing + real layout)
 ========================================================= */
 @media (max-width: 900px) {
 
@@ -4253,6 +4253,11 @@ body.home main {
         display: none !important;
     }
 
+    /* Give the page REAL space for the mobile title */
+    body.ofha-bg {
+        padding-top: 220px !important;   /* pushes ALL content down */
+    }
+
     /* Mobile-only OFHA title */
     body.ofha-bg::before {
         content: "OFHA";
@@ -4260,14 +4265,13 @@ body.home main {
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        margin-top: 220px;   /* FIXED: pushes title fully below nav */
         margin-bottom: 30px;
         color: #ffffff;
     }
 
-    /* Push first content card down so it's not tight under the title */
+    /* First card no longer needs margin-top — remove it */
     body.ofha-bg .outer-card:first-of-type {
-        margin-top: 40px !important;
+        margin-top: 0 !important;
     }
 
     /* First card fixes */
