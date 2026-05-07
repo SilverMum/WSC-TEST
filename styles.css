@@ -4262,10 +4262,16 @@ body.home main {
 
 @media (max-width: 900px) {
     body.members-bg .pledge-title {
-        font-size: 1.5rem !important; /* slightly smaller so CONSERVATION fits */
-        line-height: 1.1;
-        white-space: nowrap; /* prevents breaking the word */
+        font-size: 1.5rem !important;
+        line-height: 1.15;
         text-align: center;
+        white-space: normal !important; /* allow wrapping */
+    }
+
+    /* Force PLEDGE onto its own line */
+    body.members-bg .pledge-title::after {
+        content: "";
+        display: block; /* creates the line break */
     }
 }
 
