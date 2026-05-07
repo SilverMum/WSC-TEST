@@ -4110,58 +4110,6 @@ body.home main {
     }
 }
 
-/* =========================================================
-   MOBILE-ONLY — OFHA PAGE
-========================================================= */
-
-@media (max-width: 900px) {
-
-    /* Remove header image */
-    .ofha-header {
-        display: none !important;
-    }
-
-    /* Mobile-only OFHA title — pushed down 80px */
-    body.ofha-bg::before {
-        content: "OFHA";
-        display: block;
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-top: 200px !important; /* 120 + 80 */
-        margin-bottom: 25px;
-        color: #ffffff;
-    }
-
-    /* Push first content card down 80px */
-    body.ofha-bg .outer-card:first-of-type {
-        margin-top: 80px !important;
-    }
-
-    /* First card fixes */
-    .ofha-info-logo img.ofha-logo {
-        width: 50% !important;
-        height: auto;
-    }
-
-    .ofha-info-text p {
-        font-size: 1rem !important;
-        line-height: 1.4;
-    }
-
-    .ofha-info-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .ofha-info-logo {
-        text-align: center;
-    }
-}
-
 @media (max-width: 900px) {
     body.cheese-bg main img[alt="Cheese and Cracker Club Title"] {
         margin-top: 50px !important;
@@ -4307,5 +4255,62 @@ body.home main {
         font-size: 1.4rem;
         font-weight: 700;
         color: inherit;
+    }
+}
+
+/* =========================================================
+   MOBILE-ONLY — OFHA PAGE (FINAL, CLEAN, WORKING)
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Remove the 160px spacer ONLY on mobile */
+    body.ofha-bg section[style*="height: 160px"] {
+        display: none !important;
+    }
+
+    /* Remove header image */
+    .ofha-header {
+        display: none !important;
+    }
+
+    /* Mobile-only OFHA title (now correctly at the top) */
+    body.ofha-bg::before {
+        content: "OFHA";
+        display: block;
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-top: 120px;   /* now works because spacer is gone */
+        margin-bottom: 25px;
+        color: #ffffff;
+    }
+
+    /* Push first content card down so it's not tight under the title */
+    body.ofha-bg .outer-card:first-of-type {
+        margin-top: 40px !important;
+    }
+
+    /* First card fixes */
+    .ofha-info-logo img.ofha-logo {
+        width: 50% !important;
+        height: auto;
+    }
+
+    .ofha-info-text p {
+        font-size: 1rem !important;
+        line-height: 1.4;
+    }
+
+    .ofha-info-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .ofha-info-logo {
+        text-align: center;
     }
 }
