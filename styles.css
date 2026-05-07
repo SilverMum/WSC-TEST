@@ -4291,9 +4291,21 @@ body.home main {
 
 @media (max-width: 900px) {
     body.air-rifle-bg .airrifle-title {
-        font-size: 1.55rem !important;  /* lowered from 1.7rem */
-        line-height: 1.1;
-        white-space: nowrap;            /* keeps the whole title on one line */
+        font-size: 1.6rem !important;
+        line-height: 1.15;
         text-align: center;
+        white-space: normal !important; /* allow wrapping */
+    }
+
+    /* Replace the full title with a mobile‑friendly stacked version */
+    body.air-rifle-bg .airrifle-title::before {
+        content: "Windsor\nSportsmen's\nAir Rifle";
+        white-space: pre-line;
+        display: block;
+    }
+
+    /* Hide the original desktop title text */
+    body.air-rifle-bg .airrifle-title {
+        color: transparent !important;
     }
 }
