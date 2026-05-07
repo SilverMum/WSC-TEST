@@ -4255,7 +4255,7 @@ body.home main {
 
     /* Give the page REAL space for the mobile title */
     body.ofha-bg {
-        padding-top: 260px !important;   /* pushes ALL content down */
+        padding-top: 300px !important;   /* pushes ALL content down */
     }
 
     /* Mobile-only OFHA title */
