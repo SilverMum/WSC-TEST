@@ -4253,3 +4253,9 @@ body.home main {
         margin-top: 50px !important;
     }
 }
+
+@media (max-width: 900px) {
+    body.TV-bg main {
+        margin-top: 80px !important;
+    }
+}
