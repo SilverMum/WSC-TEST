@@ -4336,10 +4336,19 @@ body.home main {
         line-height: 1.2;
     }
 
+    /* Default list styling */
     .ts-left ul {
         text-align: left;
         margin: 0 auto;
         max-width: 320px;
+    }
+
+    /* ⭐ FIX: Important Notes list — remove indent + center block */
+    .ts-left ul {
+        max-width: none !important;
+        margin: 0 !important;
+        padding-left: 20px !important;
+        text-align: left !important;
     }
 
     /* Facebook + Instagram stacked + centered */
@@ -4396,8 +4405,8 @@ body.home main {
         left: 0;
         width: 100vw !important;
         height: 100vh !important;
-        background: rgba(0,0,0,0.55); /* keep background exactly as you like it */
-        display: none; /* JS sets to flex */
+        background: rgba(0,0,0,0.55);
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -4431,7 +4440,7 @@ body.home main {
     .ts-overlay-content {
         width: 92%;
         max-width: 500px;
-        background: rgba(0,0,0,0.80) !important; /* dark card */
+        background: rgba(0,0,0,0.80) !important;
         color: #fff !important;
         padding: 22px 18px 40px 18px;
         border-radius: 10px;
@@ -4486,7 +4495,7 @@ body.home main {
     .package-block {
         padding: 15px;
         border-radius: 8px;
-        background: rgba(255,255,255,0.10); /* subtle contrast on dark */
+        background: rgba(255,255,255,0.10);
         margin-bottom: 25px;
         text-align: left;
         color: #fff !important;
