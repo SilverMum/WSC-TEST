@@ -4288,3 +4288,12 @@ body.home main {
         display: block; /* forces the second half onto its own line */
     }
 }
+
+@media (max-width: 900px) {
+    body.air-rifle-bg .airrifle-title {
+        font-size: 1.55rem !important;  /* lowered from 1.7rem */
+        line-height: 1.1;
+        white-space: nowrap;            /* keeps the whole title on one line */
+        text-align: center;
+    }
+}
