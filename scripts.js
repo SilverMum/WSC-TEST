@@ -58,3 +58,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+@media (max-width: 900px) {
+    body.air-rifle-bg .airrifle-title {
+        font-size: 1.7rem !important;  /* tuned to fit without wrapping */
+        line-height: 1.1;
+        white-space: nowrap;           /* prevents breaking the title */
+        text-align: center;
+    }
+}
+
