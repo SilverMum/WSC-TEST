@@ -4365,7 +4365,7 @@ body.home main {
         height: auto;
     }
 
-    /* ⭐ FIX: Calendar container centered */
+    /* Calendar wrapper */
     .ts-right {
         width: 100%;
         display: flex;
@@ -4373,18 +4373,18 @@ body.home main {
     }
 
     .calendar-card {
-        width: 100%;
-        max-width: 500px;
+        /* 5px space from screen edges */
+        width: calc(100% - 10px);
         margin: 0 auto;
+
+        /* thin orange border around calendar */
+        padding: 2px;
+        background: #f9a825; /* same orange as your card */
+
         display: flex;
         justify-content: center;
         overflow: hidden;
-
-        /* ⭐ NEW: Shift calendar 60px to the right */
-        padding-left: 60px !important;
-
-        /* ⭐ NEW: Make orange card border visible on left */
-        padding-right: 10px !important;
+        box-sizing: border-box;
     }
 
     .calendar-card iframe {
@@ -4392,10 +4392,9 @@ body.home main {
         height: 600px !important;
         border: none;
         display: block;
-        margin: 0 auto;
 
-        /* Override Google Calendar’s forced min-width */
-        min-width: 0 !important;
+        /* ensure it fills the inner area */
+        min-width: 100% !important;
         max-width: 100% !important;
     }
 
