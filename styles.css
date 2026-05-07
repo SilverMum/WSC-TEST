@@ -4375,3 +4375,165 @@ body.home main {
         display: block;
     }
 }
+
+/* ============================================================
+   MOBILE — Trap & Skeet Info Card Overlays (INFO1–INFO8)
+   ============================================================ */
+@media (max-width: 600px) {
+
+    /* Fullscreen overlay container */
+    .ts-overlay {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(0,0,0,0.85);
+        display: none; /* default, JS sets to flex */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: auto;
+        padding: 0;
+        margin: 0;
+        z-index: 9999;
+    }
+
+    /* Sticky close button */
+    .ts-close-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 15px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background: rgba(0,0,0,0.85);
+    }
+
+    .ts-close {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    /* Main content box */
+    .ts-overlay-content {
+        width: 92%;
+        max-width: 500px;
+        background: #fff;
+        padding: 22px 18px 40px 18px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        overflow: hidden;
+    }
+
+    /* Typography */
+    .ts-overlay-content h2,
+    .ts-overlay-content h3 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .ts-overlay-content p,
+    .ts-overlay-content li {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    /* Lists */
+    .ts-overlay-content ul,
+    .ts-overlay-content ol {
+        padding-left: 20px;
+    }
+
+    /* Nested lists (INFO7 rules) */
+    .ts-overlay-content ul ul,
+    .ts-overlay-content ol ul {
+        padding-left: 25px;
+        margin-top: 8px;
+    }
+
+    /* Restricted firearms image (INFO7) */
+    .range-restricted-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .restricted-firearms-wrapper {
+        text-align: center;
+    }
+
+    .range-revised-date {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Package blocks (INFO4) */
+    .package-block {
+        padding: 15px;
+        border-radius: 8px;
+        background: #f7f7f7;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .package-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    /* Range Open button (INFO2) */
+    .range-open-button-img {
+        width: 80%;
+        max-width: 260px;
+        height: auto;
+    }
+
+    /* ============================================================
+       INFO 8 — CONTACT FORM OVERLAY (LEFT/RIGHT FLEX FIX)
+       ============================================================ */
+
+    .ts-contact-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .ts-contact-left,
+    .ts-contact-right {
+        width: 100%;
+    }
+
+    .ts-contact-card {
+        background: #f9a825;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .trap-skeet-form input,
+    .trap-skeet-form textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .field-row {
+        margin-bottom: 15px;
+    }
+
+    .ts-submit {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+}
