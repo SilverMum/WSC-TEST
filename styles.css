@@ -4308,3 +4308,70 @@ body.home main {
     }
 }
 
+/* ============================================
+   MOBILE — Trap & Skeet Section
+   ============================================ */
+@media (max-width: 600px) {
+
+    /* Stack announcement + calendar vertically */
+    .ts-announcement {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    /* Left column full width */
+    .ts-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ts-left h2 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .ts-left ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    /* Facebook + Instagram stacked + centered */
+    .fb-bottom-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .fb-bottom-button img {
+        width: 120px;
+        height: auto;
+    }
+
+    /* Calendar full width, no overflow */
+    .ts-right {
+        width: 100%;
+    }
+
+    .calendar-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .calendar-card iframe {
+        width: 100% !important;
+        height: 600px !important;
+        border: none;
+        display: block;
+    }
+
+    /* Header image responsive */
+    .page-header img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
