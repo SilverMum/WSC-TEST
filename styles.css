@@ -4251,11 +4251,11 @@ body.home main {
 
     .archery-times::before {
         content:
-            "5:30 - 6:30 pm\n"
-            "(17 and under)\n\n"
-            "6:30 - 7:30 pm\n"
-            "(17 and under)\n\n"
-            "7:30 - 8:30 pm\n"
+            "5:30 - 6:30 pm"
+            "(17 and under)"
+            "6:30 - 7:30 pm"
+            "(17 and under)"
+            "7:30 - 8:30 pm"
             "(Age 18+)";
         white-space: pre-line;
         display: block;
