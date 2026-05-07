@@ -4314,3 +4314,17 @@ body.home main {
         text-align: center;
     }
 }
+
+/* MOBILE ONLY — shorten Cheese & Cracker Club on HOME PAGE ONLY */
+@media (max-width: 900px) {
+    body.home .dropdown-menu li a[href="cheese-cracker.html"] {
+        font-size: 0 !important; /* hide original text */
+        position: relative;
+    }
+
+    body.home .dropdown-menu li a[href="cheese-cracker.html"]::after {
+        content: "Cheese & Cracker";
+        font-size: 16px;
+        color: inherit;
+    }
+}
