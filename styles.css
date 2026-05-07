@@ -4321,7 +4321,7 @@ body.home main {
     /* Stack announcement + calendar vertically */
     .ts-announcement {
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
         padding: 0 15px;
     }
 
