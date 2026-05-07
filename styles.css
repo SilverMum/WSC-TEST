@@ -4356,13 +4356,15 @@ body.home main {
         height: auto;
     }
 
-    /* Calendar full width, no overflow */
+    /* Calendar full width, centered, no overflow */
     .ts-right {
         width: 100%;
     }
 
     .calendar-card {
         width: 100%;
+        display: flex;
+        justify-content: center;
         overflow: hidden;
     }
 
@@ -4371,6 +4373,7 @@ body.home main {
         height: 600px !important;
         border: none;
         display: block;
+        margin: 0 auto;
     }
 
     /* Header image responsive */
@@ -4393,7 +4396,7 @@ body.home main {
         left: 0;
         width: 100vw !important;
         height: 100vh !important;
-        background: rgba(0,0,0,0.55); /* DARKER but still see-through */
+        background: rgba(0,0,0,0.55); /* keep background exactly as you like it */
         display: none; /* JS sets to flex */
         flex-direction: column;
         justify-content: flex-start;
@@ -4424,11 +4427,12 @@ body.home main {
         padding: 5px 10px;
     }
 
-    /* Main content box */
+    /* Main content box — DARK NOW */
     .ts-overlay-content {
         width: 92%;
         max-width: 500px;
-        background: #fff;
+        background: rgba(0,0,0,0.80) !important; /* dark card */
+        color: #fff !important;
         padding: 22px 18px 40px 18px;
         border-radius: 10px;
         margin-bottom: 40px;
@@ -4436,24 +4440,20 @@ body.home main {
         overflow: hidden;
     }
 
-    /* Typography */
+    /* Typography — all white */
     .ts-overlay-content h2,
-    .ts-overlay-content h3 {
-        font-size: 1.4rem;
-        line-height: 1.3;
-        text-align: center;
-    }
-
+    .ts-overlay-content h3,
     .ts-overlay-content p,
-    .ts-overlay-content li {
-        font-size: 1rem;
-        line-height: 1.55;
+    .ts-overlay-content li,
+    .ts-overlay-content strong {
+        color: #fff !important;
     }
 
     /* Lists */
     .ts-overlay-content ul,
     .ts-overlay-content ol {
         padding-left: 20px;
+        color: #fff !important;
     }
 
     /* Nested lists (INFO7 rules) */
@@ -4479,21 +4479,24 @@ body.home main {
         margin-top: 10px;
         font-size: 0.9rem;
         text-align: center;
+        color: #fff !important;
     }
 
     /* Package blocks (INFO4) */
     .package-block {
         padding: 15px;
         border-radius: 8px;
-        background: #f7f7f7;
+        background: rgba(255,255,255,0.10); /* subtle contrast on dark */
         margin-bottom: 25px;
         text-align: left;
+        color: #fff !important;
     }
 
     .package-title {
         font-size: 1.2rem;
         font-weight: 700;
         margin-bottom: 8px;
+        color: #fff !important;
     }
 
     /* Range Open button (INFO2) */
@@ -4516,6 +4519,7 @@ body.home main {
     .ts-contact-left,
     .ts-contact-right {
         width: 100%;
+        color: #fff !important;
     }
 
     .ts-contact-card {
