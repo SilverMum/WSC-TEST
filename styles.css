@@ -4379,6 +4379,9 @@ body.home main {
         display: flex;
         justify-content: center;
         overflow: hidden;
+
+        /* ⭐ NEW: Shift calendar 40px to the right */
+        padding-left: 40px !important;
     }
 
     .calendar-card iframe {
@@ -4387,6 +4390,10 @@ body.home main {
         border: none;
         display: block;
         margin: 0 auto;
+
+        /* Override Google Calendar’s forced min-width */
+        min-width: 0 !important;
+        max-width: 100% !important;
     }
 
     /* Header image responsive */
@@ -4396,6 +4403,7 @@ body.home main {
         display: block;
     }
 }
+
 
 /* ============================================================
    MOBILE — Trap & Skeet Info Card Overlays (INFO1–INFO8)
