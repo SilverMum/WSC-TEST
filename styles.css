@@ -4320,6 +4320,7 @@ body.home main {
 
     /* Stack announcement + calendar vertically */
     .ts-announcement {
+        display: block !important;   /* ⭐ FORCE STACKING ON MOBILE */
         flex-direction: column;
         gap: 50px;
         padding: 0 15px;
