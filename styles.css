@@ -4372,8 +4372,8 @@ body.home main {
         display: flex;
         justify-content: center;
 
-        /* ⭐ SHIFT ENTIRE CALENDAR RIGHT 40PX */
-        margin-left: 40px;
+        /* ⭐ SHIFT ENTIRE CALENDAR RIGHT 47PX */
+        margin-left: 47px;
     }
 
     .calendar-card {
@@ -4409,7 +4409,6 @@ body.home main {
         display: block;
     }
 }
-
 
 /* ============================================================
    MOBILE — Trap & Skeet Info Card Overlays (INFO1–INFO8)
