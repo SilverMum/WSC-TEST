@@ -4605,3 +4605,44 @@ body.home main {
         padding: 0 1rem;
     }
 }
+
+/* Force the 3 event cards into a row on desktop */
+.club-events-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    padding: 0 0.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Override your card defaults ONLY inside this row */
+.club-events-row .club-event-card {
+    flex: 1;
+    max-width: 33.33%;
+    display: flex;
+}
+
+.club-events-row .inner-card {
+    width: 100%;
+}
+
+.club-events-row .event-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mobile: stack them */
+@media (max-width: 700px) {
+    .club-events-row {
+        flex-direction: column;
+    }
+
+    .club-events-row .club-event-card {
+        max-width: 100%;
+    }
+}
