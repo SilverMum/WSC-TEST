@@ -1,70 +1,68 @@
-/* Events Header Block */
+/* ⭐ Events Header Block (now wraps title + images) */
 .events-header {
-    max-width: 900px;              /* aligns with your cards */
-    margin: 40px auto 20px auto;   /* spacing above/below */
+    max-width: 900px;              
+    margin: 40px auto 20px auto;   
     text-align: center;
     padding: 30px 20px;
-    background: #f3eee6;           /* soft beige like your image */
+    background: #f3eee6;           
     border-radius: 12px;
-    border: 2px solid #d8d2c8;     /* subtle border like the banner */
+    border: 2px solid #d8d2c8;     
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Small top text WITH LINES */
+/* ⭐ Subtitle with lines */
 .events-subtitle {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #6b5e4a;                /* warm brown tone */
+    color: #6b5e4a;
     text-transform: uppercase;
     margin-bottom: 8px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;                     /* spacing between text and lines */
+    gap: 10px;
 }
 
-/* Half‑length lines */
 .events-subtitle .line {
-    flex: 0 0 60px;                /* half the previous length */
+    flex: 0 0 60px;                
     height: 2px;
-    background-color: #6b5e4a;     /* same warm brown tone */
+    background-color: #6b5e4a;
     opacity: 0.7;
     border-radius: 2px;
 }
 
-/* Main title */
+/* ⭐ Main title */
 .events-title {
     font-size: 36px;
     font-weight: 800;
-    color: #3a3328;                /* darker brown */
+    color: #3a3328;
     letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
-/* Match the pledge card width (900px) */
+/* ⭐ Image row INSIDE beige card */
 .events-row {
-    max-width: 900px;
-    margin: 40px auto;
     display: flex;
     justify-content: space-between;
-    gap: 20px;              /* keep your original spacing */
+    gap: 20px;
 }
 
-/* Images expand but stay full-image (no cropping) */
+/* ⭐ Images */
 .clickable-vertical-img {
-    flex: 1 1 auto;         /* grow to fill space */
-    max-width: 300px;       /* prevents them from becoming huge */
+    flex: 1 1 auto;
+    max-width: 300px;
     width: 100%;
-    height: auto;           /* show full image */
-    object-fit: contain;    /* IMPORTANT: shows full image, no cropping */
+    height: auto;
+    object-fit: contain;
     cursor: pointer;
     border-radius: 6px;
     display: block;
     margin: 0;
 }
 
-/* Fullscreen overlay (unchanged) */
+/* ⭐ Fullscreen overlay */
 .fullscreen-overlay {
     position: fixed;
     top: 0;
@@ -76,17 +74,17 @@
     justify-content: center;
     align-items: center;
     z-index: 99999;
-    overflow: hidden;       /* prevents scrolling */
+    overflow: hidden;
 }
 
 .fullscreen-overlay img {
-    max-width: 95vw;        /* full screen width */
-    max-height: 95vh;       /* full screen height */
-    object-fit: contain;    /* show full image */
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
     border-radius: 8px;
 }
 
-/* Close button */
+/* ⭐ Close button */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -97,7 +95,7 @@
     z-index: 100000;
 }
 
-/* Mobile: stack vertically */
+/* ⭐ Mobile */
 @media (max-width: 700px) {
     .events-row {
         flex-direction: column;
