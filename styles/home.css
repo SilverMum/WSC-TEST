@@ -4,21 +4,53 @@
     margin: 40px auto;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px;              /* keep your original spacing */
 }
 
-/* Images expand, but only up to a safe max width */
+/* Images expand but stay full-image (no cropping) */
 .clickable-vertical-img {
-    flex: 1 1 auto;         /* allow growth */
-    max-width: 260px;       /* prevents them from becoming huge */
-    width: 100%;            /* flex controls width within max */
-    height: auto;
-    object-fit: cover;
+    flex: 1 1 auto;         /* grow to fill space */
+    max-width: 300px;       /* prevents them from becoming huge */
+    width: 100%;
+    height: auto;           /* show full image */
+    object-fit: contain;    /* IMPORTANT: shows full image, no cropping */
     cursor: pointer;
     border-radius: 6px;
-
     display: block;
     margin: 0;
+}
+
+/* Fullscreen overlay (unchanged) */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    overflow: hidden;       /* prevents scrolling */
+}
+
+.fullscreen-overlay img {
+    max-width: 95vw;        /* full screen width */
+    max-height: 95vh;       /* full screen height */
+    object-fit: contain;    /* show full image */
+    border-radius: 8px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 100000;
 }
 
 /* Mobile: stack vertically */
