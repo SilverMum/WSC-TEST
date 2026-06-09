@@ -4573,3 +4573,35 @@ body.home main {
         border-radius: 8px;
     }
 }
+
+/* Desktop: 3 cards side-by-side */
+.club-events-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0.2rem; /* tiny edge spacing */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make each card take equal width */
+.club-events-row .club-event-card {
+    flex: 1;
+}
+
+/* Ensure images scale nicely */
+.club-events-row .event-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 700px) {
+    .club-events-row {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 1rem;
+    }
+}
