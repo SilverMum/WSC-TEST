@@ -4574,75 +4574,49 @@ body.home main {
     }
 }
 
-/* Desktop: 3 cards side-by-side */
+/* ⭐ Desktop: 3 cards side-by-side */
 .club-events-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 0.2rem; /* tiny edge spacing */
-    max-width: 100%;
-    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    padding: 0 0.2rem !important; /* tiny edge spacing */
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
-/* Make each card take equal width */
+/* ⭐ Each card takes equal width */
 .club-events-row .club-event-card {
-    flex: 1;
+    flex: 1 1 33% !important;
+    max-width: 33.33% !important;
+    display: flex !important;
+    margin: 0 !important;
 }
 
-/* Ensure images scale nicely */
+/* ⭐ Inner card must stretch */
+.club-events-row .inner-card {
+    width: 100% !important;
+}
+
+/* ⭐ Images scale properly */
 .club-events-row .event-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
     border-radius: 8px;
 }
 
-/* Mobile: stack vertically */
+/* ⭐ Mobile: stack vertically */
 @media (max-width: 700px) {
     .club-events-row {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 1rem;
-    }
-}
-
-/* Force the 3 event cards into a row on desktop */
-.club-events-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 10px;
-    padding: 0 0.2rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Override your card defaults ONLY inside this row */
-.club-events-row .club-event-card {
-    flex: 1;
-    max-width: 33.33%;
-    display: flex;
-}
-
-.club-events-row .inner-card {
-    width: 100%;
-}
-
-.club-events-row .event-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Mobile: stack them */
-@media (max-width: 700px) {
-    .club-events-row {
-        flex-direction: column;
+        flex-direction: column !important;
+        gap: 30px !important;
+        padding: 0 1rem !important;
     }
 
     .club-events-row .club-event-card {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 }
