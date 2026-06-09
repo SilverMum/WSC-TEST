@@ -1,3 +1,33 @@
+/* Events Header Block */
+.events-header {
+    max-width: 900px;              /* aligns with your cards */
+    margin: 40px auto 20px auto;   /* spacing above/below */
+    text-align: center;
+    padding: 30px 20px;
+    background: #f3eee6;           /* soft beige like your image */
+    border-radius: 12px;
+    border: 2px solid #d8d2c8;     /* subtle border like the banner */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Small top text */
+.events-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #6b5e4a;                /* warm brown tone */
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Main title */
+.events-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #3a3328;                /* darker brown */
+    letter-spacing: 1px;
+}
+
 /* Match the pledge card width (900px) */
 .events-row {
     max-width: 900px;
