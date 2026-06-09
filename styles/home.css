@@ -1,24 +1,24 @@
 /* Match the pledge card width (900px) */
 .events-row {
-    max-width: 900px;       /* SAME WIDTH AS YOUR CARD */
-    margin: 0 auto;         /* CENTER IT */
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 0 10px;        /* tiny breathing room to match card padding */
+    gap: 20px;              /* keep your original spacing */
+    padding: 0 10px;
     margin-top: 20px;
 }
 
-/* Bigger vertical images that align with card edges */
+/* Images expand to fill the row evenly */
 .clickable-vertical-img {
-    width: 220px;           /* increased from 180px */
+    flex: 1;                /* THIS makes them fill the space */
+    width: 100%;            /* allow flex to control width */
     height: auto;
-    max-height: 400px;      /* optional bump */
-    object-fit: cover;
+    object-fit: cover;      /* keeps them vertical and clean */
     cursor: pointer;
     border-radius: 6px;
 
-    display: inline-block;
+    display: block;
     margin: 0;
 }
 
@@ -32,7 +32,7 @@
     }
 
     .clickable-vertical-img {
-        width: 70%;          /* nice mobile size */
+        width: 70%;
         max-height: none;
     }
 }
