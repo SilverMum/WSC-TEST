@@ -26,22 +26,23 @@ body.knifeaxe-bg {
 --------------------------------*/
 .knifeaxe-hero {
     text-align: center;
-    margin-top: 260px;       /* space under nav */
+    margin-top: 360px;       /* space under nav */
     margin-bottom: 40px;
 }
 
 .knifeaxe-hero h1 {
     font-size: clamp(2.4rem, 4vw, 3.8rem);
     font-weight: 800;
-    margin: 0;              /* removes the line/gap above */
+    line-height: 1.1;   /* keeps the two lines tight */
+    margin: 0;
     padding: 0;
 }
 
 .knifeaxe-hero p {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-top: -6px;       /* pulls subtitle closer to title */
-    margin-bottom: 0;       /* removes the line/gap below */
+    margin-top: 10px;   /* space under the big title */
+    margin-bottom: 0;
     opacity: 0.9;
 }
 
