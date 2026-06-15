@@ -1,4 +1,18 @@
 /* ------------------------------
+   KNIFE & AXE BACKGROUND IMAGE
+--------------------------------*/
+body.air-rifle-bg,  /* remove this if not needed */
+body.knifeaxe-bg {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)),
+        url("images/lukasz-szmigiel-2ShvY8Lf6l0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional: makes it look premium */
+}
+
+/* ------------------------------
    KNIFE & AXE PAGE WRAPPER
 --------------------------------*/
 .knifeaxe-container {
