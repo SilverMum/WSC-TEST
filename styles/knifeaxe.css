@@ -1,1 +1,121 @@
-placeholder
+/* ------------------------------
+   KNIFE & AXE PAGE WRAPPER
+--------------------------------*/
+.knifeaxe-container {
+    max-width: 900px;
+    margin: 120px auto 60px; /* space under fixed nav */
+    padding: 0 20px;
+    color: #222;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.knifeaxe-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.knifeaxe-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.knifeaxe-hero p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+/* ------------------------------
+   PROGRAM DETAILS
+--------------------------------*/
+.knifeaxe-details {
+    margin-bottom: 40px;
+}
+
+.knifeaxe-details h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.knifeaxe-details p {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+/* ------------------------------
+   CONTACT SECTION
+--------------------------------*/
+.knifeaxe-contact {
+    margin-bottom: 40px;
+}
+
+.knifeaxe-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #333;
+}
+
+/* ------------------------------
+   RULES SECTION
+--------------------------------*/
+.knifeaxe-rules {
+    margin-bottom: 40px;
+}
+
+.knifeaxe-rules h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.knifeaxe-rules ul {
+    padding-left: 20px;
+}
+
+.knifeaxe-rules li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* ------------------------------
+   GALLERY SECTION
+--------------------------------*/
+.knifeaxe-gallery {
+    margin-bottom: 60px;
+}
+
+.knifeaxe-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.img-placeholder {
+    background-color: #ddd;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
