@@ -1,7 +1,6 @@
 /* ------------------------------
    KNIFE & AXE BACKGROUND IMAGE
 --------------------------------*/
-body.air-rifle-bg,  /* remove this if not needed */
 body.knifeaxe-bg {
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)),
