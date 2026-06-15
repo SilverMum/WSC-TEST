@@ -8,7 +8,7 @@ body.knifeaxe-bg {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* optional: makes it look premium */
+    background-attachment: fixed;
 }
 
 /* ------------------------------
