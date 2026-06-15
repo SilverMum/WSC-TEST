@@ -7,12 +7,26 @@
 
     <title>Login – Windsor Sportsmen’s Club</title>
 
-    <!-- Your stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- =========================================================
+         PAGE STYLESHEETS
+    ========================================================== -->
+     <!-- Nav styles -->
+    <link rel="stylesheet" href="styles/nav.css">
+    <!-- Air Rifle styles -->
+    <link rel="stylesheet" href="styles.css?v=7">
+    <!-- Footer styles -->
+    <link rel="stylesheet" href="styles/footer.css">
+    
 </head>
 
 <body class="login-bg">
 
+    <!-- =========================================================
+         NAVIGATION (LOADED FROM /components/nav.html)
+    ========================================================== -->
+    <div id="nav-placeholder"></div>
+    <script src="scripts/load-nav.js"></script>
+    
 <!-- ⭐ FULL NAV BAR -->
 <header>
     <nav class="main-nav">
@@ -92,9 +106,9 @@
 </main>
 
 <!-- ⭐ FOOTER -->
-<footer class="site-footer">
-    <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
-</footer>
+<div id="footer-placeholder"></div>
+<script src="scripts/load-footer.js"></script>
+    
 <script src="scripts.js"></script>
 </body>
 </html>
