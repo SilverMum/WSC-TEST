@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>Windsor Sportsmen’s Club</title>
+    
+  <!-- =========================================================
+         PAGE STYLESHEETS
+    ========================================================== -->
+     <!-- Nav styles -->
+    <link rel="stylesheet" href="styles/nav.css">
+    <!-- Air Rifle styles -->
     <link rel="stylesheet" href="styles.css?v=7">
+    <!-- Footer styles -->
+    <link rel="stylesheet" href="styles/footer.css">
+    
 </head>
 
 <body class="members-bg">
+
+    <!-- =========================================================
+         NAVIGATION (LOADED FROM /components/nav.html)
+    ========================================================== -->
+    <div id="nav-placeholder"></div>
+    <script src="scripts/load-nav.js"></script>
 
 <!-- ⭐ FULL NAV BAR -->
 <header>
@@ -253,9 +269,10 @@
 
 </main>
 
-<footer class="site-footer">
-    <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
-</footer>
+<!-- ⭐ FOOTER -->
+<div id="footer-placeholder"></div>
+<script src="scripts/load-footer.js"></script>
+    
 <script src="scripts.js"></script>
 </body>
 </html>
