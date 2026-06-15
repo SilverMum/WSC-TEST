@@ -11,12 +11,9 @@
 /* ------------------------------
    HERO SECTION
 --------------------------------*/
-/* ------------------------------
-   KNIFE & AXE HERO — MATCH SCREENSHOT
---------------------------------*/
 .knifeaxe-hero {
     text-align: center;
-    margin-top: 40px;       /* space under nav */
+    margin-top: 260px;       /* space under nav */
     margin-bottom: 40px;
 }
 
