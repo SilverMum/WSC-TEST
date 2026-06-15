@@ -180,3 +180,19 @@
 .submenu-toggle {
     display: inline-block;
 }
+
+/* ------------------------------
+   KNIFE & AXE (Stacked Link)
+--------------------------------*/
+.knifeaxe-link {
+    display: block;
+    line-height: 1.1;
+    text-align: left; /* or center if you prefer */
+}
+
+.knifeaxe-sub {
+    font-size: 0.85em;
+    opacity: 0.85;
+    display: block;
+    margin-top: -2px;
+}
