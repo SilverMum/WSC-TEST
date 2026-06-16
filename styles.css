@@ -507,22 +507,6 @@ main {
 /* ------------------------------
    FOOTER — DARK THEME (GLOBAL)
 --------------------------------*/
-.site-footer {
-    background-color: #1a1a1a;   /* dark footer */
-    color: #ffffff;
-    text-align: center;
-    padding: 25px 10px;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 40px;
-}
-
-.site-footer p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0;
-}
-
 /* HOMEPAGE ONLY — allow full-width layout */
 body.home main {
     max-width: none;
@@ -533,7 +517,6 @@ body.home main {
 #club-events {
     scroll-margin-top: 92px; /* was 80px */
 }
-
 
 /* =========================================================
    OTHER PAGES (RANGE, ARCHERY, OFHA, PRIVATE EVENTS, LOGIN)
