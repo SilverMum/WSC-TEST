@@ -2,6 +2,10 @@ html, body {
     overflow-x: hidden;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* ------------------------------
    KNIFE & AXE BACKGROUND IMAGE
 --------------------------------*/
@@ -20,9 +24,10 @@ body.knifeaxe-bg {
 --------------------------------*/
 .knifeaxe-container {
     max-width: 900px;
-    margin: 120px auto 60px; /* space under fixed nav */
+    margin: 120px auto 60px;
     padding: 0 20px;
-    color: #222;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ------------------------------
@@ -141,6 +146,7 @@ body.knifeaxe-bg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    overflow-x: hidden;
 }
 
 .img-placeholder {
