@@ -11,6 +11,14 @@ html, body {
     box-sizing: border-box;
 }
 
+/* =========================================================
+   AXE PAGE — FORCE ALL TEXT WHITE
+========================================================= */
+.knifeaxe-container,
+.knifeaxe-container * {
+    color: #ffffff !important;
+}
+
 /* ------------------------------
    KNIFE & AXE BACKGROUND IMAGE
 --------------------------------*/
