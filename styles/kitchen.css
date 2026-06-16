@@ -202,3 +202,77 @@
         margin-bottom: 20px;
     }
 }
+
+.kitchen-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kitchen-description {
+        text-align: left;
+        max-width: 100%;
+    }
+
+/* Kitchen section */
+    .kitchen-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .kitchen-description {
+        text-align: center;
+        max-width: 100%;
+    }
+
+/* =========================================================
+   KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
+========================================================= */
+
+.kitchen-title-img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 110px auto 0;
+}
+
+.kitchen-layout {
+    display: block;
+    text-align: center;
+}
+
+.kitchen-badge {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.kitchen-description p {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    padding: 0 10px;
+    word-break: break-word;
+}
+
+.kitchen-fb-scroll iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+}
+
+/* =========================================================
+   MOBILE-ONLY — KITCHEN PAGE
+========================================================= */
+
+@media (max-width: 900px) {
+    .kitchen-description p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .kitchen-description {
+        margin-left: -17px;
+    }
+}
