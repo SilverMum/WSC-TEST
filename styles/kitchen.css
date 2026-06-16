@@ -20,11 +20,7 @@
    KITCHEN PAGE SPACING
 --------------------------------*/
 #kitchen-page {
-    padding-top: 40px !important;
-}
-
-#kitchen-page .content-section {
-    padding-top: 40px;
+    margin-top: 200px; /* space under nav */
 }
 
 /* ------------------------------
