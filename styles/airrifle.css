@@ -25,7 +25,7 @@ html, body {
     justify-content: center;
     padding: 10px 0;
     background-color: #1a1a1a;
-    border-bottom: 1px solid #ddd;
+    border-bottom: none;
 }
 
 .nav-spacer {
@@ -176,6 +176,9 @@ html, body {
     z-index: -1;
 }
 
+.content-section {
+    padding-top: 140px;
+}
 
 /* =========================================================
    PAGE WRAPPER
