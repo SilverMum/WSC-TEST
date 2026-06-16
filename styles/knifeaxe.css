@@ -175,7 +175,7 @@ body.knifeaxe-bg {
 ========================================================= */
 
 .knifeaxe-details-card {
-    background: rgba(0, 128, 0, 0.10); /* light green, 10% opacity */
+    background: rgba(210, 180, 140, 0.10);
     padding: 30px;
     border-radius: 12px;
     max-width: 900px;
