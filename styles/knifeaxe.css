@@ -169,3 +169,55 @@ body.knifeaxe-bg {
     font-size: 1.2rem;
     border-radius: 8px;
 }
+
+/* =========================================================
+   AXE PAGE — PROGRAM DETAILS CARD
+========================================================= */
+
+.knifeaxe-details-card {
+    background: rgba(0, 128, 0, 0.10); /* light green, 10% opacity */
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 60px auto;
+    backdrop-filter: blur(2px);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.detail-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.detail-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.detail-item p {
+    margin: 3px 0 0;
+    font-size: 1.1rem;
+}
+
+/* Weather note bar */
+.weather-note {
+    margin-top: 35px;
+    background: rgba(0, 128, 0, 0.15);
+    padding: 18px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}
