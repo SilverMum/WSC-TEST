@@ -1,3 +1,22 @@
+/* =========================================================
+   GLOBAL LAYOUT FIX — NO HORIZONTAL SCROLL + STICKY FOOTER
+   (Use this block on any page that gets a bottom scroll bar)
+========================================================= */
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /* --------------------------------------------------
    INFO 8 — FORM COLOR FIXES (LEFTOVER FROM OLD FORM)
 -------------------------------------------------- */
