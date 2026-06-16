@@ -111,7 +111,7 @@
 .kitchen-bg {
     position: relative;
     min-height: 100vh;
-    background: url('images/kitchen-background.png') center bottom / cover no-repeat fixed;
+    background: url('../images/kitchen-background.png') center bottom / cover no-repeat fixed;
     z-index: 0;
 }
 
