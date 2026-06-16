@@ -1,5 +1,10 @@
+/* =========================================================
+   GLOBAL LAYOUT FIX — NO HORIZONTAL SCROLL + STICKY FOOTER
+   (Use this block on any page that gets a bottom scroll bar)
+========================================================= */
 html, body {
     overflow-x: hidden;
+    height: auto;
 }
 
 * {
