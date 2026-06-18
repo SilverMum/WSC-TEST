@@ -118,6 +118,8 @@
     height: auto;
     transition: all 0.25s ease;
     cursor: pointer;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .kitchen-fb-button img:hover {
