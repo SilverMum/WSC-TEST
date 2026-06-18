@@ -101,6 +101,28 @@
     color: #5a2d14;
 }
 
+/* Kitchen Facebook Button */
+.kitchen-fb-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;   /* left side */
+    padding-left: 40px;            /* nudge right from the left edge */
+    margin: 40px 0 20px 0;          /* spacing above footer */
+}
+
+.kitchen-fb-button img {
+    width: 180px;                  /* adjust size as needed */
+    max-width: 240px;
+    height: auto;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.kitchen-fb-button img:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.15);
+}
+
 /* ------------------------------
    KITCHEN PAGE BACKGROUND
 --------------------------------*/
