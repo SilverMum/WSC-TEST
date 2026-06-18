@@ -111,8 +111,8 @@
 
 .kitchen-fb-button {
     position: absolute;
-    left: 120px;   /* move right — increase this number for more right */
-    top: 340px;    /* move down — increase this number for more down */
+    left: 240px;   /* moved right the same amount again */
+    top: 300px;    /* perfect vertical position you confirmed */
     z-index: 50;
 }
 
