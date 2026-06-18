@@ -101,25 +101,30 @@
     color: #5a2d14;
 }
 
-/* Kitchen Facebook Button */
+/* =========================================================
+   KITCHEN PAGE — FACEBOOK BUTTON
+========================================================= */
+
+#kitchen-page {
+    position: relative; /* allows absolute positioning inside */
+}
+
 .kitchen-fb-button {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;   /* move to the left */
-    align-items: flex-start;        /* vertical left alignment */
-    text-align: left;               /* override inherited centering */
-    padding-left: 0.5px;            /* nudge right from the left edge */
+    position: absolute;
+   padding-left: 0.5px;            /* nudge right from the left edge */
     margin-top: 290px;             /* move DOWN */
     margin-bottom: 0.5px;           /* spacing above footer */
+    z-index: 50;       /* keep above background */
 }
 
 .kitchen-fb-button img {
     width: 180px;
     height: auto;
-    transition: all 0.25s ease;
     cursor: pointer;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    transition: all 0.25s ease;
+
+    /* override global centering rules */
+    margin: 0 !important;
 }
 
 .kitchen-fb-button img:hover {
