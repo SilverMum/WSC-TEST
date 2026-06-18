@@ -107,13 +107,13 @@
 
 .kitchen-bg {
     background-image: url('../images/robnsonsbg.png');
-    background-size: contain;        /* full image visible */
+    background-size: cover;          /* full width, fills horizontally */
     background-repeat: no-repeat;
     background-position: top center; /* starts right under nav */
-    background-attachment: fixed;    /* does not move */
+    background-attachment: scroll;   /* scrolls normally */
 
-    padding-top: 0.5px;                /* 3px under nav */
-    padding-bottom: 0.5px;             /* 3px above footer */
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------------------
