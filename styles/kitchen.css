@@ -107,8 +107,8 @@
     display: flex;
     justify-content: flex-start;   /* move to the left */
     padding-left: 20px;            /* nudge right from the left edge */
-    margin-top: 200px;             /* move DOWN */
-    margin-bottom: 5px;           /* spacing above footer */
+    margin-top: 250px;             /* move DOWN */
+    margin-bottom: 0.5px;           /* spacing above footer */
 }
 
 .kitchen-fb-button img {
