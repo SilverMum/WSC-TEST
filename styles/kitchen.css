@@ -104,19 +104,20 @@
 /* ------------------------------
    KITCHEN PAGE BACKGROUND
 --------------------------------*/
-.kitchen-bg {
-    position: relative;
-    min-height: 100vh;
-    background: url('../images/rob n sons width 2026.png') center bottom / cover no-repeat fixed;
-    z-index: 0;
-}
+/* ------------------------------
+   KITCHEN PAGE — NEW BACKGROUND
+--------------------------------*/
+#kitchen-page {
+    background-image: url('../images/Rob n sons BG.png');
+    background-size: contain;          /* show full image */
+    background-repeat: no-repeat;
+    background-position: top center;   /* align top */
+    background-attachment: fixed;      /* no movement */
 
-.kitchen-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.0);
-    z-index: -1;
+    padding-top: 3px;                  /* tuck under nav */
+    padding-bottom: 3px;               /* tuck above footer */
+
+    min-height: calc(100vh - 6px);     /* full image visible */
 }
 
 /* ------------------------------
