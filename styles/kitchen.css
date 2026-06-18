@@ -108,7 +108,7 @@
    KITCHEN PAGE — NEW BACKGROUND
 --------------------------------*/
 #kitchen-page {
-    background-image: url('../images/Rob n sons BG.png');
+    background-image: url('..images/Rob n sons BG.png');
     background-size: contain;          /* show full image */
     background-repeat: no-repeat;
     background-position: top center;   /* align top */
