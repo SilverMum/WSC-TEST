@@ -20,8 +20,6 @@
    KITCHEN PAGE SPACING
 --------------------------------*/
 #kitchen-page {
-    margin-top: 200px;
-
     background-image: url('../images/robnsonsbg.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -31,7 +29,7 @@
     padding-top: 3px;
     padding-bottom: 3px;
 
-    min-height: calc(100vh - 6px);
+    min-height: calc(100vh - 6px); /* exactly nav→footer space */
 }
 
 /* ------------------------------
