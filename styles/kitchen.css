@@ -112,8 +112,8 @@
     background-position: top center; /* starts right under nav */
     background-attachment: fixed;    /* does not move */
 
-    padding-top: 3px;                /* 3px under nav */
-    padding-bottom: 3px;             /* 3px above footer */
+    padding-top: 0.5px;                /* 3px under nav */
+    padding-bottom: 0.5px;             /* 3px above footer */
 }
 
 /* ------------------------------
