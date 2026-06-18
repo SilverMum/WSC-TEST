@@ -105,14 +105,14 @@
 .kitchen-fb-button {
     width: 100%;
     display: flex;
-    justify-content: flex-start;   /* left side */
+    justify-content: flex-start;   /* move to the left */
     padding-left: 40px;            /* nudge right from the left edge */
-    margin: 40px 0 20px 0;          /* spacing above footer */
+    margin-top: 120px;             /* move DOWN */
+    margin-bottom: 40px;           /* spacing above footer */
 }
 
 .kitchen-fb-button img {
-    width: 180px;                  /* adjust size as needed */
-    max-width: 240px;
+    width: 180px;
     height: auto;
     transition: all 0.25s ease;
     cursor: pointer;
