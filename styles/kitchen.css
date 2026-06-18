@@ -106,6 +106,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;   /* move to the left */
+    align-items: flex-start;        /* vertical left alignment */
+    text-align: left;               /* override inherited centering */
     padding-left: 0.5px;            /* nudge right from the left edge */
     margin-top: 290px;             /* move DOWN */
     margin-bottom: 0.5px;           /* spacing above footer */
