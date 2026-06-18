@@ -20,8 +20,9 @@
    KITCHEN PAGE SPACING
 --------------------------------*/
 #kitchen-page {
-    margin-top: 200px;                 /* if you still want this */
-    background-image: url('../images/Rob n sons BG.png');
+    margin-top: 200px;
+
+    background-image: url('../images/Rob%20n%20sons%20BG.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -32,7 +33,6 @@
 
     min-height: calc(100vh - 6px);
 }
-
 
 /* ------------------------------
    KITCHEN PAGE — DESKTOP LAYOUT
