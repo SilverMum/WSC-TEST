@@ -111,11 +111,9 @@
 
 .kitchen-fb-button {
     position: absolute;
-    /* ⭐ ADD THIS LINE TO MOVE LEFT */
-    left: -400px;   /* move left; increase the negative number for more left */
-    margin-top: 290px;             /* move DOWN */
-    margin-bottom: 0.5px;           /* spacing above footer */
-    z-index: 50;       /* keep above background */
+    left: 0;          /* anchor to the left edge */
+    top: 300px;       /* adjust this number to match your old vertical position */
+    z-index: 50;
 }
 
 .kitchen-fb-button img {
