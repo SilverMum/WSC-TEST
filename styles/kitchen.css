@@ -20,8 +20,19 @@
    KITCHEN PAGE SPACING
 --------------------------------*/
 #kitchen-page {
-    margin-top: 200px; /* space under nav */
+    margin-top: 200px;                 /* if you still want this */
+    background-image: url('../images/Rob n sons BG.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    min-height: calc(100vh - 6px);
 }
+
 
 /* ------------------------------
    KITCHEN PAGE — DESKTOP LAYOUT
@@ -104,21 +115,6 @@
 /* ------------------------------
    KITCHEN PAGE BACKGROUND
 --------------------------------*/
-/* ------------------------------
-   KITCHEN PAGE — NEW BACKGROUND
---------------------------------*/
-#kitchen-page {
-    background-image: url('..images/Rob n sons BG.png');
-    background-size: contain;          /* show full image */
-    background-repeat: no-repeat;
-    background-position: top center;   /* align top */
-    background-attachment: fixed;      /* no movement */
-
-    padding-top: 3px;                  /* tuck under nav */
-    padding-bottom: 3px;               /* tuck above footer */
-
-    min-height: calc(100vh - 6px);     /* full image visible */
-}
 
 /* ------------------------------
    KITCHEN — DOUBLE CARD STYLE
