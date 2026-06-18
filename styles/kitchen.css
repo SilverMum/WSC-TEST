@@ -20,16 +20,7 @@
    KITCHEN PAGE SPACING
 --------------------------------*/
 #kitchen-page {
-    background-image: url('../images/robnsonsbg.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-
-    padding-top: 3px;
-    padding-bottom: 3px;
-
-    min-height: calc(100vh - 6px); /* exactly nav→footer space */
+    margin-top: 200px;
 }
 
 /* ------------------------------
@@ -113,6 +104,17 @@
 /* ------------------------------
    KITCHEN PAGE BACKGROUND
 --------------------------------*/
+
+.kitchen-bg {
+    background-image: url('../images/robnsonsbg.png');
+    background-size: contain;        /* full image visible */
+    background-repeat: no-repeat;
+    background-position: top center; /* starts right under nav */
+    background-attachment: fixed;    /* does not move */
+
+    padding-top: 3px;                /* 3px under nav */
+    padding-bottom: 3px;             /* 3px above footer */
+}
 
 /* ------------------------------
    KITCHEN — DOUBLE CARD STYLE
