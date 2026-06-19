@@ -704,3 +704,10 @@ main {
         background-repeat: no-repeat;
     }
 }
+
+@media (max-width: 900px) {
+    .kitchen-fb-button {
+        left: 20px !important;   /* move to left side */
+        top: 260px !important;   /* adjust vertical position if needed */
+    }
+}
