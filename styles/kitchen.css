@@ -703,3 +703,13 @@ body {
 main {
     flex: 1;
 }
+
+/* MOBILE-ONLY BACKGROUND FOR KITCHEN PAGE */
+@media (max-width: 900px) {
+    .kitchen-bg {
+        background-image: url('../images/robnsonsphonebg.png') !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
