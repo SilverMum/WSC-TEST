@@ -298,9 +298,10 @@ img {
 
 @media (max-width: 600px) {
   .kitchen-bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-size: contain;       /* shrink to fit width */
+    background-repeat: no-repeat;   /* no tiling */
+    background-position: center;    /* center vertically + horizontally */
+    background-color: #000;         /* black bars above/below */
   }
 }
 
