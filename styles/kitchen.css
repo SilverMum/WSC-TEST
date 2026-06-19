@@ -707,7 +707,8 @@ main {
 
 @media (max-width: 900px) {
     .kitchen-fb-button {
-        left: 10px !important;   /* move to left side */
-        top: 200px !important;   /* adjust vertical position if needed */
+        left: 10px !important;     /* bottom-left */
+        bottom: 40px !important;   /* slightly higher */
+        top: auto !important;      /* disable the desktop top value */
     }
 }
