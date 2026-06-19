@@ -1,31 +1,32 @@
-/* ------------------------------
+/* =========================================================
    KITCHEN PAGE TITLE
---------------------------------*/
+========================================================= */
 #kitchen-page .section-title {
     font-size: 3.2rem;
     color: #000;
     text-decoration: underline;
     font-weight: 800;
-    margin-top: 25px; /* final chosen spacing */
+    margin-top: 25px;
 }
 
-/* Kitchen Title Image */
+/* Title Image */
 .kitchen-title-img {
     max-width: 50%;
-    margin: 45px auto 45px auto;
+    margin: 45px auto;
     display: block;
 }
 
-/* ------------------------------
-   KITCHEN PAGE SPACING
---------------------------------*/
+/* =========================================================
+   PAGE SPACING
+========================================================= */
 #kitchen-page {
     margin-top: 200px;
+    position: relative; /* for FB button */
 }
 
-/* ------------------------------
-   KITCHEN PAGE — DESKTOP LAYOUT
---------------------------------*/
+/* =========================================================
+   DESKTOP LAYOUT
+========================================================= */
 #kitchen-page .kitchen-layout {
     display: flex;
     align-items: center;
@@ -52,9 +53,9 @@
     text-align: left;
 }
 
-/* ------------------------------
+/* =========================================================
    FACEBOOK EMBED BOX
---------------------------------*/
+========================================================= */
 .fb-page-container {
     width: calc(100% - 20px);
     margin: 0 auto;
@@ -70,9 +71,7 @@
     overflow-y: scroll;
 }
 
-/* ------------------------------
-   KITCHEN FACEBOOK FEED CARD
---------------------------------*/
+/* Scrollable FB feed card */
 .kitchen-fb-scroll {
     max-height: 800px;
     overflow-y: auto;
@@ -80,7 +79,6 @@
     margin-top: 20px;
 }
 
-/* Scrollbar styling */
 .kitchen-fb-scroll::-webkit-scrollbar {
     width: 10px;
 }
@@ -102,17 +100,12 @@
 }
 
 /* =========================================================
-   KITCHEN PAGE — FACEBOOK BUTTON
+   FACEBOOK BUTTON
 ========================================================= */
-
-#kitchen-page {
-    position: relative; /* allows absolute positioning inside */
-}
-
 .kitchen-fb-button {
     position: absolute;
-    left: 280px;   /* was 240px → moved 40px more to the right */
-    top: 340px;    /* was 300px → moved 20px down */
+    left: 280px;
+    top: 340px;
     z-index: 50;
 }
 
@@ -121,8 +114,6 @@
     height: auto;
     cursor: pointer;
     transition: all 0.25s ease;
-
-    /* override global centering rules */
     margin: 0 !important;
 }
 
@@ -131,24 +122,32 @@
     filter: brightness(1.15);
 }
 
-/* ------------------------------
-   KITCHEN PAGE BACKGROUND
---------------------------------*/
-
+/* =========================================================
+   BACKGROUND
+========================================================= */
 .kitchen-bg {
     background-image: url('../images/robnsonsbg.png');
-    background-size: cover;          /* full width, fills horizontally */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center; /* starts right under nav */
-    background-attachment: scroll;   /* scrolls normally */
-
+    background-position: top center;
+    background-attachment: scroll;
     margin: 0;
     padding: 0;
 }
 
-/* ------------------------------
-   KITCHEN — DOUBLE CARD STYLE
---------------------------------*/
+/* Mobile background fix */
+@media (max-width: 600px) {
+    .kitchen-bg {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000;
+    }
+}
+
+/* =========================================================
+   DOUBLE CARD STYLE
+========================================================= */
 .home-kitchen-card.outer-card {
     max-width: 900px;
     margin: 40px auto;
@@ -167,7 +166,6 @@
         0 8px 28px rgba(90, 45, 20, 0.35);
 }
 
-/* Layout inside card */
 .home-kitchen-card .kitchen-layout {
     display: flex;
     justify-content: center;
@@ -192,9 +190,9 @@
     text-align: center;
 }
 
-/* ------------------------------
-   MOBILE FIXES
---------------------------------*/
+/* =========================================================
+   MOBILE LAYOUT
+========================================================= */
 @media (max-width: 768px) {
     #kitchen-page .kitchen-layout {
         flex-direction: column;
@@ -226,26 +224,9 @@
     }
 }
 
-.kitchen-layout {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .kitchen-description {
-        text-align: left;
-        max-width: 100%;
-    }
-
-    .kitchen-description {
-        text-align: center;
-        max-width: 100%;
-    }
-
 /* =========================================================
-   KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
+   BASE STYLES
 ========================================================= */
-
 .kitchen-title-img {
     max-width: 70%;
     height: auto;
@@ -267,9 +248,8 @@
 }
 
 /* =========================================================
-   MOBILE-ONLY — KITCHEN PAGE
+   MOBILE-ONLY MINOR FIXES
 ========================================================= */
-
 @media (max-width: 900px) {
     .kitchen-description p {
         padding-left: 0;
@@ -281,6 +261,7 @@
     }
 }
 
+/* Global resets (safe to keep) */
 body {
     width: 100%;
     max-width: 100%;
@@ -294,315 +275,4 @@ body {
 img {
     max-width: 100%;
     height: auto;
-}
-
-@media (max-width: 600px) {
-  .kitchen-bg {
-    background-size: contain;       /* shrink to fit width */
-    background-repeat: no-repeat;   /* no tiling */
-    background-position: center;    /* center vertically + horizontally */
-    background-color: #000;         /* black bars above/below */
-  }
-}
-
-/* =========================================================
-   1. MOBILE NAV — ALIGNMENT + TOGGLE BEHAVIOR
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Disable hover behavior on mobile */
-    .dropdown:hover > .dropdown-menu {
-        display: none !important;
-    }
-
-    /* Normalize dropdown anchor width */
-    .nav-links li.dropdown {
-        width: auto !important;
-    }
-
-    .nav-links li.dropdown > a {
-        display: inline-block !important;
-    }
-
-    /* Left-align dropdowns */
-    .nav-links li.dropdown > .dropdown-menu {
-        left: 0 !important;
-        transform: translateX(0) !important;
-    }
-
-    /* JS-controlled open state */
-    .nav-links li.dropdown > .dropdown-menu.open {
-        display: block !important;
-    }
-}
-
-/* =========================================================
-   2. MOBILE LABEL FIX — TRAP & SKEET
-   ========================================================= */
-@media (max-width: 768px) {
-
-    .nav-links > li > a[href="trap-skeet.html"] {
-        font-size: 0 !important;
-        position: relative;
-    }
-
-    .nav-links > li > a[href="trap-skeet.html"]::after {
-        content: "Trap & Skeet";
-        font-size: 16px;
-        color: inherit;
-    }
-}
-
-/* =========================================================
-   3. MOBILE NAV — WRAPPED LAYOUT + TAP-TO-OPEN DROPDOWNS
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* NAV CONTAINER */
-    .main-nav {
-        justify-content: center !important;
-        padding: 12px 0 !important;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .logo {
-        order: 1;
-        text-align: center;
-        width: 100%;
-    }
-
-    .logo img {
-        height: 90px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .nav-spacer {
-        display: none;
-    }
-
-    /* WRAPPED NAV — 3 OVER 3 */
-    .nav-links {
-        order: 2;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px 6px;
-        width: 100%;
-        padding: 0;
-        margin-top: 0;
-    }
-
-    .nav-links li {
-        flex: 0 0 calc(33.33% - 6px);
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 1.3rem;
-        padding: 4px 2px;
-        white-space: nowrap;
-    }
-
-    /* HOMEPAGE-SPECIFIC SPACING */
-    .home .nav-links {
-        gap: 4px 6px !important;
-    }
-
-    .home .nav-links li {
-        flex: 0 0 calc(33.33% - 4px) !important;
-    }
-
-    .home .nav-links a {
-        font-size: 1.3rem !important;
-        padding: 2px 0 !important;
-        font-weight: bold;
-    }
-
-    .home .main-nav {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-        width: 100% !important;
-        max-width: none !important;
-        margin: 0 auto !important;
-    }
-
-    /* MOBILE DROPDOWN OVERLAY */
-    .dropdown-menu,
-    .submenu-right {
-        display: none;
-        position: absolute !important;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90% !important;
-        margin-top: 6px;
-        padding: 10px 0;
-        border: 1px solid #ddd;
-        background: white;
-        z-index: 9999;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    /* HOMEPAGE DROPDOWN TEXT SIZE */
-    .home .dropdown-menu a,
-    .home .submenu-right a {
-        font-size: 1.3rem !important;
-    }
-
-    /* HOMEPAGE DROPDOWN WIDTH */
-    .home .dropdown-menu,
-    .home .submenu-right {
-        max-width: 360px !important;
-    }
-
-    /* MEMBERS SUBMENU — MOBILE RIGHT OPEN */
-    .dropdown-sub {
-        position: relative;
-    }
-
-    .submenu-toggle {
-        display: inline-block !important;
-        vertical-align: middle !important;
-        margin-left: 6px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .dropdown-sub .submenu-right {
-        top: 0 !important;
-        left: 100% !important;
-        transform: none !important;
-        width: auto !important;
-        max-width: 240px !important;
-    }
-
-    .dropdown-sub.open > .submenu-right {
-        display: block;
-    }
-
-    .dropdown.open > .dropdown-menu {
-        display: block;
-    }
-
-    /* HOMEPAGE — KEEP MEMBERS + ARROW INLINE */
-    .home .dropdown-sub {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        white-space: nowrap !important;
-    }
-
-    .home .submenu-link {
-        display: inline-block !important;
-    }
-
-    .home .submenu-toggle {
-        display: inline-block !important;
-        margin-left: 6px !important;
-        vertical-align: middle !important;
-    }
-}
-
-/* =========================================================
-   MOBILE NAV — EXTRA RULES NEEDED FOR DROPDOWN VISIBILITY
-   (These were NOT in the unified block yet)
-   ========================================================= */
-@media (max-width: 900px) {
-
-    /* Ensure nav stays above all dropdowns + content */
-    .main-nav {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999 !important;
-    }
-
-    header {
-        position: relative;
-        z-index: 9998;
-    }
-
-    /* WRAPPED NAV — 3 OVER 3 (structure only, no conflicts) */
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px 6px;
-        width: 100%;
-        padding: 0;
-        margin-top: 0;
-    }
-
-    .nav-links li {
-        flex: 0 0 calc(33.33% - 6px);
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 1.3rem;
-        padding: 4px 2px;
-        white-space: nowrap;
-    }
-}
-
-@media (max-width: 900px) {
-    .main-nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 12px 0 !important;
-    }
-
-    .logo img {
-        height: 90px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px;
-        width: 100%;
-    }
-
-    .nav-links li {
-        flex: 0 0 calc(33.33% - 6px);
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 1.3rem;
-        padding: 4px 2px;
-    }
-}
-
-@media (max-width: 900px) {
-    .dropdown-menu,
-    .submenu-right {
-        position: absolute !important;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90% !important;
-        margin-top: 6px;
-        padding: 10px 0;
-        background: white;
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        display: none;
-    }
-
-    .dropdown-menu.open,
-    .submenu-right.open {
-        display: block !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .kitchen-bg {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #000;
-    }
 }
