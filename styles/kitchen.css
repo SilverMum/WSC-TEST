@@ -708,8 +708,8 @@ main {
 @media (max-width: 900px) {
     .kitchen-fb-button {
         position: absolute !important;
-        left: -5px !important;     /* stays left */
-        bottom: -60px !important;   /* moves DOWN */
+        left: 5px !important;     /* stays left */
+        bottom: -180px !important;   /* moves DOWN */
         top: auto !important;
         z-index: 99999 !important;
     }
