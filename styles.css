@@ -551,10 +551,10 @@ body.home main {
 
 /* Title text inside the card */
 .private-events-text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #ffffff; /* white text */
-    line-height: 1.5;
+    line-height: 1.2;
     margin: 0;
 
     /* crisp gold outline */
