@@ -549,16 +549,34 @@ body.home main {
         0 8px 28px rgba(90, 45, 20, 0.35);
 }
 
-/* Title text inside the card */
-/* Title text inside the card */
+/* TITLE for Private Events */
+.private-events-title {
+    font-size: 3.2rem;      /* much larger than the text */
+    font-weight: 900;
+    color: #ffffff;         /* same white as your text */
+    text-align: center;
+    margin: 0 0 25px 0;     /* space under the title */
+
+    /* same crisp gold outline */
+    text-shadow:
+        -3px -3px 0 #d4a017,
+         3px -3px 0 #d4a017,
+        -3px  3px 0 #d4a017,
+         3px  3px 0 #d4a017,
+        -3px  0px 0 #d4a017,
+         3px  0px 0 #d4a017,
+         0px -3px 0 #d4a017,
+         0px  3px 0 #d4a017;
+}
+
+/* Existing text */
 .private-events-text {
     font-size: 2.0rem;
     font-weight: 700;
-    color: #ffffff; /* white text */
+    color: #ffffff;
     line-height: 1.4;
     margin: 0;
 
-    /* crisp gold outline */
     text-shadow:
         -2px -2px 0 #d4a017,
          2px -2px 0 #d4a017,
@@ -572,7 +590,7 @@ body.home main {
 
 /* Dark blue text with same gold outline */
 .blue-word {
-    color: #003399; /* dark blue */
+    color: #003399;
     text-shadow:
         -2px -2px 0 #d4a017,
          2px -2px 0 #d4a017,
@@ -586,7 +604,7 @@ body.home main {
 
 /* Bright red text with same gold outline */
 .red-word {
-    color: #ff0000; /* bright red */
+    color: #ff0000;
     text-shadow:
         -2px -2px 0 #d4a017,
          2px -2px 0 #d4a017,
