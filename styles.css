@@ -569,7 +569,7 @@ body.home main {
          0px  3px 0 #d4a017;
 }
 
-/* Private Events Text – white with black outline */
+/* Private Events Text – white with gold outline */
 .private-events-text {
     font-size: 2.0rem;
     font-weight: 700;
@@ -577,44 +577,43 @@ body.home main {
     line-height: 1.4;
     margin: 0;
 
-    /* crisp black outline */
     text-shadow:
-        -2px -2px 0 #000000,
-         2px -2px 0 #000000,
-        -2px  2px 0 #000000,
-         2px  2px 0 #000000,
-        -2px  0px 0 #000000,
-         2px  0px 0 #000000,
-         0px -2px 0 #000000,
-         0px  2px 0 #000000;
+        -2px -2px 0 #d4a017,
+         2px -2px 0 #d4a017,
+        -2px  2px 0 #d4a017,
+         2px  2px 0 #d4a017,
+        -2px  0px 0 #d4a017,
+         2px  0px 0 #d4a017,
+         0px -2px 0 #d4a017,
+         0px  2px 0 #d4a017;
 }
 
-/* Dark blue text with black outline */
+/* Lighter blue text with same gold outline */
 .blue-word {
-    color: #003399;
+    color: #4a8cff; /* lighter, brighter blue */
     text-shadow:
-        -2px -2px 0 #000000,
-         2px -2px 0 #000000,
-        -2px  2px 0 #000000,
-         2px  2px 0 #000000,
-        -2px  0px 0 #000000,
-         2px  0px 0 #000000,
-         0px -2px 0 #000000,
-         0px  2px 0 #000000;
+        -2px -2px 0 #d4a017,
+         2px -2px 0 #d4a017,
+        -2px  2px 0 #d4a017,
+         2px  2px 0 #d4a017,
+        -2px  0px 0 #d4a017,
+         2px  0px 0 #d4a017,
+         0px -2px 0 #d4a017,
+         0px  2px 0 #d4a017;
 }
 
-/* Bright red text with black outline */
+/* Bright red text with same gold outline */
 .red-word {
     color: #ff0000;
     text-shadow:
-        -2px -2px 0 #000000,
-         2px -2px 0 #000000,
-        -2px  2px 0 #000000,
-         2px  2px 0 #000000,
-        -2px  0px 0 #000000,
-         2px  0px 0 #000000,
-         0px -2px 0 #000000,
-         0px  2px 0 #000000;
+        -2px -2px 0 #d4a017,
+         2px -2px 0 #d4a017,
+        -2px  2px 0 #d4a017,
+         2px  2px 0 #d4a017,
+        -2px  0px 0 #d4a017,
+         2px  0px 0 #d4a017,
+         0px -2px 0 #d4a017,
+         0px  2px 0 #d4a017;
 }
 
 /* ------------------------------
