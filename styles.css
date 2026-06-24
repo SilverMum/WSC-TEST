@@ -569,51 +569,52 @@ body.home main {
          0px  3px 0 #d4a017;
 }
 
-/* Existing text */
+/* Private Events Text – white with black outline */
 .private-events-text {
     font-size: 2.0rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff; /* white text */
     line-height: 1.4;
     margin: 0;
 
+    /* crisp black outline */
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #000000,
+         2px -2px 0 #000000,
+        -2px  2px 0 #000000,
+         2px  2px 0 #000000,
+        -2px  0px 0 #000000,
+         2px  0px 0 #000000,
+         0px -2px 0 #000000,
+         0px  2px 0 #000000;
 }
 
-/* Dark blue text with same gold outline */
+/* Dark blue text with black outline */
 .blue-word {
     color: #003399;
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #000000,
+         2px -2px 0 #000000,
+        -2px  2px 0 #000000,
+         2px  2px 0 #000000,
+        -2px  0px 0 #000000,
+         2px  0px 0 #000000,
+         0px -2px 0 #000000,
+         0px  2px 0 #000000;
 }
 
-/* Bright red text with same gold outline */
+/* Bright red text with black outline */
 .red-word {
     color: #ff0000;
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #000000,
+         2px -2px 0 #000000,
+        -2px  2px 0 #000000,
+         2px  2px 0 #000000,
+        -2px  0px 0 #000000,
+         2px  0px 0 #000000,
+         0px -2px 0 #000000,
+         0px  2px 0 #000000;
 }
 
 /* ------------------------------
