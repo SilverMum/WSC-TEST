@@ -2521,22 +2521,6 @@ header {
         text-align: center;
     }
 
-    /* TV page grid */
-    .tv-grid {
-        margin-left: 0;
-    }
-
-    .tv-grid-top {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .tv-grid-img,
-    .tv-grid-img-wide {
-        height: auto;
-        max-width: 100%;
-    }
-
     /* Archery images */
     .archery-image-wrapper img {
         height: auto;
@@ -2569,9 +2553,6 @@ header {
         width: 70%;
     }
 
-    .tv-map {
-        width: 100%;
-    }
 }
 
 /* =========================================================
@@ -3290,7 +3271,9 @@ body.home main {
     .outer-card {
         margin-left: 5px;
         margin-right: 5px;
-    }/* =========================================================
+    }
+   
+   /* =========================================================
    KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
 ========================================================= */
 
