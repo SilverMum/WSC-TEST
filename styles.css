@@ -565,31 +565,32 @@ body.home main {
          0px  2px 0 #0a1a3a;
 }
 
-/* Blue and red words stay EXACTLY the same */
+/* Blue word – blue fill, dark blue outline */
 .blue-word {
-    color: #4a8cff;
+    color: #4a8cff; /* keep the bright blue */
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #0a1a3a,
+         2px -2px 0 #0a1a3a,
+        -2px  2px 0 #0a1a3a,
+         2px  2px 0 #0a1a3a,
+        -2px  0px 0 #0a1a3a,
+         2px  0px 0 #0a1a3a,
+         0px -2px 0 #0a1a3a,
+         0px  2px 0 #0a1a3a;
 }
 
+/* Red word – red fill, dark blue outline */
 .red-word {
-    color: #ff0000;
+    color: #ff0000; /* keep the bright red */
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #0a1a3a,
+         2px -2px 0 #0a1a3a,
+        -2px  2px 0 #0a1a3a,
+         2px  2px 0 #0a1a3a,
+        -2px  0px 0 #0a1a3a,
+         2px  0px 0 #0a1a3a,
+         0px -2px 0 #0a1a3a,
+         0px  2px 0 #0a1a3a;
 }
 
 /* ------------------------------
