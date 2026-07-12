@@ -527,70 +527,47 @@ body.home main {
    PRIVATE EVENTS — TEXT CARD
 --------------------------------*/
 
-/* Outer card (30% white + blur) */
-.private-events-text-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-/* Inner card — soft sunrise cream + warm deep shadow */
-.private-events-text-card .inner-card {
-    background: rgba(255, 236, 220, 0.55); /* soft sunrise cream */
-    padding: 30px;
-    border-radius: 12px;
-
-    box-shadow:
-        0 4px 14px rgba(90, 45, 20, 0.45),
-        0 8px 28px rgba(90, 45, 20, 0.35);
-}
-
-/* TITLE for Private Events */
+/* TITLE for Private Events – white text, dark blue outline */
 .private-events-title {
-    font-size: 3.2rem;      /* much larger than the text */
+    font-size: 3.2rem;
     font-weight: 900;
-    color: #ffffff;         /* same white as your text */
+    color: #ffffff; /* white fill */
     text-align: center;
-    margin: 0 0 35px 0;     /* space under the title */
+    margin: 0 0 35px 0;
 
-    /* same crisp gold outline */
     text-shadow:
-        -3px -3px 0 #d4a017,
-         3px -3px 0 #d4a017,
-        -3px  3px 0 #d4a017,
-         3px  3px 0 #d4a017,
-        -3px  0px 0 #d4a017,
-         3px  0px 0 #d4a017,
-         0px -3px 0 #d4a017,
-         0px  3px 0 #d4a017;
+        -3px -3px 0 #0a1a3a,
+         3px -3px 0 #0a1a3a,
+        -3px  3px 0 #0a1a3a,
+         3px  3px 0 #0a1a3a,
+        -3px  0px 0 #0a1a3a,
+         3px  0px 0 #0a1a3a,
+         0px -3px 0 #0a1a3a,
+         0px  3px 0 #0a1a3a;
 }
 
-/* Private Events Text – white with gold outline */
+/* Private Events Text – white text, dark blue outline */
 .private-events-text {
     font-size: 2.0rem;
     font-weight: 700;
-    color: #ffffff; /* white text */
+    color: #ffffff; /* white fill */
     line-height: 1.4;
     margin: 0;
 
     text-shadow:
-        -2px -2px 0 #d4a017,
-         2px -2px 0 #d4a017,
-        -2px  2px 0 #d4a017,
-         2px  2px 0 #d4a017,
-        -2px  0px 0 #d4a017,
-         2px  0px 0 #d4a017,
-         0px -2px 0 #d4a017,
-         0px  2px 0 #d4a017;
+        -2px -2px 0 #0a1a3a,
+         2px -2px 0 #0a1a3a,
+        -2px  2px 0 #0a1a3a,
+         2px  2px 0 #0a1a3a,
+        -2px  0px 0 #0a1a3a,
+         2px  0px 0 #0a1a3a,
+         0px -2px 0 #0a1a3a,
+         0px  2px 0 #0a1a3a;
 }
 
-/* Lighter blue text with same gold outline */
+/* Blue and red words stay EXACTLY the same */
 .blue-word {
-    color: #4a8cff; /* lighter, brighter blue */
+    color: #4a8cff;
     text-shadow:
         -2px -2px 0 #d4a017,
          2px -2px 0 #d4a017,
@@ -602,7 +579,6 @@ body.home main {
          0px  2px 0 #d4a017;
 }
 
-/* Bright red text with same gold outline */
 .red-word {
     color: #ff0000;
     text-shadow:
@@ -624,18 +600,6 @@ body.home main {
     height: auto;
     display: block;
     margin: 20px auto 40px;
-}
-
-/* ------------------------------
-   PRIVATE EVENTS — HEADER IMAGE
---------------------------------*/
-.private-events-header-image img {
-    display: block;
-    margin: 20px auto 40px;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* ------------------------------
