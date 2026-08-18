@@ -229,3 +229,21 @@ body.knifeaxe-bg {
     font-size: 1rem;
     font-style: italic;
 }
+
+/* Stop italic text inside the rules card */
+.knifeaxe-rules li {
+    font-style: normal;
+}
+
+/* Left-align ONLY the rules section */
+.knifeaxe-rules,
+.knifeaxe-rules li,
+.rules-content,
+.rules-content li {
+    text-align: left;
+}
+
+/* Keep your bold text bold */
+.knifeaxe-rules li strong {
+    font-weight: bold;
+}
