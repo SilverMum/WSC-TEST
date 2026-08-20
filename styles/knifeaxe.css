@@ -332,3 +332,10 @@ body.knifeaxe-bg {
 .knifeaxe-form textarea {
     color: black !important;
 }
+
+/* =========================================================
+   FIX — MAKE SUBJECT INPUT TEXT BLACK
+========================================================= */
+.knifeaxe-form input {
+    color: black !important;
+}
