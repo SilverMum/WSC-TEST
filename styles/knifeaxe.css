@@ -325,3 +325,7 @@ body.knifeaxe-bg {
     border-radius: 6px;
     cursor: pointer;
 }
+
+textarea {
+    color: black !important;
+}
