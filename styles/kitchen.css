@@ -111,8 +111,8 @@
 
 .kitchen-fb-button {
     position: absolute;
-    left: 280px;   /* was 240px → moved 40px more to the right */
-    top: 340px;    /* was 300px → moved 20px down */
+    left: 310px;
+    top: 310px;
     z-index: 50;
 }
 
