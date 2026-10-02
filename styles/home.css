@@ -1,110 +1,597 @@
-/* ⭐ Events Header Block (now wraps title + images) */
+/* =========================================================
+   ⭐ EVENTS HEADER / BEIGE EVENT CARD
+   ========================================================= */
+
 .events-header {
-    max-width: 900px;              
-    margin: 40px auto 20px auto;   
-    text-align: center;
-    padding: 30px 20px;
-    background: #f3eee6;           
-    border-radius: 12px;
-    border: 2px solid #d8d2c8;     
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 900px !important;
+
+    margin: 40px auto 20px auto !important;
+
+    /* ⭐ CHANGED: horizontal padding 20px → 40px */
+    padding: 30px 40px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    text-align: center !important;
+
+    background: #f3eee6 !important;
+
+    border-radius: 12px !important;
+    border: 2px solid #d8d2c8 !important;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+
+    box-sizing: border-box !important;
 }
 
-/* ⭐ Subtitle with lines */
-.events-subtitle {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #6b5e4a;
-    text-transform: uppercase;
-    margin-bottom: 8px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+/* =========================================================
+   ⭐ MARK YOUR CALENDAR
+   ========================================================= */
+
+.events-header > .events-subtitle {
+    display: flex !important;
+
+    width: 100% !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 2px !important;
+
+    color: #6b5e4a !important;
+
+    text-transform: uppercase !important;
+
+    box-sizing: border-box !important;
 }
 
-.events-subtitle .line {
-    flex: 0 0 60px;                
-    height: 2px;
-    background-color: #6b5e4a;
-    opacity: 0.7;
-    border-radius: 2px;
+
+.events-header > .events-subtitle .line {
+    display: block !important;
+
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+
+    height: 2px !important;
+
+    flex: 0 0 60px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-color: #6b5e4a !important;
+
+    opacity: 0.7 !important;
+
+    border-radius: 2px !important;
+
+    box-sizing: border-box !important;
 }
 
-/* ⭐ Main title */
-.events-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #3a3328;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
+
+/* =========================================================
+   ⭐ EVENTS TITLE
+   ========================================================= */
+
+.events-header > .events-title {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 0 30px 0 !important;
+    padding: 0 !important;
+
+    font-size: 36px !important;
+    font-weight: 800 !important;
+
+    color: #3a3328 !important;
+
+    letter-spacing: 1px !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
 }
 
-/* ⭐ Image row INSIDE beige card */
-.events-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+
+/* =========================================================
+   ⭐ OCTOBER 2026 EVENT ROW
+   =========================================================
+
+   LEFT  = EVENT TEXT
+   RIGHT = EVENT IMAGE
+
+   IMAGE SIZE = 300px
+
+   ========================================================= */
+
+.events-header > .event-row {
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) 300px !important;
+
+    grid-template-rows: auto !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    column-gap: 40px !important;
+    row-gap: 0 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 0 40px 0 !important;
+    padding: 0 !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+
+    float: none !important;
+    clear: both !important;
+
+    box-sizing: border-box !important;
 }
 
-/* ⭐ Images */
-.clickable-vertical-img {
-    flex: 1 1 auto;
-    max-width: 272px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    cursor: pointer;
-    border-radius: 6px;
-    display: block;
-    margin: 0;
+
+/* =========================================================
+   ⭐ OCTOBER EVENT TEXT — LEFT COLUMN
+   ========================================================= */
+
+.events-header > .event-row > .event-text {
+    display: block !important;
+
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+
+    float: none !important;
+    clear: none !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
 }
 
-/* ⭐ Fullscreen overlay */
+
+.events-header > .event-row > .event-text p {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.6 !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   ⭐ OCTOBER EVENT IMAGE
+   ========================================================= */
+
+.events-header > .event-row > .clickable-vertical-img {
+    display: block !important;
+
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    /* ⭐ 300px */
+    width: 300px !important;
+
+    min-width: 300px !important;
+    max-width: 300px !important;
+
+    height: auto !important;
+
+    max-height: 420px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    position: static !important;
+
+    float: none !important;
+    clear: none !important;
+
+    object-fit: contain !important;
+
+    cursor: pointer !important;
+
+    border-radius: 6px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   ⭐ MAKE SURE OCTOBER ROWS ARE INDEPENDENT
+   ========================================================= */
+
+.events-header > .event-row + .event-row {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   ⭐ FULLSCREEN OVERLAY
+   ========================================================= */
+
 .fullscreen-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.9);
+    position: fixed !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+
+    background: rgba(0,0,0,0.9) !important;
+
     display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    overflow: hidden;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    z-index: 99999 !important;
+
+    overflow: hidden !important;
 }
+
 
 .fullscreen-overlay img {
-    max-width: 95vw;
-    max-height: 95vh;
-    object-fit: contain;
-    border-radius: 8px;
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+
+    object-fit: contain !important;
+
+    border-radius: 8px !important;
 }
 
-/* ⭐ Close button */
+
+/* =========================================================
+   ⭐ CLOSE BUTTON
+   ========================================================= */
+
 .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    z-index: 100000;
+    position: absolute !important;
+
+    top: 20px !important;
+    right: 25px !important;
+
+    font-size: 40px !important;
+
+    color: white !important;
+
+    cursor: pointer !important;
+
+    z-index: 100000 !important;
 }
 
-/* ⭐ Mobile */
+
+/* =========================================================
+   ⭐ MOBILE
+   ========================================================= */
+
 @media (max-width: 700px) {
-    .events-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
+
+    .events-header {
+        width: calc(100% - 20px) !important;
+
+        max-width: 900px !important;
+
+        margin: 25px auto 20px auto !important;
+
+        /* Keep mobile padding comfortable */
+        padding: 25px 15px 30px 15px !important;
     }
 
-    .clickable-vertical-img {
-        max-width: 70%;
+
+    .events-header > .events-title {
+        font-size: 28px !important;
+
+        margin-bottom: 25px !important;
+    }
+
+
+    /* -----------------------------------------
+       OCTOBER PHONE:
+
+       TEXT
+       ↓
+       IMAGE
+       ----------------------------------------- */
+
+    .events-header > .event-row {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        grid-template-rows: auto auto !important;
+
+        row-gap: 15px !important;
+
+        column-gap: 0 !important;
+
+        margin-bottom: 40px !important;
+    }
+
+
+    .events-header > .event-row > .event-text {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+
+        width: 100% !important;
+
+        text-align: center !important;
+    }
+
+
+    .events-header > .event-row > .event-text p {
+        text-align: center !important;
+    }
+
+
+    .events-header > .event-row > .clickable-vertical-img {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+
+        width: 300px !important;
+
+        max-width: 80% !important;
+
+        min-width: 0 !important;
+
+        max-height: 420px !important;
+
+        margin: 0 auto !important;
+    }
+
+
+    .events-header > .events-subtitle {
+        font-size: 14px !important;
+
+        letter-spacing: 1.5px !important;
+
+        gap: 7px !important;
+    }
+
+
+    .events-header > .events-subtitle .line {
+        width: 35px !important;
+
+        min-width: 35px !important;
+        max-width: 35px !important;
+
+        flex: 0 0 35px !important;
     }
 }
 
+
+/* =========================================================
+   ⭐ NOVEMBER 2026 EVENTS
+   =========================================================
+
+   November uses:
+
+   <div class="events-row">
+
+   November now uses the SAME image size as October.
+
+   IMAGE SIZE = 300px
+
+   LEFT  = TEXT
+   RIGHT = IMAGE
+
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   NOVEMBER EVENT ROW
+   --------------------------------------------------------- */
+
+.events-header > .events-row {
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) 300px !important;
+
+    grid-template-rows: auto !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    column-gap: 40px !important;
+    row-gap: 0 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 0 40px 0 !important;
+    padding: 0 !important;
+
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+
+    float: none !important;
+    clear: both !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   NOVEMBER EVENT TEXT — LEFT COLUMN
+   --------------------------------------------------------- */
+
+.events-header > .events-row > .event-text {
+    display: block !important;
+
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+
+    float: none !important;
+    clear: none !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.events-header > .events-row > .event-text p {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.6 !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   NOVEMBER EVENT IMAGE — 300px
+   --------------------------------------------------------- */
+
+.events-header > .events-row > .clickable-vertical-img {
+    display: block !important;
+
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    /* ⭐ SAME SIZE AS OCTOBER */
+    width: 300px !important;
+
+    min-width: 300px !important;
+    max-width: 300px !important;
+
+    height: auto !important;
+
+    max-height: 420px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    position: static !important;
+
+    float: none !important;
+    clear: none !important;
+
+    object-fit: contain !important;
+
+    cursor: pointer !important;
+
+    border-radius: 6px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   ⭐ NOVEMBER MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .events-header > .events-row {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        grid-template-rows: auto auto !important;
+
+        row-gap: 15px !important;
+
+        column-gap: 0 !important;
+
+        margin-bottom: 40px !important;
+    }
+
+
+    .events-header > .events-row > .event-text {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+
+        width: 100% !important;
+
+        text-align: center !important;
+    }
+
+
+    .events-header > .events-row > .event-text p {
+        text-align: center !important;
+    }
+
+
+    .events-header > .events-row > .clickable-vertical-img {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+
+        /* ⭐ SAME SIZE AS OCTOBER */
+        width: 300px !important;
+
+        max-width: 80% !important;
+
+        min-width: 0 !important;
+
+        max-height: 420px !important;
+
+        margin: 0 auto !important;
+    }
+}
