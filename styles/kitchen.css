@@ -709,14 +709,13 @@ main {
     .kitchen-fb-button {
         position: absolute !important;
         left: 15px !important;
-        bottom: -240px !important;
+        bottom: -200px !important;
         top: auto !important;
         z-index: 99999 !important;
     }
-}
 
     .kitchen-fb-button img {
-        width: 150px !important;    /* correct mobile size */
+        width: 150px !important;
         height: auto !important;
     }
 }
