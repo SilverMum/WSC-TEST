@@ -4,19 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>Windsor Sportsmen’s Club</title>
-    
-    <!-- =========================================================
-         PAGE STYLESHEETS
-    ========================================================== -->
-     <!-- Nav styles -->
-    <link rel="stylesheet" href="styles/nav.css">
-    <!-- Air Rifle styles -->
-    <link rel="stylesheet" href="styles.css?v=7">
-    <!-- Home styles -->
+    <link rel="stylesheet" href="styles.css?v=10">
     <link rel="stylesheet" href="styles/home.css">
-    <!-- Footer styles -->
-    <link rel="stylesheet" href="styles/footer.css">
-    
 </head>
 
 <body class="home">
@@ -79,7 +68,7 @@
         </ul>
     </nav>
 </header>
-
+    
 <main>
 
     <section style="height: 90px;"></section>
@@ -101,6 +90,26 @@
     <img src="images/WSC Membership Meeting.png" alt="Membership Information" class="membership-image">
 </section>
 
+    <section class="facebook-card outer-card">
+    <div class="inner-card">
+
+        <div class="facebook-section">
+
+            <!-- Text under the button -->
+            <div class="facebook-text">
+                <p style="font-size: 2em;"><strong>Important Info Trap &amp; Skeet</strong></p>
+                    
+                <span class="line"></span>
+                <p>We are looking for Trappers</p>
+                <p>We also need Club Members to Volunteer and assist with Trap & Skeet</p>
+                <p>Contact Domenic for details 519-791-8164</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    
 <section class="facebook-card outer-card">
     <div class="inner-card">
 
@@ -124,38 +133,6 @@
     </div>
 </section>
 
-    <!-- ⭐ Event Card 1 -->
-<!--<div class="events-header">
- 
-<div class="events-subtitle">
-<span class="line"></span>
-MARK YOUR CALENDAR
-<span class="line"></span>
-</div>
- 
-<div class="events-title">December 2026 Events</div>
- 
-<div class="events-row">
- 
-<div class="event-text">
-<p>
-This is sample text for your July event.
-Club members enjoyed a great day of riding,
-followed by food, photos, and socializing.
-Replace this text with your actual event details.
-</p>
-</div>
- 
-<img
-src="images/FB_IMG_1780866308035.jpg"
-class="clickable-vertical-img"
-onclick="openFullscreenImage('images/FB_IMG_1780866308035.jpg')"
->
- 
-</div>
- 
-</div>
-
 <!-- ⭐ Event Card 2 -->
 <div class="events-header">
  
@@ -167,23 +144,73 @@ MARK YOUR CALENDAR
  
 <div class="events-title">October 2026 Events</div>
  
-<div class="events-row">
+<!-- Event 1 -->
+<div class="event-row">
  
 <div class="event-text">
 <p>
-October 31st, Saterday<br>
-Ghouls Guitars & Grooves<br>
+<strong>October 2nd, Friday</strong><br>
+<strong>Canada South Blues Society Windsor</strong><br>
+Experience Great Live Blues<br>
+Steve Marriner and Local Electric<br>
+@ The Windsor Sportsmens Club<br>
+2401 Dougall Ave.<br>
+Tickets Available<br>
+Doors Open @ 6PM - 7PM<br>
+Contact Mike McCann<br>
+226-757-0748
+</p>
+</div>
+ 
+<img
+src="images/image.png"
+class="clickable-vertical-img"
+onclick="openFullscreenImage('images/image.png')"
+>
+</div>
+<!-- Event 2 -->
+<div class="event-row">
+ 
+<div class="event-text">
+<p>
+<strong>October 10th Saterday</strong><br>
+<strong>Motor City Drive Band</strong><br>
+Charity Concert<br>
+@ 6PM - 10PM<br>
+Sponsored By Unifor Local 200<br>
+Night of Live Music<br>
+Food Specials and Good Vibes!<br>
+Free Entry<br>
+Donations accepted for The House of Sophrosyne<br>
+@ Windsor Sportsmens Club
+</p>
+</div>
+ 
+<img
+src="images/image1.png"
+class="clickable-vertical-img"
+onclick="openFullscreenImage('images/image1.png')"
+>
+</div>
+    
+<!-- Event 3 -->
+<div class="event-row">
+ 
+<div class="event-text">
+<p>
+<strong>October 31st, Saturday</strong><br>
+<strong>Ghouls Guitars &amp; Grooves</strong><br>
 Concert and Costume Party<br>
 J#MAJOR<br>
 Tickets $10 in Advance $15 at the Door<br>
-Doors Open 6:PM Show Starts 7:PM<br>
+Doors Open 6PM Show Starts 7PM<br>
 Special Guest Motor City Drive<br>
 Creepy Halloween Themed Food and Drink will be available<br>
 $150 For Best Costume<br>
 $100 Best Rock Costume<br>
 $50 For Funniest Costume<br>
 Door Prize Draw Packed with Product and Merchant Swag<br>
-Come For the Boos Stay for the Grooves<br>
+Come For the Boos Stay for the Grooves
 </p>
 </div>
  
@@ -212,8 +239,8 @@ MARK YOUR CALENDAR
  
 <div class="event-text">
 <p>
-November 20th, Friday<br>
-Crime Stoppers<br>
+<strong>November 20th, Friday</strong><br>
+<strong>Crime Stoppers</strong><br>
 Music/Dinner Fundraiser<br>
 519 Band<br>
 Ticket Price $15.00 per person<br>
@@ -525,12 +552,9 @@ onclick="openFullscreenImage('images/FB_IMG_1780866308035.jpg')"
 </div>-->
     
 </main>
-
-<!-- =========================================================
-     FOOTER (LOADED FROM /components/footer.html)
-========================================================= -->
-<div id="footer-placeholder"></div>
-<script src="scripts/load-footer.js"></script>
+<footer class="site-footer">
+    <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
+</footer>
 
 <!-- ⭐ JS MOVED HERE SO NAV WORKS PROPERLY -->
 <script>
@@ -553,6 +577,12 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 });
 </script>
 
+<script>
+function openFullscreenImage(imageSrc) {
+window.open(imageSrc, '_blank');
+}
+</script>
+    
 <!-- ⭐ YOUR MAIN NAVIGATION SCRIPT -->
 <script src="scripts.js"></script>
 
