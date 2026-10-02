@@ -60,6 +60,189 @@ main {
 }
 
 /* ------------------------------
+   NAVIGATION
+--------------------------------*/
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centered nav */
+    padding: 10px 0;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-spacer {
+    display: none;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Base nav link style */
+.nav-links a {
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Dark hover style for TOP NAV (matches dropdown) */
+.nav-links > li > a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+    box-shadow: none;
+    transform: translateY(-2px);
+}
+
+/* Make the Members submenu arrow white */
+.submenu-toggle {
+    color: #fff !important;
+}
+
+/* ------------------------------
+   TRAP & SKEET TWO-LINE ITEM
+--------------------------------*/
+.nav-trap-skeet a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    line-height: 1.1;
+    display: inline-block;
+    text-align: left !important;
+}
+
+.nav-trap-skeet a span {
+    font-size: 0.85em;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+}
+
+/* ------------------------------
+   DROPDOWN MENU (Unified Dark Theme)
+--------------------------------*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    padding: 8px 0;
+    list-style: none;
+    background-color: #1a1a1a !important;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2100;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: normal;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ------------------------------
+   RIGHT-SIDE SUBMENU (Members)
+--------------------------------*/
+.nav-links li.dropdown-sub {
+    position: relative;
+}
+
+.dropdown-sub > a {
+    padding-right: 18px;
+}
+
+.submenu-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    padding: 8px 0;
+    list-style: none;
+    background-color: #1a1a1a !important;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2200;
+}
+
+.dropdown-sub:hover > .submenu-right {
+    display: block;
+}
+
+.submenu-right a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu-right a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Keep Members text + arrow aligned */
+.dropdown-sub {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.submenu-link,
+.submenu-toggle {
+    display: inline-block;
+}
+
+/* ------------------------------
    HERO SECTION
 --------------------------------*/
 .hero {
@@ -507,6 +690,22 @@ main {
 /* ------------------------------
    FOOTER — DARK THEME (GLOBAL)
 --------------------------------*/
+.site-footer {
+    background-color: #1a1a1a;   /* dark footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* HOMEPAGE ONLY — allow full-width layout */
 body.home main {
     max-width: none;
@@ -517,6 +716,7 @@ body.home main {
 #club-events {
     scroll-margin-top: 92px; /* was 80px */
 }
+
 
 /* =========================================================
    OTHER PAGES (RANGE, ARCHERY, OFHA, PRIVATE EVENTS, LOGIN)
@@ -2124,6 +2324,211 @@ body.cheese-bg .content-section {
 }
 
 /* ------------------------------
+   KITCHEN PAGE TITLE
+--------------------------------*/
+#kitchen-page .section-title {
+    font-size: 3.2rem;
+    color: #000;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-top: 25px; /* final chosen spacing */
+}
+
+/* Kitchen Title Image */
+.kitchen-title-img {
+    max-width: 50%;
+    margin: 45px auto 45px auto;
+    display: block;
+}
+
+/* ------------------------------
+   KITCHEN PAGE SPACING
+--------------------------------*/
+#kitchen-page {
+    padding-top: 40px !important;
+}
+
+#kitchen-page .content-section {
+    padding-top: 40px;
+}
+
+/* ------------------------------
+   KITCHEN PAGE — DESKTOP LAYOUT
+--------------------------------*/
+#kitchen-page .kitchen-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+#kitchen-page .kitchen-badge {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#kitchen-page .kitchen-description {
+    flex: 1;
+    min-width: 260px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ------------------------------
+   FACEBOOK EMBED BOX
+--------------------------------*/
+.fb-page-container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid red;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.fb-page {
+    width: 100% !important;
+    height: 800px !important;
+    overflow-y: scroll;
+}
+
+/* ------------------------------
+   KITCHEN FACEBOOK FEED CARD
+--------------------------------*/
+.kitchen-fb-scroll {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 12px;
+    margin-top: 20px;
+}
+
+/* Scrollbar styling */
+.kitchen-fb-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 236, 220, 0.55);
+    border-radius: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-thumb {
+    background: rgba(90, 45, 20, 0.55);
+    border-radius: 10px;
+}
+
+.kitchen-feed-title {
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+    color: #5a2d14;
+}
+
+/* ------------------------------
+   KITCHEN PAGE BACKGROUND
+--------------------------------*/
+.kitchen-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/kitchen-background.png') center bottom / cover no-repeat fixed;
+    z-index: 0;
+}
+
+.kitchen-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+/* ------------------------------
+   KITCHEN — DOUBLE CARD STYLE
+--------------------------------*/
+.home-kitchen-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.home-kitchen-card .inner-card {
+    background: rgba(255, 236, 220, 0.55);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow:
+        0 4px 14px rgba(90, 45, 20, 0.45),
+        0 8px 28px rgba(90, 45, 20, 0.35);
+}
+
+/* Layout inside card */
+.home-kitchen-card .kitchen-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.home-kitchen-card .kitchen-badge {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-kitchen-card .kitchen-description {
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ------------------------------
+   MOBILE FIXES
+--------------------------------*/
+@media (max-width: 768px) {
+    #kitchen-page .kitchen-layout {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #kitchen-page .kitchen-badge {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #kitchen-page .kitchen-description {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-kitchen-card .kitchen-layout {
+        flex-direction: column;
+    }
+
+    .home-kitchen-card .kitchen-badge {
+        margin-bottom: 20px;
+    }
+}
+
+/* ------------------------------
    AIR RIFLE (SEPARATE PAGE)
 --------------------------------*/
 
@@ -2394,6 +2799,17 @@ header {
         font-size: 1rem;
     }
 
+    .kitchen-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kitchen-description {
+        text-align: left;
+        max-width: 100%;
+    }
+
     .ofha-intro {
         flex-direction: column;
         text-align: center;
@@ -2483,6 +2899,18 @@ header {
     .hero-title {
         font-size: 2rem;
         white-space: normal;
+    }
+
+    /* Kitchen section */
+    .kitchen-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .kitchen-description {
+        text-align: center;
+        max-width: 100%;
     }
 
     /* Max Band */
@@ -2972,7 +3400,7 @@ header {
 }
 
 .calendar-bg {
-    background-image: url("images/tree line bg.png");
+    background-image: url("images/calendar page background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3272,8 +3700,8 @@ body.home main {
         margin-left: 5px;
         margin-right: 5px;
     }
-   
-   /* =========================================================
+
+/* =========================================================
    KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
 ========================================================= */
 
@@ -3307,6 +3735,22 @@ body.home main {
     width: 100% !important;
     max-width: 100% !important;
     height: auto;
+}
+
+
+/* =========================================================
+   MOBILE-ONLY — KITCHEN PAGE
+========================================================= */
+
+@media (max-width: 900px) {
+    .kitchen-description p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .kitchen-description {
+        margin-left: -17px;
+    }
 }
 
 /* =========================================================
@@ -3808,49 +4252,16 @@ body.home main {
     }
 }
 
-/* ⭐ Desktop: 3 cards side-by-side */
-.club-events-row {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: stretch !important;
-    gap: 10px !important;
-    padding: 0 0.2rem !important; /* tiny edge spacing */
-    width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* ⭐ Each card takes equal width */
-.club-events-row .club-event-card {
-    flex: 1 1 33% !important;
-    max-width: 33.33% !important;
-    display: flex !important;
-    margin: 0 !important;
-}
-
-/* ⭐ Inner card must stretch */
-.club-events-row .inner-card {
-    width: 100% !important;
-}
-
-/* ⭐ Images scale properly */
-.club-events-row .event-image {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: cover !important;
-    border-radius: 8px;
-}
-
-/* ⭐ Mobile: stack vertically */
-@media (max-width: 700px) {
-    .club-events-row {
-        flex-direction: column !important;
-        gap: 30px !important;
-        padding: 0 1rem !important;
+/* FIX — Force mobile to use the HTML text for archery times */
+@media (max-width: 900px) {
+    .archery-times {
+        font-size: 1.3rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
     }
 
-    .club-events-row .club-event-card {
-        max-width: 100% !important;
+    /* Remove old cached pseudo-element text */
+    .archery-times::before {
+        content: none !important;
     }
 }
