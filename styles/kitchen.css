@@ -709,7 +709,7 @@ main {
     .kitchen-fb-button {
         position: absolute !important;
         left: 15px !important;
-        bottom: -200px !important;
+        bottom: -170px !important;
         top: auto !important;
         z-index: 99999 !important;
     }
